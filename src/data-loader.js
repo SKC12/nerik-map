@@ -14,13 +14,13 @@ export async function loadCSV(data) {
   let csv = await fetchCSV(data);
   let lines = csv.split("\n");
   let headers = lines[0].split(";");
-  let content = [];
+  let spheres = [];
   for (let i = 1; i < lines.length; i++) {
     let obj = {};
     let planets = [];
     let currentLine = lines[i].split(";");
     for (let j = 0; j < currentLine.length; j++) {
-      console.log(headers[j]);
+      //console.log(headers[j]);
       if (headers[j].includes("Planet")) {
         if (currentLine[j]) {
           let planet = {};
@@ -33,9 +33,10 @@ export async function loadCSV(data) {
         obj[headers[j]] = currentLine[j];
       }
     }
-    console.log(obj);
+    //console.log(obj);
     obj.planets = planets;
-    content.push(new Sphere(obj));
+    spheres.push(new Sphere(obj));
   }
-  console.log(content);
+  //console.log(spheres);
+  return spheres;
 }

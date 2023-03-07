@@ -1,13 +1,11 @@
 import "./App.css";
-import { loadCSV } from "./data-loader";
-import data from "./data/radiant-triangle.csv";
+import Map from "./Components/Map";
 
 function App() {
-  loadCSV(data);
-
   return (
     <div className="App">
       <header className="App-header"></header>
+      <Map />
     </div>
   );
 }
