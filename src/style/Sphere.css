@@ -1,0 +1,11 @@
+.SPHERE_node{
+    display: flex;
+    align-content: center;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

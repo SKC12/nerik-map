@@ -28,8 +28,8 @@ function scalePoint(p, scale) {
 const ZOOM_SENSITIVITY = 500;
 
 function Map(props) {
-  const canvasWidth = 1000;
-  const canvasHeight = 600;
+  const canvasWidth = props.width;
+  const canvasHeight = props.height;
   const [spheres, setSpheres] = useState(loadCSV(sphereData));
   const canvasRef = useRef(null);
   const [context, setContext] = useState(null);
@@ -115,6 +115,11 @@ function Map(props) {
   // pan when offset or scale changes
   useLayoutEffect(() => {
     if (context && lastOffsetRef.current) {
+      console.log(
+        offset,
+        lastOffsetRef.current,
+        scalePoint(diffPoints(offset, lastOffsetRef.current), scale)
+      );
       const offsetDiff = scalePoint(
         diffPoints(offset, lastOffsetRef.current),
         scale
@@ -124,28 +129,6 @@ function Map(props) {
       isResetRef.current = false;
     }
   }, [context, offset, scale]);
-
-  // draw
-  useLayoutEffect(() => {
-    if (context) {
-      const squareSize = 20;
-
-      // clear canvas but maintain transform
-      const storedTransform = context.getTransform();
-      context.canvas.width = context.canvas.width;
-      context.setTransform(storedTransform);
-
-      context.fillRect(
-        canvasWidth / 2 - squareSize / 2,
-        canvasHeight / 2 - squareSize / 2,
-        squareSize,
-        squareSize
-      );
-      context.arc(viewportTopLeft.x, viewportTopLeft.y, 5, 0, 2 * Math.PI);
-      context.fillStyle = "red";
-      context.fill();
-    }
-  }, [canvasWidth, canvasHeight, context, scale, offset, viewportTopLeft]);
 
   // add event listener on canvas for mouse position
   useEffect(() => {
@@ -210,6 +193,35 @@ function Map(props) {
     canvasElem.addEventListener("wheel", handleWheel);
     return () => canvasElem.removeEventListener("wheel", handleWheel);
   }, [context, mousePos.x, mousePos.y, viewportTopLeft, scale]);
+
+  // draw
+  useLayoutEffect(() => {
+    if (context) {
+      const squareSize = 20;
+
+      // clear canvas but maintain transform
+      const storedTransform = context.getTransform();
+      context.canvas.width = context.canvas.width;
+      context.setTransform(storedTransform);
+
+      let imgratio = 1.421;
+      let img = new Image(500, 500 * imgratio);
+      img.onload = function () {
+        context.drawImage(img, 0, 0, canvasWidth * ratio, canvasHeight * ratio);
+      };
+      img.src = frame;
+
+      context.fillRect(
+        canvasWidth / 2 - squareSize / 2,
+        canvasHeight / 2 - squareSize / 2,
+        squareSize,
+        squareSize
+      );
+      context.arc(viewportTopLeft.x, viewportTopLeft.y, 5, 0, 2 * Math.PI);
+      context.fillStyle = "red";
+      context.fill();
+    }
+  }, [canvasWidth, canvasHeight, context, scale, offset, viewportTopLeft]);
 
   // const draw = (ctx) => {
   //   let ratio = 1.421;
