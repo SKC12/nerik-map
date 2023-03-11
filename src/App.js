@@ -4,7 +4,7 @@ import SphereMap from "./Components/SphereMap";
 
 function App() {
   let bgRatio = 1.421;
-  let canvasHeight = 600;
+  let canvasHeight = 400;
 
   return (
     <div className="App">

@@ -1,9 +1,16 @@
 import "../style/Sphere.css";
 
 export function SphereNode({ data }) {
-  let width = data.sphereRadius / 400 + "px";
-  let height = data.sphereRadius / 400 + "px";
-  let fontSize = data.sphereRadius / 700 + "px";
+  let width =
+    data.sphereRadius !== "0" ? data.sphereRadius / 600 + "px" : "1px";
+  let height =
+    data.sphereRadius !== "0" ? data.sphereRadius / 600 + "px" : "1px";
+  let fontSize =
+    data.sphereRadius !== "0" && data.sphereRadius > 3000
+      ? data.sphereRadius / 3000 + "px"
+      : "1px";
+
+  //console.log(data.sphereRadius, width, height, fontSize);
 
   //console.log(width);
   let style = {
@@ -15,7 +22,7 @@ export function SphereNode({ data }) {
   return (
     <>
       <div className="SPHERE_node" style={style}>
-        <label>{data.sphere}</label>
+        <div className="SPHERE_name">{data.shortName}</div>
       </div>
     </>
   );

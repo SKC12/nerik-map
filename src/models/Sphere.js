@@ -9,12 +9,15 @@ export class Sphere {
     console.log(spheres);
     let nodes = [];
     for (let i = 0; i < spheres.length; i++) {
-      nodes.push({
-        id: spheres[i].sphere,
-        type: "sphereNode",
-        position: { x: spheres[i].xCoord, y: spheres[i].yCoord },
-        data: spheres[i],
-      });
+      //console.log(spheres[i].onMap);
+      if (spheres[i]["onMap?"] === "Yes") {
+        nodes.push({
+          id: spheres[i].sphere,
+          type: "sphereNode",
+          position: { x: spheres[i].xCoord, y: spheres[i].yCoord },
+          data: spheres[i],
+        });
+      }
     }
     return nodes;
   }
