@@ -5,7 +5,7 @@ export class Sphere {
     }
   }
 
-  static getNodes(spheres) {
+  static getNodes(spheres, scale = 1) {
     console.log(spheres);
     let nodes = [];
     for (let i = 0; i < spheres.length; i++) {
@@ -14,7 +14,11 @@ export class Sphere {
         nodes.push({
           id: spheres[i].sphere,
           type: "sphereNode",
-          position: { x: spheres[i].xCoord, y: spheres[i].yCoord },
+          // 11 is the offset from the original map
+          position: {
+            x: spheres[i].xCoord * scale - 11,
+            y: spheres[i].yCoord * scale - 11,
+          },
           data: spheres[i],
         });
       }

@@ -13,6 +13,9 @@ import { SphereNode } from "./SphereNode";
 import { BgNode } from "./BgNode";
 import { Sphere } from "../models/Sphere";
 
+let baseMapHeight = 399;
+let baseMapWidth = 567;
+
 const nodeTypes = { sphereNode: SphereNode, bgNode: BgNode };
 
 function SphereMap(props) {
@@ -42,8 +45,8 @@ function SphereMap(props) {
       let bgSphere = {
         id: "bg",
         type: "bgNode",
-        position: { x: canvasWidth / 2, y: canvasHeight / 2 },
-        data: { width: canvasWidth, height: canvasHeight },
+        position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
+        data: { width: baseMapWidth, height: baseMapHeight },
         draggable: false,
         selectable: false,
       };
@@ -81,14 +84,14 @@ function SphereMap(props) {
         nodeTypes={nodeTypes}
         nodeOrigin={[0.5, 0.5]}
         fitView={true}
-        minZoom={1}
+        minZoom={canvasHeight / baseMapHeight}
         maxZoom={15}
         translateExtent={[
           [0, 0],
           [567, 399],
         ]}
       >
-        <Background />
+        {/* <Background /> */}
         <Controls />
       </ReactFlow>
     </div>
