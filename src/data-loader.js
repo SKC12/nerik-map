@@ -1,5 +1,6 @@
 import { Sphere } from "./models/Sphere.js";
 import { Planet } from "./models/Planet";
+import { Flow } from "./models/Flow";
 
 async function fetchCSV(data) {
   const response = await fetch(data);
@@ -10,7 +11,28 @@ async function fetchCSV(data) {
   return csv;
 }
 
-export async function loadCSV(data) {
+export async function loadCSVFlows(data) {
+  let csv = await fetchCSV(data);
+  let lines = csv.split("\n");
+  let headers = lines[0].split(";");
+  console.log(headers);
+  let flows = [];
+  for (let i = 1; i < lines.length; i++) {
+    let obj = {};
+    let currentLine = lines[i].split(";");
+    for (let j = 0; j < currentLine.length; j++) {
+      //console.log(headers[j]);
+
+      obj[headers[j]] = currentLine[j];
+    }
+    //console.log(obj);
+    flows.push(new Flow(obj));
+  }
+  //console.log(spheres);
+  return flows;
+}
+
+export async function loadCSVSpheres(data) {
   let csv = await fetchCSV(data);
   let lines = csv.split("\n");
   let headers = lines[0].split(";");

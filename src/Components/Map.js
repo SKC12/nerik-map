@@ -1,4 +1,4 @@
-import { loadCSV } from "../data-loader";
+import { loadCSVSpheres } from "../data-loader";
 import sphereData from "../data/radiant-triangle.csv";
 import {
   useState,
@@ -30,7 +30,7 @@ const ZOOM_SENSITIVITY = 500;
 function Map(props) {
   const canvasWidth = props.width;
   const canvasHeight = props.height;
-  const [spheres, setSpheres] = useState(loadCSV(sphereData));
+  const [spheres, setSpheres] = useState(loadCSVSpheres(sphereData));
   const canvasRef = useRef(null);
   const [context, setContext] = useState(null);
   const [scale, setScale] = useState(1);

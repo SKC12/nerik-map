@@ -12,7 +12,7 @@ export class Sphere {
       //console.log(spheres[i].onMap);
       if (spheres[i]["onMap?"] === "Yes") {
         nodes.push({
-          id: spheres[i].sphere,
+          id: spheres[i].shortName,
           type: "sphereNode",
           // 11 is the offset from the original map
           position: {

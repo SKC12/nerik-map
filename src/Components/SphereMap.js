@@ -6,17 +6,25 @@ import ReactFlow, {
 } from "reactflow";
 import "reactflow/dist/style.css";
 import "../style/SphereMap.css";
-import { loadCSV } from "../data-loader";
+import { loadCSVSpheres, loadCSVFlows } from "../data-loader";
 import { useEffect, useState, useCallback } from "react";
-import sphereData from "../data/nerik.csv";
+import sphereData from "../data/spheres.csv";
+import flowsData from "../data/flows.csv";
 import { SphereNode } from "./SphereNode";
 import { BgNode } from "./BgNode";
 import { Sphere } from "../models/Sphere";
+import { Flow } from "../models/Flow";
+import FloatingEdge from "./FloatingEdge.js";
+import FloatingConnectionLine from "./FloatingConnectionLine.js";
+import { createNodesAndEdges } from "./utils.js";
 
 let baseMapHeight = 399;
 let baseMapWidth = 567;
 
 const nodeTypes = { sphereNode: SphereNode, bgNode: BgNode };
+const edgeTypes = {
+  floating: FloatingEdge,
+};
 
 function SphereMap(props) {
   const canvasWidth = props.width;
@@ -24,6 +32,7 @@ function SphereMap(props) {
   const [nodes, setNodes] = useState([]);
   const [edges, setEdges] = useState([]);
   const [spheres, setSpheres] = useState([]);
+  const [flows, setFlows] = useState([]);
   const [loadingSphere, setLoadingSphere] = useState(true);
 
   const onNodesChange = useCallback(
@@ -38,8 +47,11 @@ function SphereMap(props) {
   useEffect(() => {
     setLoadingSphere(true);
     async function loadSpheres(sphereData) {
-      let sphereArray = await loadCSV(sphereData);
+      let sphereArray = await loadCSVSpheres(sphereData);
       setSpheres(sphereArray);
+
+      let flowsArray = await loadCSVFlows(flowsData);
+      setFlows(flowsArray);
       setLoadingSphere(false);
 
       let bgSphere = {
@@ -68,13 +80,16 @@ function SphereMap(props) {
       sphereArray.push(testSphere2);
 
       console.log("SPHERES", sphereArray);
+      console.log("FLOWS", flowsArray);
 
       setNodes(Sphere.getNodes(sphereArray).concat(bgSphere));
+      setEdges(Flow.getEges(flowsArray));
     }
     loadSpheres(sphereData);
   }, []);
 
   console.log("NODES", nodes);
+  console.log("EDGES", edges);
 
   return (
     <div style={{ height: canvasHeight, width: canvasWidth }}>
@@ -82,6 +97,10 @@ function SphereMap(props) {
         nodes={nodes}
         edges={edges}
         nodeTypes={nodeTypes}
+        onNodesChange={onNodesChange}
+        onEdgesChange={onEdgesChange}
+        edgeTypes={edgeTypes}
+        connectionLineComponent={FloatingConnectionLine}
         nodeOrigin={[0.5, 0.5]}
         fitView={true}
         minZoom={canvasHeight / baseMapHeight}

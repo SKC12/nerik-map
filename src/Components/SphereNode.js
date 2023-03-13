@@ -1,4 +1,5 @@
 import "../style/Sphere.css";
+import { Handle, Position } from "reactflow";
 
 export function SphereNode({ data }) {
   let width =
@@ -21,9 +22,11 @@ export function SphereNode({ data }) {
   };
   return (
     <>
+      <Handle type="target" position={Position.Left} />
       <div className="SPHERE_node" style={style}>
         <div className="SPHERE_name">{data.shortName}</div>
       </div>
+      <Handle type="source" position={Position.Right} />
     </>
   );
 }

@@ -1,0 +1,347 @@
+sphereW;xCoord;yCoord;sphereE;xCoord;yCoord;speed;dist;type;typeExtraInfo;timeW;timeE;flowRiver;isKnown;editedSpeed
+Vosko;39;328;Tarra;43;320;0,229340305384594;8,94;regular;;39;39;Pirtel Flow;yes;no
+Belt;164;164;Redeye;178;155;0,43798202571298;16,64;regular;;38;38;Red-Heart Flow;yes;no
+Plebos;106;254;Turn;119;268;0,47762432936357;19,10;uniE;;;40;Crystal Flow;yes;no
+Grey;205;192;Arkaela;217;185;0,479049792739648;13,89;tide;0.125/1y;29;29;Other;no;no
+Horror;44;60;Torn;61;62;0,482175852637287;17,12;regular;;39;32;Vodonika Flow;no;no
+Cy'Pren;261;333;Seldar;281;344;0,496204878717971;22,83;predominantE;;59;33;Mystara Flow;no;no
+Pearl Cluster;65;368;Léshy Cluster;96;393;0,5;39,82;uniW;;;;Trulian Ring;no;yes
+Pearl Cluster;65;368;Freeze;80;365;0,5;15,30;regular;;;;Other;yes;yes
+Freeze;80;365;In;94;364;0,5;14,04;regular;;;;Other;yes;yes
+Dirk;316;369;Race;329;347;0,511077293567226;25,55;predominantE;;58;42;Other;no;no
+Plebos;106;254;Heart;116;236;0,51478150704935;20,59;uniE;;;40;Red-Heart Flow;yes;no
+Ceypari;193;390;Cradle;207;370;0,554843437078805;24,41;erratic;30-35%;44;44;Other;yes;no
+Fjord;145;310;Giant;160;325;0,55824219567359;21,21;predominantE;;41;35;Crystal Flow;yes;no
+Cradle;207;370;Gossamer;222;361;0,564285667243094;17,49;erratic;30-35%;31;31;Other;yes;no
+Dirk;316;369;Ssss;337;374;0,568079819603234;21,59;regular;;38;38;Eadhel Flow;yes;no
+Calatain;243;323;Beltoun;249;348;0,571331561430331;25,71;regular;;45;45;Hammer Flow;yes;no
+Yggdrasil;363;328;Dawn;378;319;0,573536251951997;17,49;predominantE;;38;23;Mystara Flow;yes;no
+Lost;143;28;Faraba;171;25;0,580623828467164;28,16;predominantE;;55;42;Gorth Flow;no;no
+Guard;116;168;Falx;143;153;0,582771517414358;30,89;predominantE;;58;48;Braineater Flow;yes;no
+Léshy Cluster;96;393;Time;94;371;0,6;22,09;regular;;;;Other;yes;yes
+Léshy Cluster;96;393;Alanthus;114;383;0,6;20,59;regular;;;;Other;yes;yes
+Rain;113;216;Glowrings;140;225;0,6;28,46;predominantW;;;;Other;yes;yes
+Morune;125;194;Sillus;140;192;0,6;15,13;predominantE;;;;Other;yes;yes
+Jade;128;370;Tukon;144;358;0,6;20,00;regular;;;;Other;yes;yes
+Sillus;140;192;Hyrkul;159;180;0,6;22,47;regular;;;;Other;yes;yes
+Sillus;140;192;Taur-Utu;147;201;0,6;11,40;regular;;;;Other;yes;yes
+Tukon;144;358;Silk;148;343;0,6;15,52;regular;;;;Other;yes;yes
+Osra;200;175;Kanis;221;167;0,6;22,47;regular;;;;Other;yes;yes
+Patria;236;185;Agra;259;162;0,6;32,53;off flow;;;;Other;no;yes
+Agra;259;162;Never;275;161;0,6;16,03;regular;;;;Other;no;yes
+Agra;259;162;Falyn;272;170;0,6;15,26;off flow;;;;Other;no;yes
+Falyn;272;170;Never;275;161;0,6;9,49;regular;;;;Other;yes;yes
+Falyn;272;170;Charm;301;168;0,6;29,07;regular;;;;Other;yes;yes
+Aqua;289;149;Neomara;331;146;0,6;42,11;regular;;;;Other;yes;yes
+Charm;301;168;Fungo;321;173;0,6;20,62;regular;;;;Other;yes;yes
+Garland;306;122;'Mal;313;136;0,6;15,65;regular;;;;Other;yes;yes
+'Mal;313;136;Neomara;331;146;0,6;20,59;regular;;;;Other;yes;yes
+Fungo;321;173;Solice;352;189;0,6;34,89;regular;;;;Other;yes;yes
+Neomara;331;146;Magincia;351;119;0,6;33,60;regular;;;;Other;yes;yes
+Magincia;351;119;Heat;379;108;0,6;30,08;regular;;;;Other;yes;yes
+Rhyme;356;161;Flat;376;174;0,6;23,85;regular;;;;Other;yes;yes
+Adramis;360;94;Heat;379;108;0,6;23,60;regular;;;;Other;yes;yes
+Dungeon;375;204;Runal;404;207;0,6;29,15;regular;;;;Other;yes;yes
+Flat;376;174;Ragestar;434;178;0,6;58,14;regular;;;;Other;yes;yes
+Lah;378;241;Charge;380;233;0,6;8,25;regular;;;;Other;yes;yes
+Lah;378;241;Seskot;395;269;0,6;32,76;regular;;;;Other;yes;yes
+Heat;379;108;Ametsuchi;426;91;0,6;49,98;regular;;;;Other;yes;yes
+Charge;380;233;Runal;404;207;0,6;35,38;regular;;;;Other;yes;yes
+Runal;404;207;Dragon;445;220;0,6;43,01;regular;;;;Other;yes;yes
+Ragestar;434;178;Fall;438;152;0,6;26,31;regular;;;;Other;yes;yes
+Nehwon;462;93;Osternaa;465;115;0,6;22,20;regular;;;;Other;yes;yes
+Osternaa;465;115;Terra;499;61;0,6;63,81;erratic;;;;Other;no;yes
+Osternaa;465;115;Archaeus;467;130;0,6;15,13;regular;;;;Other;yes;yes
+Osternaa;465;115;Trail;475;167;0,6;52,95;regular;;;;Other;yes;yes
+Seelie II;481;361;Seelie V;482;356;0,6;5,10;off flow;;;;Other;no;yes
+Seelie V;482;356;Seelie VII;484;378;0,6;22,09;off flow;;;;Other;no;yes
+Scale;483;219;Malhavok;499;219;0,6;16,00;regular;;;;Other;yes;yes
+Aenea;486;186;Golarion;525;183;0,6;39,12;regular;;;;Other;yes;yes
+Flame;502;284;Nile;518;292;0,6;17,89;regular;;;;Other;no;yes
+Nile;518;292;Inca;554;282;0,6;37,36;regular;;;;Other;yes;yes
+Burn;528;394;Float;537;396;0,6;9,22;regular;;;;Other;yes;yes
+Float;537;396;Ontwree;550;393;0,6;13,34;regular;;;;Other;yes;yes
+Mind;88;172;Guard;116;168;0,60826389779488;28,28;predominantE;;49;44;Braineater Flow;no;no
+Mirror;247;220;Ether;255;230;0,609821355945986;12,81;regular;;21;21;Other;yes;no
+Garland;306;122;Cryo;329;117;0,619400120838938;23,54;predominantE;;49;27;Braineater Flow;yes;no
+Cloak;86;190;Mind;88;172;0,624509319871546;18,11;regular;;29;29;Braineater Flow;no;no
+Taur-Utu;147;201;Hyrkul;159;180;0,636494032760412;24,19;regular;;38;38;Red-Heart Flow;yes;no
+Vodoni;167;104;Ilsisine;182;131;0,643476883811688;30,89;predominantE;;56;40;Vodoni Flow;no;no
+Hyrkul;159;180;Belt;164;164;0,64473286977847;16,76;predominantW;;22;30;Red-Heart Flow;yes;no
+Taul;266;371;Harth;284;385;0,651528814342365;22,80;regular;;35;35;Hammer Flow;yes;no
+Mer;396;143;Fall;438;152;0,660822510612755;42,95;predominantE;;86;44;Way Flow;yes;no
+Torn;61;62;Gorth;101;76;0,662175628138034;42,38;erratic;20%;82;46;Vodonika Flow;no;no
+Luftrain;41;344;Beyond;47;336;0,666666666666667;10,00;erratic;50%;15;15;Radiant Flow;no;no
+Beyond;47;336;Atrida;65;323;0,672836463974985;22,20;regular;;33;33;Radiant Flow;no;no
+Twin;312;345;Race;329;347;0,684689710744948;17,12;predominantE;;31;19;Mystara Flow;no;no
+Oort;228;129;Cthon;254;105;0,693796314233495;35,38;uniE;;;51;Braineater Flow;no;no
+Ocean;422;269;Ember;447;262;0,701662431662009;25,96;uniW;;37;;Casa Flow;yes;no
+Harth;284;385;S'Sirenth;317;397;0,702281994643178;35,11;regular;;50;50;Hammer Flow;yes;no
+Calatain;243;323;Darnannon;246;302;0,719091641884625;21,21;predominantW;;13;46;Hammer Flow;yes;no
+Rage;122;296;Fjord;145;310;0,727724973937095;26,93;uniW;;37;;Crystal Flow;yes;no
+Vista;172;298;Octor;182;315;0,730484552715408;19,72;predominantE;;32;22;Other;yes;no
+Race;329;347;Wyrm;350;342;0,731763835421115;21,59;tide;73/269;37;22;Mystara Flow;no;no
+Fall;438;152;Trail;475;167;0,732567514777142;39,92;predominantE;;71;38;Way Flow;yes;no
+Wyrm;350;342;Yggdrasil;363;328;0,734806660559338;19,10;predominantE;;32;20;Mystara Flow;yes;no
+Nachten;208;139;Oort;228;129;0,74535599249993;22,36;regular;;30;30;Red-Heart Flow;yes;no
+Tarra;43;320;Nacre;61;300;0,747423558170762;26,91;regular;;36;36;Pirtel Flow;yes;no
+Konek;23;252;Arton;44;257;0,75;21,59;regular;;;;Other;yes;yes
+Arton;44;257;Algol;55;263;0,75;12,53;regular;;;;Other;yes;yes
+Algol;55;263;Wehr;62;274;0,75;13,04;regular;;;;Other;yes;yes
+In;94;364;Keel;100;364;0,75;6,00;regular;;;;Other;yes;yes
+Time;94;371;Keel;100;364;0,75;9,22;regular;;;;Other;yes;yes
+Keel;100;364;Ignia;101;356;0,75;8,06;regular;;;;Other;yes;yes
+Keel;100;364;Jade;128;370;0,75;28,64;regular;;;;Other;yes;yes
+Zalani;125;112;Gimlun;130;120;0,75;9,43;regular;;;;Other;no;yes
+Gimlun;130;120;Falx;143;153;0,75;35,47;erratic;;;;Other;no;yes
+Spider;134;329;Silk;148;343;0,75;19,80;regular;;;;Other;yes;yes
+Silk;148;343;Lizard;166;363;0,75;26,91;regular;;;;Other;yes;yes
+Hyrkul;159;180;Grey;205;192;0,75;47,54;erratic;;;;Other;yes;yes
+Octor;182;315;Thuria;195;326;0,75;17,03;predominantE;;;;Other;yes;yes
+Never;275;161;Aqua;289;149;0,75;18,44;regular;;;;Other;yes;yes
+Solice;352;189;Dungeon;375;204;0,75;27,46;regular;;;;Other;no;yes
+Dragon;445;220;Scale;483;219;0,75;38,01;regular;;;;Other;yes;yes
+Seelie IV;471;364;Seelie I;479;360;0,75;8,94;regular;;;;Other;yes;yes
+Seelie I;479;360;Seelie VI;485;359;0,75;6,08;regular;;;;Other;yes;yes
+Seelie I;479;360;Seelie II;481;361;0,75;2,24;regular;;;;Other;yes;yes
+Seelie II;481;361;Seelie III;486;363;0,75;5,39;regular;;;;Other;yes;yes
+Seelie VI;485;359;Count;528;338;0,75;47,85;regular;;;;Other;yes;yes
+Seelie III;486;363;Sand;522;376;0,75;38,28;regular;;;;Other;yes;yes
+Anki;509;306;Nile;518;292;0,75;16,64;regular;;;;Other;yes;yes
+Sand;522;376;Io;535;387;0,75;17,03;regular;;;;Other;yes;yes
+Lost;143;28;Thasia;157;44;0,759296129481046;21,26;predominantW;;22;34;Lost Flow;yes;no
+Dragon;445;220;Titan;473;237;0,761783225774846;32,76;uniW;;43;;Pillar Flow;yes;no
+S'Sirenth;317;397;Noamuth;349;400;0,765245651428009;32,14;regular;;42;42;Hammer Flow;yes;no
+Thuria;195;326;Astral;215;330;0,769663322806458;20,40;predominantE;;37;16;Other;yes;no
+Darra;42;225;Crystal;79;226;0,779231811508284;37,01;regular;;42;53;Other;yes;no
+Noamuth;349;400;Kaldric;370;398;0,781297152212185;21,10;regular;;27;27;Hammer Flow;yes;no
+Squarm;283;116;Garland;306;122;0,792324288266981;23,77;regular;;30;30;Braineater Flow;yes;no
+Kra‘aken;130;24;Lost;143;28;0,80008650051385;13,60;uniW;;17;;Lost Flow;yes;no
+Vodonika;147;84;Passar;189;85;0,800226725241905;42,01;predominantE;;54;51;Vodonika Flow;yes;no
+Tide;62;131;Golot;100;125;0,801474335902973;38,47;erratic;13%;48;48;Golot Flow;no;no
+Omni;87;245;Plebos;106;254;0,80860754006264;21,02;regular;;26;26;Crystal Flow;yes;no
+Blood;342;56;Emerald;378;43;0,814368476978921;38,28;uniE;;;47;Vodonika Flow;no;no
+Beltoun;249;348;Taul;266;371;0,817162836918577;28,60;regular;;35;35;Hammer Flow;yes;no
+Seskot;395;269;Ocean;422;269;0,818181818181818;27,00;uniW;;33;;Casa Flow;yes;no
+Dreadmind;247;135;True;264;152;0,82902174346009;24,04;erratic;20%;29;29;Other;no;no
+Prime;170;284;Vista;172;298;0,831890330807703;14,14;predominantE;;23;11;Other;yes;no
+Worm;308;71;Blood;342;56;0,835096816901665;37,16;predominantE;;56;33;Vodonika Flow;no;no
+Sidius;157;388;Kerr;168;402;0,847833038798327;17,80;predominantW;;8;34;Red-Heart Flow;no;no
+Dark;208;181;Great;221;200;0,852656624683062;23,02;regular;;27;27;Other;no;no
+Herd;288;178;Aqua;289;149;0,853448125208642;29,02;regular;;34;34;Mael Flow;no;no
+Nal;325;284;Nivel;355;289;0,856727116943411;30,41;predominantW;;35;36;Other;yes;no
+Pirtel;218;280;Darnannon;246;302;0,858047894687463;35,61;predominantE;;45;38;Arcane Inner Flow;yes;no
+Squirrn;80;294;Cube;96;305;0,862955015064338;19,42;predominantE;;24;21;Pirtel Flow;yes;no
+Cube;96;305;Bloodstar;97;324;0,864831708656384;19,03;uniW;;22;;Red-Heart Flow;yes;no
+Dawn;378;319;Bug;410;320;0,865287059112547;32,02;uniE;;;37;Mystara Flow;yes;no
+Winter;152;258;Path;155;279;0,865845038187609;21,21;predominantW;;17;32;Other;yes;no
+Prime;170;284;Cluster;185;266;0,867805519545184;23,43;regular;;27;27;Vodoni Flow;yes;no
+Steel Star;197;162;Osra;200;175;0,889444270941756;13,34;erratic;75%;15;15;Other;no;no
+Wilderlands;398;338;Bug;410;320;0,901387818865997;21,63;uniW;;24;;Eadhel Flow;yes;no
+Crystal;79;226;Heart;116;236;0,901824371611144;38,33;predominantW;;36;49;Other;yes;no
+Talangran;354;260;Nivel;355;289;0,906788633034182;29,02;predominantW;;23;41;Arcane Inner Flow;yes;no
+Fodruin;422;365;Tiny;443;352;0,914747335942849;24,70;regular;;27;27;Hammer Flow;yes;no
+Redeye;178;155;Ilsisine;182;131;0,918152834761995;24,33;predominantW;;23;30;Vodoni Flow;yes;no
+Out;279;76;Worm;308;71;0,919621185597635;29,43;erratic;70%;41;23;Vodonika Flow;no;no
+Kaldric;370;398;Moor;392;388;0,92946507489189;24,17;regular;;26;26;Hammer Flow;yes;no
+Gorth;101;76;Kofu;110;49;0,933131112836571;28,46;predominantE;;38;23;Gorth Flow;yes;no
+Garden;445;282;Scarred;445;296;0,933333333333333;14,00;uniW;;15;;Other;yes;no
+Osra;200;175;Patria;236;185;0,93407708461347;37,36;predominantE;;49;31;Casa Flow;yes;no
+Giant;160;325;Rock;189;338;0,934720504827689;31,78;regular;;34;34;Crystal Flow;yes;no
+Moor;392;388;Isver;428;382;0,93580962004588;36,50;regular;;39;39;Other;no;no
+Imperial;372;370;Wilderlands;398;338;0,93706946036765;41,23;predominantW;;34;54;Eadhel Flow;no;no
+Solice;352;189;Rhyme;356;161;0,942809041582063;28,28;predominantE;;34;26;Way Flow;yes;no
+Astral;215;330;Gossamer;222;361;0,94867155713855;31,78;predominantE;;41;26;Gate Flow;yes;no
+Cryo;329;117;Magincia;351;119;0,960466175407588;22,09;regular;;23;23;Braineater Flow;yes;no
+Dust;472;265;Titan;473;237;0,966132808698062;28,02;uniE;;;29;Pillar Flow;yes;no
+Nether;230;216;Mirror;247;220;0,970236066476276;17,46;regular;;18;18;Other;yes;no
+Way;348;215;Solice;352;189;0,974292328738215;26,31;predominantE;;31;23;Way Flow;yes;no
+Taur-Utu;147;201;Char;159;217;0,975609756097561;20,00;predominantW;;18;23;Other;yes;no
+Glowrings;140;225;Winter;152;258;0,989129569919968;35,11;predominantW;;32;39;Other;yes;no
+Darnannon;246;302;Korv;279;324;0,991526600752597;39,66;predominantE;;47;33;Arcane Inner Flow;yes;no
+Pelinore;499;331;Count;528;338;0,994428926011753;29,83;uniE;;;30;Mystara Flow;yes;no
+Moor;392;388;Fodruin;422;365;0,994792535338726;37,80;regular;;38;38;Hammer Flow;yes;no
+Sea;17;325;Konek;23;252;1;73,25;erratic;;;;Other;no;yes
+Prey;38;176;Thrust;45;167;1;11,40;erratic;;;;Other;no;yes
+Fluid;39;29;Lost One's;53;48;1;23,60;regular;;;;Other;no;yes
+Thrust;45;167;Tide;62;131;1;39,81;regular;;;;Other;no;yes
+Lost One's;53;48;Torn;61;62;1;16,12;regular;;;;Other;no;yes
+Torn;61;62;Tide;62;131;1;69,01;regular;;;;Other;no;yes
+Dukagsh;65;197;Cloak;86;190;1;22,14;predominantE;;;;Other;no;yes
+Dukagsh;65;197;Color;83;211;1;22,80;predominantW;;;;Other;no;yes
+Color;83;211;Rain;113;216;1;30,41;predominantW;;;;Other;no;yes
+Cloak;86;190;Ssuw;103;191;1;17,03;predominantE;;;;Other;no;yes
+Bloodstar;97;324;Lorpulan;121;321;1;24,19;regular;;;;Other;no;yes
+Ssuw;103;191;Morune;125;194;1;22,20;predominantE;;;;Other;no;yes
+Lorpulan;121;321;Spider;134;329;1;15,26;regular;;;;Other;no;yes
+Sillus;140;192;Morag;168;198;1;28,64;predominantE;;;;Other;no;yes
+Neren;218;98;Star;239;85;1;24,70;regular;;;;Other;no;yes
+Sung;222;29;Star;239;85;1;58,52;erratic;;;;Other;no;yes
+Patria;236;185;Nith;258;175;1;24,17;uniW;;;;Other;no;yes
+Star;239;85;Lharn;298;35;1;77,34;erratic;;;;Other;no;yes
+Nith;258;175;Casa;274;205;1;34,00;uniW;;;;Other;no;yes
+Dead Shell;267;229;Casa;274;205;1;25,00;regular;;25;25;Other;yes;no
+Nivel;355;289;Arth;364;301;1;15,00;regular;;;;Other;yes;yes
+Arth;364;301;Enderra;389;291;1;26,93;regular;;;;Other;yes;yes
+Ametsuchi;426;91;Forcelia;444;62;1;34,13;regular;;;;Other;yes;yes
+Isver;428;382;Zuig;442;378;1;14,56;regular;;;;Other;no;yes
+Slayer;435;59;Forcelia;444;62;1;9,49;regular;;;;Other;no;yes
+Forcelia;444;62;Final;466;73;1;24,60;regular;;;;Other;no;yes
+Analoth;453;396;Seelie IV;471;364;1;36,72;erratic;;;;Other;no;yes
+Cracked;460;305;Mystara;462;322;1;17,12;erratic;;;;Other;no;yes
+Mystara;462;322;Cold;478;331;1;18,36;erratic;;;;Other;no;yes
+Cold;478;331;Pelinore;499;331;1;21,00;uniE;;;21;Mystara Flow;yes;no
+Terra;499;61;Mongo;533;26;1;48,80;erratic;;;;Other;yes;yes
+Maj;505;241;Pyre;521;235;1;17,09;regular;;;;Other;no;yes
+Pyre;521;235;Iron;544;226;1;24,70;erratic;;;;Other;no;yes
+Pyre;521;235;Shard;544;246;1;25,50;regular;;;;Other;no;yes
+Web;438;324;Blue;453;330;1,00971840133772;16,16;uniE;;;16;Mystara Flow;yes;no
+Seven Stars;332;320;Nivel;355;289;1,01580310871678;38,60;predominantE;;53;23;Arcane Inner Flow;yes;no
+Hero;196;218;Great;221;200;1,02686145338329;30,81;regular;;30;30;Other;yes;no
+Dukagsh;65;197;Witchlight;67;169;1,03967917389764;28,07;erratic;20%;27;27;Other;no;no
+Golot;100;125;Gorth;101;76;1,0427702770079;49,01;uniW;;47;;Gorth Flow;yes;no
+Golot;100;125;Zalani;125;112;1,0436298373041;28,18;regular;;27;27;Golot Flow;yes;no
+Celenares;296;360;Dirk;316;369;1,0443672475934;21,93;regular;;21;21;Eadhel Flow;yes;no
+Casa;274;205;Herd;288;178;1,04875216039624;30,41;regular;;29;29;Mael Flow;no;no
+Path;155;279;Krynn;167;230;1,05099985463579;50,45;erratic;10%;48;48;Other;yes;no
+Hero;196;218;Realm;217;230;1,05159883673459;24,19;erratic;50%;23;23;Other;yes;no
+Heart;116;236;Cloud;129;213;1,05678758508983;26,42;uniE;;;25;Red-Heart Flow;yes;no
+Umbra;235;113;Squarm;283;116;1,05700348627789;48,09;predominantE;;58;33;Braineater Flow;yes;no
+Cold;478;331;Steam;484;296;1,07607763057968;35,51;uniE;;;33;Other;yes;no
+Web;438;324;Cracked;460;305;1,0766253224999;29,07;uniW;;27;;Other;yes;no
+Wyrm;350;342;Imperial;372;370;1,07906023119787;35,61;regular;;33;33;Seven Stars Flow;yes;no
+Redeye;178;155;Nachten;208;139;1,07936507936508;34,00;predominantW;;29;34;Red-Heart Flow;yes;no
+Cloud;129;213;Taur-Utu;147;201;1,0816653826392;21,63;uniE;;;20;Red-Heart Flow;yes;no
+Falx;143;153;Ilsisine;182;131;1,0921274720604;44,78;regular;;41;41;Braineater Flow;yes;no
+Redeye;178;155;Saru;236;155;1,1047619047619;58,00;erratic;80%;45;60;Other;yes;no
+Bloodstar;97;324;Jade;128;370;1,10941425986869;55,47;uniW;;50;;Red-Heart Flow;yes;no
+Garden;445;282;Ember;447;262;1,11665284679121;20,10;uniE;;;18;Other;yes;no
+Garden;445;282;Spindle;462;284;1,14114951790825;17,12;regular;;15;15;Other;yes;no
+Redeye;178;155;Osra;200;175;1,16596617626027;29,73;predominantE;;33;18;Casa Flow;yes;no
+Prime;170;284;Pirtel;218;280;1,17478971500413;48,17;regular;;41;41;Pirtel Flow;yes;no
+Hero;196;218;Dark;208;181;1,17870608113798;38,90;uniW;;33;;Other;no;no
+Giant;160;325;Octor;182;315;1,17883375352142;24,17;predominantW;;18;23;Other;yes;no
+Talangran;354;260;Seskot;395;269;1,18242771052481;41,98;predominantW;;29;42;Casa Flow;yes;no
+Ssss;337;374;Numos;356;375;1,18914359940253;19,03;regular;;16;16;Eadhel Flow;yes;no
+Blue;453;330;Cold;478;331;1,19142819078065;25,02;uniE;;;21;Mystara Flow;yes;no
+Count;528;338;Gladius;565;361;1,19359018689271;43,57;predominantE;;47;26;Mystara Flow;yes;no
+Pirtel;218;280;Refuge;228;236;1,2032548450857;45,12;predominantW;;30;45;Arcane Inner Flow;yes;no
+Nex;141;286;Path;155;279;1,20403660326912;15,65;predominantE;;15;11;Pirtel Flow;yes;no
+Gate;206;305;Pirtel;218;280;1,20568909772713;27,73;predominantW;;20;26;Gate Flow;yes;no
+Nacre;61;300;Squirrn;80;294;1,20756720273765;19,92;predominantE;;20;13;Pirtel Flow;yes;no
+Casa;274;205;Pheolite;288;262;1,22279421590243;58,69;regular;;48;48;Mael Flow;yes;no
+Heart;116;236;Winter;152;258;1,22289989041907;42,19;predominantW;;30;39;Other;yes;no
+Gate;206;305;Astral;215;330;1,23584467493827;26,57;predominantW;;13;30;Gate Flow;yes;no
+Darnannon;246;302;Thorn;275;300;1,23697377478712;29,07;predominantE;;34;13;Other;no;no
+Ytherik;310;200;Way;348;215;1,23798171004942;40,85;predominantW;;21;45;Arcane Inner Flow;yes;no
+Cube;96;305;Rage;122;296;1,25061968110887;27,51;predominantE;;26;18;Pirtel Flow;yes;no
+Spindle;462;284;Steam;484;296;1,25299640861417;25,06;regular;;20;20;Other;yes;no
+Tyr;277;268;Pheolite;288;262;1,25299640861417;12,53;regular;;10;10;Other;yes;no
+Seldar;281;344;Celenares;296;360;1,25324069711207;21,93;predominantE;;23;12;Eadhel Flow;yes;no
+Korv;279;324;Seldar;281;344;1,25623445264011;20,10;predominantE;;21;11;Eadhel Flow;yes;no
+Krynn;167;230;Cluster;185;266;1,25778823734363;40,25;predominantW;;28;36;Other;yes;no
+Spindle;462;284;Dust;472;265;1,26299473844611;21,47;uniE;;;17;Pillar Flow;yes;no
+Ash;332;241;Talangran;354;260;1,26386450902162;29,07;predominantW;;16;30;Casa Flow;yes;no
+Rhyme;356;161;Mer;396;143;1,27140360576587;43,86;predominantE;;41;28;Way Flow;yes;no
+Zalani;125;112;Vodonika;147;84;1,27174955819749;35,61;regular;;28;28;Golot Flow;yes;no
+Storm;176;170;Grey;205;192;1,27721226127728;36,40;erratic;60%;19;38;Vodoni Flow;yes;no
+Korv;279;324;Seven Stars;332;320;1,28074045936562;53,15;predominantE;;57;26;Arcane Inner Flow;yes;no
+Vodoni;167;104;Vergon;174;57;1,28428155356938;47,52;uniW;;37;;Other;yes;no
+Thasia;157;44;Vergon;174;57;1,29702633691107;21,40;predominantW;;13;20;Lost Flow;yes;no
+Kra‘aken;130;24;Vodonika;147;84;1,29920515230574;62,36;regular;;48;48;Vodoni Flow;yes;no
+Bug;410;320;Pillar;423;302;1,30609431242203;22,20;regular;;17;17;Eadhel Flow;yes;no
+Seldar;281;344;Twin;312;345;1,31983509951241;31,02;predominantE;;29;18;Mystara Flow;yes;no
+Pheolite;288;262;Ash;332;241;1,35429130480543;48,75;regular;;36;36;Way Flow;yes;no
+Casa;274;205;Caz-Adar;301;226;1,36821051011897;34,21;regular;;25;25;Casa Flow;yes;no
+Nacre;61;300;Atrida;65;323;1,37324912116809;23,35;predominantE;;18;16;Radiant Flow;no;no
+Cracked;460;305;Cold;478;331;1,37490333050799;31,62;uniE;;;23;Other;yes;no
+Dreadmind;247;135;Aqua;289;149;1,38349647632367;44,27;regular;;32;32;Mael Flow;yes;no
+Numos;356;375;Imperial;372;370;1,39692121785335;16,76;predominantW;;7;17;Eadhel Flow;yes;no
+Way;348;215;Talangran;354;260;1,41869493285202;45,40;predominantW;;24;40;Arcane Inner Flow;yes;no
+Refuge;228;236;Matri;234;240;1,4422205101856;7,21;regular;;5;5;Other;yes;no
+Vergon;174;57;Passar;189;85;1,44385274311533;31,76;predominantW;;18;26;Lost Flow;yes;no
+Krynn;167;230;Grey;205;192;1,45243555054534;53,74;predominantW;;36;38;Radiant Flow;yes;no
+Sunless;210;121;Umbra;235;113;1,45826719426741;26,25;regular;;18;18;Braineater Flow;yes;no
+Cluster;185;266;Realm;217;230;1,45958722167179;48,17;predominantW;;30;36;Other;yes;no
+Kofu;110;49;Lost;143;28;1,47604582759305;39,12;predominantE;;33;20;Gorth Flow;yes;no
+Pheolite;288;262;Pearl;299;272;1,48660687473185;14,87;regular;;10;10;Other;yes;no
+Seven Stars;332;320;Wyrm;350;342;1,49607056879494;28,43;regular;;19;19;Seven Stars Flow;yes;no
+Elysak;317;234;Ash;332;241;1,50481321429517;16,55;regular;;11;11;Casa Flow;yes;no
+Cube;96;305;Sword;98;281;1,50519932234904;24,08;uniE;;;16;Red-Heart Flow;yes;no
+Cracked;460;305;Steam;484;296;1,50776536682074;25,63;uniW;;17;;Other;yes;no
+Casa;274;205;Ytherik;310;200;1,51439848711552;36,35;predominantW;;17;31;Arcane Inner Flow;yes;no
+Char;159;217;Krynn;167;230;1,52643375224737;15,26;regular;;10;10;Other;yes;no
+Morag;168;198;Shadow;178;194;1,53861851632414;10,77;uniW;;7;;Other;no;no
+Jade;128;370;Sidius;157;388;1,55145892417055;34,13;regular;;22;22;Red-Heart Flow;yes;no
+Trail;475;167;Aenea;486;186;1,56817845715001;21,95;predominantW;;10;18;Arcane Outer Flow;yes;no
+Path;155;279;Prime;170;284;1,58113883008419;15,81;regular;;10;10;Pirtel Flow;yes;no
+Ash;332;241;Way;348;215;1,60677237078671;30,53;regular;;19;19;Way Flow;yes;no
+Star;239;85;Out;279;76;1,6078431372549;41,00;predominantE;;33;18;Vodonika Flow;no;no
+Pheolite;288;262;Seven Stars;332;320;1,61780219761789;72,80;regular;;45;45;Seven Stars Flow;yes;no
+Dust;472;265;Knight;509;252;1,63405596259396;39,22;uniW;;24;;Casa Flow;yes;no
+Ilsisine;182;131;Sunless;210;121;1,65178541636872;29,73;regular;;18;18;Braineater Flow;yes;no
+Faerie;171;206;Dark;208;181;1,65386026383453;44,65;uniW;;27;;Other;no;no
+Traba;74;253;Omni;87;245;1,69603750249708;15,26;predominantW;;7;11;Radiant Flow;yes;no
+Refuge;228;236;Solaris;249;273;1,70176379089461;42,54;regular;;25;25;Radiant Flow;yes;no
+Wehr;62;274;Traba;74;253;1,72762666034969;24,19;regular;;11;17;Radiant Flow;yes;no
+Scarred;445;296;Spindle;462;284;1,73405433722373;20,81;uniE;;;12;Pillar Flow;yes;no
+Passar;189;85;Salzar;216;84;1,7431298175621;27,02;predominantE;;16;15;Vodonika Flow;yes;no
+Sword;98;281;Plebos;106;254;1,76001598004109;28,16;uniE;;;16;Red-Heart Flow;yes;no
+Nyrod;36;120;Tide;62;131;1,76444927668664;28,23;regular;;16;16;Golot Flow;no;no
+Salzar;216;84;Star;239;85;1,77090222049559;23,02;erratic;40%;16;10;Vodonika Flow;no;no
+Gromm;252;198;Casa;274;205;1,77590713547926;23,09;regular;;13;13;Casa Flow;yes;no
+True;264;152;Never;275;161;1,77658380044399;14,21;regular;;8;8;Other;no;no
+Realm;217;230;Great;221;200;1,78032305299077;30,27;uniW;;17;;Other;yes;no
+Nachten;208;139;Dreadmind;247;135;1,78202688944661;39,20;regular;;22;22;Mael Flow;yes;no
+Realm;217;230;Refuge;228;236;1,78999486944881;12,53;regular;;7;7;Radiant Flow;yes;no
+Shadow;178;194;Grey;205;192;1,80493151609078;27,07;uniW;;15;;Other;no;no
+Ametsuchi;426;91;Metal;450;130;1,83172050269685;45,79;predominantW;;19;31;Arcane Outer Flow;yes;no
+Vodonika;147;84;Vodoni;167;104;1,88561808316413;28,28;regular;;15;15;Vodoni Flow;yes;no
+Aenea;486;186;Elespatio;492;202;1,89866749895945;17,09;predominantW;;6;12;Arcane Outer Flow;yes;no
+Pheolite;288;262;Caz-Adar;301;226;1,91376592090046;38,28;regular;;20;20;Seven Stars Flow;yes;no
+Ember;447;262;Dust;472;265;1,93687358646372;25,18;uniW;;13;;Casa Flow;yes;no
+Metal;450;130;Trail;475;167;1,94148813580575;44,65;predominantW;;18;28;Arcane Outer Flow;yes;no
+Caz-Adar;301;226;Ytherik;310;200;1,96525949888537;27,51;regular;;14;14;Seven Stars Flow;yes;no
+Caz-Adar;301;226;Elysak;317;234;1,98761597999981;17,89;regular;;9;9;Casa Flow;yes;no
+Windy;202;305;Gate;206;305;2;4,00;regular;;2;2;Other;yes;no
+Split;206;301;Gate;206;305;2;4,00;regular;;2;2;Other;yes;no
+Cluster;185;266;Grey;205;192;2,01723872597229;76,66;predominantE;;40;36;Vodoni Flow;yes;no
+Crystal;79;226;Omni;87;245;2,06155281280883;20,62;uniW;;10;;Crystal Flow;yes;no
+Gate;206;305;Shamble;210;304;2,06155281280883;4,12;regular;;2;2;Other;yes;no
+Patria;236;185;Gromm;252;198;2,06155281280883;20,62;regular;;10;10;Casa Flow;yes;no
+Knight;509;252;Nile;518;292;2,1025641025641;41,00;predominantW;;12;27;Arcane Outer Flow;yes;no
+Mirror;247;220;Casa;274;205;2,13013037399731;30,89;predominantW;;13;16;Arcane Inner Flow;yes;no
+Grey;205;192;Realm;217;230;2,15403879407257;39,85;predominantE;;22;15;Radiant Flow;yes;no
+Storm;176;170;Redeye;178;155;2,16182085006022;15,13;regular;;7;7;Vodoni Flow;yes;no
+Nacre;61;300;Wehr;62;274;2,16826863854295;26,02;regular;;10;14;Radiant Flow;yes;no
+Bug;410;320;Web;438;324;2,17571317288168;28,28;uniE;;;13;Mystara Flow;yes;no
+Chitin;204;309;Gate;206;305;2,23606797749979;4,47;regular;;2;2;Other;yes;no
+Rage;122;296;Nex;141;286;2,26009584774567;21,47;predominantE;;12;7;Pirtel Flow;yes;no
+Winter;152;258;Cluster;185;266;2,26372357951329;33,96;uniW;;15;;Other;yes;no
+Faerie;171;206;Hero;196;218;2,31090410397701;27,73;predominantW;;9;15;Other;yes;no
+Tenebrous;394;60;Ametsuchi;426;91;2,34491256946794;44,55;predominantW;;11;27;Arcane Outer Flow;yes;no
+Banesun;275;256;Pheolite;288;262;2,38630351054606;14,32;regular;;6;6;Other;yes;no
+Pheolite;288;262;Song;300;254;2,40370085030933;14,42;regular;;6;6;Other;yes;no
+Omni;87;245;Heart;116;236;2,42915623211024;30,36;predominantW;;10;15;Radiant Flow;yes;no
+Morag;168;198;Grey;205;192;2,49888864186551;37,48;uniE;;;15;Other;no;no
+Turn;119;268;Rage;122;296;2,56002324369613;28,16;regular;;11;11;Crystal Flow;yes;no
+Pearl;299;272;Song;300;254;2,57539376818856;18,03;uniE;;;7;The Maelstrom;yes;no
+Ocean;422;269;Pillar;423;302;2,75126233653653;33,02;uniE;;;12;Eadhel Flow;yes;no
+Gate;206;305;Chroma;210;309;2,82842712474619;5,66;regular;;2;2;Other;yes;no
+Pillar;423;302;Scarred;445;296;2,85043856274784;22,80;uniE;;;8;Pillar Flow;yes;no
+Emerald;378;43;Tenebrous;394;60;2,91815438248219;23,35;predominantW;;7;9;Arcane Outer Flow;yes;no
+Cracked;460;305;Spindle;462;284;3,01357472996128;21,10;uniW;;7;;Other;yes;no
+Banesun;275;256;Tyr;277;268;3,04138126514911;12,17;uniE;;;4;The Maelstrom;yes;no
+Diamond;286;280;Pearl;299;272;3,05286750449475;15,26;uniE;;;5;The Maelstrom;yes;no
+Aran;353;19;Emerald;378;43;3,30051875260256;34,66;predominantW;;8;13;Arcane Outer Flow;yes;no
+Ice;284;248;Song;300;254;3,41760149812701;17,09;uniW;;5;;The Maelstrom;yes;no
+Heart;116;236;Krynn;167;230;3,54149850385318;51,35;predominantW;;12;17;Radiant Flow;yes;no
+Tyr;277;268;Diamond;286;280;3,75;15,00;uniE;;;4;The Maelstrom;yes;no
+Pearl Cluster;65;368;C'T'lk'atat;81;353;3,98758403626569;21,93;off flow;;11;;Other;no;no
+Banesun;275;256;Ice;284;248;4,01386485959743;12,04;uniW;;3;;The Maelstrom;yes;no
+Elespatio;492;202;Malhavok;499;219;4,08550584685561;18,38;predominantW;;2;7;Arcane Outer Flow;yes;no
+Ouiyan;30;400;Pearl Cluster;65;368;4,12379328743631;47,42;off flow;;23;;Other;no;no
+Malhavok;499;219;Maj;505;241;4,14609245490596;22,80;predominantW;;3;8;Arcane Outer Flow;yes;no
+Scarred;445;296;Cracked;460;305;4,37321392113398;17,49;uniW;;4;;Other;yes;no
+Heart;116;236;Nex;141;286;6,57667052205821;55,90;uniE;;;17;Other;no;no
+Maj;505;241;Knight;509;252;7,80313327381308;11,70;predominantW;;1;2;Arcane Outer Flow;yes;no
