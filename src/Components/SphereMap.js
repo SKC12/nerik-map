@@ -108,7 +108,7 @@ function SphereMap(props) {
         nodeOrigin={[0.5, 0.5]}
         fitView={true}
         minZoom={canvasHeight / baseMapHeight}
-        maxZoom={15}
+        maxZoom={30}
         translateExtent={[
           [0, 0],
           [567, 399],

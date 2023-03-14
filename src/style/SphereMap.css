@@ -1,3 +1,10 @@
 .react-flow__handle {
     opacity: 0;
   }
+  
+@keyframes dash {
+  to{
+    stroke-dashoffset: 100;
+  }
+  
+}

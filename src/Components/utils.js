@@ -40,16 +40,16 @@ function getEdgePosition(node, intersectionPoint) {
 
   //console.log("N", n, px, py, nx, ny, n.width);
 
-  if (px <= nx - n.width / 2 + 1) {
+  if (px <= nx - n.width / 2) {
     return Position.Left;
   }
-  if (px >= nx + n.width / 2 - 1) {
+  if (px >= nx + n.width / 2) {
     return Position.Right;
   }
-  if (py <= ny - n.width / 2 + 1) {
+  if (py <= ny - n.width / 2) {
     return Position.Top;
   }
-  if (py >= n.y + n.height / 2 - 1) {
+  if (py >= n.y + n.height / 2) {
     return Position.Bottom;
   }
 

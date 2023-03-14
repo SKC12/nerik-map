@@ -5,6 +5,7 @@ import {
   getStraightPath,
   getSimpleBezierPath,
 } from "reactflow";
+import "../style/Sphere.css";
 
 import { getEdgeParams } from "./utils.js";
 

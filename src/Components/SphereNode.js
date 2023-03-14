@@ -3,15 +3,15 @@ import { Handle, Position } from "reactflow";
 
 export function SphereNode({ data }) {
   let width =
-    data.sphereRadius !== "0" ? data.sphereRadius / 600 + "px" : "1px";
+    data.sphereRadius >= "400" ? data.sphereRadius / 600 + "px" : "1px";
   let height =
-    data.sphereRadius !== "0" ? data.sphereRadius / 600 + "px" : "1px";
+    data.sphereRadius >= "400" ? data.sphereRadius / 600 + "px" : "1px";
   let fontSize =
     data.sphereRadius !== "0" && data.sphereRadius > 3000
       ? data.sphereRadius / 3000 + "px"
       : "1px";
 
-  //console.log(data.sphereRadius, width, height, fontSize);
+  console.log(data.shortName, data.sphereRadius, width, height, fontSize);
 
   //console.log(width);
   let style = {
