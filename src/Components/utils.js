@@ -1,4 +1,4 @@
-import { Position, MarkerType } from "reactflow";
+import { Position } from "reactflow";
 
 // this helper function returns the intersection point
 // of the line between the center of the intersectionNode and the target node
@@ -38,16 +38,18 @@ function getEdgePosition(node, intersectionPoint) {
   const px = Math.round(intersectionPoint.x);
   const py = Math.round(intersectionPoint.y);
 
-  if (px <= nx + 1) {
+  //console.log("N", n, px, py, nx, ny, n.width);
+
+  if (px <= nx - n.width / 2 + 1) {
     return Position.Left;
   }
-  if (px >= nx + n.width - 1) {
+  if (px >= nx + n.width / 2 - 1) {
     return Position.Right;
   }
-  if (py <= ny + 1) {
+  if (py <= ny - n.width / 2 + 1) {
     return Position.Top;
   }
-  if (py >= n.y + n.height - 1) {
+  if (py >= n.y + n.height / 2 - 1) {
     return Position.Bottom;
   }
 
@@ -56,11 +58,14 @@ function getEdgePosition(node, intersectionPoint) {
 
 // returns the parameters (sx, sy, tx, ty, sourcePos, targetPos) you need to create an edge
 export function getEdgeParams(source, target) {
-  const sourceIntersectionPoint = getNodeIntersection(source, target);
-  const targetIntersectionPoint = getNodeIntersection(target, source);
+  //const sourceIntersectionPoint = getNodeIntersection(source, target);
+  const sourceIntersectionPoint = source.position;
 
-  const sourcePos = getEdgePosition(source, sourceIntersectionPoint);
-  const targetPos = getEdgePosition(target, targetIntersectionPoint);
+  //const targetIntersectionPoint = getNodeIntersection(target, source);
+  const targetIntersectionPoint = target.position;
+
+  const sourcePos = getEdgePosition(source, targetIntersectionPoint);
+  const targetPos = getEdgePosition(target, sourceIntersectionPoint);
 
   return {
     sx: sourceIntersectionPoint.x,
@@ -70,33 +75,4 @@ export function getEdgeParams(source, target) {
     sourcePos,
     targetPos,
   };
-}
-
-export function createNodesAndEdges() {
-  const nodes = [];
-  const edges = [];
-  const center = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-
-  nodes.push({ id: "target", data: { label: "Target" }, position: center });
-
-  for (let i = 0; i < 8; i++) {
-    const degrees = i * (360 / 8);
-    const radians = degrees * (Math.PI / 180);
-    const x = 250 * Math.cos(radians) + center.x;
-    const y = 250 * Math.sin(radians) + center.y;
-
-    nodes.push({ id: `${i}`, data: { label: "Source" }, position: { x, y } });
-
-    edges.push({
-      id: `edge-${i}`,
-      target: "target",
-      source: `${i}`,
-      type: "floating",
-      markerEnd: {
-        type: MarkerType.Arrow,
-      },
-    });
-  }
-
-  return { nodes, edges };
 }

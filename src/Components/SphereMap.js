@@ -8,8 +8,12 @@ import "reactflow/dist/style.css";
 import "../style/SphereMap.css";
 import { loadCSVSpheres, loadCSVFlows } from "../data-loader";
 import { useEffect, useState, useCallback } from "react";
+//import sphereData from "../data/radiant-triangle.csv";
 import sphereData from "../data/spheres.csv";
+
+//import flowsData from "../data/radiant-flows.csv";
 import flowsData from "../data/flows.csv";
+
 import { SphereNode } from "./SphereNode";
 import { BgNode } from "./BgNode";
 import { Sphere } from "../models/Sphere";
