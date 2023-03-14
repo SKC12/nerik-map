@@ -8,3 +8,9 @@
   }
   
 }
+
+@keyframes flicker {
+  to{
+    opacity: 0.1;
+  }
+}

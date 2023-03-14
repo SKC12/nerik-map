@@ -1,3 +1,5 @@
+let speedRatio = 4;
+
 export class Flow {
   constructor(obj) {
     for (var prop in obj) {
@@ -13,60 +15,63 @@ export class Flow {
       switch (flows[i].type) {
         case "regular":
           style = {
-            strokeWidth: flows[i].speed / 2,
-            strokeDasharray: "2 2",
+            strokeWidth: flows[i].speed / speedRatio,
+            strokeDasharray: 1,
             animationName: `dash 100s linear 0s infinite`,
           };
           break;
         case "predominantW":
           style = {
-            strokeWidth: flows[i].speed / 2,
-            strokeDasharray: "2 2",
+            strokeWidth: flows[i].speed / speedRatio,
+            strokeDasharray: 1,
             animation: `dash 100s linear 0s infinite`,
           };
           break;
         case "predominantE":
           style = {
-            strokeWidth: flows[i].speed / 2,
-            strokeDasharray: "2 2",
+            strokeWidth: flows[i].speed / speedRatio,
+            strokeDasharray: 1,
             animation: `dash 15s linear 0s infinite reverse`,
           };
           break;
         case "uniW":
           style = {
-            strokeWidth: flows[i].speed / 2,
-            strokeDasharray: 1,
+            strokeWidth: flows[i].speed / speedRatio,
+            strokeDasharray: "2 2",
             animation: `dash 20s linear 0s infinite`,
           };
           break;
         case "uniE":
           style = {
-            strokeWidth: flows[i].speed / 2,
-            strokeDasharray: 1,
+            strokeWidth: flows[i].speed / speedRatio,
+            strokeDasharray: "2 2",
             animation: `dash 20s linear 0s infinite reverse`,
           };
           break;
         case "off flow":
           style = {
-            strokeWidth: flows[i].speed / 2,
-            strokeDasharray: "1 3 1",
+            strokeDasharray: "2 2 0.2 2",
+
+            strokeWidth: 0.1,
           };
           break;
         case "erratic":
           style = {
-            strokeWidth: flows[i].speed / 2,
-            strokeDasharray: 1,
+            strokeWidth: flows[i].speed / speedRatio,
+            strokeDasharray: "2 2 1 1 1 2",
+            animation: `flicker 5s linear 0s infinite alternate`,
           };
           break;
         case "tide":
           style = {
-            strokeWidth: flows[i].speed / 2,
-            strokeDasharray: 1,
+            strokeWidth: flows[i].speed / speedRatio,
+            strokeDasharray: "2 2 1 2",
+            animation: `flicker 5s linear 0s infinite alternate`,
           };
           break;
         default:
           style = {
-            strokeWidth: flows[i].speed / 2,
+            strokeWidth: flows[i].speed / speedRatio,
           };
       }
       //console.log(flows[i].speed);
