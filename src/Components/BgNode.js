@@ -1,4 +1,5 @@
 import bg from "../img/quadrants.svg";
+import phlogiston from "../img/phlogiston.webp";
 
 export function BgNode({ data }) {
   let width = data.width;
@@ -13,7 +14,13 @@ export function BgNode({ data }) {
   };
   return (
     <>
-      <div style={style}></div>
+      <div
+        style={{
+          backgroundImage: `url(${phlogiston})`,
+        }}
+      >
+        <div style={style}></div>
+      </div>
     </>
   );
 }

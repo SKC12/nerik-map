@@ -22,8 +22,8 @@ export function SphereNode({ data }) {
   return (
     <>
       <Handle type="target" position={Position.Left} />
-      <div className="SPHERE_node" style={style}>
-        <div className="SPHERE_name">{data.shortName}</div>
+      <div className="SPHERE__node" style={style}>
+        <div className="SPHERE__name">{data.shortName}</div>
       </div>
       <Handle type="source" position={Position.Right} />
     </>

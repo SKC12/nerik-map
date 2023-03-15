@@ -1,8 +1,8 @@
 import ReactFlow, {
-  Background,
   Controls,
   applyNodeChanges,
   applyEdgeChanges,
+  Background,
 } from "reactflow";
 import "reactflow/dist/style.css";
 import "../style/SphereMap.css";
@@ -20,7 +20,6 @@ import { Sphere } from "../models/Sphere";
 import { Flow } from "../models/Flow";
 import FloatingEdge from "./FloatingEdge.js";
 import FloatingConnectionLine from "./FloatingConnectionLine.js";
-import { createNodesAndEdges } from "./utils.js";
 
 let baseMapHeight = 399;
 let baseMapWidth = 567;
@@ -51,9 +50,11 @@ function SphereMap(props) {
   useEffect(() => {
     setLoadingSphere(true);
     async function loadSpheres(sphereData) {
+      //let sphereArray = [];
       let sphereArray = await loadCSVSpheres(sphereData);
       setSpheres(sphereArray);
 
+      //let flowsArray = [];
       let flowsArray = await loadCSVFlows(flowsData);
       setFlows(flowsArray);
       setLoadingSphere(false);
@@ -65,6 +66,7 @@ function SphereMap(props) {
         data: { width: baseMapWidth, height: baseMapHeight },
         draggable: false,
         selectable: false,
+        zIndex: -1,
       };
 
       let testSphere = {

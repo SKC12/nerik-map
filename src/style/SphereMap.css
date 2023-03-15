@@ -1,6 +1,7 @@
 .react-flow__handle {
     opacity: 0;
-  }
+  }  
+ 
   
 @keyframes dash {
   to{

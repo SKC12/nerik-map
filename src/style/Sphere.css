@@ -1,4 +1,4 @@
-.SPHERE_node{
+.SPHERE__node{
     display: flex;
     align-content: center;
     border-radius: 50%;
@@ -9,6 +9,6 @@
     align-items: center;
 }
 
-.SPHERE_name{
+.SPHERE__name{
     white-space: nowrap;
 }
