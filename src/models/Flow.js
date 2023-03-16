@@ -44,7 +44,7 @@ function getStyle(flow) {
       color = "#050780";
       break;
     case "Other":
-      color = "#6b6b6b";
+      color = "#575757";
       break;
     case "Pillar Flow":
       color = "#3f6b8f";
@@ -117,7 +117,7 @@ function getStyle(flow) {
       break;
     case "off flow":
       style = {
-        strokeDasharray: "2 2 0.2 2",
+        strokeDasharray: "0.2 1 0.2 1",
 
         strokeWidth: 0.1,
       };
@@ -126,14 +126,14 @@ function getStyle(flow) {
       style = {
         strokeWidth: flow.speed / speedRatio,
         strokeDasharray: "2 2 1 1 1 2",
-        animation: `flicker 5s linear 0s infinite alternate`,
+        // animation: `flicker 5s linear 0s infinite alternate`,
       };
       break;
     case "tide":
       style = {
         strokeWidth: flow.speed / speedRatio,
         strokeDasharray: "2 2 1 2",
-        animation: `flicker 5s linear 0s infinite alternate`,
+        // animation: `flicker 5s linear 0s infinite alternate`,
       };
       break;
     default:

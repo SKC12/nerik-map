@@ -71,7 +71,7 @@ Darnannon;246;302;Thorn;275;300;1.23697377478712;29,07;predominantE;;34;13;Other
 Darra;42;225;Crystal;79;226;0.779231811508284;37,01;regular;;42;53;Other;yes;no
 Dawn;378;319;Bug;410;320;0.865287059112547;32,02;uniE;;;37;Mystara Flow;yes;no
 Dead Shell;267;229;Casa;274;205;1;25,00;regular;;25;25;Other;yes;no
-Diamond;286;280;Pearl;299;272;3.05286750449475;15,26;uniE;;;5;The Maelstrom;yes;no
+Diamond;286;275;Pearl;298;271;2.5298221281347;12,65;uniE;;;5;The Maelstrom;yes;no
 Dirk;316;369;Race;329;347;0.511077293567226;25,55;predominantE;;58;42;Other;no;no
 Dirk;316;369;Ssss;337;374;0.568079819603234;21,59;regular;;38;38;Eadhel Flow;yes;no
 Dragon;445;220;Scale;483;219;0.75;38,01;regular;;;;Other;yes;yes
@@ -216,14 +216,14 @@ Path;155;279;Prime;170;284;1.58113883008419;15,81;regular;;10;10;Pirtel Flow;yes
 Patria;236;185;Agra;259;162;0.6;32,53;off flow;;;;Other;no;yes
 Patria;236;185;Gromm;252;198;2.06155281280883;20,62;regular;;10;10;Casa Flow;yes;no
 Patria;236;185;Nith;258;175;1;24,17;uniW;;;;Other;no;yes
-Pearl;299;272;Song;300;254;2.57539376818856;18,03;uniE;;;7;The Maelstrom;yes;no
+Pearl;298;271;Song;300;254;2.44532039551767;17,12;uniE;;;7;The Maelstrom;yes;no
 Pearl Cluster;65;368;C'T'lk'atat;81;353;3.98758403626569;21,93;off flow;;11;;Other;no;no
 Pearl Cluster;65;368;Freeze;80;365;0.5;15,30;regular;;;;Other;yes;yes
 Pearl Cluster;65;368;Léshy Cluster;96;393;0.5;39,82;uniW;;;;Trulian Ring;no;yes
 Pelinore;499;331;Count;528;338;0.994428926011753;29,83;uniE;;;30;Mystara Flow;yes;no
 Pheolite;288;262;Ash;332;241;1.35429130480543;48,75;regular;;36;36;Way Flow;yes;no
 Pheolite;288;262;Caz-Adar;301;226;1.91376592090046;38,28;regular;;20;20;Seven Stars Flow;yes;no
-Pheolite;288;262;Pearl;299;272;1.48660687473185;14,87;regular;;10;10;Other;yes;no
+Pheolite;288;262;Pearl;298;271;1.34536240470737;13,45;regular;;10;10;Other;yes;no
 Pheolite;288;262;Seven Stars;332;320;1.61780219761789;72,80;regular;;45;45;Seven Stars Flow;yes;no
 Pheolite;288;262;Song;300;254;2.40370085030933;14,42;regular;;6;6;Other;yes;no
 Pillar;423;302;Scarred;445;296;2.85043856274784;22,80;uniE;;;8;Pillar Flow;yes;no
@@ -295,7 +295,8 @@ Star;239;85;Out;279;76;1.6078431372549;41,00;predominantE;;33;18;Vodonika Flow;n
 Steel Star;197;162;Osra;200;175;0.889444270941756;13,34;erratic;75%;15;15;Other;no;no
 Storm;176;170;Grey;192;205;1.3503074670101;38,48;erratic;60%;19;38;Vodoni Flow;yes;no
 Storm;176;170;Redeye;178;155;2.16182085006022;15,13;regular;;7;7;Vodoni Flow;yes;no
-Sung;222;29;Star;239;85;1;58,52;erratic;;;;Other;no;yes
+Sung;222;29;Chronos;240;69;1;43,86;erratic;;;;Other;no;yes
+Star;239;85;Chronos;240;69;1;16,03;erratic;;;;Other;no;yes
 Sunless;210;121;Umbra;235;113;1.45826719426741;26,25;regular;;18;18;Braineater Flow;yes;no
 Sword;98;281;Plebos;106;254;1.76001598004109;28,16;uniE;;;16;Red-Heart Flow;yes;no
 Talangran;354;260;Nivel;355;289;0.906788633034182;29,02;predominantW;;23;41;Arcane Inner Flow;yes;no
@@ -319,7 +320,7 @@ True;264;152;Never;275;161;1.77658380044399;14,21;regular;;8;8;Other;no;no
 Tukon;144;358;Silk;148;343;0.6;15,52;regular;;;;Other;yes;yes
 Turn;119;268;Rage;122;296;2.56002324369613;28,16;regular;;11;11;Crystal Flow;yes;no
 Twin;312;345;Race;329;347;0.684689710744948;17,12;predominantE;;31;19;Mystara Flow;no;no
-Tyr;277;268;Diamond;286;280;3.75;15,00;uniE;;;4;The Maelstrom;yes;no
+Tyr;277;268;Diamond;286;275;2.85043856274784;11,40;uniE;;;4;The Maelstrom;yes;no
 Tyr;277;268;Pheolite;288;262;1.25299640861417;12,53;regular;;10;10;Other;yes;no
 Umbra;235;113;Squarm;283;116;1.05700348627789;48,09;predominantE;;58;33;Braineater Flow;yes;no
 Vergon;174;57;Passar;189;85;1.44385274311533;31,76;predominantW;;18;26;Lost Flow;yes;no

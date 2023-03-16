@@ -15,8 +15,8 @@ function getTranslate(data) {
   let xCoordW = parseInt(data.xCoordW);
   let xCoordE = parseInt(data.xCoordE);
 
-  //console.log(data, yCoordW < yCoordE);
-  if (Math.abs(xCoordW - xCoordE) / Math.abs(yCoordW - yCoordE) >= 2) {
+  console.log(data, yCoordW < yCoordE);
+  if (Math.abs(xCoordW - xCoordE) / Math.abs(yCoordW - yCoordE) >= 0.75) {
     return { west: "(-0.5px,-0.5px)", east: "(0.5px,0.5px)" };
   } else if (yCoordW < yCoordE) {
     return { west: "(0.5px,-0.5px)", east: "(-0.5px,0.5px)" };
