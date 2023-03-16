@@ -10,13 +10,15 @@ import "../style/Sphere.css";
 import { getEdgeParams } from "./utils.js";
 
 function getTranslate(data) {
-  if (
-    Math.abs(data.xCoordW - data.xCoordE) /
-      Math.abs(data.yCoordW - data.yCoordE) >=
-    2
-  ) {
+  let yCoordW = parseInt(data.yCoordW);
+  let yCoordE = parseInt(data.yCoordE);
+  let xCoordW = parseInt(data.xCoordW);
+  let xCoordE = parseInt(data.xCoordE);
+
+  //console.log(data, yCoordW < yCoordE);
+  if (Math.abs(xCoordW - xCoordE) / Math.abs(yCoordW - yCoordE) >= 2) {
     return { west: "(-0.5px,-0.5px)", east: "(0.5px,0.5px)" };
-  } else if (data.yCoordW < data.yCoordE) {
+  } else if (yCoordW < yCoordE) {
     return { west: "(0.5px,-0.5px)", east: "(-0.5px,0.5px)" };
   } else {
     return { west: "(-0.5px,0.5px)", east: "(0.5px,-0.5px)" };

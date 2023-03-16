@@ -71,19 +71,33 @@ function SphereMap(props) {
 
       let testSphere = {
         sphere: "test",
-        sphereRadius: 5000,
-        xCoord: 0,
-        yCoord: 0,
+        shortName: "test",
+        sphereRadius: "1",
+        xCoord: 0 + 11,
+        yCoord: 0 + 11,
+        "onMap?": "Yes",
       };
+
+      // let testSphere3 = {
+      //   sphere: "test3",
+      //   shortName: "test3",
+      //   sphereRadius: "1",
+      //   xCoord: 194 + 11,
+      //   yCoord: 181 + 11,
+      //   "onMap?": "Yes",
+      // };
 
       let testSphere2 = {
         sphere: "test2",
+        shortName: "test2",
         sphereRadius: 100000,
         xCoord: 580,
         yCoord: 410,
+        "onMap?": "Yes",
       };
-      sphereArray.push(testSphere);
-      sphereArray.push(testSphere2);
+      //sphereArray.push(testSphere);
+      //sphereArray.push(testSphere2);
+      //sphereArray.push(testSphere3);
 
       console.log("SPHERES", sphereArray);
       console.log("FLOWS", flowsArray);

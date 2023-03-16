@@ -1,3 +1,3 @@
-sphereW;xCoord;yCoord;sphereE;xCoord;yCoord;speed;dist;type;typeExtraInfo;timeW;timeE;flowRiver;isKnown;editedSpeed
+sphereW;xCoordW;yCoordW;sphereE;xCoordE;yCoordE;speed;dist;type;typeExtraInfo;timeW;timeE;flowRiver;isKnown;editedSpeed
 Grey;205;192;Realm;217;230;2,15403879407257;39,85;predominantE;;22;15;Radiant Flow;yes;no
 Krynn;167;230;Grey;205;192;1,45243555054534;53,74;predominantW;;36;38;Radiant Flow;yes;no
