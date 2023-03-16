@@ -85,7 +85,6 @@ function getStyle(flow) {
       style = {
         strokeWidth: flow.speed / speedRatio,
         strokeDasharray: 1,
-        animationName: `dash 100s linear 0s infinite`,
       };
       break;
     case "predominantW":
@@ -99,7 +98,7 @@ function getStyle(flow) {
       style = {
         strokeWidth: flow.speed / speedRatio,
         strokeDasharray: 1,
-        animation: `dash 15s linear 0s infinite reverse`,
+        animation: `dash 100s linear 0s infinite reverse`,
       };
       break;
     case "uniW":
