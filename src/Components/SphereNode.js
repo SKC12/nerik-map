@@ -1,5 +1,6 @@
 import "../style/Sphere.css";
 import { Handle, Position } from "reactflow";
+import greySphere from "../img/Grey_Sphere.webp";
 
 export function SphereNode({ data }) {
   let width = data.sphereRadius >= 400 ? data.sphereRadius / 600 + "px" : "1px";
@@ -16,9 +17,11 @@ export function SphereNode({ data }) {
   let style = {
     width: width,
     height: height,
+    backgroundImage: `url(${greySphere})`,
 
     fontSize: fontSize,
   };
+
   return (
     <>
       <Handle type="target" position={Position.Left} />

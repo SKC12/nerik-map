@@ -1,4 +1,4 @@
-sphereW;xCoord;yCoord;sphereE;xCoord;yCoord;speed;dist;type;typeExtraInfo;timeW;timeE;flowRiver;isKnown;editedSpeed
+sphereW;xCoordW;yCoordW;sphereE;xCoordE;yCoordE;speed;dist;type;typeExtraInfo;timeW;timeE;flowRiver;isKnown;editedSpeed
 'Mal;313;136;Neomara;331;146;0.6;20,59;regular;;;;Other;yes;yes
 Adramis;360;94;Heat;379;108;0.6;23,60;regular;;;;Other;yes;yes
 Aenea;486;186;Elespatio;492;202;1.89866749895945;17,09;predominantW;;6;12;Arcane Outer Flow;yes;no

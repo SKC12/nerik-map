@@ -155,18 +155,19 @@ export class Flow {
 
   static getEges(flows) {
     console.log(flows);
-    let nodes = [];
+    let edges = [];
     for (let i = 0; i < flows.length; i++) {
       let style = getStyle(flows[i]);
       //console.log(flows[i].speed);
-      nodes.push({
+      edges.push({
         id: flows[i].sphereW + " to " + flows[i].sphereE,
         source: flows[i].sphereW,
         target: flows[i].sphereE,
         type: "floating",
         style: style,
+        data: flows[i],
       });
     }
-    return nodes;
+    return edges;
   }
 }
