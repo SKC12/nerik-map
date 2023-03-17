@@ -1,19 +1,37 @@
-import "./App.css";
-import Map from "./Components/Map";
+import "./style/Main.css";
+import Header from "./Components/Header";
+import LeftSideBar from "./Components/LeftSideBar";
 import SphereMap from "./Components/SphereMap";
+import { useEffect, useRef, useState } from "react";
 
 function App() {
   let bgRatio = 1.421;
-  let canvasHeight = 800;
+
+  const refContainer = useRef();
+  const [containerDimensions, setContainerDimensions] = useState({
+    width: 0,
+    height: 0,
+  });
+
+  useEffect(() => {
+    if (refContainer.current) {
+      setContainerDimensions({
+        width: refContainer.current.offsetHeight * bgRatio,
+        height: refContainer.current.offsetHeight,
+      });
+    }
+  }, [bgRatio]);
 
   return (
     <div className="App">
-      <header className="App-header"></header>
-      {/* <Map width={canvasHeight * bgRatio} height={canvasHeight} /> */}
-      <SphereMap
-        width={canvasHeight * bgRatio}
-        height={canvasHeight}
-      ></SphereMap>
+      <Header />
+      <div ref={refContainer} className="main-container">
+        <LeftSideBar />
+        <SphereMap
+          width={containerDimensions.width}
+          height={containerDimensions.height}
+        ></SphereMap>
+      </div>
     </div>
   );
 }

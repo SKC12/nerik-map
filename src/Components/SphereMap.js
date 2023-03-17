@@ -99,8 +99,8 @@ function SphereMap(props) {
       //sphereArray.push(testSphere2);
       //sphereArray.push(testSphere3);
 
-      console.log("SPHERES", sphereArray);
-      console.log("FLOWS", flowsArray);
+      //console.log("SPHERES", sphereArray);
+      //console.log("FLOWS", flowsArray);
 
       setNodes(Sphere.getNodes(sphereArray).concat(bgSphere));
       setEdges(Flow.getEges(flowsArray));
@@ -108,8 +108,8 @@ function SphereMap(props) {
     loadSpheres(sphereData);
   }, []);
 
-  console.log("NODES", nodes);
-  console.log("EDGES", edges);
+  //console.log("NODES", nodes);
+  //console.log("EDGES", edges);
 
   return (
     <div style={{ height: canvasHeight, width: canvasWidth }}>

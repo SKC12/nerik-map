@@ -1,0 +1,15 @@
+.HEADER {
+    height: 5vh;
+    background-color: rgb(63, 61, 82);
+}
+
+.LEFTSB {
+    height: 95vh;
+    width: 300px;
+    background-color: rgb(63, 61, 82);
+
+}
+
+.main-container{
+    display: flex;
+}
