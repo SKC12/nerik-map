@@ -43,7 +43,7 @@ Ceypari;193;390;Cradle;207;370;0.554843437078805;24,41;erratic;30-35%;44;44;Othe
 Char;159;217;Krynn;167;230;1.52643375224737;15,26;regular;;10;10;Other;yes;no
 Charge;380;233;Runal;404;207;0.6;35,38;regular;;;;Other;yes;yes
 Charm;301;168;Fungo;321;173;0.6;20,62;regular;;;;Other;yes;yes
-Chitin;204;309;Gate;206;305;2.23606797749979;4,47;regular;;2;2;Other;yes;no
+Chitin;202;312;Gate;206;305;2.23606797749979;4,47;regular;;2;2;Other;yes;no
 Cloak;86;190;Mind;88;172;0.624509319871546;18,11;regular;;29;29;Braineater Flow;no;no
 Cloak;86;190;Ssuw;103;191;1;17,03;predominantE;;;;Other;no;yes
 Cloud;129;213;Taur-Utu;147;201;1.0816653826392;21,63;uniE;;;20;Red-Heart Flow;yes;no
@@ -109,9 +109,9 @@ Garden;445;282;Spindle;462;284;1.14114951790825;17,12;regular;;15;15;Other;yes;n
 Garland;306;122;'Mal;313;136;0.6;15,65;regular;;;;Other;yes;yes
 Garland;306;122;Cryo;329;117;0.619400120838938;23,54;predominantE;;49;27;Braineater Flow;yes;no
 Gate;206;305;Astral;215;330;1.23584467493827;26,57;predominantW;;13;30;Gate Flow;yes;no
-Gate;206;305;Chroma;210;309;2.82842712474619;5,66;regular;;2;2;Other;yes;no
+Gate;206;305;Chroma;211;31;2.82842712474619;5,66;regular;;2;2;Other;yes;no
 Gate;206;305;Pirtel;218;280;1.20568909772713;27,73;predominantW;;20;26;Gate Flow;yes;no
-Gate;206;305;Shamble;210;304;2.06155281280883;4,12;regular;;2;2;Other;yes;no
+Gate;206;305;Shamble;213;303;2.06155281280883;4,12;regular;;2;2;Other;yes;no
 Giant;160;325;Octor;182;315;1.17883375352142;24,17;predominantW;;18;23;Other;yes;no
 Giant;160;325;Rock;189;338;0.934720504827689;31,78;regular;;34;34;Crystal Flow;yes;no
 Gimlun;130;120;Falx;143;153;0.75;35,47;erratic;;;;Other;no;yes
@@ -285,7 +285,7 @@ Solice;352;189;Rhyme;356;161;0.942809041582063;28,28;predominantE;;34;26;Way Flo
 Spider;134;329;Silk;148;343;0.75;19,80;regular;;;;Other;yes;yes
 Spindle;462;284;Dust;472;265;1.26299473844611;21,47;uniE;;;17;Pillar Flow;yes;no
 Spindle;462;284;Steam;484;296;1.25299640861417;25,06;regular;;20;20;Other;yes;no
-Split;206;301;Gate;206;305;2;4,00;regular;;2;2;Other;yes;no
+Split;206;298;Gate;206;305;2;4,00;regular;;2;2;Other;yes;no
 Squarm;283;116;Garland;306;122;0.792324288266981;23,77;regular;;30;30;Braineater Flow;yes;no
 Squirrn;80;294;Cube;96;305;0.862955015064338;19,42;predominantE;;24;21;Pirtel Flow;yes;no
 Ssss;337;374;Numos;356;375;1.18914359940253;19,03;regular;;16;16;Eadhel Flow;yes;no
@@ -336,7 +336,7 @@ Web;438;324;Blue;453;330;1.00971840133772;16,16;uniE;;;16;Mystara Flow;yes;no
 Web;438;324;Cracked;460;305;1.0766253224999;29,07;uniW;;27;;Other;yes;no
 Wehr;62;274;Traba;74;253;1.72762666034969;24,19;regular;;11;17;Radiant Flow;yes;no
 Wilderlands;398;338;Bug;410;320;0.901387818865997;21,63;uniW;;24;;Eadhel Flow;yes;no
-Windy;202;305;Gate;206;305;2;4,00;regular;;2;2;Other;yes;no
+Windy;200;305;Gate;206;305;2;4,00;regular;;2;2;Other;yes;no
 Winter;152;258;Cluster;185;266;2.26372357951329;33,96;uniW;;15;;Other;yes;no
 Winter;152;258;Path;155;279;0.865845038187609;21,21;predominantW;;17;32;Other;yes;no
 Worm;308;71;Blood;342;56;0.835096816901665;37,16;predominantE;;56;33;Vodonika Flow;no;no

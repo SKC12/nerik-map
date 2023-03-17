@@ -84,20 +84,20 @@ function getStyle(flow) {
     case "regular":
       style = {
         strokeWidth: flow.speed / speedRatio,
-        strokeDasharray: 1,
+        strokeDasharray: "0.3",
       };
       break;
     case "predominantW":
       style = {
         strokeWidth: flow.speed / speedRatio,
-        strokeDasharray: 1,
+        strokeDasharray: "0.6",
         animation: `dash 100s linear 0s infinite`,
       };
       break;
     case "predominantE":
       style = {
         strokeWidth: flow.speed / speedRatio,
-        strokeDasharray: 1,
+        strokeDasharray: "0.6",
         animation: `dash 100s linear 0s infinite reverse`,
       };
       break;

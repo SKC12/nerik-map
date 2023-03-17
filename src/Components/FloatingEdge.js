@@ -80,7 +80,7 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
           textAnchor="middle"
           dominantBaseline="auto"
         >
-          {data.timeW ? `<-- ${data.timeW}` : ""}
+          {data.timeW ? `<- ${data.timeW}` : ""}
         </textPath>
       </text>
       <text style={{ transform: `translate${translate.east}` }}>
@@ -91,7 +91,7 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
           textAnchor="middle"
           dominantBaseline="hanging"
         >
-          {data.timeE ? `--> ${data.timeE}` : ""}
+          {data.timeE ? `-> ${data.timeE}` : ""}
         </textPath>
       </text>
     </>
