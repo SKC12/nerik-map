@@ -153,7 +153,7 @@ export class Flow {
   }
 
   static getEges(flows) {
-    console.log(flows);
+    //console.log(flows);
     let edges = [];
     for (let i = 0; i < flows.length; i++) {
       let style = getStyle(flows[i]);

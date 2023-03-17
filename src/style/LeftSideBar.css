@@ -23,12 +23,12 @@
 
 .LEFTSB__tabs-container{
     display: flex;
-    height: 50px;
+    height: 40px;
 }
 
 .LEFTSB__tab{
     padding: 10px;
-    width: 80px;
+    width: 70px;
     display: flex;
     justify-content: center;
     align-items: center;

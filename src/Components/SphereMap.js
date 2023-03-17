@@ -2,7 +2,6 @@ import ReactFlow, {
   Controls,
   applyNodeChanges,
   applyEdgeChanges,
-  Background,
 } from "reactflow";
 import "reactflow/dist/style.css";
 import "../style/SphereMap.css";
@@ -39,6 +38,13 @@ function SphereMap(props) {
   const [flows, setFlows] = useState([]);
   const [loadingSphere, setLoadingSphere] = useState(true);
 
+  const selectedNode = nodes.filter((nd) => nd.selected === true)[0];
+  const setSelectedNode = props.setSelectedNode;
+
+  useEffect(() => {
+    setSelectedNode(selectedNode);
+  }, [selectedNode, setSelectedNode]);
+
   const onNodesChange = useCallback(
     (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
     []
@@ -49,7 +55,7 @@ function SphereMap(props) {
   );
 
   useEffect(() => {
-    console.log(animated);
+    //console.log(animated);
     setEdges((edgs) =>
       edgs.map((edg) => {
         edg.data = { ...edg.data, animation: animated };

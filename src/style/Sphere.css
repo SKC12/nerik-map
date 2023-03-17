@@ -10,6 +10,12 @@
     background-size: cover;
 }
 
+.selected{
+  
+    background-color: rgb(235, 43, 43);
+    
+}
+
 .SPHERE__name{
     white-space: nowrap;
 }

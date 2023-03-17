@@ -13,6 +13,7 @@ function App() {
   });
 
   const [animated, setAnimated] = useState(false);
+  const [selectedNode, setSelectedNode] = useState(null);
 
   useEffect(() => {
     if (refContainer.current) {
@@ -26,11 +27,15 @@ function App() {
   return (
     <div className="App">
       <div ref={refContainer} className="main-container">
-        <LeftSideBar animationState={[animated, setAnimated]} />
+        <LeftSideBar
+          animationState={[animated, setAnimated]}
+          selectedNode={selectedNode}
+        />
         <SphereMap
           width={containerDimensions.width}
           height={containerDimensions.height}
           animated={animated}
+          setSelectedNode={setSelectedNode}
         ></SphereMap>
       </div>
     </div>

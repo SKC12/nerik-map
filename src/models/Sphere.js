@@ -6,7 +6,7 @@ export class Sphere {
   }
 
   static getNodes(spheres, scale = 1) {
-    console.log(spheres);
+    //console.log(spheres);
     let nodes = [];
     for (let i = 0; i < spheres.length; i++) {
       //console.log(spheres[i].onMap);
