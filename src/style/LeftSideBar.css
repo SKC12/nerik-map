@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: rgb(209, 218, 224);
+    color: rgb(184, 184, 196);
 }
 
 .LEFTSB__header{
@@ -52,4 +52,28 @@
     background-color: rgb(69, 72, 90);
     border-radius: 10px;
     padding: 10px;
+}
+
+.LEFTSB__data{
+    font-size: 12px;
+    padding-left: 10px;
+    margin: 6px;
+    word-break: normal;
+
+}
+
+.LEFTSB__data-label{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.LEFTSB__data-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.LEFTSB__data-link{
+    color: rgb(184, 184, 196);
+    word-break: break-all;
+
 }
