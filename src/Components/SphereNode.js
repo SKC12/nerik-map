@@ -2,7 +2,7 @@ import "../style/Sphere.css";
 import { Handle, Position } from "reactflow";
 import greySphere from "../img/Grey_Sphere.webp";
 
-export function SphereNode({ data }) {
+export function SphereNode({ selected, data }) {
   let width = data.sphereRadius >= 400 ? data.sphereRadius / 600 + "px" : "1px";
   let height =
     data.sphereRadius >= 400 ? data.sphereRadius / 600 + "px" : "1px";
@@ -13,7 +13,6 @@ export function SphereNode({ data }) {
 
   //console.log(data.shortName, data.sphereRadius, width, height, fontSize);
 
-  //console.log(width);
   let style = {
     width: width,
     height: height,
@@ -25,7 +24,10 @@ export function SphereNode({ data }) {
   return (
     <>
       <Handle type="target" position={Position.Left} />
-      <div className="SPHERE__node" style={style}>
+      <div
+        className={`SPHERE__node ${selected ? "SPHERE__node-selected" : ""}`}
+        style={style}
+      >
         <div className="SPHERE__name">{data.shortName}</div>
       </div>
       <Handle type="source" position={Position.Right} />

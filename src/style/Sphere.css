@@ -10,10 +10,8 @@
     background-size: cover;
 }
 
-.selected{
-  
-    background-color: rgb(235, 43, 43);
-    
+.SPHERE__node-selected{  
+    background-color: rgb(121, 161, 207);    
 }
 
 .SPHERE__name{
