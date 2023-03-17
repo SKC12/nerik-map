@@ -33,6 +33,11 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
     useCallback((store) => store.nodeInternals.get(target), [target])
   );
 
+  let edgeStyle;
+  !data.animation
+    ? (edgeStyle = { ...style, animation: "" })
+    : (edgeStyle = style);
+
   if (!sourceNode || !targetNode) {
     return null;
   }
@@ -65,7 +70,7 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
         className="react-flow__edge-path"
         d={edgePath}
         markerEnd={markerEnd}
-        style={style}
+        style={edgeStyle}
       />
       <text style={{ transform: `translate${translate.west}` }}>
         <textPath

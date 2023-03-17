@@ -32,6 +32,7 @@ const edgeTypes = {
 function SphereMap(props) {
   const canvasWidth = props.width;
   const canvasHeight = props.height;
+  const animated = props.animated;
   const [nodes, setNodes] = useState([]);
   const [edges, setEdges] = useState([]);
   const [spheres, setSpheres] = useState([]);
@@ -46,6 +47,17 @@ function SphereMap(props) {
     (changes) => setEdges((eds) => applyEdgeChanges(changes, eds)),
     []
   );
+
+  useEffect(() => {
+    console.log(animated);
+    setEdges((edgs) =>
+      edgs.map((edg) => {
+        edg.data = { ...edg.data, animation: animated };
+        return edg;
+      })
+    );
+    //console.log(edges);
+  }, [animated]);
 
   useEffect(() => {
     setLoadingSphere(true);

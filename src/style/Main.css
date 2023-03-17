@@ -1,13 +1,9 @@
-.HEADER {
-    height: 5vh;
-    background-color: rgb(63, 61, 82);
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-.LEFTSB {
-    height: 95vh;
-    width: 300px;
-    background-color: rgb(63, 61, 82);
-
+body{
+    background-color: rgb(156, 170, 182);
 }
 
 .main-container{

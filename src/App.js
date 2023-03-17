@@ -1,5 +1,4 @@
 import "./style/Main.css";
-import Header from "./Components/Header";
 import LeftSideBar from "./Components/LeftSideBar";
 import SphereMap from "./Components/SphereMap";
 import { useEffect, useRef, useState } from "react";
@@ -13,6 +12,8 @@ function App() {
     height: 0,
   });
 
+  const [animated, setAnimated] = useState(false);
+
   useEffect(() => {
     if (refContainer.current) {
       setContainerDimensions({
@@ -24,12 +25,12 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
       <div ref={refContainer} className="main-container">
-        <LeftSideBar />
+        <LeftSideBar animationState={[animated, setAnimated]} />
         <SphereMap
           width={containerDimensions.width}
           height={containerDimensions.height}
+          animated={animated}
         ></SphereMap>
       </div>
     </div>
