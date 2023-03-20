@@ -7,8 +7,8 @@ export function SphereNode({ selected, data }) {
   let height =
     data.sphereRadius >= 400 ? data.sphereRadius / 600 + "px" : "1px";
   let fontSize =
-    data.sphereRadius !== "0" && data.sphereRadius > 3000
-      ? data.sphereRadius / 3000 + "px"
+    data.sphereRadius !== "0" && data.sphereRadius > 400
+      ? data.sphereRadius / 3300 + "px"
       : "1px";
 
   //console.log(data.shortName, data.sphereRadius, width, height, fontSize);
@@ -22,7 +22,7 @@ export function SphereNode({ selected, data }) {
   };
 
   let nameTranslateStyle = {
-    transform: `translate(${width},-0.2px)`,
+    transform: `translate(${data.sphereRadius / 600 + 0.5 + "px"},-0px)`,
     position: "absolute",
     left: "0px",
     bottom: "0px",
@@ -37,7 +37,7 @@ export function SphereNode({ selected, data }) {
         style={style}
       >
         <div
-          style={data.sphereRadius <= 2000 ? nameTranslateStyle : {}}
+          style={data.sphereRadius <= 1400 ? nameTranslateStyle : {}}
           className="SPHERE__name"
         >
           {data.shortName}
