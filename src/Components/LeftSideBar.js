@@ -5,6 +5,7 @@ function LeftSideBar(props) {
   const [isAnimated, setIsAnimated] = props.animationState;
   const [selectedTab, setSelectedTab] = useState("dataTab");
   const selectedNode = props.selectedNode;
+  const [draggable, setDraggable] = props.dragState;
 
   const selectedData = selectedNode
     ? selectedNode.data
@@ -24,6 +25,10 @@ function LeftSideBar(props) {
 
   const animationChange = () => {
     setIsAnimated(!isAnimated);
+  };
+
+  const dragChange = () => {
+    setDraggable(!draggable);
   };
 
   const handleTabClick = (e) => {
@@ -108,13 +113,23 @@ function LeftSideBar(props) {
           </div>
         ) : null}
         {selectedTab === "editTab" ? (
-          <div>
-            <h2>Settings:</h2>
+          <div className="LEFTSB__data-container">
+            <h3>Settings:</h3>
+            <div className="LEFTSB__option-container">
+              <input
+                type="checkbox"
+                id="draggablecb"
+                name="draggablecb"
+                checked={draggable}
+                onChange={dragChange}
+              ></input>
+              <label>Draggable Spheres</label>
+            </div>
           </div>
         ) : null}
         {selectedTab === "optionsTab" ? (
           <div>
-            <h2>Settings:</h2>
+            <h3>Settings:</h3>
             <div className="LEFTSB__option-container">
               <input
                 type="checkbox"

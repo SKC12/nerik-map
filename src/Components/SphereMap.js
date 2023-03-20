@@ -32,6 +32,7 @@ function SphereMap(props) {
   const canvasWidth = props.width;
   const canvasHeight = props.height;
   const animated = props.animated;
+  const draggable = props.draggable;
   const [nodes, setNodes] = useState([]);
   const [edges, setEdges] = useState([]);
   const [spheres, setSpheres] = useState([]);
@@ -147,6 +148,7 @@ function SphereMap(props) {
           [0, 0],
           [567, 399],
         ]}
+        nodesDraggable={draggable}
       >
         {/* <Background /> */}
         <Controls />

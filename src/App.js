@@ -13,6 +13,8 @@ function App() {
   });
 
   const [animated, setAnimated] = useState(false);
+  const [draggable, setDraggable] = useState(false);
+
   const [selectedNode, setSelectedNode] = useState(null);
 
   useEffect(() => {
@@ -30,12 +32,14 @@ function App() {
         <LeftSideBar
           animationState={[animated, setAnimated]}
           selectedNode={selectedNode}
+          dragState={[draggable, setDraggable]}
         />
         <SphereMap
           width={containerDimensions.width}
           height={containerDimensions.height}
           animated={animated}
           setSelectedNode={setSelectedNode}
+          draggable={draggable}
         ></SphereMap>
       </div>
     </div>

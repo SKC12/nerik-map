@@ -12,6 +12,7 @@ async function fetchCSV(data) {
 }
 
 export async function loadCSVFlows(data) {
+  console.log("loading flows");
   let csv = await fetchCSV(data);
   let lines = csv.split("\n");
   let headers = lines[0].split(";");
@@ -33,6 +34,8 @@ export async function loadCSVFlows(data) {
 }
 
 export async function loadCSVSpheres(data) {
+  console.log("loading spheres");
+
   let csv = await fetchCSV(data);
   let lines = csv.split("\n");
   let headers = lines[0].split(";");

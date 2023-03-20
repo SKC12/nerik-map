@@ -55,10 +55,11 @@
 }
 
 .LEFTSB__data{
-    font-size: 12px;
+    font-size: 14px;
     padding-left: 10px;
     margin: 6px;
     word-break: normal;
+    min-height: 18px;
 
 }
 
