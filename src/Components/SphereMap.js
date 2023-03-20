@@ -32,6 +32,7 @@ function SphereMap(props) {
   const canvasWidth = props.width;
   const canvasHeight = props.height;
   const animated = props.animated;
+  const projectedTime = props.projectedTime;
   const draggable = props.draggable;
   const [nodes, setNodes] = useState([]);
   const [edges, setEdges] = useState([]);
@@ -65,6 +66,16 @@ function SphereMap(props) {
     );
     //console.log(edges);
   }, [animated]);
+
+  useEffect(() => {
+    setEdges((edgs) =>
+      edgs.map((edg) => {
+        edg.data = { ...edg.data, projectedTime: projectedTime };
+        return edg;
+      })
+    );
+    //console.log(edges);
+  }, [projectedTime]);
 
   useEffect(() => {
     setLoadingSphere(true);

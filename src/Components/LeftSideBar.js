@@ -3,6 +3,7 @@ import "../style/LeftSideBar.css";
 
 function LeftSideBar(props) {
   const [isAnimated, setIsAnimated] = props.animationState;
+  const [projectedTime, setProjectedTime] = props.projectedTimeState;
   const [selectedTab, setSelectedTab] = useState("dataTab");
   const selectedNode = props.selectedNode;
   const [draggable, setDraggable] = props.dragState;
@@ -25,6 +26,10 @@ function LeftSideBar(props) {
 
   const animationChange = () => {
     setIsAnimated(!isAnimated);
+  };
+
+  const projectedTimeChange = () => {
+    setProjectedTime(!projectedTime);
   };
 
   const dragChange = () => {
@@ -139,6 +144,16 @@ function LeftSideBar(props) {
                 onChange={animationChange}
               ></input>
               <label>Animated</label>
+            </div>
+            <div className="LEFTSB__option-container">
+              <input
+                type="checkbox"
+                id="projTimecb"
+                name="projTimecb"
+                checked={projectedTime}
+                onChange={projectedTimeChange}
+              ></input>
+              <label>Use projected time</label>
             </div>
           </div>
         ) : null}

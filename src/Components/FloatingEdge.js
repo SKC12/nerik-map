@@ -1,8 +1,8 @@
 import { useCallback } from "react";
 import {
   useStore,
-  getBezierPath,
-  getStraightPath,
+  // getBezierPath,
+  // getStraightPath,
   getSimpleBezierPath,
 } from "reactflow";
 import "../style/Sphere.css";
@@ -33,10 +33,24 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
     useCallback((store) => store.nodeInternals.get(target), [target])
   );
 
+  //If animation is not enable, remove it from style
   let edgeStyle;
   !data.animation
     ? (edgeStyle = { ...style, animation: "" })
     : (edgeStyle = style);
+
+  //Check for data.Time, if it doesn't exist, check if projectedTime is enabled
+  let travelTime = { west: "", east: "" };
+  data.timeE
+    ? (travelTime.east = `-> ${data.timeE}`)
+    : data.projectedTime && !data.type.includes("uni")
+    ? (travelTime.east = "-> " + Math.floor(data.dist / data.speed))
+    : (travelTime.east = "");
+  data.timeW
+    ? (travelTime.west = `<- ${data.timeW}`)
+    : data.projectedTime && !data.type.includes("uni")
+    ? (travelTime.west = "<- " + Math.floor(data.dist / data.speed))
+    : (travelTime.west = "");
 
   if (!sourceNode || !targetNode) {
     return null;
@@ -80,9 +94,21 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
           textAnchor="middle"
           dominantBaseline="auto"
         >
-          {data.timeW ? `<- ${data.timeW}` : ""}
+          {travelTime.west}
         </textPath>
       </text>
+      <text style={{ transform: `translate${translate.west}` }}>
+        <textPath
+          href={`#${id}`}
+          style={textStyle}
+          startOffset="20%"
+          textAnchor="middle"
+          dominantBaseline="auto"
+        >
+          {data.typeExtraInfo}
+        </textPath>
+      </text>
+
       <text style={{ transform: `translate${translate.east}` }}>
         <textPath
           href={`#${id}`}
@@ -91,7 +117,7 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
           textAnchor="middle"
           dominantBaseline="hanging"
         >
-          {data.timeE ? `-> ${data.timeE}` : ""}
+          {travelTime.east}
         </textPath>
       </text>
     </>

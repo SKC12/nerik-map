@@ -1,5 +1,5 @@
 import React from "react";
-import { getBezierPath, getSimpleBezierPath } from "reactflow";
+import { getSimpleBezierPath } from "reactflow";
 
 import { getEdgeParams } from "./utils.js";
 

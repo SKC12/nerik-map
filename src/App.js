@@ -13,6 +13,8 @@ function App() {
   });
 
   const [animated, setAnimated] = useState(false);
+  const [projectedTime, setProjectedTime] = useState(false);
+
   const [draggable, setDraggable] = useState(false);
 
   const [selectedNode, setSelectedNode] = useState(null);
@@ -31,6 +33,7 @@ function App() {
       <div ref={refContainer} className="main-container">
         <LeftSideBar
           animationState={[animated, setAnimated]}
+          projectedTimeState={[projectedTime, setProjectedTime]}
           selectedNode={selectedNode}
           dragState={[draggable, setDraggable]}
         />
@@ -38,6 +41,7 @@ function App() {
           width={containerDimensions.width}
           height={containerDimensions.height}
           animated={animated}
+          projectedTime={projectedTime}
           setSelectedNode={setSelectedNode}
           draggable={draggable}
         ></SphereMap>
