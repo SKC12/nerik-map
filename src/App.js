@@ -14,6 +14,7 @@ function App() {
 
   const [animated, setAnimated] = useState(false);
   const [projectedTime, setProjectedTime] = useState(false);
+  const [hideUnknownPaths, setHideUnknownPaths] = useState(false);
 
   const [draggable, setDraggable] = useState(false);
 
@@ -36,6 +37,7 @@ function App() {
           projectedTimeState={[projectedTime, setProjectedTime]}
           selectedNode={selectedNode}
           dragState={[draggable, setDraggable]}
+          unknownPathsState={[hideUnknownPaths, setHideUnknownPaths]}
         />
         <SphereMap
           width={containerDimensions.width}
@@ -44,6 +46,7 @@ function App() {
           projectedTime={projectedTime}
           setSelectedNode={setSelectedNode}
           draggable={draggable}
+          hideUnknownPaths={hideUnknownPaths}
         ></SphereMap>
       </div>
     </div>

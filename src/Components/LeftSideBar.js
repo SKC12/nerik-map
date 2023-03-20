@@ -7,6 +7,7 @@ function LeftSideBar(props) {
   const [selectedTab, setSelectedTab] = useState("dataTab");
   const selectedNode = props.selectedNode;
   const [draggable, setDraggable] = props.dragState;
+  const [hideUnkownPaths, setHideUnknownPaths] = props.unknownPathsState;
 
   const selectedData = selectedNode
     ? selectedNode.data
@@ -34,6 +35,10 @@ function LeftSideBar(props) {
 
   const dragChange = () => {
     setDraggable(!draggable);
+  };
+
+  const unknownPathsChange = () => {
+    setHideUnknownPaths(!hideUnkownPaths);
   };
 
   const handleTabClick = (e) => {
@@ -99,9 +104,9 @@ function LeftSideBar(props) {
             <label className="LEFTSB__data-label">Population:</label>
             <p className="LEFTSB__data">{selectedData.population}</p>
             <label className="LEFTSB__data-label">Activity Level:</label>
-            <p className="LEFTSB__data">{selectedData.activityLeve}</p>
+            <p className="LEFTSB__data">{selectedData.activity}</p>
             <label className="LEFTSB__data-label">Controlled by:</label>
-            <p className="LEFTSB__data">{selectedData.controlledBy}</p>
+            <p className="LEFTSB__data">{selectedData.controlled}</p>
             <label className="LEFTSB__data-label">Description:</label>
             <p className="LEFTSB__data">{selectedData.description}</p>
             <label className="LEFTSB__data-label">Source:</label>
@@ -153,7 +158,17 @@ function LeftSideBar(props) {
                 checked={projectedTime}
                 onChange={projectedTimeChange}
               ></input>
-              <label>Use projected time</label>
+              <label>Calculate missing travel time</label>
+            </div>
+            <div className="LEFTSB__option-container">
+              <input
+                type="checkbox"
+                id="unknownPathscb"
+                name="unknownPathscb"
+                checked={hideUnkownPaths}
+                onChange={unknownPathsChange}
+              ></input>
+              <label>Hide unknown flow river</label>
             </div>
           </div>
         ) : null}

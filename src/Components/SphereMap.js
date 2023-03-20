@@ -34,6 +34,7 @@ function SphereMap(props) {
   const animated = props.animated;
   const projectedTime = props.projectedTime;
   const draggable = props.draggable;
+  const hideUnknownPaths = props.hideUnknownPaths;
   const [nodes, setNodes] = useState([]);
   const [edges, setEdges] = useState([]);
   const [spheres, setSpheres] = useState([]);
@@ -76,6 +77,18 @@ function SphereMap(props) {
     );
     //console.log(edges);
   }, [projectedTime]);
+
+  useEffect(() => {
+    setEdges((edgs) =>
+      edgs.map((edg) => {
+        if (edg.data.isKnown === "no") {
+          edg.hidden = hideUnknownPaths;
+        }
+        return edg;
+      })
+    );
+    //console.log(edges);
+  }, [hideUnknownPaths]);
 
   useEffect(() => {
     setLoadingSphere(true);

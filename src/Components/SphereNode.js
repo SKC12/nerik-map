@@ -22,11 +22,12 @@ export function SphereNode({ selected, data }) {
   };
 
   let nameTranslateStyle = {
-    transform: `translate(${data.sphereRadius / 600 + 0.5 + "px"},-0px)`,
+    transform: `translate(${Math.max(data.sphereRadius / 600, 1) + "px"},-0px)`,
     position: "absolute",
     left: "0px",
     bottom: "0px",
     fontSize: "0.5px",
+    color: "rgb(236, 236, 236)",
   };
 
   return (
@@ -40,7 +41,7 @@ export function SphereNode({ selected, data }) {
           style={data.sphereRadius <= 1400 ? nameTranslateStyle : {}}
           className="SPHERE__name"
         >
-          {data.shortName}
+          <span>{data.shortName}</span>
         </div>
       </div>
       <Handle type="source" position={Position.Right} />
