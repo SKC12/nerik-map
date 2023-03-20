@@ -7,9 +7,9 @@ function getNodeIntersection(intersectionNode, targetNode) {
   let h = p1.y - p2.y;
   let w = p2.x - p1.x;
   const angle = Math.atan2(h, w);
-  const dx = Math.floor(radius * Math.cos(angle));
+  const dx = radius * Math.cos(angle);
   const x = p1.x + dx;
-  const dy = Math.floor(radius * Math.sin(angle));
+  const dy = radius * Math.sin(angle);
   const y = p1.y - dy;
   //console.log(p1, h, w, radius, angle, dx, dy, x, y);
 
