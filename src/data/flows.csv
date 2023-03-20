@@ -53,6 +53,7 @@ Cold;478;331;Pelinore;499;331;1.00;21.00;uniE;;;21;Mystara Flow;yes;no
 Cold;478;331;Steam;484;296;1.08;35.51;uniE;;;33;Other;yes;no
 Color;83;211;Rain;113;216;1.00;30.41;predominantW;;;;Other;no;yes
 Count;528;338;Gladius;565;361;1.19;43.57;predominantE;;47;26;Mystara Flow;yes;no
+Count;528;338;Io;535;387;2.61;49.50;predominantW;;13;25;Arcane Outer Flow;yes;yes
 Cracked;460;305;Cold;478;331;1.37;31.62;uniE;;;23;Other;yes;no
 Cracked;460;305;Mystara;462;322;1.00;17.12;erratic;;;;Other;no;yes
 Cracked;460;305;Spindle;462;284;3.01;21.10;uniW;;7;;Other;yes;no
@@ -192,6 +193,7 @@ Nether;230;216;Mirror;247;220;0.97;17.46;regular;;18;18;Other;yes;no
 Never;275;161;Aqua;289;149;0.75;18.44;regular;;;;Other;yes;yes
 Nex;141;286;Path;155;279;1.20;15.65;predominantE;;15;11;Pirtel Flow;yes;no
 Nile;518;292;Inca;554;282;0.60;37.36;regular;;;;Other;yes;yes
+Nile;518;292;Count;528;338;1.60;47.07;predominantW;;16;26;Arcane Outer Flow;yes;yes
 Nith;258;175;Casa;274;205;1.00;34.00;uniW;;;;Other;no;yes
 Nivel;355;289;Arth;364;301;1.00;15.00;regular;;;;Other;yes;yes
 Noamuth;349;400;Kaldric;370;398;0.78;21.10;regular;;27;27;Hammer Flow;yes;no
@@ -261,13 +263,13 @@ Scale;483;219;Malhavok;499;219;0.60;16.00;regular;;;;Other;yes;yes
 Scarred;445;296;Cracked;460;305;4.37;17.49;uniW;;4;;Other;yes;no
 Scarred;445;296;Spindle;462;284;1.73;20.81;uniE;;;12;Pillar Flow;yes;no
 Sea;17;325;Konek;23;252;1.00;73.25;erratic;;;;Other;no;yes
-Seelie I;479;360;Seelie II;481;361;0.75;2.24;regular;;;;Other;yes;yes
-Seelie I;479;360;Seelie VI;485;359;0.75;6.08;regular;;;;Other;yes;yes
-Seelie II;481;361;Seelie III;486;363;0.75;5.39;regular;;;;Other;yes;yes
-Seelie II;481;361;Seelie V;482;356;0.60;5.10;off flow;;;;Other;no;yes
+Seelie I;476;360;Seelie II;481;362;0.75;5.39;regular;;;;Other;yes;yes
+Seelie I;476;360;Seelie VI;485;359;0.75;9.06;regular;;;;Other;yes;yes
+Seelie II;481;362;Seelie III;486;363;0.75;5.10;regular;;;;Other;yes;yes
+Seelie II;481;362;Seelie V;484;353;0.60;9.49;off flow;;;;Other;no;yes
 Seelie III;486;363;Sand;522;376;0.75;38.28;regular;;;;Other;yes;yes
-Seelie IV;471;364;Seelie I;479;360;0.75;8.94;regular;;;;Other;yes;yes
-Seelie V;482;356;Seelie VII;484;378;0.60;22.09;off flow;;;;Other;no;yes
+Seelie IV;471;364;Seelie I;476;360;0.75;6.40;regular;;;;Other;yes;yes
+Seelie V;484;353;Seelie VII;484;378;0.60;25.00;off flow;;;;Other;no;yes
 Seelie VI;485;359;Count;528;338;0.75;47.85;regular;;;;Other;yes;yes
 Seldar;281;344;Celenares;296;360;1.25;21.93;predominantE;;23;12;Eadhel Flow;yes;no
 Seldar;281;344;Twin;312;345;1.32;31.02;predominantE;;29;18;Mystara Flow;yes;no

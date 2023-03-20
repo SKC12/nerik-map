@@ -73,7 +73,7 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
   const translate = getTranslate(data);
 
   const textStyle = {
-    fontSize: "0.75px",
+    fontSize: "0.5px",
     height: "10px",
   };
 
@@ -86,7 +86,10 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
         markerEnd={markerEnd}
         style={edgeStyle}
       />
-      <text style={{ transform: `translate${translate.west}` }}>
+      <text
+        className="SPHERE__edge-text"
+        style={{ transform: `translate${translate.west}` }}
+      >
         <textPath
           href={`#${id}`}
           style={textStyle}
@@ -97,7 +100,10 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
           {travelTime.west}
         </textPath>
       </text>
-      <text style={{ transform: `translate${translate.west}` }}>
+      <text
+        className="SPHERE__edge-text"
+        style={{ transform: `translate${translate.west}` }}
+      >
         <textPath
           href={`#${id}`}
           style={textStyle}
@@ -109,7 +115,10 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
         </textPath>
       </text>
 
-      <text style={{ transform: `translate${translate.east}` }}>
+      <text
+        className="SPHERE__edge-text"
+        style={{ transform: `translate${translate.east}` }}
+      >
         <textPath
           href={`#${id}`}
           style={textStyle}

@@ -17,4 +17,9 @@
 
 .SPHERE__name{
     white-space: nowrap;
+    color: rgb(48, 48, 51);
+}
+
+.SPHERE__edge-text{
+    fill: rgb(35, 35, 43);
 }
