@@ -22,10 +22,11 @@ export function SphereNode({ selected, data }) {
   };
 
   let nameTranslateStyle = {
-    transform: `translate(${width},0)`,
+    transform: `translate(${width},-0.2px)`,
     position: "absolute",
     left: "0px",
-    top: "-1px",
+    bottom: "0px",
+    fontSize: "0.5px",
   };
 
   return (

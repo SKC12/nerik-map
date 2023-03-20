@@ -73,7 +73,7 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
   const translate = getTranslate(data);
 
   const textStyle = {
-    fontSize: "1px",
+    fontSize: "0.75px",
     height: "10px",
   };
 
