@@ -3,11 +3,12 @@
     align-content: center;
     border-radius: 50%;
     border-width: 1px;
-    /* background-color: white; */
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
+    background-size: 102%;
+    background-position: center;
 }
 
 .SPHERE__node-selected{  

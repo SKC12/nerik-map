@@ -21,6 +21,13 @@ export function SphereNode({ selected, data }) {
     fontSize: fontSize,
   };
 
+  let nameTranslateStyle = {
+    transform: `translate(${width},0)`,
+    position: "absolute",
+    left: "0px",
+    top: "-1px",
+  };
+
   return (
     <>
       <Handle type="target" position={Position.Left} />
@@ -28,7 +35,12 @@ export function SphereNode({ selected, data }) {
         className={`SPHERE__node ${selected ? "SPHERE__node-selected" : ""}`}
         style={style}
       >
-        <div className="SPHERE__name">{data.shortName}</div>
+        <div
+          style={data.sphereRadius <= 2000 ? nameTranslateStyle : {}}
+          className="SPHERE__name"
+        >
+          {data.shortName}
+        </div>
       </div>
       <Handle type="source" position={Position.Right} />
     </>
