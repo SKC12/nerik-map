@@ -1,13 +1,31 @@
 .LEFTSB {
     height: 100vh;
     min-width: 350px;
-    max-width: 335px;
+    /* max-width: 335px; */
     background-color: rgb(57, 57, 73);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: rgb(184, 184, 196);
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.RIGHTSB {
+    height: 100vh;
+    min-width: 350px;
+    /* max-width: 335px; */
+    background-color: rgb(57, 57, 73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(184, 184, 196);
+    flex-grow: 1;
+    flex-basis: 0;
+
+
 }
 
 .LEFTSB__header{
@@ -15,6 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: calc(100% - 40px);
 }
 
 .LEFTSB__logo{
@@ -24,35 +43,76 @@
 .LEFTSB__tabs-container{
     display: flex;
     height: 40px;
+    
 }
 
 .LEFTSB__tab{
     padding: 10px;
-    width: 70px;
+    min-width: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 .LEFTSB_selected-tab{
     background-color: rgb(69, 72, 90);
-    width: 80px;
+    padding: 10px;
+    min-width: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     cursor: default;
+    flex-grow: 1;
+    flex-basis: 0;
+
 }
 
-.LEFTSB__inner-container{
+.LEFTSB__inner-container, .RIGHTSB__inner-container{
     width: calc(100% - 40px);
     height: calc(100% - 40px);
     background-color: rgb(69, 72, 90);
-    border-radius: 10px;
     padding: 10px;
+    
 }
+
+.LEFTSB__inner-container{
+    margin-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+}
+.RIGHTSB__inner-container {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.RIGHTSB__legend {
+    height: 600px;
+}
+
+.RIGHTSB__legend-flow-container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.RIGHTSB__legend-flow-name{
+    font-size: 14px;
+    margin: 8px;
+}
+
+.RIGHTSB__legend-flow-img{
+    height: 14px;
+    width: 50px;
+}
+
 
 .LEFTSB__data{
     font-size: 14px;
@@ -77,4 +137,8 @@
     color: rgb(184, 184, 196);
     word-break: break-all;
 
+}
+
+.LEFTSB__option-container{
+    padding: 4px;
 }

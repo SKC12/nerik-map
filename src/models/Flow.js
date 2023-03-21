@@ -147,6 +147,7 @@ function getStyle(flow, scale) {
         strokeWidth: scale * (flow.speed / speedRatio),
       };
   }
+  if (flow.isKnown === "no") style.opacity = "50%";
   style.stroke = color;
   return style;
 }

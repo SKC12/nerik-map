@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../style/LeftSideBar.css";
+import "../style/SideBar.css";
 
 function LeftSideBar(props) {
   const [isAnimated, setIsAnimated] = props.animationState;
@@ -60,15 +60,6 @@ function LeftSideBar(props) {
             Data
           </div>
           <div
-            id="editTab"
-            onClick={handleTabClick}
-            className={`${
-              selectedTab === "editTab" ? "LEFTSB_selected-tab" : "LEFTSB__tab"
-            }`}
-          >
-            Edit
-          </div>
-          <div
             id="optionsTab"
             onClick={handleTabClick}
             className={`${
@@ -95,7 +86,9 @@ function LeftSideBar(props) {
           <div className="LEFTSB__data-container">
             <label className="LEFTSB__data-label">Name:</label>
             <p className="LEFTSB__data">{selectedData.sphere}</p>
-            <label className="LEFTSB__data-label">Sphere Radius:</label>
+            <label className="LEFTSB__data-label">
+              Sphere Radius (Million Miles):
+            </label>
             <p className="LEFTSB__data">{selectedData.sphereRadius}</p>
             <label className="LEFTSB__data-label">Region:</label>
             <p className="LEFTSB__data">{selectedData.region}</p>
@@ -122,8 +115,8 @@ function LeftSideBar(props) {
             </a>
           </div>
         ) : null}
-        {selectedTab === "editTab" ? (
-          <div className="LEFTSB__data-container">
+        {selectedTab === "optionsTab" ? (
+          <div>
             <h3>Settings:</h3>
             <div className="LEFTSB__option-container">
               <input
@@ -135,11 +128,6 @@ function LeftSideBar(props) {
               ></input>
               <label>Draggable Spheres</label>
             </div>
-          </div>
-        ) : null}
-        {selectedTab === "optionsTab" ? (
-          <div>
-            <h3>Settings:</h3>
             <div className="LEFTSB__option-container">
               <input
                 type="checkbox"

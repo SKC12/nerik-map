@@ -2,6 +2,7 @@ import "./style/Main.css";
 import LeftSideBar from "./Components/LeftSideBar";
 import SphereMap from "./Components/SphereMap";
 import { useEffect, useRef, useState } from "react";
+import RightSideBar from "./Components/RightSideBar";
 
 function App() {
   let bgRatio = 1.421;
@@ -49,6 +50,7 @@ function App() {
           draggable={draggable}
           hideUnknownPaths={hideUnknownPaths}
         ></SphereMap>
+        <RightSideBar />
       </div>
     </div>
   );
