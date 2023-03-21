@@ -17,6 +17,7 @@ export function BgNode({ data }) {
       <div
         style={{
           backgroundImage: `url(${phlogiston})`,
+          backgroundSize: "cover",
         }}
       >
         <div style={style}></div>

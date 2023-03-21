@@ -9,7 +9,7 @@ import "../style/Sphere.css";
 
 import { getEdgeParams } from "./utils.js";
 
-function getTranslate(data) {
+function getTranslate(data, scale) {
   let yCoordW = parseInt(data.yCoordW);
   let yCoordE = parseInt(data.yCoordE);
   let xCoordW = parseInt(data.xCoordW);
@@ -17,15 +17,25 @@ function getTranslate(data) {
 
   //console.log(data, yCoordW < yCoordE);
   if (Math.abs(xCoordW - xCoordE) / Math.abs(yCoordW - yCoordE) >= 0.75) {
-    return { west: "(-0.5px,-0.5px)", east: "(0.5px,0.5px)" };
+    return {
+      west: `(-${0.5 * scale}px,-${0.5 * scale}px)`,
+      east: `(${0.5 * scale}px,${0.5 * scale}px)`,
+    };
   } else if (yCoordW < yCoordE) {
-    return { west: "(0.5px,-0.5px)", east: "(-0.5px,0.5px)" };
+    return {
+      west: `(${0.5 * scale}px,-${0.5 * scale}px)`,
+      east: `(-${0.5 * scale}px,${0.5 * scale}px)`,
+    };
   } else {
-    return { west: "(-0.5px,0.5px)", east: "(0.5px,-0.5px)" };
+    return {
+      west: `(-${0.5 * scale}px,${0.5 * scale}px)`,
+      east: `(${0.5 * scale}px,-${0.5 * scale}px)`,
+    };
   }
 }
 
 function FloatingEdge({ id, source, target, markerEnd, style, data }) {
+  const scale = data.scale;
   const sourceNode = useStore(
     useCallback((store) => store.nodeInternals.get(source), [source])
   );
@@ -70,11 +80,11 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
     targetY: ty,
   });
 
-  const translate = getTranslate(data);
+  const translate = getTranslate(data, scale);
 
   const textStyle = {
-    fontSize: "0.5px",
-    height: "10px",
+    fontSize: `${0.5 * scale}px`,
+    height: `${10 * scale}px`,
   };
 
   return (

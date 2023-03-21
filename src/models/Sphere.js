@@ -16,10 +16,10 @@ export class Sphere {
           type: "sphereNode",
           // 11 is the offset from the original map
           position: {
-            x: spheres[i].xCoord * scale - 11,
-            y: spheres[i].yCoord * scale - 11,
+            x: (spheres[i].xCoord - 11) * scale,
+            y: (spheres[i].yCoord - 11) * scale,
           },
-          data: spheres[i],
+          data: { ...spheres[i], scale: scale },
         });
       }
     }

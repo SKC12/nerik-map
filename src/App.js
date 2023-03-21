@@ -11,6 +11,7 @@ function App() {
     width: 0,
     height: 0,
   });
+  console.log(containerDimensions);
 
   const [animated, setAnimated] = useState(false);
   const [projectedTime, setProjectedTime] = useState(false);

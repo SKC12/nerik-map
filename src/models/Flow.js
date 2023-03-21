@@ -1,6 +1,6 @@
 let speedRatio = 4;
 
-function getStyle(flow) {
+function getStyle(flow, scale) {
   let style = {};
   let color = "";
   switch (flow.flowRiver) {
@@ -83,62 +83,66 @@ function getStyle(flow) {
   switch (flow.type) {
     case "regular":
       style = {
-        strokeWidth: flow.speed / speedRatio,
-        strokeDasharray: "0.3",
+        strokeWidth: scale * (flow.speed / speedRatio),
+        strokeDasharray: `${0.5 * scale}`,
       };
       break;
     case "predominantW":
       style = {
-        strokeWidth: flow.speed / speedRatio,
-        strokeDasharray: "0.6",
+        strokeWidth: scale * (flow.speed / speedRatio),
+        strokeDasharray: `${1 * scale}`,
         animation: `dash 100s linear 0s infinite`,
       };
       break;
     case "predominantE":
       style = {
-        strokeWidth: flow.speed / speedRatio,
-        strokeDasharray: "0.6",
+        strokeWidth: scale * (flow.speed / speedRatio),
+        strokeDasharray: `${1 * scale}`,
         animation: `dash 100s linear 0s infinite reverse`,
       };
       break;
     case "uniW":
       style = {
-        strokeWidth: flow.speed / speedRatio,
-        strokeDasharray: "2 2",
+        strokeWidth: scale * (flow.speed / speedRatio),
+        strokeDasharray: `${2 * scale} ${2 * scale}`,
         animation: `dash 20s linear 0s infinite`,
       };
       break;
     case "uniE":
       style = {
-        strokeWidth: flow.speed / speedRatio,
-        strokeDasharray: "2 2",
+        strokeWidth: scale * (flow.speed / speedRatio),
+        strokeDasharray: `${2 * scale} ${2 * scale}`,
         animation: `dash 20s linear 0s infinite reverse`,
       };
       break;
     case "off flow":
       style = {
-        strokeDasharray: "0.2 1 0.2 1",
+        strokeDasharray: `${0.2 * scale} ${1 * scale} ${0.2 * scale} ${
+          1 * scale
+        }`,
 
-        strokeWidth: 0.1,
+        strokeWidth: 0.1 * scale,
       };
       break;
     case "erratic":
       style = {
-        strokeWidth: flow.speed / speedRatio,
-        strokeDasharray: "2 2 1 1 1 2",
+        strokeWidth: scale * (flow.speed / speedRatio),
+        strokeDasharray: `${2 * scale} ${2 * scale} ${1 * scale} ${1 * scale} ${
+          1 * scale
+        } ${2 * scale}`,
         // animation: `flicker 5s linear 0s infinite alternate`,
       };
       break;
     case "tide":
       style = {
-        strokeWidth: flow.speed / speedRatio,
+        strokeWidth: scale * (flow.speed / speedRatio),
         strokeDasharray: "2 2 1 2",
         // animation: `flicker 5s linear 0s infinite alternate`,
       };
       break;
     default:
       style = {
-        strokeWidth: flow.speed / speedRatio,
+        strokeWidth: scale * (flow.speed / speedRatio),
       };
   }
   style.stroke = color;
@@ -152,11 +156,11 @@ export class Flow {
     }
   }
 
-  static getEges(flows) {
+  static getEges(flows, scale = 1) {
     //console.log(flows);
     let edges = [];
     for (let i = 0; i < flows.length; i++) {
-      let style = getStyle(flows[i]);
+      let style = getStyle(flows[i], scale);
       //console.log(flows[i].speed);
       edges.push({
         id: flows[i].sphereW + " to " + flows[i].sphereE,
@@ -164,7 +168,7 @@ export class Flow {
         target: flows[i].sphereE,
         type: "floating",
         style: style,
-        data: flows[i],
+        data: { ...flows[i], scale: scale },
       });
     }
     return edges;

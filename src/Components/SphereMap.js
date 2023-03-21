@@ -20,8 +20,10 @@ import { Flow } from "../models/Flow";
 import FloatingEdge from "./FloatingEdge.js";
 import FloatingConnectionLine from "./FloatingConnectionLine.js";
 
-let baseMapHeight = 399;
-let baseMapWidth = 567;
+const scale = 5;
+
+let baseMapHeight = 399 * scale;
+let baseMapWidth = 567 * scale;
 
 const nodeTypes = { sphereNode: SphereNode, bgNode: BgNode };
 const edgeTypes = {
@@ -58,14 +60,12 @@ function SphereMap(props) {
   );
 
   useEffect(() => {
-    //console.log(animated);
     setEdges((edgs) =>
       edgs.map((edg) => {
         edg.data = { ...edg.data, animation: animated };
         return edg;
       })
     );
-    //console.log(edges);
   }, [animated]);
 
   useEffect(() => {
@@ -75,7 +75,6 @@ function SphereMap(props) {
         return edg;
       })
     );
-    //console.log(edges);
   }, [projectedTime]);
 
   useEffect(() => {
@@ -87,7 +86,6 @@ function SphereMap(props) {
         return edg;
       })
     );
-    //console.log(edges);
   }, [hideUnknownPaths]);
 
   useEffect(() => {
@@ -112,14 +110,14 @@ function SphereMap(props) {
         zIndex: -1,
       };
 
-      let testSphere = {
-        sphere: "test",
-        shortName: "test",
-        sphereRadius: "1",
-        xCoord: 0 + 11,
-        yCoord: 0 + 11,
-        "onMap?": "Yes",
-      };
+      // let testSphere = {
+      //   sphere: "test",
+      //   shortName: "test",
+      //   sphereRadius: "1",
+      //   xCoord: 0 + 11,
+      //   yCoord: 0 + 11,
+      //   "onMap?": "Yes",
+      // };
 
       // let testSphere3 = {
       //   sphere: "test3",
@@ -130,14 +128,14 @@ function SphereMap(props) {
       //   "onMap?": "Yes",
       // };
 
-      let testSphere2 = {
-        sphere: "test2",
-        shortName: "test2",
-        sphereRadius: 100000,
-        xCoord: 580,
-        yCoord: 410,
-        "onMap?": "Yes",
-      };
+      // let testSphere2 = {
+      //   sphere: "test2",
+      //   shortName: "test2",
+      //   sphereRadius: 10000,
+      //   xCoord: 580 * scale,
+      //   yCoord: 410 * scale,
+      //   "onMap?": "Yes",
+      // };
       //sphereArray.push(testSphere);
       //sphereArray.push(testSphere2);
       //sphereArray.push(testSphere3);
@@ -145,8 +143,8 @@ function SphereMap(props) {
       //console.log("SPHERES", sphereArray);
       //console.log("FLOWS", flowsArray);
 
-      setNodes(Sphere.getNodes(sphereArray).concat(bgSphere));
-      setEdges(Flow.getEges(flowsArray));
+      setNodes(Sphere.getNodes(sphereArray, scale).concat(bgSphere));
+      setEdges(Flow.getEges(flowsArray, scale));
     }
     loadSpheres(sphereData);
   }, []);
@@ -170,7 +168,7 @@ function SphereMap(props) {
         maxZoom={30}
         translateExtent={[
           [0, 0],
-          [567, 399],
+          [567 * scale, 399 * scale],
         ]}
         nodesDraggable={draggable}
       >
