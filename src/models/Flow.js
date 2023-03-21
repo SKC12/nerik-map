@@ -1,4 +1,4 @@
-let speedRatio = 4;
+let speedRatio = 5;
 
 function getStyle(flow, scale) {
   let style = {};
@@ -127,16 +127,18 @@ function getStyle(flow, scale) {
     case "erratic":
       style = {
         strokeWidth: scale * (flow.speed / speedRatio),
-        strokeDasharray: `${2 * scale} ${2 * scale} ${1 * scale} ${1 * scale} ${
-          1 * scale
-        } ${2 * scale}`,
+        strokeDasharray: `${1 * scale} ${1 * scale} ${0.5 * scale} ${
+          0.5 * scale
+        } ${0.5 * scale} ${1 * scale}`,
         // animation: `flicker 5s linear 0s infinite alternate`,
       };
       break;
     case "tide":
       style = {
         strokeWidth: scale * (flow.speed / speedRatio),
-        strokeDasharray: "2 2 1 2",
+        strokeDasharray: `${1 * scale} ${1 * scale} ${0.5 * scale} ${
+          1 * scale
+        }`,
         // animation: `flicker 5s linear 0s infinite alternate`,
       };
       break;

@@ -17,7 +17,12 @@
 
 .SPHERE__name{
     white-space: nowrap;
-    color: rgb(48, 48, 51);
+    color: rgb(84, 84, 104);
+}
+
+.SPHERE__name-translated{
+    /* -webkit-text-stroke: 0.1px black; */
+    
 }
 
 .SPHERE__edge-text{

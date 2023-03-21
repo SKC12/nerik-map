@@ -168,7 +168,7 @@ function LeftSideBar(props) {
                 checked={hideUnkownPaths}
                 onChange={unknownPathsChange}
               ></input>
-              <label>Hide unknown flow river</label>
+              <label>Hide unknown flow rivers</label>
             </div>
           </div>
         ) : null}
