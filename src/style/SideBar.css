@@ -102,15 +102,29 @@
     justify-content: start;
 }
 
+.RIGHTSB__legend-flowRiver-container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 50%;
+    gap: 6px
+}
+.RIGHTSB__legend-florRivers-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 .RIGHTSB__legend-flow-name{
-    font-size: 14px;
+    font-size: 12px;
     margin: 8px;
+    margin: 6px;
 }
 
 .RIGHTSB__legend-flow-img{
-    height: 14px;
+    height: 4px;
     width: 50px;
+    flex-shrink: 0;
 }
 
 

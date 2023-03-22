@@ -12,7 +12,10 @@ function App() {
     width: 0,
     height: 0,
   });
-  console.log(containerDimensions);
+  //console.log(containerDimensions);
+
+  const [nodes, setNodes] = useState([]);
+  const [edges, setEdges] = useState([]);
 
   const [animated, setAnimated] = useState(false);
   const [projectedTime, setProjectedTime] = useState(false);
@@ -49,8 +52,10 @@ function App() {
           setSelectedNode={setSelectedNode}
           draggable={draggable}
           hideUnknownPaths={hideUnknownPaths}
+          nodeState={[nodes, setNodes]}
+          edgeState={[edges, setEdges]}
         ></SphereMap>
-        <RightSideBar />
+        <RightSideBar edges={edges} />
       </div>
     </div>
   );

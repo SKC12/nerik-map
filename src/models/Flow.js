@@ -78,7 +78,7 @@ function getStyle(flow, scale) {
       break;
 
     default:
-      color = "grey";
+      color = "#575757";
   }
   switch (flow.type) {
     case "regular":

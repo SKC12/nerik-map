@@ -37,8 +37,8 @@ function SphereMap(props) {
   const projectedTime = props.projectedTime;
   const draggable = props.draggable;
   const hideUnknownPaths = props.hideUnknownPaths;
-  const [nodes, setNodes] = useState([]);
-  const [edges, setEdges] = useState([]);
+  const [nodes, setNodes] = props.nodeState;
+  const [edges, setEdges] = props.edgeState;
   const [spheres, setSpheres] = useState([]);
   const [flows, setFlows] = useState([]);
   const [loadingSphere, setLoadingSphere] = useState(true);
