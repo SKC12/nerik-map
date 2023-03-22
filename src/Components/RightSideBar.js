@@ -9,7 +9,10 @@ function RightSideBar(props) {
         flowRivers.push(edge.data.flowRiver);
 
         return (
-          <div className="RIGHTSB__legend-flowRiver-container">
+          <div
+            key={edge.data.flowRiver}
+            className="RIGHTSB__legend-flowRiver-container"
+          >
             <svg
               className="RIGHTSB__legend-flow-img"
               style={{
