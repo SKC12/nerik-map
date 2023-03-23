@@ -41,6 +41,8 @@ function App() {
           animationState={[animated, setAnimated]}
           projectedTimeState={[projectedTime, setProjectedTime]}
           selectedNode={selectedNode}
+          edges={edges}
+          nodes={nodes}
           dragState={[draggable, setDraggable]}
           unknownPathsState={[hideUnknownPaths, setHideUnknownPaths]}
         />

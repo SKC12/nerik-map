@@ -1,13 +1,17 @@
 import { useState } from "react";
 import "../style/SideBar.css";
+import { getConnectedEdges, getIncomers, getOutgoers } from "reactflow";
 
 function LeftSideBar(props) {
   const [isAnimated, setIsAnimated] = props.animationState;
   const [projectedTime, setProjectedTime] = props.projectedTimeState;
-  const [selectedTab, setSelectedTab] = useState("dataTab");
+  const [selectedTab, setSelectedTab] = useState("sphereTab");
   const selectedNode = props.selectedNode;
   const [draggable, setDraggable] = props.dragState;
   const [hideUnkownPaths, setHideUnknownPaths] = props.unknownPathsState;
+
+  const nodes = props.nodes;
+  const edges = props.edges;
 
   const selectedData = selectedNode
     ? selectedNode.data
@@ -24,6 +28,93 @@ function LeftSideBar(props) {
         creator: "",
         website: "",
       };
+
+  // if (selectedNode) {
+  //   console.log(selectedNode, getConnectedEdges([selectedNode], edges));
+  //   console.log(selectedNode, getIncomers(selectedNode, nodes, edges));
+  //   console.log(selectedNode, getOutgoers(selectedNode, nodes, edges));
+  // }
+
+  const getFlowsJSX = (node) => {
+    let connectedEdges = getConnectedEdges([node], edges).map((edge) => {
+      if (!hideUnkownPaths || edge.data.isKnown === "yes") {
+        if (edge.source !== node.id && edge.data.type !== "uniW") {
+          return (
+            <>
+              <div key={edge.id} className="LEFTSB__flow-container">
+                <div className="LEFTSB__flow-item-container">
+                  <label className="LEFTSB__flow-main-label">
+                    &#8226; {edge.source}
+                  </label>
+                </div>
+                <div className="LEFTSB__flow-item-container">
+                  <label className="LEFTSB__flow-label">Flow River:</label>
+
+                  <p className="LEFTSB__flow-data">{edge.data.flowRiver}</p>
+                </div>
+                <div className="LEFTSB__flow-item-container">
+                  <label className="LEFTSB__flow-label">Flow known?</label>
+
+                  <p className="LEFTSB__flow-data">{edge.data.isKnown}</p>
+                </div>
+                <div className="LEFTSB__flow-item-container">
+                  <label className="LEFTSB__flow-label">Flow speed:</label>
+
+                  <p className="LEFTSB__flow-data">{edge.data.speed}</p>
+                </div>
+                <div className="LEFTSB__flow-item-container">
+                  <label className="LEFTSB__flow-label">
+                    Time to destination:
+                  </label>
+
+                  <p className="LEFTSB__flow-data">
+                    {edge.data.timeW + " days"}
+                  </p>
+                </div>
+              </div>
+              <hr></hr>
+            </>
+          );
+        } else if (edge.source === node.id && edge.data.type !== "uniE") {
+          return (
+            <>
+              <div key={edge.id} className="LEFTSB__flow-container">
+                <div className="LEFTSB__flow-item-container">
+                  <label className="LEFTSB__flow-main-label">
+                    &#8226; {edge.target}
+                  </label>
+                </div>
+                <div className="LEFTSB__flow-item-container">
+                  <label className="LEFTSB__flow-label">Flow River:</label>
+
+                  <p className="LEFTSB__flow-data">{edge.data.flowRiver}</p>
+                </div>
+                <div className="LEFTSB__flow-item-container">
+                  <label className="LEFTSB__flow-label">Flow known?</label>
+
+                  <p className="LEFTSB__flow-data">{edge.data.isKnown}</p>
+                </div>
+                <div className="LEFTSB__flow-item-container">
+                  <label className="LEFTSB__flow-label">Flow speed:</label>
+
+                  <p className="LEFTSB__flow-data">{edge.data.speed}</p>
+                </div>
+                <div className="LEFTSB__flow-item-container">
+                  <label className="LEFTSB__flow-label">
+                    Time to destination:
+                  </label>
+                  <p className="LEFTSB__flow-data">{edge.data.timeE} days</p>
+                </div>
+              </div>
+              <hr></hr>
+            </>
+          );
+        } else return null;
+      } else return null;
+    });
+
+    return <div className="LEFTSB__flows-container">{connectedEdges}</div>;
+  };
 
   const animationChange = () => {
     setIsAnimated(!isAnimated);
@@ -51,13 +142,24 @@ function LeftSideBar(props) {
         <div className="LEFTSB__logo"></div>
         <div className="LEFTSB__tabs-container">
           <div
-            id="dataTab"
+            id="sphereTab"
             onClick={handleTabClick}
             className={`${
-              selectedTab === "dataTab" ? "LEFTSB_selected-tab" : "LEFTSB__tab"
+              selectedTab === "sphereTab"
+                ? "LEFTSB_selected-tab"
+                : "LEFTSB__tab"
             }`}
           >
-            Data
+            Sphere
+          </div>
+          <div
+            id="flowsTab"
+            onClick={handleTabClick}
+            className={`${
+              selectedTab === "flowsTab" ? "LEFTSB_selected-tab" : "LEFTSB__tab"
+            }`}
+          >
+            Flows
           </div>
           <div
             id="optionsTab"
@@ -82,7 +184,7 @@ function LeftSideBar(props) {
         </div>
       </div>
       <div className="LEFTSB__inner-container">
-        {selectedTab === "dataTab" ? (
+        {selectedTab === "sphereTab" ? (
           <div className="LEFTSB__data-container">
             <label className="LEFTSB__data-label">Name:</label>
             <p className="LEFTSB__data">{selectedData.sphere}</p>
@@ -115,6 +217,11 @@ function LeftSideBar(props) {
             </a>
           </div>
         ) : null}
+        {selectedTab === "flowsTab"
+          ? selectedNode
+            ? getFlowsJSX(selectedNode)
+            : null
+          : null}
         {selectedTab === "optionsTab" ? (
           <div>
             <h3>Settings:</h3>

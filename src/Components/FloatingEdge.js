@@ -53,12 +53,12 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
   let travelTime = { west: "", east: "" };
   data.timeE
     ? (travelTime.east = `-> ${data.timeE}`)
-    : data.projectedTime && !data.type.includes("uni")
+    : data.projectedTime && !data.type.includes("uniW")
     ? (travelTime.east = "-> " + Math.floor(data.dist / data.speed))
     : (travelTime.east = "");
   data.timeW
     ? (travelTime.west = `<- ${data.timeW}`)
-    : data.projectedTime && !data.type.includes("uni")
+    : data.projectedTime && !data.type.includes("uniE")
     ? (travelTime.west = "<- " + Math.floor(data.dist / data.speed))
     : (travelTime.west = "");
 

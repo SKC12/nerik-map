@@ -84,9 +84,38 @@
     margin-bottom: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    overflow: scroll;
 
 
 }
+
+.LEFTSB__flow-item-container{
+    display: flex;
+    gap: 4px;
+}
+
+.LEFTSB__flow-label{
+    margin: 2px;
+    font-weight: bold;
+    font-size: 14px
+    
+
+}
+.LEFTSB__flow-main-label{
+    font-size: 16px;
+    margin: 6px;
+    font-weight: bold;
+    margin-left: 10px;    
+
+}
+
+.LEFTSB__flow-data{
+    margin: 2px;
+    text-transform: capitalize;
+    font-size: 14px;
+
+}
+
 .RIGHTSB__inner-container {
     margin-top: 20px;
     border-radius: 10px;
