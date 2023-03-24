@@ -85,10 +85,31 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow: scroll;
+    position: relative;
 
 
 }
 
+.LEFTSB__icon-container{
+    color: rgb(57, 57, 73);
+    background-color: rgb(145, 145, 153);
+    position: absolute;
+    padding: 2px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 8px;
+    top: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.LEFTSB__icon{
+    width: 20px;
+    height: 20px;
+    
+    
+}
 .LEFTSB__flow-item-container{
     display: flex;
     gap: 4px;
@@ -163,12 +184,36 @@
     margin: 6px;
     word-break: normal;
     min-height: 18px;
+    font-family: inherit;
+    padding: 0;   
+    height: fit-content;
+}
+
+.MuiInputBase-root{
+    padding: 0 !important;
 
 }
 
+.LEFTSB__data:disabled{
+    font-size: 14px;
+    padding-left: 10px;
+    word-break: normal;
+    min-height: 18px;
+    background-color: inherit;
+    border: 0;
+    color: rgb(184, 184, 196);;  
+    padding: 0;  
+    border: 0px;
+ }
+
+
+
+
 .LEFTSB__data-label{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 2px;
 
 }
 .LEFTSB__data-container{

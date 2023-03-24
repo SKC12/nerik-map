@@ -3,15 +3,16 @@ import "../style/SideBar.css";
 import LeftSBFlows from "./LeftSBFlows";
 import LeftSBSphere from "./LeftSBSphere";
 import LeftSBOptions from "./LeftSBOptions";
-
 function LeftSideBar(props) {
   const [selectedTab, setSelectedTab] = useState("sphereTab");
-  const selectedNode = props.selectedNode;
+  const [selectedNode, setSelectedNode] = [
+    props.selectedNode,
+    props.setSelectedNode,
+  ];
   const [hideUnkownPaths] = props.unknownPathsState;
+  const setNodes = props.setNodes;
 
   const edges = props.edges;
-
-  const selectedData = selectedNode ? selectedNode.data : null;
 
   const handleTabClick = (e) => {
     setSelectedTab(e.target.id);
@@ -66,7 +67,11 @@ function LeftSideBar(props) {
       </div>
       <div className="LEFTSB__inner-container">
         {selectedTab === "sphereTab" ? (
-          <LeftSBSphere selectedData={selectedData} />
+          <LeftSBSphere
+            selectedNode={selectedNode}
+            setSelectedNode={setSelectedNode}
+            setNodes={setNodes}
+          />
         ) : null}
         {selectedTab === "flowsTab" ? (
           <LeftSBFlows

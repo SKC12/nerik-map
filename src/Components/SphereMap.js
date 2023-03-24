@@ -2,11 +2,13 @@ import ReactFlow, {
   Controls,
   applyNodeChanges,
   applyEdgeChanges,
+  useNodesState,
+  useEdgesState,
 } from "reactflow";
 import "reactflow/dist/style.css";
 import "../style/SphereMap.css";
 import { loadCSVSpheres, loadCSVFlows } from "../data-loader";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 //import sphereData from "../data/radiant-triangle.csv";
 import sphereData from "../data/spheres.csv";
 
@@ -19,6 +21,8 @@ import { Sphere } from "../models/Sphere";
 import { Flow } from "../models/Flow";
 import FloatingEdge from "./FloatingEdge.js";
 import FloatingConnectionLine from "./FloatingConnectionLine.js";
+import LeftSideBar from "./LeftSideBar";
+import RightSideBar from "./RightSideBar";
 
 const scale = 5;
 
@@ -33,31 +37,31 @@ const edgeTypes = {
 function SphereMap(props) {
   const canvasWidth = props.width;
   const canvasHeight = props.height;
-  const animated = props.animated;
-  const projectedTime = props.projectedTime;
-  const draggable = props.draggable;
-  const hideUnknownPaths = props.hideUnknownPaths;
-  const [nodes, setNodes] = props.nodeState;
-  const [edges, setEdges] = props.edgeState;
+  const [animated, setAnimated] = useState(false);
+  const [projectedTime, setProjectedTime] = useState(false);
+  const [hideUnknownPaths, setHideUnknownPaths] = useState(false);
+  const [draggable, setDraggable] = useState(false);
+  const [selectedNode, setSelectedNode] = useState(null);
+  const [nodes, setNodes, onNodesChange] = useNodesState([]);
+  const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [spheres, setSpheres] = useState([]);
   const [flows, setFlows] = useState([]);
   const [loadingSphere, setLoadingSphere] = useState(true);
 
-  const selectedNode = nodes.filter((nd) => nd.selected === true)[0];
-  const setSelectedNode = props.setSelectedNode;
+  const selectNode = nodes.filter((nd) => nd.selected === true)[0];
 
   useEffect(() => {
-    setSelectedNode(selectedNode);
-  }, [selectedNode, setSelectedNode]);
+    setSelectedNode(selectNode);
+  }, [selectNode, setSelectedNode]);
 
-  const onNodesChange = useCallback(
-    (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
-    []
-  );
-  const onEdgesChange = useCallback(
-    (changes) => setEdges((eds) => applyEdgeChanges(changes, eds)),
-    []
-  );
+  // const onNodesChange = useCallback(
+  //   (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
+  //   [setNodes]
+  // );
+  // const onEdgesChange = useCallback(
+  //   (changes) => setEdges((eds) => applyEdgeChanges(changes, eds)),
+  //   [setEdges]
+  // );
 
   useEffect(() => {
     setEdges((edgs) =>
@@ -66,7 +70,7 @@ function SphereMap(props) {
         return edg;
       })
     );
-  }, [animated]);
+  }, [animated, setEdges]);
 
   useEffect(() => {
     setEdges((edgs) =>
@@ -75,7 +79,7 @@ function SphereMap(props) {
         return edg;
       })
     );
-  }, [projectedTime]);
+  }, [projectedTime, setEdges]);
 
   useEffect(() => {
     setEdges((edgs) =>
@@ -86,7 +90,7 @@ function SphereMap(props) {
         return edg;
       })
     );
-  }, [hideUnknownPaths]);
+  }, [hideUnknownPaths, setEdges]);
 
   useEffect(() => {
     setLoadingSphere(true);
@@ -153,29 +157,43 @@ function SphereMap(props) {
   //console.log("EDGES", edges);
 
   return (
-    <div style={{ height: canvasHeight, width: canvasWidth }}>
-      <ReactFlow
-        nodes={nodes}
+    <>
+      <LeftSideBar
+        animationState={[animated, setAnimated]}
+        projectedTimeState={[projectedTime, setProjectedTime]}
+        selectedNode={selectedNode}
+        setSelectedNode={setSelectedNode}
         edges={edges}
-        nodeTypes={nodeTypes}
-        onNodesChange={onNodesChange}
-        onEdgesChange={onEdgesChange}
-        edgeTypes={edgeTypes}
-        connectionLineComponent={FloatingConnectionLine}
-        nodeOrigin={[0.5, 0.5]}
-        fitView={true}
-        minZoom={canvasHeight / baseMapHeight}
-        maxZoom={30}
-        translateExtent={[
-          [0, 0],
-          [567 * scale, 399 * scale],
-        ]}
-        nodesDraggable={draggable}
-      >
-        {/* <Background /> */}
-        <Controls />
-      </ReactFlow>
-    </div>
+        nodes={nodes}
+        dragState={[draggable, setDraggable]}
+        unknownPathsState={[hideUnknownPaths, setHideUnknownPaths]}
+        setNodes={setNodes}
+      />
+      <div style={{ height: canvasHeight, width: canvasWidth }}>
+        <ReactFlow
+          nodes={nodes}
+          edges={edges}
+          nodeTypes={nodeTypes}
+          onNodesChange={onNodesChange}
+          onEdgesChange={onEdgesChange}
+          edgeTypes={edgeTypes}
+          connectionLineComponent={FloatingConnectionLine}
+          nodeOrigin={[0.5, 0.5]}
+          fitView={true}
+          minZoom={canvasHeight / baseMapHeight}
+          maxZoom={30}
+          translateExtent={[
+            [0, 0],
+            [567 * scale, 399 * scale],
+          ]}
+          nodesDraggable={draggable}
+        >
+          {/* <Background /> */}
+          <Controls />
+        </ReactFlow>
+      </div>
+      <RightSideBar edges={edges} />
+    </>
   );
 }
 
