@@ -168,6 +168,7 @@ function SphereMap(props) {
         dragState={[draggable, setDraggable]}
         unknownPathsState={[hideUnknownPaths, setHideUnknownPaths]}
         setNodes={setNodes}
+        setEdges={setEdges}
       />
       <div style={{ height: canvasHeight, width: canvasWidth }}>
         <ReactFlow

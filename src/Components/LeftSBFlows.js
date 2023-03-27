@@ -25,7 +25,9 @@ const inputStyle = {
 
 const selectStyle = {
   "& .MuiInputBase-input": {
-    WebkitTextFillColor: "rgb(184, 184, 196)",
+    WebkitTextFillColor: "rgb(84, 84, 104)",
+    backgroundColor: "white",
+
     fontSize: "14px",
   },
   "& .MuiSelect-select": {
@@ -47,6 +49,7 @@ function FlowOutgoing(props) {
   const edge = props.edge;
   const [tempData, setTempData] = useState(edge.data);
   const [known, setKnown] = useState(tempData.isKnown === "yes");
+  const setEdges = props.setEdges;
 
   const handleTypeChange = (e) => {
     setTempData({ ...tempData, type: e.target.value });
@@ -62,6 +65,17 @@ function FlowOutgoing(props) {
   };
 
   const onClickSave = () => {
+    setEdges((edgs) =>
+      edgs.map((edg) => {
+        if (edg.id === edge.data.sphereW + " to " + edge.data.sphereE) {
+          console.log(edg);
+          edg.data = tempData;
+          console.log(edg);
+        }
+
+        return edg;
+      })
+    );
     setEditMode(false);
   };
   return (
@@ -193,6 +207,7 @@ function FlowIncoming(props) {
   const [editMode, setEditMode] = useState(false);
   const edge = props.edge;
   const [tempData, setTempData] = useState(edge.data);
+  const setEdges = props.setEdges;
 
   const onClickEdit = () => {
     setEditMode(!editMode);
@@ -312,14 +327,15 @@ function LeftSBFlows(props) {
   const selectedNode = props.selectedNode;
   const edges = props.edges;
   const hideUnkownPaths = props.hideUnkownPaths;
+  const setEdges = props.setEdges;
 
   const getFlowsJSX = (node) => {
     let connectedEdges = getConnectedEdges([node], edges).map((edge) => {
       if (!hideUnkownPaths || edge.data.isKnown === "yes") {
         if (edge.source !== node.id && edge.data.type !== "uniW") {
-          return <FlowIncoming edge={edge} />;
+          return <FlowIncoming edge={edge} setEdges={setEdges} />;
         } else if (edge.source === node.id && edge.data.type !== "uniE") {
-          return <FlowOutgoing edge={edge} />;
+          return <FlowOutgoing edge={edge} setEdges={setEdges} />;
         } else return null;
       } else return null;
     });

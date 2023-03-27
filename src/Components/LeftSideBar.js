@@ -11,6 +11,7 @@ function LeftSideBar(props) {
   ];
   const [hideUnkownPaths] = props.unknownPathsState;
   const setNodes = props.setNodes;
+  const setEdges = props.setEdges;
 
   const edges = props.edges;
 
@@ -78,6 +79,7 @@ function LeftSideBar(props) {
             edges={edges}
             selectedNode={selectedNode}
             hideUnkownPaths={hideUnkownPaths}
+            setEdges={setEdges}
           />
         ) : null}
         {selectedTab === "optionsTab" ? (
