@@ -7,7 +7,7 @@ import {
 } from "reactflow";
 import "../style/Sphere.css";
 
-import { getEdgeParams } from "./utils.js";
+import { getEdgeParams, getStyle } from "./utils.js";
 
 function getTranslate(data, scale) {
   let yCoordW = parseInt(data.yCoordW);
@@ -34,8 +34,10 @@ function getTranslate(data, scale) {
   }
 }
 
-function FloatingEdge({ id, source, target, markerEnd, style, data }) {
+function FloatingEdge({ id, source, target, markerEnd, data, selected }) {
   const scale = data.scale;
+  let style = getStyle(data, scale);
+
   const sourceNode = useStore(
     useCallback((store) => store.nodeInternals.get(source), [source])
   );
@@ -48,6 +50,9 @@ function FloatingEdge({ id, source, target, markerEnd, style, data }) {
   !data.animation
     ? (edgeStyle = { ...style, animation: "" })
     : (edgeStyle = style);
+
+  if (selected)
+    edgeStyle = { ...edgeStyle, filter: "drop-shadow(0px 0px 2px white)" };
 
   //Check for data.Time, if it doesn't exist, check if projectedTime is enabled
   let travelTime = { west: "", east: "" };

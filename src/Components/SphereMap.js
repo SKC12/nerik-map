@@ -148,7 +148,7 @@ function SphereMap(props) {
       //console.log("FLOWS", flowsArray);
 
       setNodes(Sphere.getNodes(sphereArray, scale).concat(bgSphere));
-      setEdges(Flow.getEges(flowsArray, scale));
+      setEdges(Flow.getEdges(flowsArray, scale));
     }
     loadSpheres(sphereData);
   }, []);
