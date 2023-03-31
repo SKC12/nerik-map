@@ -23,7 +23,7 @@ function LeftSBSphere(props) {
       backgroundColor: "white",
       fontSize: "14px",
       border: "black 1px solid",
-      borderRadius: "10px",
+      borderRadius: "4px",
       paddingLeft: "8px",
     },
   };

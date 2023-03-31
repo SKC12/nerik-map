@@ -42,6 +42,7 @@ function SphereMap(props) {
   const [hideUnknownPaths, setHideUnknownPaths] = useState(false);
   const [draggable, setDraggable] = useState(false);
   const [selectedNode, setSelectedNode] = useState(null);
+  const [selectedEdge, setSelectedEdge] = useState(null);
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [spheres, setSpheres] = useState([]);
@@ -49,10 +50,15 @@ function SphereMap(props) {
   const [loadingSphere, setLoadingSphere] = useState(true);
 
   const selectNode = nodes.filter((nd) => nd.selected === true)[0];
+  const selectEdge = edges.filter((edg) => edg.selected === true)[0];
 
   useEffect(() => {
     setSelectedNode(selectNode);
-  }, [selectNode, setSelectedNode]);
+  }, [selectNode]);
+
+  useEffect(() => {
+    setSelectedEdge(selectEdge);
+  }, [selectEdge]);
 
   // const onNodesChange = useCallback(
   //   (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
@@ -163,6 +169,8 @@ function SphereMap(props) {
         projectedTimeState={[projectedTime, setProjectedTime]}
         selectedNode={selectedNode}
         setSelectedNode={setSelectedNode}
+        selectedEdge={selectedEdge}
+        setSelectedEdge={setSelectedEdge}
         edges={edges}
         nodes={nodes}
         dragState={[draggable, setDraggable]}

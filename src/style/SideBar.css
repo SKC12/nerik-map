@@ -139,13 +139,16 @@
 
 .LEFTSB__flow-data{
     margin: 2px;
+    padding-left: 4px;
     text-transform: capitalize;
     font-size: 14px;
+    width: fit-content;
 
 }
 
 .RIGHTSB__inner-container {
     margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 
