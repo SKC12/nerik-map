@@ -240,3 +240,19 @@
 .LEFTSB__option-container{
     padding: 4px;
 }
+
+.LEFTSB__new-sphere-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 8px;
+}
+
+.LEFTSB__new-main-label{
+    font-size: 16px;
+    margin: 6px;
+    font-weight: bold;
+    margin-left: 10px;    
+
+}

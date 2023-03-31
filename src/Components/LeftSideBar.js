@@ -4,6 +4,7 @@ import LeftSBFlows from "./LeftSBFlows";
 import LeftSBSphere from "./LeftSBSphere";
 import LeftSBOptions from "./LeftSBOptions";
 import LeftSBFlow from "./LeftSBFlow";
+import LeftSBNew from "./LeftSBNew";
 function LeftSideBar(props) {
   const [selectedTab, setSelectedTab] = useState("aboutTab");
   const [selectedNode, setSelectedNode] = [
@@ -133,6 +134,7 @@ function LeftSideBar(props) {
             nodes={nodes}
           />
         ) : null}
+        {selectedTab === "newTab" ? <LeftSBNew /> : null}
         {selectedTab === "optionsTab" ? (
           <LeftSBOptions
             animationState={props.animationState}
