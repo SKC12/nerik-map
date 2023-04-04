@@ -134,7 +134,7 @@ function LeftSideBar(props) {
             nodes={nodes}
           />
         ) : null}
-        {selectedTab === "newTab" ? <LeftSBNew /> : null}
+        {selectedTab === "newTab" ? <LeftSBNew nodes={nodes} /> : null}
         {selectedTab === "optionsTab" ? (
           <LeftSBOptions
             animationState={props.animationState}

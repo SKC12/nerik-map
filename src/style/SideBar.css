@@ -256,3 +256,24 @@
     margin-left: 10px;    
 
 }
+
+.LEFTSB__new-flow-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.LEFTSB__new-flow-inner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+}
+
+.LEFTSB__new-button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}

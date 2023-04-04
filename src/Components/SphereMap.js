@@ -8,7 +8,7 @@ import ReactFlow, {
 import "reactflow/dist/style.css";
 import "../style/SphereMap.css";
 import { loadCSVSpheres, loadCSVFlows } from "../data-loader";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 //import sphereData from "../data/radiant-triangle.csv";
 import sphereData from "../data/spheres.csv";
 
@@ -49,6 +49,9 @@ function SphereMap(props) {
   const [flows, setFlows] = useState([]);
   const [loadingSphere, setLoadingSphere] = useState(true);
 
+  const reactFlowRef = useRef(null);
+  const [reactFlowInstance, setReactFlowInstance] = useState(null);
+
   const selectNode = nodes.filter((nd) => nd.selected === true)[0];
   const selectEdge = edges.filter((edg) => edg.selected === true)[0];
 
@@ -60,14 +63,40 @@ function SphereMap(props) {
     setSelectedEdge(selectEdge);
   }, [selectEdge]);
 
-  // const onNodesChange = useCallback(
-  //   (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
-  //   [setNodes]
-  // );
-  // const onEdgesChange = useCallback(
-  //   (changes) => setEdges((eds) => applyEdgeChanges(changes, eds)),
-  //   [setEdges]
-  // );
+  const onDragSphereOver = useCallback(
+    (e) => {
+      e.preventDefault();
+
+      const reactFlowBounds = reactFlowRef.current.getBoundingClientRect();
+      const id = e.dataTransfer.getData("text/plain");
+      const position = reactFlowInstance.project({
+        x: e.clientX - reactFlowBounds.left,
+        y: e.clientY - reactFlowBounds.top,
+      });
+
+      const newSphere = {
+        id,
+        type: "sphereNode",
+        position,
+        data: {
+          scale,
+          shortName: id,
+          sphere: id,
+          sphereRadius: "10000",
+          xCoord: `${position.x / scale + 11}`,
+          yCoord: `${position.x / scale + 11}`,
+          "onMap?": "Yes",
+        },
+      };
+      setNodes((nds) => nds.concat(newSphere));
+    },
+    [reactFlowInstance, setNodes]
+  );
+
+  const onSphereDrop = useCallback((e) => {
+    e.preventDefault();
+    e.dataTransfer.effect = "move";
+  }, []);
 
   useEffect(() => {
     setEdges((edgs) =>
@@ -178,7 +207,10 @@ function SphereMap(props) {
         setNodes={setNodes}
         setEdges={setEdges}
       />
-      <div style={{ height: canvasHeight, width: canvasWidth }}>
+      <div
+        ref={reactFlowRef}
+        style={{ height: canvasHeight, width: canvasWidth }}
+      >
         <ReactFlow
           nodes={nodes}
           edges={edges}
@@ -196,9 +228,12 @@ function SphereMap(props) {
             [567 * scale, 399 * scale],
           ]}
           nodesDraggable={draggable}
+          onDrop={onSphereDrop}
+          onDragOver={onDragSphereOver}
+          onInit={setReactFlowInstance}
         >
           {/* <Background /> */}
-          <Controls />
+          {/* <Controls /> */}
         </ReactFlow>
       </div>
       <RightSideBar edges={edges} />
