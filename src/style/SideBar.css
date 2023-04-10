@@ -257,6 +257,15 @@
 
 }
 
+.LEFTSB__new-travel-data-label{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 2px; 
+    writing-mode: vertical-lr;  
+
+}
+
 .LEFTSB__new-flow-container{
     display: flex;
     flex-direction: column;
@@ -271,6 +280,15 @@
     justify-content: center;
     width: 85%;
 }
+
+.LEFTSB__new-flow-travel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}
+
 
 .LEFTSB__new-button-container{
     display: flex;

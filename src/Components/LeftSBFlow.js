@@ -86,14 +86,14 @@ function LeftSBFlow(props) {
     //console.log(tempData, nodes);
     const node1 = nodes.find((nd) => nd.data.shortName === tempData.sphereW);
     const node2 = nodes.find((nd) => nd.data.shortName === tempData.sphereE);
-    console.log(
-      tempData,
-      node1,
-      node2,
-      node1.position.x,
-      node2.position.x,
-      node1.position.x < node2.position.x
-    );
+    // console.log(
+    //   tempData,
+    //   node1,
+    //   node2,
+    //   node1.position.x,
+    //   node2.position.x,
+    //   node1.position.x < node2.position.x
+    // );
 
     let data = {};
 
