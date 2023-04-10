@@ -25,12 +25,12 @@ function LeftSideBar(props) {
   const scale = props.scale;
 
   useEffect(() => {
-    selectedNode ? setSelectedTab("sphereTab") : setSelectedTab("newTab");
-  }, [selectedNode]);
-
-  useEffect(() => {
-    selectedEdge ? setSelectedTab("flowTab") : setSelectedTab("newTab");
-  }, [selectedEdge]);
+    selectedNode
+      ? setSelectedTab("sphereTab")
+      : selectedEdge
+      ? setSelectedTab("flowTab")
+      : setSelectedTab("newTab");
+  }, [selectedNode, selectedEdge]);
 
   const handleTabClick = (e) => {
     setSelectedTab(e.target.id);
@@ -141,7 +141,7 @@ function LeftSideBar(props) {
             edges={edges}
             nodes={nodes}
             setEdges={setEdges}
-            scale={props.scale}
+            scale={scale}
           />
         ) : null}
         {selectedTab === "optionsTab" ? (
