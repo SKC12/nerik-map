@@ -22,6 +22,8 @@ function LeftSideBar(props) {
   const edges = props.edges;
   const nodes = props.nodes;
 
+  const scale = props.scale;
+
   useEffect(() => {
     selectedNode ? setSelectedTab("sphereTab") : setSelectedTab("newTab");
   }, [selectedNode]);
@@ -135,7 +137,12 @@ function LeftSideBar(props) {
           />
         ) : null}
         {selectedTab === "newTab" ? (
-          <LeftSBNew edges={edges} nodes={nodes} />
+          <LeftSBNew
+            edges={edges}
+            nodes={nodes}
+            setEdges={setEdges}
+            scale={props.scale}
+          />
         ) : null}
         {selectedTab === "optionsTab" ? (
           <LeftSBOptions

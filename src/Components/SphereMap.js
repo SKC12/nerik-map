@@ -206,6 +206,7 @@ function SphereMap(props) {
         unknownPathsState={[hideUnknownPaths, setHideUnknownPaths]}
         setNodes={setNodes}
         setEdges={setEdges}
+        scale={scale}
       />
       <div
         ref={reactFlowRef}

@@ -142,7 +142,7 @@ function getFlowColor(flowRiver) {
   return color;
 }
 
-export function getStyle(flow, scale) {
+export function getStyle(flow, scale = 1) {
   let speedRatio = 5;
 
   let style = {};

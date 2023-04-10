@@ -1,5 +1,6 @@
 import { Autocomplete, Button } from "@mui/material";
 import TextField from "@mui/material/TextField";
+import { getStyle } from "../Components/utils.js";
 
 import { useState } from "react";
 import greySphere from "../img/Grey_Sphere.webp";
@@ -48,8 +49,10 @@ const inputStyle = {
 const flowOptions = ["Regular", "Erratic", "Tidal"];
 
 function LeftSBNew(props) {
+  const setEdges = props.setEdges;
   const nodes = props.nodes;
   const edges = props.edges;
+  const scale = props.scale;
 
   const flowRiverOptions = edges.reduce((flowRivers, edge) => {
     if (!flowRivers.includes(edge.data.flowRiver)) {
@@ -99,10 +102,12 @@ function LeftSBNew(props) {
         isKnown: "yes",
         editedSpeed: "no",
         typeExtraInfo: "",
+        scale,
       };
 
       if (node1.position.x < node2.position.x) {
         data = {
+          ...data,
           sphereW: sphere1,
           sphereE: sphere2,
           xCoordW: node1.data.xCoord,
@@ -114,6 +119,7 @@ function LeftSBNew(props) {
         };
       } else {
         data = {
+          ...data,
           sphereW: sphere2,
           sphereE: sphere1,
           xCoordW: node2.data.xCoord,
@@ -126,7 +132,7 @@ function LeftSBNew(props) {
       }
 
       // Reverse flow type formatting
-      if (data.type === "Regular") {
+      if (flowType === "Regular") {
         let timeW = parseInt(data.timeW);
         let timeE = parseInt(data.timeE);
 
@@ -139,8 +145,8 @@ function LeftSBNew(props) {
           if (timeE) data.type = "uniE";
         }
       } else {
-        if (data.type === "Erratic") data.type = "erratic";
-        if (data.type === "Tidal") data.type = "tide";
+        if (flowType === "Erratic") data.type = "erratic";
+        if (flowType === "Tidal") data.type = "tide";
       }
 
       // Calculate distance and speed
@@ -158,8 +164,20 @@ function LeftSBNew(props) {
           ((parseInt(data.timeW) + parseInt(data.timeE)) / 2)
         ).toFixed(2);
       }
-
-      console.log(data);
+      let newEdge = {
+        id: `${data.sphereW} to ${data.sphereE}`,
+        source: data.sphereW,
+        target: data.sphereE,
+        data: data,
+        type: "floating",
+        style: getStyle(data, 5),
+      };
+      console.log(newEdge);
+      if (!edges.find((edg) => edg.id === newEdge.id)) {
+        setEdges(edges.concat(newEdge));
+      } else {
+        console.log("DUPLICATE");
+      }
     } else {
       console.log("ERROR");
     }
