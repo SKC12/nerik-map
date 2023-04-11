@@ -55,7 +55,8 @@ function SphereMap(props) {
   const selectNode = nodes.filter((nd) => nd.selected === true)[0];
   const selectEdge = edges.filter((edg) => edg.selected === true)[0];
 
-  console.log(selectedEdge, selectedNode);
+  //console.log(selectedEdge, selectedNode);
+  //console.log(nodes, edges);
   useEffect(() => {
     setSelectedNode(selectNode);
   }, [selectNode]);
@@ -208,6 +209,7 @@ function SphereMap(props) {
         setNodes={setNodes}
         setEdges={setEdges}
         scale={scale}
+        reactFlowInstance={reactFlowInstance}
       />
       <div
         ref={reactFlowRef}
@@ -233,6 +235,7 @@ function SphereMap(props) {
           onDrop={onSphereDrop}
           onDragOver={onDragSphereOver}
           onInit={setReactFlowInstance}
+          deleteKeyCode="Delete"
         >
           {/* <Background /> */}
           {/* <Controls /> */}

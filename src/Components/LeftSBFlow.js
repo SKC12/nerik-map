@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import TextField from "@mui/material/TextField";
 import { Autocomplete } from "@mui/material";
+import DelConfirmationDialog from "./DelConfirmationDialog";
 
 function getFormattedFlowType(type) {
   //   if (type.includes("predominant")) return "Predominant";
@@ -16,6 +17,8 @@ function getTempData(data) {
 
 function LeftSBFlow(props) {
   const [editMode, setEditMode] = useState(false);
+  const [delDialogOpen, setDelDialogOpen] = useState(false);
+
   const [selectedEdge, setSelectedNode] = [
     props.selectedEdge,
     props.setSelectedEdge,
@@ -33,6 +36,8 @@ function LeftSBFlow(props) {
     }
     return options;
   }, []);
+
+  const reactFlowInstance = props.reactFlowInstance;
 
   const flowOptions = ["Regular", "Erratic", "Tidal"];
 
@@ -77,7 +82,13 @@ function LeftSBFlow(props) {
     setEditMode(!editMode);
   };
 
-  const onClickDelete = () => {};
+  const deleteEdge = (edge) => {
+    if (edge) reactFlowInstance.deleteElements({ edges: [edge] });
+  };
+
+  const onClickDelete = () => {
+    setDelDialogOpen(true);
+  };
 
   const onClickCancel = () => {
     setTempData(getTempData(selectedData));
@@ -200,6 +211,12 @@ function LeftSBFlow(props) {
               <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
             </svg>
           </div>
+          <DelConfirmationDialog
+            title="Delete this Flow River?"
+            onDelete={() => deleteEdge(selectedEdge)}
+            open={delDialogOpen}
+            setOpen={setDelDialogOpen}
+          />
         </div>
       ) : (
         <div className="LEFTSB__icon-container">

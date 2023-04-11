@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import TextField from "@mui/material/TextField";
+import DelConfirmationDialog from "./DelConfirmationDialog";
 
 function LeftSBSphere(props) {
   const [editMode, setEditMode] = useState(false);
+  const [delDialogOpen, setDelDialogOpen] = useState(false);
   const [selectedNode, setSelectedNode] = [
     props.selectedNode,
     props.setSelectedNode,
@@ -11,6 +13,7 @@ function LeftSBSphere(props) {
   //console.log(selectedData);
   const [tempData, setTempData] = useState(selectedData);
   const setNodes = props.setNodes;
+  const reactFlowInstance = props.reactFlowInstance;
 
   const inputStyle = {
     "& .MuiInputBase-input.Mui-disabled": {
@@ -38,8 +41,13 @@ function LeftSBSphere(props) {
   const onClickEdit = () => {
     setEditMode(!editMode);
   };
+  const deleteNode = (node) => {
+    if (node) reactFlowInstance.deleteElements({ nodes: [node] });
+  };
 
-  const onClickDelete = () => {};
+  const onClickDelete = () => {
+    setDelDialogOpen(true);
+  };
 
   const onClickCancel = () => {
     setTempData(selectedData);
@@ -89,6 +97,12 @@ function LeftSBSphere(props) {
               <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />{" "}
             </svg>
           </div>
+          <DelConfirmationDialog
+            title="Delete this Sphere?"
+            onDelete={() => deleteNode(selectedNode)}
+            open={delDialogOpen}
+            setOpen={setDelDialogOpen}
+          />
         </div>
       ) : (
         <div className="LEFTSB__icon-container">
