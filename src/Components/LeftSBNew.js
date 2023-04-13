@@ -72,6 +72,7 @@ function LeftSBNew(props) {
   const [sphere2, setSphere2] = useState(sphereOptions[1]);
   const [sphere1InputValue, setSphere1InputValue] = useState("");
   const [sphere2InputValue, setSphere2InputValue] = useState("");
+  const [flowRiverInputValue, setFlowRiverInputValue] = useState("");
 
   const [timeSphere1, setTimeSphere1] = useState("");
   const [timeSphere2, setTimeSphere2] = useState("");
@@ -98,7 +99,7 @@ function LeftSBNew(props) {
       let node2 = nodes.find((nd) => nd.data.shortName === sphere2);
 
       let data = {
-        flowRiver,
+        flowRiver: flowRiverInputValue,
         isKnown: "yes",
         editedSpeed: "no",
         typeExtraInfo: "",
@@ -296,6 +297,10 @@ function LeftSBNew(props) {
             value={flowRiver}
             onChange={(e, newValue) => {
               setFlowRiver(newValue);
+            }}
+            inputValue={flowRiverInputValue}
+            onInputChange={(e, newInputValue) => {
+              setFlowRiverInputValue(newInputValue);
             }}
             sx={selectStyle}
             options={flowRiverOptions}
