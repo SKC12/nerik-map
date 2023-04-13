@@ -7,11 +7,11 @@ export class Flow {
     }
   }
 
-  static getEdges(flows, scale = 1) {
+  static getEdges(flows, flowRiverColors, scale = 1) {
     //console.log(flows);
     let edges = [];
     for (let i = 0; i < flows.length; i++) {
-      let style = getStyle(flows[i], scale);
+      let style = getStyle(flows[i], flowRiverColors, scale);
       //console.log(flows[i].speed);
       edges.push({
         id: flows[i].sphereW + " to " + flows[i].sphereE,

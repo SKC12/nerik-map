@@ -34,6 +34,33 @@ const edgeTypes = {
   floating: FloatingEdge,
 };
 
+const defaultFlowRiverColors = {
+  "Arcane Inner Flow": "#fcf003",
+  "Arcane Outer Flow": "#fca503",
+  "Braineater Flow": "#a503fc",
+  "Casa Flow": "#00ad31",
+  "Crystal Flow": "#ff00bf",
+  "Eadhel Flow": "#90eb8d",
+  "Gate Flow": "#94dbf7",
+  "Hammer Flow": "#99680e",
+  "Golot Flow": "#007874",
+  "Gorth Flow": "#b1deca",
+  "Lost Flow": "#c2c793",
+  "Mael Flow": "#4b3870",
+  "Mystara Flow": "#050780",
+  Other: "#575757",
+  "Pillar Flow": "#3f6b8f",
+  "Pirtel Flow": "#e0e0e0",
+  "Radiant Flow": "#ff0000",
+  "Red-Heart Flow": "#ff7e1c",
+  "Seven Stars Flow": "#d98c52",
+  "The Maelstrom": "#d62dc2",
+  "Trulian Ring": "#593455",
+  "Vodoni Flow": "#0b1d57",
+  "Vodonika Flow": "#7d0b13",
+  "Way Flow": "#268496",
+};
+
 function SphereMap(props) {
   const canvasWidth = props.width;
   const canvasHeight = props.height;
@@ -48,6 +75,9 @@ function SphereMap(props) {
   const [spheres, setSpheres] = useState([]);
   const [flows, setFlows] = useState([]);
   const [loadingSphere, setLoadingSphere] = useState(true);
+  const [flowRiverColors, setFlowRiverColors] = useState(
+    defaultFlowRiverColors
+  );
 
   const reactFlowRef = useRef(null);
   const [reactFlowInstance, setReactFlowInstance] = useState(null);
@@ -56,7 +86,7 @@ function SphereMap(props) {
   const selectEdge = edges.filter((edg) => edg.selected === true)[0];
 
   //console.log(selectedEdge, selectedNode);
-  //console.log(nodes, edges);
+  console.log(nodes, edges);
   useEffect(() => {
     setSelectedNode(selectNode);
   }, [selectNode]);
@@ -185,13 +215,13 @@ function SphereMap(props) {
       //console.log("FLOWS", flowsArray);
 
       setNodes(Sphere.getNodes(sphereArray, scale).concat(bgSphere));
-      setEdges(Flow.getEdges(flowsArray, scale));
+      setEdges(Flow.getEdges(flowsArray, defaultFlowRiverColors, scale));
     }
     loadSpheres(sphereData);
-  }, []);
+  }, [setNodes, setEdges]);
 
   //console.log("NODES", nodes);
-  //console.log("EDGES", edges);
+  console.log("EDGES", edges);
 
   return (
     <>
@@ -210,6 +240,7 @@ function SphereMap(props) {
         setEdges={setEdges}
         scale={scale}
         reactFlowInstance={reactFlowInstance}
+        flowRiverColors={flowRiverColors}
       />
       <div
         ref={reactFlowRef}

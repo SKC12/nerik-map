@@ -34,9 +34,16 @@ function getTranslate(data, scale) {
   }
 }
 
-function FloatingEdge({ id, source, target, markerEnd, data, selected }) {
+function FloatingEdge({
+  id,
+  source,
+  target,
+  markerEnd,
+  data,
+  selected,
+  style,
+}) {
   const scale = data.scale;
-  let style = getStyle(data, scale);
 
   const sourceNode = useStore(
     useCallback((store) => store.nodeInternals.get(source), [source])

@@ -24,6 +24,7 @@ function LeftSideBar(props) {
 
   const scale = props.scale;
   const reactFlowInstance = props.reactFlowInstance;
+  const flowRiverColors = props.flowRiverColors;
 
   useEffect(() => {
     selectedNode
@@ -137,6 +138,7 @@ function LeftSideBar(props) {
             setEdges={setEdges}
             nodes={nodes}
             reactFlowInstance={reactFlowInstance}
+            flowRiverColors={flowRiverColors}
           />
         ) : null}
         {selectedTab === "newTab" ? (
@@ -145,6 +147,7 @@ function LeftSideBar(props) {
             nodes={nodes}
             setEdges={setEdges}
             scale={scale}
+            flowRiverColors={flowRiverColors}
           />
         ) : null}
         {selectedTab === "optionsTab" ? (

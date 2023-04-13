@@ -53,6 +53,7 @@ function LeftSBNew(props) {
   const nodes = props.nodes;
   const edges = props.edges;
   const scale = props.scale;
+  const flowRiverColors = props.flowRiverColors;
 
   const flowRiverOptions = edges.reduce((flowRivers, edge) => {
     if (!flowRivers.includes(edge.data.flowRiver)) {
@@ -171,7 +172,7 @@ function LeftSBNew(props) {
         target: data.sphereE,
         data: data,
         type: "floating",
-        style: getStyle(data, 5),
+        style: getStyle(data, flowRiverColors, 5),
       };
       console.log(newEdge);
       if (!edges.find((edg) => edg.id === newEdge.id)) {

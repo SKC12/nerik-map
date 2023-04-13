@@ -142,11 +142,13 @@ function getFlowColor(flowRiver) {
   return color;
 }
 
-export function getStyle(flow, scale = 1) {
+export function getStyle(flow, flowRiverColors, scale = 1) {
   let speedRatio = 5;
 
   let style = {};
-  let color = getFlowColor(flow.flowRiver);
+  let color = flowRiverColors[flow.flowRiver]
+    ? flowRiverColors[flow.flowRiver]
+    : "#575757";
 
   switch (flow.type) {
     case "regular":
