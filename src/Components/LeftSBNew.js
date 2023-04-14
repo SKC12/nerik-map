@@ -88,6 +88,7 @@ function LeftSBNew(props) {
   const [timeSphere2, setTimeSphere2] = useState("");
   const [flowType, setFlowType] = useState("Regular");
   const [flowRiver, setFlowRiver] = useState("Other");
+  const [typeExtraInfo, setTypeExtraInfo] = useState("");
 
   function getId(count) {
     if (!nodes.find((nd) => nd.id === `Sphere ${count}`)) {
@@ -303,6 +304,26 @@ function LeftSBNew(props) {
             renderInput={(params) => <TextField {...params} />}
           ></Autocomplete>
         </div>
+        {flowType !== "Regular" ? (
+          <div className="LEFTSB__new-flow-inner-container">
+            <label className="LEFTSB__data-label">
+              Unusual Flow Type Extra Info:
+            </label>
+            <TextField
+              variant="standard"
+              className="LEFTSB__data"
+              value={typeExtraInfo}
+              onChange={(e) => {
+                setTypeExtraInfo(e.target.value);
+              }}
+              InputProps={{
+                disableUnderline: true,
+              }}
+              sx={inputStyle}
+            ></TextField>
+          </div>
+        ) : null}
+
         <div className="LEFTSB__new-flow-inner-container">
           <label className="LEFTSB__data-label">Flow River:</label>
           <div className="LEFTSB__new-flow-type-container">

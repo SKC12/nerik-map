@@ -67,6 +67,8 @@ function LeftSBFlow(props) {
       fontSize: "14px",
       border: "black 1px solid",
       borderRadius: "4px",
+      padding: "2px",
+
       paddingLeft: "8px",
     },
   };
@@ -316,6 +318,34 @@ function LeftSBFlow(props) {
       ) : (
         <p className="LEFTSB__flow-data">{tempData.type}</p>
       )}
+
+      {editMode && tempData.type !== "Regular" ? (
+        <>
+          <label className="LEFTSB__data-label">
+            Unusual Flow Type Information:
+          </label>
+          <TextField
+            variant="standard"
+            className="LEFTSB__data"
+            value={tempData.typeExtraInfo}
+            onChange={(e) => {
+              setTempData({ ...tempData, typeExtraInfo: e.target.value });
+            }}
+            disabled={!editMode}
+            InputProps={{
+              disableUnderline: true,
+            }}
+            sx={inputStyle}
+          ></TextField>
+        </>
+      ) : tempData.typeExtraInfo ? (
+        <>
+          <label className="LEFTSB__data-label">
+            Unusual Flow Type Information:
+          </label>
+          <p className="LEFTSB__flow-data">{tempData.typeExtraInfo}</p>
+        </>
+      ) : null}
       <label className="LEFTSB__data-label">
         Travel Time to Sphere 1 (days):
       </label>
@@ -330,7 +360,6 @@ function LeftSBFlow(props) {
         }}
         value={tempData.timeW}
         disabled={!editMode}
-        multiline
         InputProps={{
           disableUnderline: true,
           inputMode: "numeric",
@@ -353,7 +382,6 @@ function LeftSBFlow(props) {
         }}
         value={tempData.timeE}
         disabled={!editMode}
-        multiline
         InputProps={{
           disableUnderline: true,
           inputMode: "numeric",
