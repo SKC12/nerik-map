@@ -101,6 +101,10 @@ function LeftSBNew(props) {
     let id = getId(1);
     //console.log("ID", id);
     event.dataTransfer.setData("text/plain", id);
+    var img = new Image();
+    img.src =
+      "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=";
+    event.dataTransfer.setDragImage(img, 0, 0);
   };
 
   const createFlowRiver = (event) => {
