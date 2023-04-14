@@ -24,6 +24,8 @@ import FloatingConnectionLine from "./FloatingConnectionLine.js";
 import LeftSideBar from "./LeftSideBar";
 import RightSideBar from "./RightSideBar";
 
+import { getStyle } from "../Components/utils.js";
+
 const scale = 5;
 
 let baseMapHeight = 399 * scale;
@@ -94,6 +96,15 @@ function SphereMap(props) {
   useEffect(() => {
     setSelectedEdge(selectEdge);
   }, [selectEdge]);
+
+  useEffect(() => {
+    setEdges((edgs) =>
+      edgs.map((edg) => {
+        edg.style = getStyle(edg.data, flowRiverColors, scale);
+        return edg;
+      })
+    );
+  }, [flowRiverColors, setEdges]);
 
   const onDragSphereOver = useCallback(
     (e) => {
@@ -241,6 +252,7 @@ function SphereMap(props) {
         scale={scale}
         reactFlowInstance={reactFlowInstance}
         flowRiverColors={flowRiverColors}
+        setFlowRiverColors={setFlowRiverColors}
       />
       <div
         ref={reactFlowRef}

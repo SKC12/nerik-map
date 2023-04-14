@@ -7,7 +7,7 @@ import {
 } from "reactflow";
 import "../style/Sphere.css";
 
-import { getEdgeParams, getStyle } from "./utils.js";
+import { getEdgeParams } from "./utils.js";
 
 function getTranslate(data, scale) {
   let yCoordW = parseInt(data.yCoordW);

@@ -293,6 +293,23 @@
     gap: 6px;
     text-align: center;
 }
+.LEFTSB__new-flow-type-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}
+.LEFTSB__new-flow-type-autocomplete{
+    width: 100%;
+}
+
+.LEFTSB__new-flow-type-color-select{
+    width: 28px;
+    height: 28px;
+    padding: 0px;
+    flex-shrink: 0;
+}
 
 
 .LEFTSB__new-button-container{

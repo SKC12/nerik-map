@@ -20,12 +20,15 @@ const selectStyle = {
     backgroundColor: "white",
     borderRadius: "4px",
     border: "black 1px solid",
-
     fontSize: "14px",
   },
   "& .MuiSelect-select": {
     padding: "0px",
     paddingLeft: "4px",
+  },
+  "& .MuiAutocomplete-root": {
+    flexShrink: 0,
+    width: "80%",
   },
 };
 
@@ -54,6 +57,8 @@ function LeftSBNew(props) {
   const edges = props.edges;
   const scale = props.scale;
   const flowRiverColors = props.flowRiverColors;
+  const setFlowRiverColors = props.setFlowRiverColors;
+  //console.log(flowRiverColors);
 
   const flowRiverOptions = edges.reduce((flowRivers, edge) => {
     if (!flowRivers.includes(edge.data.flowRiver)) {
@@ -62,12 +67,16 @@ function LeftSBNew(props) {
     return flowRivers;
   }, []);
 
-  const sphereOptions = nodes.reduce((options, nd) => {
-    if (nd.data.shortName) {
-      options.push(nd.data.shortName);
-    }
-    return options;
-  }, []);
+  const sphereOptions = nodes
+    ? nodes
+        .reduce((options, nd) => {
+          if (nd.data.shortName) {
+            options.push(nd.data.shortName);
+          }
+          return options;
+        }, [])
+        .sort((a, b) => -b.localeCompare(a))
+    : [];
 
   const [sphere1, setSphere1] = useState(sphereOptions[0]);
   const [sphere2, setSphere2] = useState(sphereOptions[1]);
@@ -292,22 +301,36 @@ function LeftSBNew(props) {
         </div>
         <div className="LEFTSB__new-flow-inner-container">
           <label className="LEFTSB__data-label">Flow River:</label>
-          <Autocomplete
-            freeSolo={true}
-            size="small"
-            value={flowRiver}
-            onChange={(e, newValue) => {
-              setFlowRiver(newValue);
-            }}
-            inputValue={flowRiverInputValue}
-            onInputChange={(e, newInputValue) => {
-              setFlowRiverInputValue(newInputValue);
-            }}
-            sx={selectStyle}
-            options={flowRiverOptions}
-            defaultValue="Other"
-            renderInput={(params) => <TextField {...params} />}
-          ></Autocomplete>
+          <div className="LEFTSB__new-flow-type-container">
+            <Autocomplete
+              className="LEFTSB__new-flow-type-autocomplete"
+              freeSolo={true}
+              size="small"
+              value={flowRiver}
+              onChange={(e, newValue) => {
+                setFlowRiver(newValue);
+              }}
+              inputValue={flowRiverInputValue}
+              onInputChange={(e, newInputValue) => {
+                setFlowRiverInputValue(newInputValue);
+              }}
+              sx={selectStyle}
+              options={flowRiverOptions}
+              defaultValue="Other"
+              renderInput={(params) => <TextField {...params} />}
+            ></Autocomplete>
+            <input
+              className="LEFTSB__new-flow-type-color-select"
+              type="color"
+              value={flowRiverColors[flowRiverInputValue] ?? ""}
+              onChange={(e) => {
+                setFlowRiverColors({
+                  ...flowRiverColors,
+                  [flowRiverInputValue]: e.target.value,
+                });
+              }}
+            />
+          </div>
         </div>
 
         <div className="LEFTSB__new-flow-inner-container">

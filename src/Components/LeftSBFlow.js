@@ -16,28 +16,42 @@ function getTempData(data) {
 }
 
 function LeftSBFlow(props) {
-  const [editMode, setEditMode] = useState(false);
-  const [delDialogOpen, setDelDialogOpen] = useState(false);
+  const reactFlowInstance = props.reactFlowInstance;
 
+  const flowRiverColors = props.flowRiverColors;
+  const setFlowRiverColors = props.setFlowRiverColors;
   const [selectedEdge, setSelectedNode] = [
     props.selectedEdge,
     props.setSelectedEdge,
   ];
   const selectedData = selectedEdge ? selectedEdge.data : null;
-  //console.log(selectedData);
-  const [tempData, setTempData] = useState(getTempData(selectedData));
+  const edges = props.edges;
   const setEdges = props.setEdges;
   const nodes = props.nodes;
+
+  const [editMode, setEditMode] = useState(false);
+  const [delDialogOpen, setDelDialogOpen] = useState(false);
+  const [tempData, setTempData] = useState(getTempData(selectedData));
+  const [flowRiverInputValue, setFlowRiverInputValue] = useState("");
   const [known, setKnown] = useState(tempData.isKnown === "yes");
 
-  const sphereOptions = nodes.reduce((options, nd) => {
-    if (nd.data.shortName) {
-      options.push(nd.data.shortName);
-    }
-    return options;
-  }, []);
+  const sphereOptions = nodes
+    ? nodes
+        .reduce((options, nd) => {
+          if (nd.data.shortName) {
+            options.push(nd.data.shortName);
+          }
+          return options;
+        }, [])
+        .sort((a, b) => -b.localeCompare(a))
+    : [];
 
-  const reactFlowInstance = props.reactFlowInstance;
+  const flowRiverOptions = edges.reduce((flowRivers, edge) => {
+    if (!flowRivers.includes(edge.data.flowRiver)) {
+      flowRivers.push(edge.data.flowRiver);
+    }
+    return flowRivers;
+  }, []);
 
   const flowOptions = ["Regular", "Erratic", "Tidal"];
 
@@ -348,20 +362,42 @@ function LeftSBFlow(props) {
         sx={inputStyle}
       />
       <label className="LEFTSB__data-label">Flow River:</label>
-      <TextField
-        variant="standard"
-        className="LEFTSB__data"
-        onChange={(e) =>
-          setTempData({ ...tempData, flowRiver: e.target.value })
-        }
-        value={tempData.flowRiver}
-        disabled={!editMode}
-        multiline
-        InputProps={{
-          disableUnderline: true,
-        }}
-        sx={inputStyle}
-      />
+      {editMode ? (
+        <div className="LEFTSB__new-flow-type-container">
+          <Autocomplete
+            className="LEFTSB__new-flow-type-autocomplete"
+            freeSolo={true}
+            size="small"
+            value={tempData.flowRiver}
+            onChange={(e, newValue) => {
+              setTempData({ ...tempData, flowRiver: newValue });
+            }}
+            inputValue={flowRiverInputValue}
+            onInputChange={(e, newInputValue) => {
+              setFlowRiverInputValue(newInputValue);
+              setTempData({ ...tempData, flowRiver: newInputValue });
+            }}
+            sx={selectStyle}
+            options={flowRiverOptions}
+            defaultValue="Other"
+            renderInput={(params) => <TextField {...params} />}
+          ></Autocomplete>
+          <input
+            className="LEFTSB__new-flow-type-color-select"
+            type="color"
+            value={flowRiverColors[flowRiverInputValue] ?? ""}
+            onChange={(e) => {
+              setFlowRiverColors({
+                ...flowRiverColors,
+                [flowRiverInputValue]: e.target.value,
+              });
+            }}
+          />
+        </div>
+      ) : (
+        <p className="LEFTSB__flow-data">{tempData.flowRiver}</p>
+      )}
+
       <label className="LEFTSB__data-label">Known?</label>
       {editMode ? (
         <input
