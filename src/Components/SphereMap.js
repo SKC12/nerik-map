@@ -111,21 +111,19 @@ function SphereMap(props) {
       e.preventDefault();
 
       const reactFlowBounds = reactFlowRef.current.getBoundingClientRect();
-      const id = e.dataTransfer.getData("text/plain");
+      const data = JSON.parse(e.dataTransfer.getData("text/plain"));
       const position = reactFlowInstance.project({
         x: e.clientX - reactFlowBounds.left,
         y: e.clientY - reactFlowBounds.top,
       });
 
       const newSphere = {
-        id,
+        id: data.shortName,
         type: "sphereNode",
         position,
         data: {
+          ...data,
           scale,
-          shortName: id,
-          sphere: id,
-          sphereRadius: "10000",
           xCoord: `${position.x / scale + 11}`,
           yCoord: `${position.x / scale + 11}`,
           "onMap?": "Yes",

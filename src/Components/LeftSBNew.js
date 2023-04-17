@@ -1,4 +1,4 @@
-import { Autocomplete, Button } from "@mui/material";
+import { Autocomplete, Button, Slider } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import { getStyle } from "../Components/utils.js";
 
@@ -81,12 +81,28 @@ function LeftSBNew(props) {
   const [sphereDropdown, setSphereDropdown] = useState(false);
   const [flowDropdown, setFlowDropdown] = useState(false);
 
+  //New sphere state
+  const [sphereData, setSphereData] = useState({
+    shortName: getId(1),
+    sphere: "Newspherespace",
+    sphereRadius: "10000",
+    region: "",
+    flowRiver: "",
+    population: "",
+    activity: "",
+    controlled: "",
+    description: "",
+    source: "",
+    creator: "",
+    website: "",
+  });
+
+  //New flow state
   const [sphere1, setSphere1] = useState(sphereOptions[0]);
   const [sphere2, setSphere2] = useState(sphereOptions[1]);
   const [sphere1InputValue, setSphere1InputValue] = useState("");
   const [sphere2InputValue, setSphere2InputValue] = useState("");
   const [flowRiverInputValue, setFlowRiverInputValue] = useState("");
-
   const [timeSphere1, setTimeSphere1] = useState("");
   const [timeSphere2, setTimeSphere2] = useState("");
   const [flowType, setFlowType] = useState("Regular");
@@ -102,9 +118,9 @@ function LeftSBNew(props) {
   }
 
   const onDragStart = (event) => {
-    let id = getId(1);
+    let dataString = JSON.stringify(sphereData);
     //console.log("ID", id);
-    event.dataTransfer.setData("text/plain", id);
+    event.dataTransfer.setData("text/plain", dataString);
     var img = new Image();
     img.src =
       "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=";
@@ -204,13 +220,13 @@ function LeftSBNew(props) {
 
   return (
     <div className="LEFTSB__data-container">
-      <div className="LEFTSB__new-dropdown">
+      <div
+        onClick={() => setSphereDropdown(!sphereDropdown)}
+        className="LEFTSB__new-dropdown"
+      >
         <label className="LEFTSB__new-main-label">New Sphere:</label>
 
-        <div
-          onClick={() => setSphereDropdown(!sphereDropdown)}
-          className="LEFTSB__new-dropdown-arrow"
-        >
+        <div className="LEFTSB__new-dropdown-arrow">
           {sphereDropdown ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -243,23 +259,183 @@ function LeftSBNew(props) {
         </div>
       </div>
       {sphereDropdown ? (
-        <div className="LEFTSB__new-sphere-container">
-          <div
-            style={style}
-            onDragStart={(e) => onDragStart(e)}
-            draggable
-          ></div>
-          <p className="LEFTSB__data">Drag into map to create new Sphere</p>
-        </div>
+        <>
+          <div className="LEFTSB__new-sphere-container">
+            <div
+              style={style}
+              onDragStart={(e) => onDragStart(e)}
+              draggable
+            ></div>
+            <p className="LEFTSB__data">Drag into map to create new Sphere</p>
+            <div className="LEFTSB__new-sphere-inner-container">
+              <label className="LEFTSB__data-label">Full Name:</label>
+              <TextField
+                variant="standard"
+                className="LEFTSB__data"
+                value={sphereData.sphere}
+                onChange={(e) => {
+                  setSphereData({ ...sphereData, sphere: e.target.value });
+                }}
+                InputProps={{
+                  disableUnderline: true,
+                }}
+                sx={inputStyle}
+              ></TextField>
+              <label className="LEFTSB__data-label">Short Name:</label>
+              <TextField
+                variant="standard"
+                className="LEFTSB__data"
+                value={sphereData.shortName}
+                onChange={(e) => {
+                  setSphereData({ ...sphereData, shortName: e.target.value });
+                }}
+                InputProps={{
+                  disableUnderline: true,
+                }}
+                sx={inputStyle}
+              ></TextField>
+              <label className="LEFTSB__data-label">
+                Radius (Million Miles):
+              </label>
+              <div className="LEFTSB__sphere-radius-container">
+                <Slider
+                  size="small"
+                  className="LEFTSB__data LEFTSB__slider"
+                  value={sphereData.sphereRadius}
+                  onChange={(e) => {
+                    setSphereData({
+                      ...sphereData,
+                      sphereRadius: e.target.value,
+                    });
+                  }}
+                  sx={{ p: 0 }}
+                  max={20000}
+                  step={1000}
+                  marks
+                ></Slider>
+                <p className="LEFTSB__data LEFTSB__data-radius">
+                  {sphereData.sphereRadius}
+                </p>
+              </div>
+
+              <label className="LEFTSB__data-label">Region:</label>
+              <TextField
+                variant="standard"
+                className="LEFTSB__data"
+                value={sphereData.region}
+                onChange={(e) => {
+                  setSphereData({ ...sphereData, region: e.target.value });
+                }}
+                InputProps={{
+                  disableUnderline: true,
+                }}
+                sx={inputStyle}
+              ></TextField>
+              <label className="LEFTSB__data-label">Population:</label>
+              <TextField
+                variant="standard"
+                className="LEFTSB__data"
+                value={sphereData.population}
+                onChange={(e) => {
+                  setSphereData({ ...sphereData, population: e.target.value });
+                }}
+                InputProps={{
+                  disableUnderline: true,
+                }}
+                sx={inputStyle}
+              ></TextField>
+              <label className="LEFTSB__data-label">Activity:</label>
+              <TextField
+                variant="standard"
+                className="LEFTSB__data"
+                value={sphereData.activity}
+                onChange={(e) => {
+                  setSphereData({ ...sphereData, activity: e.target.value });
+                }}
+                InputProps={{
+                  disableUnderline: true,
+                }}
+                sx={inputStyle}
+              ></TextField>
+              <label className="LEFTSB__data-label">Controlled By:</label>
+              <TextField
+                variant="standard"
+                className="LEFTSB__data"
+                value={sphereData.controlled}
+                onChange={(e) => {
+                  setSphereData({ ...sphereData, controlled: e.target.value });
+                }}
+                InputProps={{
+                  disableUnderline: true,
+                }}
+                sx={inputStyle}
+              ></TextField>
+              <label className="LEFTSB__data-label">Description:</label>
+              <TextField
+                variant="standard"
+                className="LEFTSB__data"
+                value={sphereData.description}
+                onChange={(e) => {
+                  setSphereData({ ...sphereData, description: e.target.value });
+                }}
+                InputProps={{
+                  disableUnderline: true,
+                }}
+                sx={inputStyle}
+                multiline
+              ></TextField>
+              <label className="LEFTSB__data-label">Source:</label>
+              <TextField
+                variant="standard"
+                className="LEFTSB__data"
+                value={sphereData.source}
+                onChange={(e) => {
+                  setSphereData({ ...sphereData, source: e.target.value });
+                }}
+                InputProps={{
+                  disableUnderline: true,
+                }}
+                sx={inputStyle}
+              ></TextField>
+
+              <label className="LEFTSB__data-label">Creator:</label>
+              <TextField
+                variant="standard"
+                className="LEFTSB__data"
+                value={sphereData.creator}
+                onChange={(e) => {
+                  setSphereData({ ...sphereData, creator: e.target.value });
+                }}
+                InputProps={{
+                  disableUnderline: true,
+                }}
+                sx={inputStyle}
+              ></TextField>
+              <label className="LEFTSB__data-label">Website:</label>
+              <TextField
+                variant="standard"
+                className="LEFTSB__data"
+                value={sphereData.website}
+                onChange={(e) => {
+                  setSphereData({ ...sphereData, website: e.target.value });
+                }}
+                InputProps={{
+                  disableUnderline: true,
+                }}
+                sx={inputStyle}
+              ></TextField>
+            </div>
+          </div>
+        </>
       ) : null}
 
-      <div className="LEFTSB__new-dropdown">
+      <div
+        onClick={() => setFlowDropdown(!flowDropdown)}
+        className="LEFTSB__new-dropdown"
+      >
         <label className="LEFTSB__new-main-label">New Flow River:</label>
 
-        <div
-          onClick={() => setFlowDropdown(!flowDropdown)}
-          className="LEFTSB__new-dropdown-arrow"
-        >
+        <div className="LEFTSB__new-dropdown-arrow">
           {flowDropdown ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
