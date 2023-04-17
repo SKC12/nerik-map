@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import TextField from "@mui/material/TextField";
 import DelConfirmationDialog from "./DelConfirmationDialog";
+import { Slider } from "@mui/material";
 
 function LeftSBSphere(props) {
   const [editMode, setEditMode] = useState(false);
@@ -165,20 +166,41 @@ function LeftSBSphere(props) {
       <label className="LEFTSB__data-label">
         Sphere Radius (Million Miles):
       </label>
-      <TextField
-        variant="standard"
-        className="LEFTSB__data"
-        onChange={(e) =>
-          setTempData({ ...tempData, sphereRadius: e.target.value })
-        }
-        value={tempData.sphereRadius}
-        disabled={!editMode}
-        multiline
-        InputProps={{
-          disableUnderline: true,
-        }}
-        sx={inputStyle}
-      />
+      {editMode ? (
+        <div className="LEFTSB__sphere-radius-container">
+          <p className="LEFTSB__data LEFTSB__data-radius">
+            {tempData.sphereRadius}
+          </p>
+          <Slider
+            size="small"
+            className="LEFTSB__data LEFTSB__slider"
+            value={tempData.sphereRadius}
+            onChange={(e) => {
+              setTempData({ ...tempData, sphereRadius: e.target.value });
+            }}
+            sx={{ p: 0 }}
+            max={20000}
+            step={1000}
+            marks
+          ></Slider>
+        </div>
+      ) : (
+        <TextField
+          variant="standard"
+          className="LEFTSB__data"
+          onChange={(e) =>
+            setTempData({ ...tempData, sphereRadius: e.target.value })
+          }
+          value={tempData.sphereRadius}
+          disabled={!editMode}
+          multiline
+          InputProps={{
+            disableUnderline: true,
+          }}
+          sx={inputStyle}
+        />
+      )}
+
       <label className="LEFTSB__data-label">Region:</label>
       <TextField
         variant="standard"
