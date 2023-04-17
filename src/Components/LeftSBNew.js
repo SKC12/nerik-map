@@ -78,6 +78,9 @@ function LeftSBNew(props) {
         .sort((a, b) => -b.localeCompare(a))
     : [];
 
+  const [sphereDropdown, setSphereDropdown] = useState(false);
+  const [flowDropdown, setFlowDropdown] = useState(false);
+
   const [sphere1, setSphere1] = useState(sphereOptions[0]);
   const [sphere2, setSphere2] = useState(sphereOptions[1]);
   const [sphere1InputValue, setSphere1InputValue] = useState("");
@@ -201,175 +204,258 @@ function LeftSBNew(props) {
 
   return (
     <div className="LEFTSB__data-container">
-      <label className="LEFTSB__new-main-label">New Sphere:</label>
-      <div className="LEFTSB__new-sphere-container">
-        <div style={style} onDragStart={(e) => onDragStart(e)} draggable></div>
-        <p className="LEFTSB__data">Drag into map to create new Sphere</p>
+      <div className="LEFTSB__new-dropdown">
+        <label className="LEFTSB__new-main-label">New Sphere:</label>
+
+        <div
+          onClick={() => setSphereDropdown(!sphereDropdown)}
+          className="LEFTSB__new-dropdown-arrow"
+        >
+          {sphereDropdown ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-arrow-down-short"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-arrow-up-short"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+              />
+            </svg>
+          )}
+        </div>
       </div>
-      <label className="LEFTSB__new-main-label">New Flow River:</label>
-      <div className="LEFTSB__new-flow-container">
-        <div className="LEFTSB__new-flow-inner-container">
-          <label className="LEFTSB__data-label">Sphere 1:</label>
-          <Autocomplete
-            disableClearable
-            size="small"
-            value={sphere1}
-            onChange={(e, newValue) => {
-              setSphere1(newValue);
-            }}
-            inputValue={sphere1InputValue}
-            onInputChange={(e, newInputValue) => {
-              setSphere1InputValue(newInputValue);
-            }}
-            sx={selectStyle}
-            options={sphereOptions}
-            getOptionDisabled={(option) => option === sphere2}
-            renderInput={(params) => <TextField {...params} />}
-          ></Autocomplete>
+      {sphereDropdown ? (
+        <div className="LEFTSB__new-sphere-container">
+          <div
+            style={style}
+            onDragStart={(e) => onDragStart(e)}
+            draggable
+          ></div>
+          <p className="LEFTSB__data">Drag into map to create new Sphere</p>
         </div>
-        <div className="LEFTSB__new-flow-inner-container">
-          <label className="LEFTSB__data-label">Travel Time (days):</label>
+      ) : null}
 
-          <div className="LEFTSB__new-flow-travel-container">
-            <label className="LEFTSB__new-travel-data-label">--&gt;</label>
+      <div className="LEFTSB__new-dropdown">
+        <label className="LEFTSB__new-main-label">New Flow River:</label>
 
-            <TextField
-              variant="standard"
-              className="LEFTSB__data"
-              onChange={(e) => {
-                const regex = /^[0-9/b]+$/;
-                if (e.target.value === "" || regex.test(e.target.value)) {
-                  setTimeSphere1(e.target.value);
-                }
-              }}
-              value={timeSphere1}
-              InputProps={{
-                disableUnderline: true,
-                inputMode: "numeric",
-                pattern: "[0-9]*",
-              }}
-              sx={inputStyle}
-            />
-            <label className="LEFTSB__new-travel-data-label">&lt;--</label>
-            <TextField
-              variant="standard"
-              className="LEFTSB__data"
-              onChange={(e) => {
-                const regex = /^[0-9/b]+$/;
-                if (e.target.value === "" || regex.test(e.target.value)) {
-                  setTimeSphere2(e.target.value);
-                }
-              }}
-              value={timeSphere2}
-              InputProps={{
-                disableUnderline: true,
-                inputMode: "numeric",
-                pattern: "[0-9]*",
-              }}
-              sx={inputStyle}
-            />
-          </div>
+        <div
+          onClick={() => setFlowDropdown(!flowDropdown)}
+          className="LEFTSB__new-dropdown-arrow"
+        >
+          {flowDropdown ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-arrow-down-short"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-arrow-up-short"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+              />
+            </svg>
+          )}
         </div>
-        <div className="LEFTSB__new-flow-inner-container">
-          <label className="LEFTSB__data-label">Sphere 2:</label>
-          <Autocomplete
-            disableClearable
-            size="small"
-            value={sphere2}
-            onChange={(e, newValue) => {
-              setSphere2(newValue);
-            }}
-            inputValue={sphere2InputValue}
-            onInputChange={(e, newInputValue) => {
-              setSphere2InputValue(newInputValue);
-            }}
-            sx={selectStyle}
-            options={sphereOptions}
-            getOptionDisabled={(option) => option === sphere1}
-            renderInput={(params) => <TextField {...params} />}
-          ></Autocomplete>
-        </div>
-        <div className="LEFTSB__new-flow-inner-container">
-          <label className="LEFTSB__data-label">Flow Type:</label>
-          <Autocomplete
-            disableClearable
-            size="small"
-            value={flowType}
-            onChange={(e, newValue) => {
-              setFlowType(newValue);
-            }}
-            sx={selectStyle}
-            options={flowOptions}
-            defaultValue="Regular"
-            renderInput={(params) => <TextField {...params} />}
-          ></Autocomplete>
-        </div>
-        {flowType !== "Regular" ? (
+      </div>
+      {flowDropdown ? (
+        <div className="LEFTSB__new-flow-container">
           <div className="LEFTSB__new-flow-inner-container">
-            <label className="LEFTSB__data-label">
-              Unusual Flow Type Extra Info:
-            </label>
-            <TextField
-              variant="standard"
-              className="LEFTSB__data"
-              value={typeExtraInfo}
-              onChange={(e) => {
-                setTypeExtraInfo(e.target.value);
-              }}
-              InputProps={{
-                disableUnderline: true,
-              }}
-              sx={inputStyle}
-            ></TextField>
-          </div>
-        ) : null}
-
-        <div className="LEFTSB__new-flow-inner-container">
-          <label className="LEFTSB__data-label">Flow River:</label>
-          <div className="LEFTSB__new-flow-type-container">
+            <label className="LEFTSB__data-label">Sphere 1:</label>
             <Autocomplete
-              className="LEFTSB__new-flow-type-autocomplete"
-              freeSolo={true}
+              disableClearable
               size="small"
-              value={flowRiver}
+              value={sphere1}
               onChange={(e, newValue) => {
-                setFlowRiver(newValue);
+                setSphere1(newValue);
               }}
-              inputValue={flowRiverInputValue}
+              inputValue={sphere1InputValue}
               onInputChange={(e, newInputValue) => {
-                setFlowRiverInputValue(newInputValue);
+                setSphere1InputValue(newInputValue);
               }}
               sx={selectStyle}
-              options={flowRiverOptions}
-              defaultValue="Other"
+              options={sphereOptions}
+              getOptionDisabled={(option) => option === sphere2}
               renderInput={(params) => <TextField {...params} />}
             ></Autocomplete>
-            <input
-              className="LEFTSB__new-flow-type-color-select"
-              type="color"
-              value={flowRiverColors[flowRiverInputValue] ?? ""}
-              onChange={(e) => {
-                setFlowRiverColors({
-                  ...flowRiverColors,
-                  [flowRiverInputValue]: e.target.value,
-                });
-              }}
-            />
           </div>
-        </div>
+          <div className="LEFTSB__new-flow-inner-container">
+            <label className="LEFTSB__data-label">Travel Time (days):</label>
 
-        <div className="LEFTSB__new-flow-inner-container">
-          <div className="LEFTSB__new-button-container">
-            <Button
-              onClick={createFlowRiver}
-              disableElevation
-              variant="contained"
-            >
-              Create Flow River
-            </Button>
+            <div className="LEFTSB__new-flow-travel-container">
+              <label className="LEFTSB__new-travel-data-label">--&gt;</label>
+
+              <TextField
+                variant="standard"
+                className="LEFTSB__data"
+                onChange={(e) => {
+                  const regex = /^[0-9/b]+$/;
+                  if (e.target.value === "" || regex.test(e.target.value)) {
+                    setTimeSphere1(e.target.value);
+                  }
+                }}
+                value={timeSphere1}
+                InputProps={{
+                  disableUnderline: true,
+                  inputMode: "numeric",
+                  pattern: "[0-9]*",
+                }}
+                sx={inputStyle}
+              />
+              <label className="LEFTSB__new-travel-data-label">&lt;--</label>
+              <TextField
+                variant="standard"
+                className="LEFTSB__data"
+                onChange={(e) => {
+                  const regex = /^[0-9/b]+$/;
+                  if (e.target.value === "" || regex.test(e.target.value)) {
+                    setTimeSphere2(e.target.value);
+                  }
+                }}
+                value={timeSphere2}
+                InputProps={{
+                  disableUnderline: true,
+                  inputMode: "numeric",
+                  pattern: "[0-9]*",
+                }}
+                sx={inputStyle}
+              />
+            </div>
+          </div>
+          <div className="LEFTSB__new-flow-inner-container">
+            <label className="LEFTSB__data-label">Sphere 2:</label>
+            <Autocomplete
+              disableClearable
+              size="small"
+              value={sphere2}
+              onChange={(e, newValue) => {
+                setSphere2(newValue);
+              }}
+              inputValue={sphere2InputValue}
+              onInputChange={(e, newInputValue) => {
+                setSphere2InputValue(newInputValue);
+              }}
+              sx={selectStyle}
+              options={sphereOptions}
+              getOptionDisabled={(option) => option === sphere1}
+              renderInput={(params) => <TextField {...params} />}
+            ></Autocomplete>
+          </div>
+          <div className="LEFTSB__new-flow-inner-container">
+            <label className="LEFTSB__data-label">Flow Type:</label>
+            <Autocomplete
+              disableClearable
+              size="small"
+              value={flowType}
+              onChange={(e, newValue) => {
+                setFlowType(newValue);
+              }}
+              sx={selectStyle}
+              options={flowOptions}
+              defaultValue="Regular"
+              renderInput={(params) => <TextField {...params} />}
+            ></Autocomplete>
+          </div>
+          {flowType !== "Regular" ? (
+            <div className="LEFTSB__new-flow-inner-container">
+              <label className="LEFTSB__data-label">
+                Unusual Flow Type Extra Info:
+              </label>
+              <TextField
+                variant="standard"
+                className="LEFTSB__data"
+                value={typeExtraInfo}
+                onChange={(e) => {
+                  setTypeExtraInfo(e.target.value);
+                }}
+                InputProps={{
+                  disableUnderline: true,
+                }}
+                sx={inputStyle}
+              ></TextField>
+            </div>
+          ) : null}
+
+          <div className="LEFTSB__new-flow-inner-container">
+            <label className="LEFTSB__data-label">Flow River:</label>
+            <div className="LEFTSB__new-flow-type-container">
+              <Autocomplete
+                className="LEFTSB__new-flow-type-autocomplete"
+                freeSolo={true}
+                size="small"
+                value={flowRiver}
+                onChange={(e, newValue) => {
+                  setFlowRiver(newValue);
+                }}
+                inputValue={flowRiverInputValue}
+                onInputChange={(e, newInputValue) => {
+                  setFlowRiverInputValue(newInputValue);
+                }}
+                sx={selectStyle}
+                options={flowRiverOptions}
+                defaultValue="Other"
+                renderInput={(params) => <TextField {...params} />}
+              ></Autocomplete>
+              <input
+                className="LEFTSB__new-flow-type-color-select"
+                type="color"
+                value={flowRiverColors[flowRiverInputValue] ?? ""}
+                onChange={(e) => {
+                  setFlowRiverColors({
+                    ...flowRiverColors,
+                    [flowRiverInputValue]: e.target.value,
+                  });
+                }}
+              />
+            </div>
+          </div>
+
+          <div className="LEFTSB__new-flow-inner-container">
+            <div className="LEFTSB__new-button-container">
+              <Button
+                onClick={createFlowRiver}
+                disableElevation
+                variant="contained"
+              >
+                Create Flow River
+              </Button>
+            </div>
           </div>
         </div>
-      </div>
+      ) : null}
     </div>
   );
 }

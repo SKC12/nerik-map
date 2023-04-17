@@ -3,6 +3,7 @@ import SphereMap from "./Components/SphereMap";
 import { useEffect, useRef, useState } from "react";
 
 function App() {
+  //width/heigth of the coordinates background
   let bgRatio = 1.421;
 
   const refContainer = useRef();

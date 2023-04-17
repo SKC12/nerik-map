@@ -317,3 +317,21 @@
     justify-content: center;
     margin-top: 5px;
 }
+
+.LEFTSB__new-dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(57, 57, 73);
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+.LEFTSB__new-dropdown-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
