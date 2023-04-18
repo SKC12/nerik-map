@@ -1,10 +1,4 @@
-import ReactFlow, {
-  Controls,
-  applyNodeChanges,
-  applyEdgeChanges,
-  useNodesState,
-  useEdgesState,
-} from "reactflow";
+import ReactFlow, { useNodesState, useEdgesState } from "reactflow";
 import "reactflow/dist/style.css";
 import "../style/SphereMap.css";
 import { loadCSVSpheres, loadCSVFlows } from "../data-loader";
@@ -69,14 +63,12 @@ function SphereMap(props) {
   const [animated, setAnimated] = useState(false);
   const [projectedTime, setProjectedTime] = useState(false);
   const [hideUnknownPaths, setHideUnknownPaths] = useState(false);
+  const [hideUnknownSpheres, setHideUnknownSpheres] = useState(false);
   const [draggable, setDraggable] = useState(false);
   const [selectedNode, setSelectedNode] = useState(null);
   const [selectedEdge, setSelectedEdge] = useState(null);
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
-  const [spheres, setSpheres] = useState([]);
-  const [flows, setFlows] = useState([]);
-  const [loadingSphere, setLoadingSphere] = useState(true);
   const [flowRiverColors, setFlowRiverColors] = useState(
     defaultFlowRiverColors
   );
@@ -123,10 +115,12 @@ function SphereMap(props) {
         position,
         data: {
           ...data,
+          planets: [],
           scale,
           xCoord: `${position.x / scale + 11}`,
           yCoord: `${position.x / scale + 11}`,
           "onMap?": "Yes",
+          isKnown: "yes",
         },
       };
       setNodes((nds) => nds.concat(newSphere));
@@ -169,16 +163,23 @@ function SphereMap(props) {
   }, [hideUnknownPaths, setEdges]);
 
   useEffect(() => {
-    setLoadingSphere(true);
+    setNodes((nds) =>
+      nds.map((nd) => {
+        if (nd.data.isKnown === "no") {
+          nd.hidden = hideUnknownSpheres;
+        }
+        return nd;
+      })
+    );
+  }, [hideUnknownSpheres, setNodes]);
+
+  useEffect(() => {
     async function loadSpheres(sphereData) {
       //let sphereArray = [];
       let sphereArray = await loadCSVSpheres(sphereData);
-      setSpheres(sphereArray);
 
       //let flowsArray = [];
       let flowsArray = await loadCSVFlows(flowsData);
-      setFlows(flowsArray);
-      setLoadingSphere(false);
 
       let bgSphere = {
         id: "bg",
@@ -245,6 +246,7 @@ function SphereMap(props) {
         nodes={nodes}
         dragState={[draggable, setDraggable]}
         unknownPathsState={[hideUnknownPaths, setHideUnknownPaths]}
+        unknownSpheresState={[hideUnknownSpheres, setHideUnknownSpheres]}
         setNodes={setNodes}
         setEdges={setEdges}
         scale={scale}

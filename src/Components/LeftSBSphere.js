@@ -6,13 +6,13 @@ import { Slider } from "@mui/material";
 function LeftSBSphere(props) {
   const [editMode, setEditMode] = useState(false);
   const [delDialogOpen, setDelDialogOpen] = useState(false);
-  const [selectedNode, setSelectedNode] = [
-    props.selectedNode,
-    props.setSelectedNode,
-  ];
+  const selectedNode = props.selectedNode;
+
   const selectedData = selectedNode ? selectedNode.data : null;
   //console.log(selectedData);
   const [tempData, setTempData] = useState(selectedData);
+  const [known, setKnown] = useState(tempData.isKnown === "yes");
+
   const setNodes = props.setNodes;
   const reactFlowInstance = props.reactFlowInstance;
 
@@ -70,6 +70,13 @@ function LeftSBSphere(props) {
       })
     );
     setEditMode(false);
+  };
+
+  const handleKnownCheckbox = () => {
+    !known
+      ? setTempData({ ...tempData, isKnown: "yes" })
+      : setTempData({ ...tempData, isKnown: "no" });
+    setKnown(!known);
   };
 
   return tempData ? (
@@ -337,6 +344,19 @@ function LeftSBSphere(props) {
         }}
         sx={inputStyle}
       />
+      <label className="LEFTSB__data-label">Known?</label>
+      {editMode ? (
+        <input
+          className="LEFTSB__flow-data"
+          type="checkbox"
+          id="knowncb"
+          name="knowncb"
+          checked={known}
+          onChange={handleKnownCheckbox}
+        ></input>
+      ) : (
+        <p className="LEFTSB__flow-data">{tempData.isKnown}</p>
+      )}
     </div>
   ) : null;
 }

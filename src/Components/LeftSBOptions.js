@@ -3,6 +3,8 @@ function LeftSBOptions(props) {
   const [projectedTime, setProjectedTime] = props.projectedTimeState;
   const [draggable, setDraggable] = props.dragState;
   const [hideUnkownPaths, setHideUnknownPaths] = props.unknownPathsState;
+  const [hideUnkownSpheres, setHideUnknownSpheres] = props.unknownSpheresState;
+
   const animationChange = () => {
     setIsAnimated(!isAnimated);
   };
@@ -17,6 +19,7 @@ function LeftSBOptions(props) {
 
   const unknownPathsChange = () => {
     setHideUnknownPaths(!hideUnkownPaths);
+    setHideUnknownSpheres(!hideUnkownSpheres);
   };
 
   return (
@@ -60,7 +63,7 @@ function LeftSBOptions(props) {
           checked={hideUnkownPaths}
           onChange={unknownPathsChange}
         ></input>
-        <label>Hide unknown flow rivers</label>
+        <label>Hide unknown Spheres and Flows</label>
       </div>
     </div>
   );

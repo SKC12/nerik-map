@@ -16,6 +16,7 @@ function LeftSideBar(props) {
     props.setSelectedEdge,
   ];
   const [hideUnkownPaths] = props.unknownPathsState;
+
   const setNodes = props.setNodes;
   const setEdges = props.setEdges;
 
@@ -159,6 +160,7 @@ function LeftSideBar(props) {
             animationState={props.animationState}
             projectedTimeState={props.projectedTimeState}
             unknownPathsState={props.unknownPathsState}
+            unknownSpheresState={props.unknownSpheresState}
             dragState={props.dragState}
           />
         ) : null}

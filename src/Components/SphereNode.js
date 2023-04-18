@@ -22,6 +22,7 @@ export function SphereNode({ selected, data }) {
     width: width,
     height: height,
     backgroundImage: `url(${greySphere})`,
+    opacity: `${data.isKnown === "yes" ? "100%" : "70%"}`,
 
     fontSize: fontSize,
   };
