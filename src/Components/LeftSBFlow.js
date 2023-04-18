@@ -4,8 +4,6 @@ import { Autocomplete } from "@mui/material";
 import DelConfirmationDialog from "./DelConfirmationDialog";
 
 function getFormattedFlowType(type) {
-  //   if (type.includes("predominant")) return "Predominant";
-  //   if (type.includes("uni")) return "Unidirectional";
   if (type.includes("erratic")) return "Erratic";
   if (type.includes("tide")) return "Tidal";
   return "Regular";
@@ -20,10 +18,7 @@ function LeftSBFlow(props) {
 
   const flowRiverColors = props.flowRiverColors;
   const setFlowRiverColors = props.setFlowRiverColors;
-  const [selectedEdge, setSelectedNode] = [
-    props.selectedEdge,
-    props.setSelectedEdge,
-  ];
+  const selectedEdge = props.selectedEdge;
   const selectedData = selectedEdge ? selectedEdge.data : null;
   const edges = props.edges;
   const setEdges = props.setEdges;
@@ -281,6 +276,11 @@ function LeftSBFlow(props) {
           options={sphereOptions}
           getOptionDisabled={(option) => option === tempData.sphereE}
           renderInput={(params) => <TextField {...params} />}
+          ListboxProps={{
+            sx: {
+              fontSize: "14px",
+            },
+          }}
         ></Autocomplete>
       ) : (
         <p className="LEFTSB__flow-data">{tempData.sphereW}</p>
@@ -298,6 +298,11 @@ function LeftSBFlow(props) {
           options={sphereOptions}
           getOptionDisabled={(option) => option === tempData.sphereW}
           renderInput={(params) => <TextField {...params} />}
+          ListboxProps={{
+            sx: {
+              fontSize: "14px",
+            },
+          }}
         ></Autocomplete>
       ) : (
         <p className="LEFTSB__flow-data">{tempData.sphereE}</p>
@@ -314,6 +319,11 @@ function LeftSBFlow(props) {
           sx={selectStyle}
           options={flowOptions}
           renderInput={(params) => <TextField {...params} />}
+          ListboxProps={{
+            sx: {
+              fontSize: "14px",
+            },
+          }}
         ></Autocomplete>
       ) : (
         <p className="LEFTSB__flow-data">{tempData.type}</p>
@@ -332,6 +342,9 @@ function LeftSBFlow(props) {
               setTempData({ ...tempData, typeExtraInfo: e.target.value });
             }}
             disabled={!editMode}
+            inputProps={{
+              maxLength: 5,
+            }}
             InputProps={{
               disableUnderline: true,
             }}
@@ -360,6 +373,9 @@ function LeftSBFlow(props) {
         }}
         value={tempData.timeW}
         disabled={!editMode}
+        inputProps={{
+          maxLength: 5,
+        }}
         InputProps={{
           disableUnderline: true,
           inputMode: "numeric",
@@ -402,13 +418,20 @@ function LeftSBFlow(props) {
             }}
             inputValue={flowRiverInputValue}
             onInputChange={(e, newInputValue) => {
-              setFlowRiverInputValue(newInputValue);
-              setTempData({ ...tempData, flowRiver: newInputValue });
+              if (newInputValue.length <= 31) {
+                setFlowRiverInputValue(newInputValue);
+                setTempData({ ...tempData, flowRiver: newInputValue });
+              }
             }}
             sx={selectStyle}
             options={flowRiverOptions}
             defaultValue="Other"
             renderInput={(params) => <TextField {...params} />}
+            ListboxProps={{
+              sx: {
+                fontSize: "14px",
+              },
+            }}
           ></Autocomplete>
           <input
             className="LEFTSB__new-flow-type-color-select"

@@ -289,9 +289,7 @@
 .LEFTSB__new-flow-travel-container{
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 6px;
-    text-align: center;
 }
 .LEFTSB__new-flow-type-container{
     display: flex;

@@ -28,6 +28,8 @@ function LeftSBSphere(props) {
       fontSize: "14px",
       border: "black 1px solid",
       borderRadius: "4px",
+      padding: "2px",
+      margins: "0px",
       paddingLeft: "8px",
     },
   };
@@ -142,7 +144,9 @@ function LeftSBSphere(props) {
         onChange={(e) => setTempData({ ...tempData, sphere: e.target.value })}
         value={tempData.sphere}
         disabled={!editMode}
-        multiline
+        inputProps={{
+          maxLength: 30,
+        }}
         InputProps={{
           disableUnderline: true,
         }}
@@ -157,7 +161,9 @@ function LeftSBSphere(props) {
         }
         value={tempData.shortName}
         disabled={!editMode}
-        multiline
+        inputProps={{
+          maxLength: 30,
+        }}
         InputProps={{
           disableUnderline: true,
         }}
@@ -193,7 +199,9 @@ function LeftSBSphere(props) {
           }
           value={tempData.sphereRadius}
           disabled={!editMode}
-          multiline
+          inputProps={{
+            maxLength: 30,
+          }}
           InputProps={{
             disableUnderline: true,
           }}
@@ -208,7 +216,9 @@ function LeftSBSphere(props) {
         onChange={(e) => setTempData({ ...tempData, region: e.target.value })}
         value={tempData.region}
         disabled={!editMode}
-        multiline
+        inputProps={{
+          maxLength: 30,
+        }}
         InputProps={{
           disableUnderline: true,
         }}
@@ -224,7 +234,9 @@ function LeftSBSphere(props) {
         }
         value={tempData.population}
         disabled={!editMode}
-        multiline
+        inputProps={{
+          maxLength: 30,
+        }}
         InputProps={{
           disableUnderline: true,
         }}
@@ -237,7 +249,9 @@ function LeftSBSphere(props) {
         onChange={(e) => setTempData({ ...tempData, activity: e.target.value })}
         value={tempData.activity}
         disabled={!editMode}
-        multiline
+        inputProps={{
+          maxLength: 30,
+        }}
         InputProps={{
           disableUnderline: true,
         }}
@@ -252,7 +266,9 @@ function LeftSBSphere(props) {
         }
         value={tempData.controlled}
         disabled={!editMode}
-        multiline
+        inputProps={{
+          maxLength: 30,
+        }}
         InputProps={{
           disableUnderline: true,
         }}
@@ -268,6 +284,9 @@ function LeftSBSphere(props) {
         value={tempData.description}
         disabled={!editMode}
         multiline
+        inputProps={{
+          maxLength: 300,
+        }}
         InputProps={{
           disableUnderline: true,
         }}
@@ -280,7 +299,9 @@ function LeftSBSphere(props) {
         onChange={(e) => setTempData({ ...tempData, source: e.target.value })}
         value={tempData.source}
         disabled={!editMode}
-        multiline
+        inputProps={{
+          maxLength: 30,
+        }}
         InputProps={{
           disableUnderline: true,
         }}
@@ -293,7 +314,9 @@ function LeftSBSphere(props) {
         onChange={(e) => setTempData({ ...tempData, creator: e.target.value })}
         value={tempData.creator}
         disabled={!editMode}
-        multiline
+        inputProps={{
+          maxLength: 30,
+        }}
         InputProps={{
           disableUnderline: true,
         }}
@@ -306,7 +329,9 @@ function LeftSBSphere(props) {
         onChange={(e) => setTempData({ ...tempData, website: e.target.value })}
         value={tempData.website}
         disabled={!editMode}
-        multiline
+        inputProps={{
+          maxLength: 30,
+        }}
         InputProps={{
           disableUnderline: true,
         }}

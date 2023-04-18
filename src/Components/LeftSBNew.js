@@ -103,8 +103,8 @@ function LeftSBNew(props) {
   const [sphere1InputValue, setSphere1InputValue] = useState("");
   const [sphere2InputValue, setSphere2InputValue] = useState("");
   const [flowRiverInputValue, setFlowRiverInputValue] = useState("");
-  const [timeSphere1, setTimeSphere1] = useState("");
-  const [timeSphere2, setTimeSphere2] = useState("");
+  const [timeSphere1, setTimeSphere1] = useState("1");
+  const [timeSphere2, setTimeSphere2] = useState("1");
   const [flowType, setFlowType] = useState("Regular");
   const [flowRiver, setFlowRiver] = useState("Other");
   const [typeExtraInfo, setTypeExtraInfo] = useState("");
@@ -118,7 +118,9 @@ function LeftSBNew(props) {
   }
 
   const onDragStart = (event) => {
-    let dataString = JSON.stringify(sphereData);
+    let transferData = sphereData;
+    if (!sphereData.shortName) transferData.shortName = getId(1);
+    let dataString = JSON.stringify(transferData);
     //console.log("ID", id);
     event.dataTransfer.setData("text/plain", dataString);
     var img = new Image();
@@ -279,6 +281,9 @@ function LeftSBNew(props) {
                 InputProps={{
                   disableUnderline: true,
                 }}
+                inputProps={{
+                  maxLength: 30,
+                }}
                 sx={inputStyle}
               ></TextField>
               <label className="LEFTSB__data-label">Short Name:</label>
@@ -291,6 +296,9 @@ function LeftSBNew(props) {
                 }}
                 InputProps={{
                   disableUnderline: true,
+                }}
+                inputProps={{
+                  maxLength: 30,
                 }}
                 sx={inputStyle}
               ></TextField>
@@ -329,6 +337,9 @@ function LeftSBNew(props) {
                 InputProps={{
                   disableUnderline: true,
                 }}
+                inputProps={{
+                  maxLength: 30,
+                }}
                 sx={inputStyle}
               ></TextField>
               <label className="LEFTSB__data-label">Population:</label>
@@ -341,6 +352,9 @@ function LeftSBNew(props) {
                 }}
                 InputProps={{
                   disableUnderline: true,
+                }}
+                inputProps={{
+                  maxLength: 30,
                 }}
                 sx={inputStyle}
               ></TextField>
@@ -355,6 +369,9 @@ function LeftSBNew(props) {
                 InputProps={{
                   disableUnderline: true,
                 }}
+                inputProps={{
+                  maxLength: 30,
+                }}
                 sx={inputStyle}
               ></TextField>
               <label className="LEFTSB__data-label">Controlled By:</label>
@@ -368,6 +385,9 @@ function LeftSBNew(props) {
                 InputProps={{
                   disableUnderline: true,
                 }}
+                inputProps={{
+                  maxLength: 30,
+                }}
                 sx={inputStyle}
               ></TextField>
               <label className="LEFTSB__data-label">Description:</label>
@@ -380,6 +400,9 @@ function LeftSBNew(props) {
                 }}
                 InputProps={{
                   disableUnderline: true,
+                }}
+                inputProps={{
+                  maxLength: 300,
                 }}
                 sx={inputStyle}
                 multiline
@@ -395,6 +418,9 @@ function LeftSBNew(props) {
                 InputProps={{
                   disableUnderline: true,
                 }}
+                inputProps={{
+                  maxLength: 30,
+                }}
                 sx={inputStyle}
               ></TextField>
 
@@ -409,6 +435,9 @@ function LeftSBNew(props) {
                 InputProps={{
                   disableUnderline: true,
                 }}
+                inputProps={{
+                  maxLength: 30,
+                }}
                 sx={inputStyle}
               ></TextField>
               <label className="LEFTSB__data-label">Website:</label>
@@ -421,6 +450,9 @@ function LeftSBNew(props) {
                 }}
                 InputProps={{
                   disableUnderline: true,
+                }}
+                inputProps={{
+                  maxLength: 50,
                 }}
                 sx={inputStyle}
               ></TextField>
@@ -486,6 +518,11 @@ function LeftSBNew(props) {
               options={sphereOptions}
               getOptionDisabled={(option) => option === sphere2}
               renderInput={(params) => <TextField {...params} />}
+              ListboxProps={{
+                sx: {
+                  fontSize: "14px",
+                },
+              }}
             ></Autocomplete>
           </div>
           <div className="LEFTSB__new-flow-inner-container">
@@ -497,9 +534,13 @@ function LeftSBNew(props) {
               <TextField
                 variant="standard"
                 className="LEFTSB__data"
+                type="number"
                 onChange={(e) => {
                   const regex = /^[0-9/b]+$/;
-                  if (e.target.value === "" || regex.test(e.target.value)) {
+                  if (
+                    (e.target.value === "" || regex.test(e.target.value)) &&
+                    e.target.value < 10000
+                  ) {
                     setTimeSphere1(e.target.value);
                   }
                 }}
@@ -509,15 +550,26 @@ function LeftSBNew(props) {
                   inputMode: "numeric",
                   pattern: "[0-9]*",
                 }}
+                inputProps={{
+                  maxLength: 5,
+                  min: 1,
+                  max: 9999,
+                }}
                 sx={inputStyle}
+                error={!(timeSphere1 > 0)}
+                helperText={timeSphere1 > 0 ? null : "Invalid time"}
               />
               <label className="LEFTSB__new-travel-data-label">&lt;--</label>
               <TextField
                 variant="standard"
+                type="number"
                 className="LEFTSB__data"
                 onChange={(e) => {
                   const regex = /^[0-9/b]+$/;
-                  if (e.target.value === "" || regex.test(e.target.value)) {
+                  if (
+                    (e.target.value === "" || regex.test(e.target.value)) &&
+                    e.target.value < 10000
+                  ) {
                     setTimeSphere2(e.target.value);
                   }
                 }}
@@ -527,7 +579,14 @@ function LeftSBNew(props) {
                   inputMode: "numeric",
                   pattern: "[0-9]*",
                 }}
+                inputProps={{
+                  maxLength: 5,
+                  min: 1,
+                  max: 9999,
+                }}
                 sx={inputStyle}
+                error={!(timeSphere2 > 0)}
+                helperText={timeSphere2 > 0 ? null : "Invalid time"}
               />
             </div>
           </div>
@@ -548,6 +607,11 @@ function LeftSBNew(props) {
               options={sphereOptions}
               getOptionDisabled={(option) => option === sphere1}
               renderInput={(params) => <TextField {...params} />}
+              ListboxProps={{
+                sx: {
+                  fontSize: "14px",
+                },
+              }}
             ></Autocomplete>
           </div>
           <div className="LEFTSB__new-flow-inner-container">
@@ -563,6 +627,11 @@ function LeftSBNew(props) {
               options={flowOptions}
               defaultValue="Regular"
               renderInput={(params) => <TextField {...params} />}
+              ListboxProps={{
+                sx: {
+                  fontSize: "14px",
+                },
+              }}
             ></Autocomplete>
           </div>
           {flowType !== "Regular" ? (
@@ -581,6 +650,9 @@ function LeftSBNew(props) {
                   disableUnderline: true,
                 }}
                 sx={inputStyle}
+                inputProps={{
+                  maxLength: 15,
+                }}
               ></TextField>
             </div>
           ) : null}
@@ -598,12 +670,18 @@ function LeftSBNew(props) {
                 }}
                 inputValue={flowRiverInputValue}
                 onInputChange={(e, newInputValue) => {
-                  setFlowRiverInputValue(newInputValue);
+                  if (newInputValue.length <= 31)
+                    setFlowRiverInputValue(newInputValue);
                 }}
                 sx={selectStyle}
                 options={flowRiverOptions}
                 defaultValue="Other"
                 renderInput={(params) => <TextField {...params} />}
+                ListboxProps={{
+                  sx: {
+                    fontSize: "14px",
+                  },
+                }}
               ></Autocomplete>
               <input
                 className="LEFTSB__new-flow-type-color-select"
