@@ -1,3 +1,5 @@
+import { Button } from "@mui/material";
+
 function LeftSBOptions(props) {
   const [isAnimated, setIsAnimated] = props.animationState;
   const [projectedTime, setProjectedTime] = props.projectedTimeState;
@@ -21,6 +23,8 @@ function LeftSBOptions(props) {
     setHideUnknownPaths(!hideUnkownPaths);
     setHideUnknownSpheres(!hideUnkownSpheres);
   };
+
+  const saveToLocalStorage = () => {};
 
   return (
     <div>
@@ -72,6 +76,42 @@ function LeftSBOptions(props) {
         <label className="LEFTSB__data-label">
           Hide unknown Spheres and Flows
         </label>
+      </div>
+      <hr></hr>
+      <h3>Storage:</h3>
+      <div className="LEFTSB__option-button-container">
+        <Button
+          className="LEFTSB__option-button"
+          onClick={saveToLocalStorage}
+          disableElevation
+          variant="contained"
+        >
+          Save to local storage
+        </Button>
+        <Button
+          className="LEFTSB__option-button"
+          onClick={saveToLocalStorage}
+          disableElevation
+          variant="contained"
+        >
+          Restore from local storage
+        </Button>
+        <Button
+          className="LEFTSB__option-button"
+          onClick={saveToLocalStorage}
+          disableElevation
+          variant="contained"
+        >
+          Download as a file
+        </Button>
+        <Button
+          className="LEFTSB__option-button"
+          onClick={saveToLocalStorage}
+          disableElevation
+          variant="contained"
+        >
+          Load from file
+        </Button>
       </div>
     </div>
   );

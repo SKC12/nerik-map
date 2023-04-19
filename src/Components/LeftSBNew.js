@@ -1,5 +1,4 @@
 import { Autocomplete, Button, Slider } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 import TextField from "@mui/material/TextField";
 import { getStyle } from "../Components/utils.js";
 
@@ -53,8 +52,6 @@ const inputStyle = {
 const flowOptions = ["Regular", "Erratic", "Tidal"];
 
 function LeftSBNew(props) {
-  const theme = useTheme();
-  console.log(theme);
   const setEdges = props.setEdges;
   const nodes = props.nodes;
   const edges = props.edges;
