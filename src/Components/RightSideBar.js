@@ -5,7 +5,7 @@ function RightSideBar(props) {
     let flowRivers = [];
 
     return edges.map((edge) => {
-      if (!flowRivers.includes(edge.data.flowRiver && edge.data.flowRiver)) {
+      if (!flowRivers.includes(edge.data.flowRiver) && edge.data.flowRiver) {
         flowRivers.push(edge.data.flowRiver);
 
         return (

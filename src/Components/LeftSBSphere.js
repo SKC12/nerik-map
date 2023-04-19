@@ -19,8 +19,8 @@ function LeftSBSphere(props) {
   const inputStyle = {
     "& .MuiInputBase-input.Mui-disabled": {
       borderStyle: "none",
-      WebkitTextFillColor: "rgb(184, 184, 196);",
-      backgroundColor: "rgb(69, 72, 90)",
+      WebkitTextFillColor: "rgb(213, 213, 230);",
+      backgroundColor: "rgb(81, 85, 102)",
     },
     "& .MuiInputBase-input": {
       WebkitTextFillColor: "rgb(84, 84, 104);",
@@ -347,7 +347,7 @@ function LeftSBSphere(props) {
       <label className="LEFTSB__data-label">Known?</label>
       {editMode ? (
         <input
-          className="LEFTSB__flow-data"
+          className="LEFTSB__sphere-checkbox"
           type="checkbox"
           id="knowncb"
           name="knowncb"

@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: rgb(184, 184, 196);
+    color: rgb(213, 213, 230);
     flex-grow: 1;
     flex-basis: 0;
 }
@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: rgb(184, 184, 196);
+    color: rgb(213, 213, 230);
     flex-grow: 1;
     flex-basis: 0;
 
@@ -58,7 +58,7 @@
 }
 
 .LEFTSB_selected-tab{
-    background-color: rgb(69, 72, 90);
+    background-color: rgb(81, 85, 102);
     padding: 10px;
     min-width: 70px;
     display: flex;
@@ -75,9 +75,8 @@
 .LEFTSB__inner-container, .RIGHTSB__inner-container{
     width: calc(100% - 40px);
     height: calc(100% - 40px);
-    background-color: rgb(69, 72, 90);
+    background-color: rgb(81, 85, 102);
     padding: 10px;
-    
 }
 
 .LEFTSB__inner-container{
@@ -243,7 +242,23 @@
 }
 
 .LEFTSB__option-container{
+    display: flex;
     padding: 4px;
+}
+.LEFTSB__option-checkbox{
+    width: 14px;
+    height: 14px;
+    margin: 4px;
+}
+.LEFTSB__flow-checkbox, .LEFTSB__sphere-checkbox{
+    height: 18px;
+    width: 18px;
+    align-self: baseline;
+    
+}
+.LEFTSB__option-checkbox:checked, .LEFTSB__flow-checkbox, .LEFTSB__sphere-checkbox{
+    
+    accent-color: rgb(57, 57, 73);
 }
 
 .LEFTSB__new-sphere-container{

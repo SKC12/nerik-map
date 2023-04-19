@@ -1,4 +1,5 @@
 import { Autocomplete, Button, Slider } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import TextField from "@mui/material/TextField";
 import { getStyle } from "../Components/utils.js";
 
@@ -35,7 +36,7 @@ const selectStyle = {
 const inputStyle = {
   "& .MuiInputBase-input.Mui-disabled": {
     borderStyle: "none",
-    WebkitTextFillColor: "rgb(184, 184, 196);",
+    WebkitTextFillColor: "rgb(213, 213, 230);",
     backgroundColor: "rgb(69, 72, 90)",
   },
   "& .MuiInputBase-input": {
@@ -52,6 +53,8 @@ const inputStyle = {
 const flowOptions = ["Regular", "Erratic", "Tidal"];
 
 function LeftSBNew(props) {
+  const theme = useTheme();
+  console.log(theme);
   const setEdges = props.setEdges;
   const nodes = props.nodes;
   const edges = props.edges;

@@ -53,8 +53,8 @@ function LeftSBFlow(props) {
   const inputStyle = {
     "& .MuiInputBase-input.Mui-disabled": {
       borderStyle: "none",
-      WebkitTextFillColor: "rgb(184, 184, 196);",
-      backgroundColor: "rgb(69, 72, 90)",
+      WebkitTextFillColor: "rgb(213, 213, 230);",
+      backgroundColor: "rgb(81, 85, 102)",
     },
     "& .MuiInputBase-input": {
       WebkitTextFillColor: "rgb(84, 84, 104);",
@@ -72,7 +72,7 @@ function LeftSBFlow(props) {
     "& .MuiInputBase-input": {
       WebkitTextFillColor: "rgb(84, 84, 104)",
       backgroundColor: "white",
-      borderRadius: "4px",
+      border: "black 1px solid",
 
       fontSize: "14px",
     },
@@ -452,7 +452,7 @@ function LeftSBFlow(props) {
       <label className="LEFTSB__data-label">Known?</label>
       {editMode ? (
         <input
-          className="LEFTSB__flow-data"
+          className="LEFTSB__flow-checkbox"
           type="checkbox"
           id="knowncb"
           name="knowncb"
