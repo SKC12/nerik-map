@@ -162,6 +162,9 @@ function LeftSideBar(props) {
             unknownPathsState={props.unknownPathsState}
             unknownSpheresState={props.unknownSpheresState}
             dragState={props.dragState}
+            reactFlowInstance={reactFlowInstance}
+            setEdges={setEdges}
+            setNodes={setNodes}
           />
         ) : null}
         {selectedTab === "aboutTab" ? (

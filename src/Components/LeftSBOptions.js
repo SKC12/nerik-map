@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import { createElement, useCallback, useRef } from "react";
 
 function LeftSBOptions(props) {
   const [isAnimated, setIsAnimated] = props.animationState;
@@ -6,6 +7,10 @@ function LeftSBOptions(props) {
   const [draggable, setDraggable] = props.dragState;
   const [hideUnkownPaths, setHideUnknownPaths] = props.unknownPathsState;
   const [hideUnkownSpheres, setHideUnknownSpheres] = props.unknownSpheresState;
+  const reactFlowInstance = props.reactFlowInstance;
+  const setNodes = props.setNodes;
+  const setEdges = props.setEdges;
+  const hiddenFileRef = useRef(null);
 
   const animationChange = () => {
     setIsAnimated(!isAnimated);
@@ -24,7 +29,52 @@ function LeftSBOptions(props) {
     setHideUnknownSpheres(!hideUnkownSpheres);
   };
 
-  const saveToLocalStorage = () => {};
+  const saveToLocalStorage = useCallback(() => {
+    if (reactFlowInstance) {
+      const data = reactFlowInstance.toObject();
+      localStorage.setItem("sbej-flowmap", JSON.stringify(data));
+    }
+  }, [reactFlowInstance]);
+
+  const downloadAsFile = useCallback(() => {
+    if (reactFlowInstance) {
+      const data = JSON.stringify(reactFlowInstance.toObject());
+
+      const blob = new Blob([data], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "flowmap.json";
+      a.click();
+    }
+  }, [reactFlowInstance]);
+
+  const loadFromLocalStorage = useCallback(() => {
+    const loadData = async () => {
+      const data = JSON.parse(localStorage.getItem("sbej-flowmap"));
+      if (data) {
+        setNodes(data.nodes || []);
+        setEdges(data.edges || []);
+      }
+    };
+
+    loadData();
+  }, [setEdges, setNodes]);
+
+  const loadFromFile = useCallback(
+    (event) => {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        let data = JSON.parse(e.target.result);
+        if (data) {
+          setNodes(data.nodes || []);
+          setEdges(data.edges || []);
+        }
+      };
+      reader.readAsText(file);
+    },
+    [setEdges, setNodes]
+  );
 
   return (
     <div>
@@ -90,7 +140,7 @@ function LeftSBOptions(props) {
         </Button>
         <Button
           className="LEFTSB__option-button"
-          onClick={saveToLocalStorage}
+          onClick={loadFromLocalStorage}
           disableElevation
           variant="contained"
         >
@@ -98,7 +148,7 @@ function LeftSBOptions(props) {
         </Button>
         <Button
           className="LEFTSB__option-button"
-          onClick={saveToLocalStorage}
+          onClick={downloadAsFile}
           disableElevation
           variant="contained"
         >
@@ -106,12 +156,21 @@ function LeftSBOptions(props) {
         </Button>
         <Button
           className="LEFTSB__option-button"
-          onClick={saveToLocalStorage}
+          onClick={(e) => {
+            hiddenFileRef.current.click();
+          }}
           disableElevation
           variant="contained"
         >
           Load from file
         </Button>
+        <input
+          ref={hiddenFileRef}
+          onChange={loadFromFile}
+          style={{ display: "none" }}
+          type="file"
+          accept=".json"
+        ></input>
       </div>
     </div>
   );
