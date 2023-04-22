@@ -18,8 +18,11 @@ function getTempData(data) {
 function LeftSBFlow(props) {
   const reactFlowInstance = props.reactFlowInstance;
 
-  const flowRiverColors = props.flowRiverColors;
-  const setFlowRiverColors = props.setFlowRiverColors;
+  const flowRiverColors = useStore((state) => state.flowRiverColors, shallow);
+  const setFlowRiverColors = useStore(
+    (state) => state.setFlowRiverColors,
+    shallow
+  );
   const selectedEdge = props.selectedEdge;
   const selectedData = selectedEdge ? selectedEdge.data : null;
 

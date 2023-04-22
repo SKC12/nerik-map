@@ -101,9 +101,7 @@ function SphereMap(props) {
 
   const [selectedNode, setSelectedNode] = useState(null);
   const [selectedEdge, setSelectedEdge] = useState(null);
-  const [flowRiverColors, setFlowRiverColors] = useState(
-    defaultFlowRiverColors
-  );
+  const flowRiverColors = useStore((state) => state.flowRiverColors);
 
   const reactFlowRef = useRef(null);
   const [reactFlowInstance, setReactFlowInstance] = useState(null);
@@ -246,7 +244,6 @@ function SphereMap(props) {
         selectedEdge={selectedEdge}
         setSelectedEdge={setSelectedEdge}
         reactFlowInstance={reactFlowInstance}
-        flowRiverColors={flowRiverColors}
       />
       <div
         ref={reactFlowRef}

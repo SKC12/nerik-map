@@ -4,8 +4,39 @@ import { addEdge, applyNodeChanges, applyEdgeChanges } from "reactflow";
 
 import { getStyle } from "./Components/utils";
 
+const defaultFlowRiverColors = {
+  "Arcane Inner Flow": "#fcf003",
+  "Arcane Outer Flow": "#fca503",
+  "Braineater Flow": "#a503fc",
+  "Casa Flow": "#00ad31",
+  "Crystal Flow": "#ff00bf",
+  "Eadhel Flow": "#90eb8d",
+  "Gate Flow": "#94dbf7",
+  "Hammer Flow": "#99680e",
+  "Golot Flow": "#007874",
+  "Gorth Flow": "#b1deca",
+  "Lost Flow": "#c2c793",
+  "Mael Flow": "#4b3870",
+  "Mystara Flow": "#050780",
+  Other: "#575757",
+  "Pillar Flow": "#3f6b8f",
+  "Pirtel Flow": "#e0e0e0",
+  "Radiant Flow": "#ff0000",
+  "Red-Heart Flow": "#ff7e1c",
+  "Seven Stars Flow": "#d98c52",
+  "The Maelstrom": "#d62dc2",
+  "Trulian Ring": "#593455",
+  "Vodoni Flow": "#0b1d57",
+  "Vodonika Flow": "#7d0b13",
+  "Way Flow": "#268496",
+};
+
 // this is our useStore hook that we can use in our components to get parts of the store and call actions
 const useStore = create((set, get) => ({
+  nodes: [],
+  edges: [],
+  scale: 5,
+  flowRiverColors: defaultFlowRiverColors,
   isAnimated: false,
   toggleAnimated: () => set((state) => ({ isAnimated: !state.isAnimated })),
   projectedTime: false,
@@ -20,9 +51,6 @@ const useStore = create((set, get) => ({
   toggleHideUnknownSpheres: () =>
     set((state) => ({ hideUnknownSpheres: !state.hideUnknownSpheres })),
 
-  nodes: [],
-  edges: [],
-  scale: 5,
   onNodesChange: (changes) => {
     set({
       nodes: applyNodeChanges(changes, get().nodes),
@@ -98,6 +126,11 @@ const useStore = create((set, get) => ({
       edges: newEdges,
     });
     console.log("set edges", get().nodes);
+  },
+  setFlowRiverColors: (newFlowRiverColors) => {
+    set({
+      flowRiverColors: newFlowRiverColors,
+    });
   },
 }));
 

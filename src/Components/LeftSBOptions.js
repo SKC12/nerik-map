@@ -4,6 +4,8 @@ import useStore from "../store";
 import { shallow } from "zustand/shallow";
 
 function LeftSBOptions(props) {
+  const reactFlowInstance = props.reactFlowInstance;
+
   const isAnimated = useStore((state) => state.isAnimated);
   const toggleAnimated = useStore((state) => state.toggleAnimated);
   const projectedTime = useStore((state) => state.projectedTime);
@@ -18,7 +20,6 @@ function LeftSBOptions(props) {
     (state) => state.toggleHideUnknownSpheres
   );
 
-  const reactFlowInstance = props.reactFlowInstance;
   const setEdges = useStore((state) => state.setEdges, shallow);
   const setNodes = useStore((state) => state.setNodes, shallow);
 

@@ -60,8 +60,11 @@ function LeftSBNew(props) {
   const edges = useStore((state) => state.edges, shallow);
   const nodes = useStore((state) => state.nodes, shallow);
   const scale = props.scale;
-  const flowRiverColors = props.flowRiverColors;
-  const setFlowRiverColors = props.setFlowRiverColors;
+  const flowRiverColors = useStore((state) => state.flowRiverColors, shallow);
+  const setFlowRiverColors = useStore(
+    (state) => state.setFlowRiverColors,
+    shallow
+  );
   //console.log(flowRiverColors);
 
   const flowRiverOptions = edges.reduce((flowRivers, edge) => {
