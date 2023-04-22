@@ -15,7 +15,6 @@ function LeftSideBar(props) {
     props.selectedEdge,
     props.setSelectedEdge,
   ];
-  const [hideUnkownPaths] = props.unknownPathsState;
 
   const scale = props.scale;
   const reactFlowInstance = props.reactFlowInstance;
@@ -119,10 +118,7 @@ function LeftSideBar(props) {
           />
         ) : null}
         {selectedTab === "flowsTab" ? (
-          <LeftSBFlows
-            selectedNode={selectedNode}
-            hideUnkownPaths={hideUnkownPaths}
-          />
+          <LeftSBFlows selectedNode={selectedNode} />
         ) : null}
         {selectedTab === "flowTab" ? (
           <LeftSBFlow

@@ -56,7 +56,7 @@ function Flow(props) {
 function LeftSBFlows(props) {
   const selectedNode = props.selectedNode;
   const edges = useStore((state) => state.edges, shallow);
-  const hideUnkownPaths = props.hideUnkownPaths;
+  const hideUnkownPaths = useStore((state) => state.hideUnkownPaths);
 
   const getFlowsJSX = (node) => {
     let connectedEdges = getConnectedEdges([node], edges).map((edge) => {

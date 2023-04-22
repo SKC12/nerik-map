@@ -6,6 +6,20 @@ import { getStyle } from "./Components/utils";
 
 // this is our useStore hook that we can use in our components to get parts of the store and call actions
 const useStore = create((set, get) => ({
+  isAnimated: false,
+  toggleAnimated: () => set((state) => ({ isAnimated: !state.isAnimated })),
+  projectedTime: false,
+  toggleProjectedTime: () =>
+    set((state) => ({ projectedTime: !state.projectedTime })),
+  draggable: false,
+  toggleDraggable: () => set((state) => ({ draggable: !state.draggable })),
+  hideUnknownPaths: false,
+  toggleHideUnknownPaths: () =>
+    set((state) => ({ hideUnknownPaths: !state.hideUnknownPaths })),
+  hideUnknownSpheres: false,
+  toggleHideUnknownSpheres: () =>
+    set((state) => ({ hideUnknownSpheres: !state.hideUnknownSpheres })),
+
   nodes: [],
   edges: [],
   scale: 5,

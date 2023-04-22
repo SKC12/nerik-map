@@ -93,12 +93,12 @@ function SphereMap(props) {
 
   const setEdges = useStore((state) => state.setEdges, shallow);
   const setNodes = useStore((state) => state.setNodes, shallow);
+  const animated = useStore((state) => state.isAnimated);
+  const projectedTime = useStore((state) => state.projectedTime);
+  const hideUnknownPaths = useStore((state) => state.hideUnknownPaths);
+  const hideUnknownSpheres = useStore((state) => state.hideUnknownSpheres);
+  const draggable = useStore((state) => state.draggable);
 
-  const [animated, setAnimated] = useState(false);
-  const [projectedTime, setProjectedTime] = useState(false);
-  const [hideUnknownPaths, setHideUnknownPaths] = useState(false);
-  const [hideUnknownSpheres, setHideUnknownSpheres] = useState(false);
-  const [draggable, setDraggable] = useState(false);
   const [selectedNode, setSelectedNode] = useState(null);
   const [selectedEdge, setSelectedEdge] = useState(null);
   const [flowRiverColors, setFlowRiverColors] = useState(
@@ -165,6 +165,8 @@ function SphereMap(props) {
   }, [animated, updateAnimation]);
 
   useEffect(() => {
+    console.log(projectedTime);
+
     updateProjectedTime(projectedTime);
   }, [projectedTime, updateProjectedTime]);
 
@@ -239,16 +241,10 @@ function SphereMap(props) {
   return (
     <>
       <LeftSideBar
-        animationState={[animated, setAnimated]}
-        projectedTimeState={[projectedTime, setProjectedTime]}
         selectedNode={selectedNode}
         setSelectedNode={setSelectedNode}
         selectedEdge={selectedEdge}
         setSelectedEdge={setSelectedEdge}
-        dragState={[draggable, setDraggable]}
-        unknownPathsState={[hideUnknownPaths, setHideUnknownPaths]}
-        unknownSpheresState={[hideUnknownSpheres, setHideUnknownSpheres]}
-        scale={scale}
         reactFlowInstance={reactFlowInstance}
         flowRiverColors={flowRiverColors}
       />

@@ -4,32 +4,33 @@ import useStore from "../store";
 import { shallow } from "zustand/shallow";
 
 function LeftSBOptions(props) {
-  const [isAnimated, setIsAnimated] = props.animationState;
-  const [projectedTime, setProjectedTime] = props.projectedTimeState;
-  const [draggable, setDraggable] = props.dragState;
-  const [hideUnkownPaths, setHideUnknownPaths] = props.unknownPathsState;
-  const [hideUnkownSpheres, setHideUnknownSpheres] = props.unknownSpheresState;
+  const isAnimated = useStore((state) => state.isAnimated);
+  const toggleAnimated = useStore((state) => state.toggleAnimated);
+  const projectedTime = useStore((state) => state.projectedTime);
+  const toggleProjectedTime = useStore((state) => state.toggleProjectedTime);
+  const draggable = useStore((state) => state.draggable);
+  const toggleDraggable = useStore((state) => state.toggleDraggable);
+  const hideUnknownPaths = useStore((state) => state.hideUnkownPaths);
+  const toggleHideUnknownPaths = useStore(
+    (state) => state.toggleHideUnknownPaths
+  );
+  const toggleHideUnknownSpheres = useStore(
+    (state) => state.toggleHideUnknownSpheres
+  );
+
   const reactFlowInstance = props.reactFlowInstance;
   const setEdges = useStore((state) => state.setEdges, shallow);
   const setNodes = useStore((state) => state.setNodes, shallow);
 
   const hiddenFileRef = useRef(null);
 
-  const animationChange = () => {
-    setIsAnimated(!isAnimated);
-  };
-
-  const projectedTimeChange = () => {
-    setProjectedTime(!projectedTime);
-  };
-
-  const dragChange = () => {
-    setDraggable(!draggable);
-  };
+  // const animationChange = () => {
+  //   setIsAnimated(!isAnimated);
+  // };
 
   const unknownPathsChange = () => {
-    setHideUnknownPaths(!hideUnkownPaths);
-    setHideUnknownSpheres(!hideUnkownSpheres);
+    toggleHideUnknownPaths();
+    toggleHideUnknownSpheres();
   };
 
   const saveToLocalStorage = useCallback(() => {
@@ -89,7 +90,7 @@ function LeftSBOptions(props) {
           id="draggablecb"
           name="draggablecb"
           checked={draggable}
-          onChange={dragChange}
+          onChange={toggleDraggable}
         ></input>
         <label className="LEFTSB__data-label">Draggable Spheres</label>
       </div>
@@ -100,7 +101,7 @@ function LeftSBOptions(props) {
           id="animationcb"
           name="animationcb"
           checked={isAnimated}
-          onChange={animationChange}
+          onChange={toggleAnimated}
         ></input>
         <label className="LEFTSB__data-label">Animated</label>
       </div>
@@ -111,7 +112,7 @@ function LeftSBOptions(props) {
           id="projTimecb"
           name="projTimecb"
           checked={projectedTime}
-          onChange={projectedTimeChange}
+          onChange={toggleProjectedTime}
         ></input>
         <label className="LEFTSB__data-label">
           Calculate missing travel time
@@ -123,7 +124,7 @@ function LeftSBOptions(props) {
           type="checkbox"
           id="unknownPathscb"
           name="unknownPathscb"
-          checked={hideUnkownPaths}
+          checked={hideUnknownPaths}
           onChange={unknownPathsChange}
         ></input>
         <label className="LEFTSB__data-label">
