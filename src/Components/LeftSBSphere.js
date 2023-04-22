@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import TextField from "@mui/material/TextField";
 import DelConfirmationDialog from "./DelConfirmationDialog";
 import { Slider } from "@mui/material";
+import useStore from "../store";
+import { shallow } from "zustand/shallow";
 
 function LeftSBSphere(props) {
   const [editMode, setEditMode] = useState(false);
@@ -12,8 +14,9 @@ function LeftSBSphere(props) {
   //console.log(selectedData);
   const [tempData, setTempData] = useState(selectedData);
   const [known, setKnown] = useState(tempData.isKnown === "yes");
+  const nodes = useStore((state) => state.nodes, shallow);
 
-  const setNodes = props.setNodes;
+  const setNodes = useStore((state) => state.setNodes, shallow);
   const reactFlowInstance = props.reactFlowInstance;
 
   const inputStyle = {
@@ -58,8 +61,8 @@ function LeftSBSphere(props) {
   };
 
   const onClickSave = () => {
-    setNodes((nds) =>
-      nds.map((node) => {
+    setNodes(
+      nodes.map((node) => {
         if (node.id === selectedData.shortName) {
           console.log(node);
           node.data = tempData;

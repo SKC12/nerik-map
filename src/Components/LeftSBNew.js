@@ -4,6 +4,10 @@ import { getStyle } from "../Components/utils.js";
 
 import { useState } from "react";
 import greySphere from "../img/Grey_Sphere.webp";
+
+import useStore from "../store";
+import { shallow } from "zustand/shallow";
+
 let style = {
   backgroundImage: `url(${greySphere})`,
   width: "100px",
@@ -52,9 +56,9 @@ const inputStyle = {
 const flowOptions = ["Regular", "Erratic", "Tidal"];
 
 function LeftSBNew(props) {
-  const setEdges = props.setEdges;
-  const nodes = props.nodes;
-  const edges = props.edges;
+  const setEdges = useStore((state) => state.setEdges, shallow);
+  const edges = useStore((state) => state.edges, shallow);
+  const nodes = useStore((state) => state.nodes, shallow);
   const scale = props.scale;
   const flowRiverColors = props.flowRiverColors;
   const setFlowRiverColors = props.setFlowRiverColors;

@@ -1,4 +1,4 @@
-import ReactFlow, { useNodesState, useEdgesState } from "reactflow";
+import ReactFlow from "reactflow";
 import "reactflow/dist/style.css";
 import "../style/SphereMap.css";
 import { loadCSVSpheres, loadCSVFlows } from "../data-loader";
@@ -18,7 +18,8 @@ import FloatingConnectionLine from "./FloatingConnectionLine.js";
 import LeftSideBar from "./LeftSideBar";
 import RightSideBar from "./RightSideBar";
 
-import { getStyle } from "../Components/utils.js";
+import useStore from "../store";
+import { shallow } from "zustand/shallow";
 
 const scale = 5;
 
@@ -57,9 +58,42 @@ const defaultFlowRiverColors = {
   "Way Flow": "#268496",
 };
 
+const selector = (state) => ({
+  nodes: state.nodes,
+  edges: state.edges,
+  scale: state.scale,
+  onNodesChange: state.onNodesChange,
+  onEdgesChange: state.onEdgesChange,
+  onConnect: state.onConnect,
+  updateFlowRiverColors: state.updateFlowRiverColors,
+  updateAnimation: state.updateAnimation,
+  updateProjectedTime: state.updateProjectedTime,
+  updateHideUnknownPaths: state.updateHideUnknownPaths,
+  updateHideUnknownSpheres: state.updateHideUnknownSpheres,
+  addNode: state.addNode,
+});
+
 function SphereMap(props) {
   const canvasWidth = props.width;
   const canvasHeight = props.height;
+  const {
+    scale,
+    onNodesChange,
+    onEdgesChange,
+    onConnect,
+    updateFlowRiverColors,
+    nodes,
+    edges,
+    addNode,
+    updateAnimation,
+    updateProjectedTime,
+    updateHideUnknownPaths,
+    updateHideUnknownSpheres,
+  } = useStore(selector, shallow);
+
+  const setEdges = useStore((state) => state.setEdges, shallow);
+  const setNodes = useStore((state) => state.setNodes, shallow);
+
   const [animated, setAnimated] = useState(false);
   const [projectedTime, setProjectedTime] = useState(false);
   const [hideUnknownPaths, setHideUnknownPaths] = useState(false);
@@ -67,8 +101,6 @@ function SphereMap(props) {
   const [draggable, setDraggable] = useState(false);
   const [selectedNode, setSelectedNode] = useState(null);
   const [selectedEdge, setSelectedEdge] = useState(null);
-  const [nodes, setNodes, onNodesChange] = useNodesState([]);
-  const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [flowRiverColors, setFlowRiverColors] = useState(
     defaultFlowRiverColors
   );
@@ -80,7 +112,7 @@ function SphereMap(props) {
   const selectEdge = edges.filter((edg) => edg.selected === true)[0];
 
   //console.log(selectedEdge, selectedNode);
-  console.log(nodes, edges);
+  //console.log(nodes, edges);
   useEffect(() => {
     setSelectedNode(selectNode);
   }, [selectNode]);
@@ -90,13 +122,8 @@ function SphereMap(props) {
   }, [selectEdge]);
 
   useEffect(() => {
-    setEdges((edgs) =>
-      edgs.map((edg) => {
-        edg.style = getStyle(edg.data, flowRiverColors, scale);
-        return edg;
-      })
-    );
-  }, [flowRiverColors, setEdges]);
+    updateFlowRiverColors(flowRiverColors);
+  }, [flowRiverColors, updateFlowRiverColors]);
 
   const onDragSphereOver = useCallback(
     (e) => {
@@ -123,9 +150,9 @@ function SphereMap(props) {
           isKnown: "yes",
         },
       };
-      setNodes((nds) => nds.concat(newSphere));
+      addNode(newSphere);
     },
-    [reactFlowInstance, setNodes]
+    [reactFlowInstance, addNode, scale]
   );
 
   const onSphereDrop = useCallback((e) => {
@@ -134,44 +161,20 @@ function SphereMap(props) {
   }, []);
 
   useEffect(() => {
-    setEdges((edgs) =>
-      edgs.map((edg) => {
-        edg.data = { ...edg.data, animation: animated };
-        return edg;
-      })
-    );
-  }, [animated, setEdges]);
+    updateAnimation(animated);
+  }, [animated, updateAnimation]);
 
   useEffect(() => {
-    setEdges((edgs) =>
-      edgs.map((edg) => {
-        edg.data = { ...edg.data, projectedTime: projectedTime };
-        return edg;
-      })
-    );
-  }, [projectedTime, setEdges]);
+    updateProjectedTime(projectedTime);
+  }, [projectedTime, updateProjectedTime]);
 
   useEffect(() => {
-    setEdges((edgs) =>
-      edgs.map((edg) => {
-        if (edg.data.isKnown === "no") {
-          edg.hidden = hideUnknownPaths;
-        }
-        return edg;
-      })
-    );
-  }, [hideUnknownPaths, setEdges]);
+    updateHideUnknownPaths(hideUnknownPaths);
+  }, [hideUnknownPaths, updateHideUnknownPaths]);
 
   useEffect(() => {
-    setNodes((nds) =>
-      nds.map((nd) => {
-        if (nd.data.isKnown === "no") {
-          nd.hidden = hideUnknownSpheres;
-        }
-        return nd;
-      })
-    );
-  }, [hideUnknownSpheres, setNodes]);
+    updateHideUnknownSpheres(hideUnknownSpheres);
+  }, [hideUnknownSpheres, updateHideUnknownSpheres]);
 
   useEffect(() => {
     async function loadSpheres(sphereData) {
@@ -228,7 +231,7 @@ function SphereMap(props) {
       setEdges(Flow.getEdges(flowsArray, defaultFlowRiverColors, scale));
     }
     loadSpheres(sphereData);
-  }, [setNodes, setEdges]);
+  }, [setNodes, setEdges, scale]);
 
   //console.log("NODES", nodes);
   console.log("EDGES", edges);
@@ -242,17 +245,12 @@ function SphereMap(props) {
         setSelectedNode={setSelectedNode}
         selectedEdge={selectedEdge}
         setSelectedEdge={setSelectedEdge}
-        edges={edges}
-        nodes={nodes}
         dragState={[draggable, setDraggable]}
         unknownPathsState={[hideUnknownPaths, setHideUnknownPaths]}
         unknownSpheresState={[hideUnknownSpheres, setHideUnknownSpheres]}
-        setNodes={setNodes}
-        setEdges={setEdges}
         scale={scale}
         reactFlowInstance={reactFlowInstance}
         flowRiverColors={flowRiverColors}
-        setFlowRiverColors={setFlowRiverColors}
       />
       <div
         ref={reactFlowRef}
@@ -264,6 +262,7 @@ function SphereMap(props) {
           nodeTypes={nodeTypes}
           onNodesChange={onNodesChange}
           onEdgesChange={onEdgesChange}
+          onConnect={onConnect}
           edgeTypes={edgeTypes}
           connectionLineComponent={FloatingConnectionLine}
           nodeOrigin={[0.5, 0.5]}

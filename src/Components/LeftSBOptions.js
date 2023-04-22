@@ -1,5 +1,7 @@
 import { Button } from "@mui/material";
 import { useCallback, useRef } from "react";
+import useStore from "../store";
+import { shallow } from "zustand/shallow";
 
 function LeftSBOptions(props) {
   const [isAnimated, setIsAnimated] = props.animationState;
@@ -8,8 +10,9 @@ function LeftSBOptions(props) {
   const [hideUnkownPaths, setHideUnknownPaths] = props.unknownPathsState;
   const [hideUnkownSpheres, setHideUnknownSpheres] = props.unknownSpheresState;
   const reactFlowInstance = props.reactFlowInstance;
-  const setNodes = props.setNodes;
-  const setEdges = props.setEdges;
+  const setEdges = useStore((state) => state.setEdges, shallow);
+  const setNodes = useStore((state) => state.setNodes, shallow);
+
   const hiddenFileRef = useRef(null);
 
   const animationChange = () => {

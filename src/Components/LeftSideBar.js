@@ -17,12 +17,6 @@ function LeftSideBar(props) {
   ];
   const [hideUnkownPaths] = props.unknownPathsState;
 
-  const setNodes = props.setNodes;
-  const setEdges = props.setEdges;
-
-  const edges = props.edges;
-  const nodes = props.nodes;
-
   const scale = props.scale;
   const reactFlowInstance = props.reactFlowInstance;
   const flowRiverColors = props.flowRiverColors;
@@ -121,25 +115,19 @@ function LeftSideBar(props) {
           <LeftSBSphere
             selectedNode={selectedNode}
             setSelectedNode={setSelectedNode}
-            setNodes={setNodes}
             reactFlowInstance={reactFlowInstance}
           />
         ) : null}
         {selectedTab === "flowsTab" ? (
           <LeftSBFlows
-            edges={edges}
             selectedNode={selectedNode}
             hideUnkownPaths={hideUnkownPaths}
-            setEdges={setEdges}
           />
         ) : null}
         {selectedTab === "flowTab" ? (
           <LeftSBFlow
             selectedEdge={selectedEdge}
             setSelectedEdge={setSelectedEdge}
-            setEdges={setEdges}
-            edges={edges}
-            nodes={nodes}
             reactFlowInstance={reactFlowInstance}
             flowRiverColors={flowRiverColors}
             setFlowRiverColors={setFlowRiverColors}
@@ -147,9 +135,6 @@ function LeftSideBar(props) {
         ) : null}
         {selectedTab === "newTab" ? (
           <LeftSBNew
-            edges={edges}
-            nodes={nodes}
-            setEdges={setEdges}
             scale={scale}
             flowRiverColors={flowRiverColors}
             setFlowRiverColors={setFlowRiverColors}
@@ -163,8 +148,6 @@ function LeftSideBar(props) {
             unknownSpheresState={props.unknownSpheresState}
             dragState={props.dragState}
             reactFlowInstance={reactFlowInstance}
-            setEdges={setEdges}
-            setNodes={setNodes}
           />
         ) : null}
         {selectedTab === "aboutTab" ? (

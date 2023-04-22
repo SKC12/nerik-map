@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import TextField from "@mui/material/TextField";
 import { Autocomplete } from "@mui/material";
 import DelConfirmationDialog from "./DelConfirmationDialog";
+import useStore from "../store";
+import { shallow } from "zustand/shallow";
 
 function getFormattedFlowType(type) {
   if (type.includes("erratic")) return "Erratic";
@@ -20,9 +22,10 @@ function LeftSBFlow(props) {
   const setFlowRiverColors = props.setFlowRiverColors;
   const selectedEdge = props.selectedEdge;
   const selectedData = selectedEdge ? selectedEdge.data : null;
-  const edges = props.edges;
-  const setEdges = props.setEdges;
-  const nodes = props.nodes;
+
+  const setEdges = useStore((state) => state.setEdges, shallow);
+  const edges = useStore((state) => state.edges, shallow);
+  const nodes = useStore((state) => state.nodes, shallow);
 
   const [editMode, setEditMode] = useState(false);
   const [delDialogOpen, setDelDialogOpen] = useState(false);
@@ -170,8 +173,8 @@ function LeftSBFlow(props) {
       ).toFixed(2);
     }
 
-    setEdges((edgs) =>
-      edgs.map((edg) => {
+    setEdges(
+      edges.map((edg) => {
         if (edg.id === selectedEdge.id) {
           console.log(edg);
           edg.id = `${data.sphereW} to ${data.sphereE}`;

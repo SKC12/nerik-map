@@ -1,4 +1,6 @@
 import { getConnectedEdges } from "reactflow";
+import useStore from "../store";
+import { shallow } from "zustand/shallow";
 
 function getFormattedFlowType(type) {
   if (type.includes("predominant")) return "Predominant";
@@ -53,21 +55,16 @@ function Flow(props) {
 
 function LeftSBFlows(props) {
   const selectedNode = props.selectedNode;
-  const edges = props.edges;
+  const edges = useStore((state) => state.edges, shallow);
   const hideUnkownPaths = props.hideUnkownPaths;
-  const setEdges = props.setEdges;
 
   const getFlowsJSX = (node) => {
     let connectedEdges = getConnectedEdges([node], edges).map((edge) => {
       if (!hideUnkownPaths || edge.data.isKnown === "yes") {
         if (edge.source !== node.id && edge.data.type !== "uniW") {
-          return (
-            <Flow edge={edge} setEdges={setEdges} direction={"incoming"} />
-          );
+          return <Flow edge={edge} direction={"incoming"} />;
         } else if (edge.source === node.id && edge.data.type !== "uniE") {
-          return (
-            <Flow edge={edge} setEdges={setEdges} direction={"outgoing"} />
-          );
+          return <Flow edge={edge} direction={"outgoing"} />;
         } else return null;
       } else return null;
     });
