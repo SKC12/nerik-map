@@ -1,18 +1,11 @@
 import ReactFlow from "reactflow";
 import "reactflow/dist/style.css";
 import "../style/SphereMap.css";
-import { loadCSVSpheres, loadCSVFlows } from "../data-loader";
 import { useEffect, useState, useRef, useCallback } from "react";
-//import sphereData from "../data/radiant-triangle.csv";
-import sphereData from "../data/spheres.csv";
-
-//import flowsData from "../data/radiant-flows.csv";
-import flowsData from "../data/flows.csv";
 
 import { SphereNode } from "./SphereNode";
 import { BgNode } from "./BgNode";
-import { Sphere } from "../models/Sphere";
-import { Flow } from "../models/Flow";
+
 import FloatingEdge from "./FloatingEdge.js";
 import FloatingConnectionLine from "./FloatingConnectionLine.js";
 import LeftSideBar from "./LeftSideBar";
@@ -24,38 +17,10 @@ import { shallow } from "zustand/shallow";
 const scale = 5;
 
 let baseMapHeight = 399 * scale;
-let baseMapWidth = 567 * scale;
 
 const nodeTypes = { sphereNode: SphereNode, bgNode: BgNode };
 const edgeTypes = {
   floating: FloatingEdge,
-};
-
-const defaultFlowRiverColors = {
-  "Arcane Inner Flow": "#fcf003",
-  "Arcane Outer Flow": "#fca503",
-  "Braineater Flow": "#a503fc",
-  "Casa Flow": "#00ad31",
-  "Crystal Flow": "#ff00bf",
-  "Eadhel Flow": "#90eb8d",
-  "Gate Flow": "#94dbf7",
-  "Hammer Flow": "#99680e",
-  "Golot Flow": "#007874",
-  "Gorth Flow": "#b1deca",
-  "Lost Flow": "#c2c793",
-  "Mael Flow": "#4b3870",
-  "Mystara Flow": "#050780",
-  Other: "#575757",
-  "Pillar Flow": "#3f6b8f",
-  "Pirtel Flow": "#e0e0e0",
-  "Radiant Flow": "#ff0000",
-  "Red-Heart Flow": "#ff7e1c",
-  "Seven Stars Flow": "#d98c52",
-  "The Maelstrom": "#d62dc2",
-  "Trulian Ring": "#593455",
-  "Vodoni Flow": "#0b1d57",
-  "Vodonika Flow": "#7d0b13",
-  "Way Flow": "#268496",
 };
 
 const selector = (state) => ({
@@ -91,8 +56,6 @@ function SphereMap(props) {
     updateHideUnknownSpheres,
   } = useStore(selector, shallow);
 
-  const setEdges = useStore((state) => state.setEdges, shallow);
-  const setNodes = useStore((state) => state.setNodes, shallow);
   const animated = useStore((state) => state.isAnimated);
   const projectedTime = useStore((state) => state.projectedTime);
   const hideUnknownPaths = useStore((state) => state.hideUnknownPaths);
@@ -175,63 +138,6 @@ function SphereMap(props) {
   useEffect(() => {
     updateHideUnknownSpheres(hideUnknownSpheres);
   }, [hideUnknownSpheres, updateHideUnknownSpheres]);
-
-  useEffect(() => {
-    async function loadSpheres(sphereData) {
-      //let sphereArray = [];
-      let sphereArray = await loadCSVSpheres(sphereData);
-
-      //let flowsArray = [];
-      let flowsArray = await loadCSVFlows(flowsData);
-
-      let bgSphere = {
-        id: "bg",
-        type: "bgNode",
-        position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
-        data: { width: baseMapWidth, height: baseMapHeight },
-        draggable: false,
-        selectable: false,
-        zIndex: -1,
-      };
-
-      // let testSphere = {
-      //   sphere: "test",
-      //   shortName: "test",
-      //   sphereRadius: "1",
-      //   xCoord: 0 + 11,
-      //   yCoord: 0 + 11,
-      //   "onMap?": "Yes",
-      // };
-
-      // let testSphere3 = {
-      //   sphere: "test3",
-      //   shortName: "test3",
-      //   sphereRadius: "1",
-      //   xCoord: 194 + 11,
-      //   yCoord: 181 + 11,
-      //   "onMap?": "Yes",
-      // };
-
-      // let testSphere2 = {
-      //   sphere: "test2",
-      //   shortName: "test2",
-      //   sphereRadius: 10000,
-      //   xCoord: 580 * scale,
-      //   yCoord: 410 * scale,
-      //   "onMap?": "Yes",
-      // };
-      //sphereArray.push(testSphere);
-      //sphereArray.push(testSphere2);
-      //sphereArray.push(testSphere3);
-
-      //console.log("SPHERES", sphereArray);
-      //console.log("FLOWS", flowsArray);
-
-      setNodes(Sphere.getNodes(sphereArray, scale).concat(bgSphere));
-      setEdges(Flow.getEdges(flowsArray, defaultFlowRiverColors, scale));
-    }
-    loadSpheres(sphereData);
-  }, [setNodes, setEdges, scale]);
 
   //console.log("NODES", nodes);
   console.log("EDGES", edges);

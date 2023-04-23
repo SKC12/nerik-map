@@ -2,6 +2,18 @@ import "./style/Main.css";
 import SphereMap from "./Components/SphereMap";
 import { useEffect, useRef, useState } from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { loadCSVSpheres, loadCSVFlows } from "./data-loader";
+import sphereData from "./data/spheres.csv";
+import flowsData from "./data/flows.csv";
+import useStore from "./store";
+import { shallow } from "zustand/shallow";
+import { Sphere } from "./models/Sphere";
+import { Flow } from "./models/Flow";
+
+const scale = 5;
+
+let baseMapHeight = 399 * scale;
+let baseMapWidth = 567 * scale;
 
 function App() {
   //width/heigth of the coordinates background
@@ -12,16 +24,52 @@ function App() {
     width: 0,
     height: 0,
   });
+  const setEdges = useStore((state) => state.setEdges, shallow);
+  const setNodes = useStore((state) => state.setNodes, shallow);
+  const flowRiverColors = useStore((state) => state.flowRiverColors);
+
+  const [loaded, setLoaded] = useState(false);
+
   //console.log(containerDimensions);
 
   useEffect(() => {
-    if (refContainer.current) {
+    async function loadSpheres(sphereData) {
+      //let sphereArray = [];
+      let sphereArray = await loadCSVSpheres(sphereData);
+
+      //let flowsArray = [];
+      let flowsArray = await loadCSVFlows(flowsData);
+
+      let bgSphere = {
+        id: "bg",
+        type: "bgNode",
+        position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
+        data: { width: baseMapWidth, height: baseMapHeight },
+        draggable: false,
+        selectable: false,
+        zIndex: -1,
+      };
+
+      setNodes(Sphere.getNodes(sphereArray, scale).concat(bgSphere));
+      setEdges(Flow.getEdges(flowsArray, flowRiverColors, scale));
+      setLoaded(true);
+    }
+    if (!loaded) {
+      loadSpheres(sphereData);
+    }
+  }, [loaded, flowRiverColors, setNodes, setEdges]);
+
+  // console.log("nodes and edges", nodes, edges);
+  //console.log("LOADED", loaded);
+
+  useEffect(() => {
+    if (refContainer.current && loaded) {
       setContainerDimensions({
         width: refContainer.current.offsetHeight * bgRatio,
         height: refContainer.current.offsetHeight,
       });
     }
-  }, [bgRatio]);
+  }, [bgRatio, loaded]);
 
   const theme = createTheme({
     palette: {
@@ -38,15 +86,19 @@ function App() {
     },
   });
 
+  //console.log(loaded && containerDimensions.width);
+
   return (
-    <div className="App">
+    <div ref={refContainer} className="App">
       <ThemeProvider theme={theme}>
-        <div ref={refContainer} className="main-container">
-          <SphereMap
-            width={containerDimensions.width}
-            height={containerDimensions.height}
-          ></SphereMap>
-        </div>
+        {loaded && containerDimensions.width ? (
+          <div className="main-container">
+            <SphereMap
+              width={containerDimensions.width}
+              height={containerDimensions.height}
+            ></SphereMap>
+          </div>
+        ) : null}
       </ThemeProvider>
     </div>
   );
