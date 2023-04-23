@@ -36,6 +36,7 @@ const useStore = create((set, get) => ({
   nodes: [],
   edges: [],
   scale: 5,
+  planetScreenData: null,
   flowRiverColors: defaultFlowRiverColors,
   isAnimated: false,
   toggleAnimated: () => set((state) => ({ isAnimated: !state.isAnimated })),
@@ -131,6 +132,19 @@ const useStore = create((set, get) => ({
     set({
       flowRiverColors: newFlowRiverColors,
     });
+  },
+  setPlanetScreenData: (planetsData) => {
+    set({
+      planetScreenData: planetsData,
+    });
+    console.log(get().planetScreenData);
+  },
+  leavePlanetScreen: () => {
+    console.log("LEAVE");
+    set({
+      planetScreenData: null,
+    });
+    console.log(get().planetScreenData);
   },
 }));
 

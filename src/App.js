@@ -9,6 +9,7 @@ import useStore from "./store";
 import { shallow } from "zustand/shallow";
 import { Sphere } from "./models/Sphere";
 import { Flow } from "./models/Flow";
+import PlanetMap from "./Components/PlanetMap";
 
 const scale = 5;
 
@@ -30,7 +31,10 @@ function App() {
 
   const [loaded, setLoaded] = useState(false);
 
+  const planetScreenData = useStore((state) => state.planetScreenData, shallow);
+
   //console.log(containerDimensions);
+  console.log(planetScreenData);
 
   useEffect(() => {
     async function loadSpheres(sphereData) {
@@ -93,10 +97,17 @@ function App() {
       <ThemeProvider theme={theme}>
         {loaded && containerDimensions.width ? (
           <div className="main-container">
-            <SphereMap
-              width={containerDimensions.width}
-              height={containerDimensions.height}
-            ></SphereMap>
+            {planetScreenData === null ? (
+              <SphereMap
+                width={containerDimensions.width}
+                height={containerDimensions.height}
+              ></SphereMap>
+            ) : (
+              <PlanetMap
+                width={containerDimensions.width}
+                height={containerDimensions.height}
+              />
+            )}
           </div>
         ) : null}
       </ThemeProvider>

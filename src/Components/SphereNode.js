@@ -1,8 +1,14 @@
 import "../style/Sphere.css";
 import { Handle, Position } from "reactflow";
 import greySphere from "../img/Grey_Sphere.webp";
+import useStore from "../store";
+import { shallow } from "zustand/shallow";
 
 export function SphereNode({ selected, data }) {
+  const setPlanetScreenData = useStore(
+    (state) => state.setPlanetScreenData,
+    shallow
+  );
   let width =
     data.sphereRadius >= 400
       ? (data.sphereRadius * data.scale) / 600 + "px"
@@ -50,6 +56,7 @@ export function SphereNode({ selected, data }) {
         {selected ? (
           <div
             className="SPHERE__planets-icon-contaier"
+            onClick={() => setPlanetScreenData(data.planets)}
             style={{
               right: `-${parseInt(width) / 6}px`,
               top: `-${parseInt(width) / 6}px`,
