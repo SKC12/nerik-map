@@ -15,8 +15,8 @@ export function PlanetNode({ selected, data }) {
       <div
         className="PLANET__orbit"
         style={{
-          width: `${parseInt(data.orbitRadius) * scale}px`,
-          height: `${parseInt(data.orbitRadius) * scale}px`,
+          width: `${parseInt(data.orbitRadius) * scale || 1}px`,
+          height: `${parseInt(data.orbitRadius) * scale || 1}px`,
           borderRadius: "100%",
           // border: "1px solid black",
           position: "relative",

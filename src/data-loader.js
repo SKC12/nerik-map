@@ -47,6 +47,14 @@ export async function loadCSVSpheres(data) {
     let currentLine = lines[i].split(";");
     for (let j = 0; j < currentLine.length; j++) {
       //console.log(headers[j]);
+      if (headers[j].includes("primaryBody")) {
+        obj[headers[j]] = currentLine[j];
+        let planet = {};
+        planet.name = currentLine[j];
+        planet.orbitRadius = "0";
+        planet.orbitTrack = "I1";
+        planets.push(new Planet(planet));
+      }
       if (headers[j].includes("Planet")) {
         if (currentLine[j]) {
           let planet = {};
