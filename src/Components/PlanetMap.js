@@ -16,8 +16,8 @@ import PlanetInnerBgNode from "./PlanetInnerBgNode";
 
 const scale = 5;
 
-let baseMapHeight = 28 * scale;
-let baseMapWidth = 28 * scale;
+let baseMapHeight = 200 * scale;
+let baseMapWidth = 200 * scale;
 
 const nodeTypes = {
   planetNode: PlanetNode,
@@ -47,7 +47,7 @@ function PlanetMap(props) {
         id: "outerBg",
         type: "outerBg",
         position: { x: 0, y: 0 },
-        data: { width: baseMapWidth * 14, height: baseMapHeight * 14 },
+        data: { width: baseMapWidth * 28, height: baseMapHeight * 28 },
         draggable: false,
         selectable: false,
         zIndex: -1,
@@ -113,7 +113,7 @@ function PlanetMap(props) {
           onEdgesChange={onEdgesChange}
           nodeOrigin={[0.5, 0.5]}
           fitView={true}
-          minZoom={0.25}
+          minZoom={0.025}
           maxZoom={30}
           //   translateExtent={[
           //     [0, 0],
