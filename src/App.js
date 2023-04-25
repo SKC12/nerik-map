@@ -5,6 +5,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { loadCSVSpheres, loadCSVFlows } from "./data-loader";
 import sphereData from "./data/spheres.csv";
 import flowsData from "./data/flows.csv";
+import planetData from "./data/planets.csv";
+
 import useStore from "./store";
 import { shallow } from "zustand/shallow";
 import { Sphere } from "./models/Sphere";
@@ -39,7 +41,7 @@ function App() {
   useEffect(() => {
     async function loadSpheres(sphereData) {
       //let sphereArray = [];
-      let sphereArray = await loadCSVSpheres(sphereData);
+      let sphereArray = await loadCSVSpheres(sphereData, planetData);
 
       //let flowsArray = [];
       let flowsArray = await loadCSVFlows(flowsData);
