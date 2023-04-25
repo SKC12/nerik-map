@@ -1,10 +1,14 @@
 import "../style/Sphere.css";
 import { Handle, Position } from "reactflow";
 import useStore from "../store";
+import { useStore as useReactFlowStore } from "reactflow";
 
 export function PlanetNode({ selected, data }) {
-  console.log(data);
+  //console.log(data);
+  const zoomLevel = useReactFlowStore((store) => store.transform[2]);
+  //console.log(zoomLevel);
   const scale = useStore((state) => state.scale);
+  const planetSize = 30 / zoomLevel;
   return (
     <>
       <Handle type="target" position={Position.Left} />
@@ -21,13 +25,15 @@ export function PlanetNode({ selected, data }) {
         <div
           className={`PLANET__node ${selected ? "PLANET__node-selected" : ""}`}
           style={{
-            width: "10px",
-            height: "10px",
+            width: `${planetSize}px`,
+            height: `${planetSize}px`,
             position: "absolute",
-            top: "-5px",
-            left: `${(parseInt(data.orbitRadius) * scale) / 2 - 5}px`,
+            top: `${-planetSize / 2}px`,
+            left: `${
+              (parseInt(data.orbitRadius) * scale) / 2 - planetSize / 2
+            }px`,
             backgroundColor: "red",
-            // borderRadius: "100%",
+            borderRadius: "100%",
           }}
         ></div>
       </div>

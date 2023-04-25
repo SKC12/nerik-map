@@ -3,6 +3,7 @@ import ReactFlow, {
   applyEdgeChanges,
   applyNodeChanges,
   Background,
+  ReactFlowProvider,
 } from "reactflow";
 import "reactflow/dist/style.css";
 import PlanetLeftSB from "./PlanetLeftSB";
@@ -105,26 +106,28 @@ function PlanetMap(props) {
         >
           X
         </div>
-        <ReactFlow
-          nodes={nodes}
-          edges={edges}
-          nodeTypes={nodeTypes}
-          onNodesChange={onNodesChange}
-          onEdgesChange={onEdgesChange}
-          nodeOrigin={[0.5, 0.5]}
-          fitView={true}
-          minZoom={0.025}
-          maxZoom={30}
-          //   translateExtent={[
-          //     [0, 0],
-          //     [567 * scale, 399 * scale],
-          //   ]}
-          onInit={setReactFlowInstance}
-          deleteKeyCode="Delete"
-        >
-          <Background />
-          {/* <Controls /> */}
-        </ReactFlow>
+        <ReactFlowProvider>
+          <ReactFlow
+            nodes={nodes}
+            edges={edges}
+            nodeTypes={nodeTypes}
+            onNodesChange={onNodesChange}
+            onEdgesChange={onEdgesChange}
+            nodeOrigin={[0.5, 0.5]}
+            fitView={true}
+            minZoom={0.025}
+            maxZoom={30}
+            //   translateExtent={[
+            //     [0, 0],
+            //     [567 * scale, 399 * scale],
+            //   ]}
+            onInit={setReactFlowInstance}
+            deleteKeyCode="Delete"
+          >
+            <Background />
+            {/* <Controls /> */}
+          </ReactFlow>
+        </ReactFlowProvider>
       </div>
       <PlanetRightSB />
     </>
