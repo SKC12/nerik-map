@@ -15,6 +15,7 @@ import { PlanetNode } from "./PlanetNode";
 import PlanetOuterBgNode from "./PlanetOuterBgNode";
 import PlanetInnerBgNode from "./PlanetInnerBgNode";
 import StarsBgNode from "./PlanetStarsBgNode";
+import SphereLimitsNode from "./PlanetSphereLimitsNode";
 
 const scale = 5;
 
@@ -26,11 +27,12 @@ const nodeTypes = {
   outerBg: PlanetOuterBgNode,
   innerBg: PlanetInnerBgNode,
   starsBg: StarsBgNode,
+  sphereLimitNode: SphereLimitsNode,
 };
 
 function PlanetMap(props) {
   const planetScreenData = useStore((state) => state.planetScreenData, shallow);
-
+  const sphereRadius = planetScreenData[0].info.sphereRadius;
   const initialNodes = planetScreenData.map((planet) => {
     let node = {
       id: planet.name + planet.orbitRadius,
@@ -71,6 +73,15 @@ function PlanetMap(props) {
         type: "innerBg",
         position: { x: 0, y: 0 },
         data: { width: baseMapWidth * 10, height: baseMapHeight * 10 },
+        draggable: false,
+        selectable: false,
+        zIndex: -1,
+      },
+      {
+        id: "sphereLimitNode",
+        type: "sphereLimitNode",
+        position: { x: 0, y: 0 },
+        data: { sphereRadius: sphereRadius },
         draggable: false,
         selectable: false,
         zIndex: -1,
