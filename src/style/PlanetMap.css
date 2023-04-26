@@ -4,3 +4,10 @@
     top: 0;
     z-index: 100;
 }
+
+/* .PLANET__node::after{
+    content: "test";
+    transform: var(--transform);
+    
+
+} */

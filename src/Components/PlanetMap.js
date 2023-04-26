@@ -48,7 +48,7 @@ function PlanetMap(props) {
         id: "outerBg",
         type: "outerBg",
         position: { x: 0, y: 0 },
-        data: { width: baseMapWidth * 28, height: baseMapHeight * 28 },
+        data: { width: baseMapWidth * 280, height: baseMapHeight * 280 },
         draggable: false,
         selectable: false,
         zIndex: -1,
@@ -57,7 +57,7 @@ function PlanetMap(props) {
         id: "innerBg",
         type: "innerBg",
         position: { x: 0, y: 0 },
-        data: { width: baseMapWidth, height: baseMapHeight },
+        data: { width: baseMapWidth * 10, height: baseMapHeight * 10 },
         draggable: false,
         selectable: false,
         zIndex: -1,
@@ -115,7 +115,7 @@ function PlanetMap(props) {
             onEdgesChange={onEdgesChange}
             nodeOrigin={[0.5, 0.5]}
             fitView={true}
-            minZoom={0.025}
+            minZoom={0.001}
             maxZoom={30}
             //   translateExtent={[
             //     [0, 0],
