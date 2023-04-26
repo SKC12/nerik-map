@@ -2,7 +2,12 @@ import "../style/Sphere.css";
 import { Handle, Position } from "reactflow";
 import useStore from "../store";
 import { useStore as useReactFlowStore } from "reactflow";
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
+import airPlanet from "../img/PlanetGasGiant_02_Regular_Orange_Thumb.webp";
+import firePlanet from "../img/PlanetAtmo_05_Regular_Red_Thumb.webp";
+import earthPlanet from "../img/PlanetAtmo_01_Regular_BlueOrange_Thumb.webp";
+import icePlanet from "../img/PlanetNoAtmo_01_Regular_BlueWhite_Thumb.webp";
+import waterPlanet from "../img/PlanetGasGiant_01_Regular_Blue_Thumb.webp";
 
 function getWidth(size) {
   switch (size) {
@@ -31,66 +36,82 @@ function getWidth(size) {
   }
 }
 
+function getBackgroundImage(type) {
+  console.log(type);
+  if (type && type.includes("Earth")) {
+    return earthPlanet;
+  } else if (type && type.includes("Fire")) {
+    return firePlanet;
+  } else if (type && type.includes("Water")) {
+    return waterPlanet;
+  } else if (type && type.includes("Ice")) {
+    return icePlanet;
+  } else if (type && type.includes("Air")) {
+    return airPlanet;
+  } else {
+    return earthPlanet;
+  }
+}
+
 export function PlanetNode({ selected, data }) {
-  console.log(data);
+  //console.log(data);
   const angle = useMemo(() => {
     return Math.floor(Math.random() * 360);
   }, []);
+
   const zoomLevel = useReactFlowStore((store) => store.transform[2]);
   //console.log(zoomLevel);
   const scale = useStore((state) => state.scale);
   const planetSize = Math.min(
-    Math.max((getWidth(data.info.size) * 5) / (zoomLevel * 1), 10),
+    Math.max((getWidth(data.info.size) * 5) / (zoomLevel * 1), 30),
     5000
   );
+
+  const radius = (parseInt(data.orbitRadius) * scale * 10) / 2;
+
+  const getCoords = useCallback(() => {
+    return {
+      x: radius * Math.sin((Math.PI * angle) / 180),
+      y: radius * Math.cos((Math.PI * angle) / 180),
+    };
+  }, [radius, angle]);
 
   return (
     <>
       <Handle type="target" position={Position.Left} />
+
       <div
-        className="PLANET__orbit"
+        className={`PLANET__node ${selected ? "PLANET__node-selected" : ""}`}
         style={{
-          width: `${parseInt(data.orbitRadius) * scale * 10 || 1}px`,
-          height: `${parseInt(data.orbitRadius) * scale * 10 || 1}px`,
-          borderRadius: "100%",
-          // border: "1px solid black",
           position: "relative",
-          transform: `rotate(${angle}deg)`,
+          width: `${planetSize}px`,
+          height: `${planetSize}px`,
+          backgroundImage: `url(${getBackgroundImage(data.info.type)})`,
+          backgroundSize: "cover",
+
+          borderRadius: "100%",
+          textAlign: "center",
+          transform: `translateX(${getCoords().x}px) translateY(${
+            getCoords().y
+          }px)`,
         }}
       >
-        <div
-          className={`PLANET__node ${selected ? "PLANET__node-selected" : ""}`}
-          style={{
-            width: `${planetSize}px`,
-            height: `${planetSize}px`,
-            position: "absolute",
-            top: `${-planetSize / 2}px`,
-            left: `${
-              (parseInt(data.orbitRadius) * scale * 10) / 2 - planetSize / 2
-            }px`,
-            backgroundColor: "red",
-            borderRadius: "100%",
-            textAlign: "center",
-          }}
-        >
-          {zoomLevel > 0.04 || parseInt(data.orbitRadius) > 200 ? (
-            <div
-              style={{
-                display: "inline-block",
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                fontSize: `${20 / zoomLevel}px`,
-                whiteSpace: "nowrap",
-                transform: `translateX(-50%) translateY(-50%) rotate(-${angle}deg) translateY(${
-                  planetSize / 1.2
-                }px)`,
-              }}
-            >
-              {data.name}
-            </div>
-          ) : null}
-        </div>
+        {zoomLevel > 0.04 || parseInt(data.orbitRadius) > 200 ? (
+          <div
+            style={{
+              position: "absolute",
+              bottom: `-${15 / zoomLevel}px`,
+              right: `50%`,
+              color: "#FFFFFF",
+              fontSize: `16px`,
+              whiteSpace: "nowrap",
+              lineHeight: "100%",
+              transform: `scale(${1 / zoomLevel})`,
+            }}
+          >
+            {data.name}
+          </div>
+        ) : null}
       </div>
 
       <Handle type="source" position={Position.Right} />

@@ -14,6 +14,7 @@ import { shallow } from "zustand/shallow";
 import { PlanetNode } from "./PlanetNode";
 import PlanetOuterBgNode from "./PlanetOuterBgNode";
 import PlanetInnerBgNode from "./PlanetInnerBgNode";
+import StarsBgNode from "./PlanetStarsBgNode";
 
 const scale = 5;
 
@@ -24,6 +25,7 @@ const nodeTypes = {
   planetNode: PlanetNode,
   outerBg: PlanetOuterBgNode,
   innerBg: PlanetInnerBgNode,
+  starsBg: StarsBgNode,
 };
 
 function PlanetMap(props) {
@@ -44,6 +46,15 @@ function PlanetMap(props) {
   const canvasHeight = props.height;
   const [nodes, setNodes] = useState(
     [
+      {
+        id: "starsBg",
+        type: "starsBg",
+        position: { x: 0, y: 0 },
+        data: { width: baseMapWidth * 600, height: baseMapHeight * 600 },
+        draggable: false,
+        selectable: false,
+        zIndex: -2,
+      },
       {
         id: "outerBg",
         type: "outerBg",
@@ -115,12 +126,12 @@ function PlanetMap(props) {
             onEdgesChange={onEdgesChange}
             nodeOrigin={[0.5, 0.5]}
             fitView={true}
-            minZoom={0.001}
-            maxZoom={30}
-            //   translateExtent={[
-            //     [0, 0],
-            //     [567 * scale, 399 * scale],
-            //   ]}
+            minZoom={0.0025}
+            maxZoom={0.5}
+            translateExtent={[
+              [baseMapWidth * -290, baseMapHeight * -290],
+              [baseMapWidth * 290, baseMapHeight * 290],
+            ]}
             onInit={setReactFlowInstance}
             deleteKeyCode="Delete"
           >
