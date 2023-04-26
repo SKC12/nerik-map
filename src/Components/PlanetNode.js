@@ -8,6 +8,7 @@ import firePlanet from "../img/PlanetAtmo_05_Regular_Red_Thumb.webp";
 import earthPlanet from "../img/PlanetAtmo_01_Regular_BlueOrange_Thumb.webp";
 import icePlanet from "../img/PlanetNoAtmo_01_Regular_BlueWhite_Thumb.webp";
 import waterPlanet from "../img/PlanetGasGiant_01_Regular_Blue_Thumb.webp";
+import livePlanet from "../img/PlanetAtmo_03_Regular_Green_Thumb.webp";
 
 function getWidth(size) {
   switch (size) {
@@ -40,6 +41,8 @@ function getBackgroundImage(type) {
   console.log(type);
   if (type && type.includes("Earth")) {
     return earthPlanet;
+  } else if (type && type.includes("Live")) {
+    return livePlanet;
   } else if (type && type.includes("Fire")) {
     return firePlanet;
   } else if (type && type.includes("Water")) {
