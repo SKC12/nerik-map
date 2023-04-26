@@ -81,12 +81,9 @@ export async function loadCSVSpheres(sphereData, planetData) {
         let planetInfo = planetsDataArray.find((p) => p.name === planet.name);
         //console.log(planetInfo);
         if (planetInfo) {
+          planetInfo.sphereRadius = obj.sphereRadius;
           planet.info = planetInfo;
-        } else if (
-          planet.name &&
-          obj["onMap?"] === "Yes" &&
-          planet.name !== "Empty"
-        ) {
+        } else if (obj["onMap?"] === "Yes" && planet.name !== "Empty") {
           planetInfo = {
             name: planet.name,
             size: "I",
@@ -107,6 +104,7 @@ export async function loadCSVSpheres(sphereData, planetData) {
             source: "",
             sphere: obj.sphere,
             website: "",
+            sphereRadius: obj.sphereRadius,
           };
           planet.info = planetInfo;
           // console.log(planet.name, "from ", obj.shortName, " NOT FOUND");
@@ -114,7 +112,7 @@ export async function loadCSVSpheres(sphereData, planetData) {
         planets.push(new Planet(planet));
       }
       if (headers[j].includes("Planet")) {
-        if (currentLine[j]) {
+        if (currentLine[j] || currentLine[j + 1]) {
           let planet = {};
           planet.name = currentLine[j];
           planet.orbitRadius = currentLine[j + 1];
@@ -122,8 +120,8 @@ export async function loadCSVSpheres(sphereData, planetData) {
           //find planetData for orbital bodies
           let planetInfo = planetsDataArray.find((p) => p.name === planet.name);
           if (planetInfo) {
+            planetInfo.sphereRadius = obj.sphereRadius;
             planet.info = planetInfo;
-          } else if (planet.name === "Empty") {
           } else if (obj["onMap?"] === "Yes" && planet.name !== "Empty") {
             planetInfo = {
               name: planet.name,
@@ -145,6 +143,7 @@ export async function loadCSVSpheres(sphereData, planetData) {
               source: "",
               sphere: obj.sphere,
               website: "",
+              sphereRadius: obj.sphereRadius,
             };
             planet.info = planetInfo;
 

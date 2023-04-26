@@ -38,7 +38,6 @@ function getWidth(size) {
 }
 
 function getBackgroundImage(type) {
-  console.log(type);
   if (type && type.includes("Earth")) {
     return earthPlanet;
   } else if (type && type.includes("Live")) {
@@ -57,7 +56,7 @@ function getBackgroundImage(type) {
 }
 
 export function PlanetNode({ selected, data }) {
-  //console.log(data);
+  console.log(data);
   const angle = useMemo(() => {
     return Math.floor(Math.random() * 360);
   }, []);

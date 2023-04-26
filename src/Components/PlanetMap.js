@@ -33,7 +33,7 @@ function PlanetMap(props) {
 
   const initialNodes = planetScreenData.map((planet) => {
     let node = {
-      id: planet.name,
+      id: planet.name + planet.orbitRadius,
       type: "planetNode",
       position: { x: 0, y: 0 },
       data: planet,
@@ -41,6 +41,8 @@ function PlanetMap(props) {
     };
     return node;
   });
+
+  console.log(initialNodes);
 
   const canvasWidth = props.width;
   const canvasHeight = props.height;
