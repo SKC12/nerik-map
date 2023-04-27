@@ -139,3 +139,57 @@ export function getStyle(flow, flowRiverColors, scale = 1) {
   style.stroke = color;
   return style;
 }
+
+export function getShapeFromUnicode(unicode) {
+  switch (unicode) {
+    case "\u003f":
+      return "Special";
+    case "\u2021":
+      return "Belt";
+    case "\u25b3":
+      return "Regular";
+    case "\u25d7":
+      return "Flat";
+    case "\u2744":
+      return "Amorphous";
+    case "\u2751":
+      return "Cube";
+    case "\u039f":
+      return "Ellipsoid";
+    case "\ue008":
+      return "Sphere";
+    case "\ue00d":
+      return "Cluster";
+    case "\ue47a":
+      return "Irregular";
+    default:
+      return "";
+  }
+}
+
+export function getUnicodeFromShape(unicode) {
+  switch (unicode) {
+    case "Special":
+      return "\u003f";
+    case "Belt":
+      return "\u2021";
+    case "Regular":
+      return "\u25b3";
+    case "Flat":
+      return "\u25d7";
+    case "Amorphous":
+      return "\u2744";
+    case "Cube":
+      return "\u2751";
+    case "Ellipsoid":
+      return "\u039f";
+    case "Sphere":
+      return "\ue008";
+    case "Cluster":
+      return "\ue47a";
+    case "Irregular":
+      return "\ue47a";
+    default:
+      return "";
+  }
+}

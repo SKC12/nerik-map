@@ -392,3 +392,8 @@
 .LEFTSB__option-button{
     width: 100%;
 }
+
+.LEFTSB__planet-shape-container{
+    display: flex;
+    align-items: center;
+}
