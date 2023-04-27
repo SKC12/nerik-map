@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import ReactFlow, {
   applyEdgeChanges,
   applyNodeChanges,
@@ -44,7 +44,7 @@ function PlanetMap(props) {
     return node;
   });
 
-  console.log(initialNodes);
+  //console.log(initialNodes);
 
   const canvasWidth = props.width;
   const canvasHeight = props.height;
@@ -88,9 +88,10 @@ function PlanetMap(props) {
       },
     ].concat(initialNodes)
   );
-  const [edges, setEdges] = useState([]);
-  console.log(nodes);
+  const [selectedNode, setSelectedNode] = useState(null);
 
+  const [edges, setEdges] = useState([]);
+  //console.log(nodes);
   const reactFlowRef = useRef(null);
   const [reactFlowInstance, setReactFlowInstance] = useState(null);
 
@@ -108,9 +109,20 @@ function PlanetMap(props) {
     []
   );
 
+  const selectNode = nodes.filter((nd) => nd.selected === true)[0];
+
+  useEffect(() => {
+    setSelectedNode(selectNode);
+  }, [selectNode]);
+
   return (
     <>
-      <PlanetLeftSB />
+      <PlanetLeftSB
+        reactFlowInstance={reactFlowInstance}
+        selectedNode={selectedNode}
+        scale={scale}
+        nodeState={[nodes, setNodes]}
+      />
       <div
         ref={reactFlowRef}
         style={{
