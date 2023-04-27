@@ -76,7 +76,9 @@ export function PlanetNode({ selected, data }) {
           height: `${planetSize}px`,
           backgroundImage: `url(${getBackgroundImage(data.info.type)})`,
           backgroundSize: "cover",
-
+          filter: `${
+            selected ? `drop-shadow(0px 0px ${2 / zoomLevel}px white)` : ""
+          }`,
           borderRadius: "100%",
           textAlign: "center",
         }}
