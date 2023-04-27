@@ -1,8 +1,6 @@
 import "../../style/Sphere.css";
 import { Handle, Position } from "reactflow";
-import useStore from "../../store";
 import { useStore as useReactFlowStore } from "reactflow";
-import { useCallback, useMemo } from "react";
 import airPlanet from "../../img/PlanetGasGiant_02_Regular_Orange_Thumb.webp";
 import firePlanet from "../../img/PlanetAtmo_05_Regular_Red_Thumb.webp";
 import earthPlanet from "../../img/PlanetAtmo_01_Regular_BlueOrange_Thumb.webp";
@@ -57,26 +55,13 @@ function getBackgroundImage(type) {
 
 export function PlanetNode({ selected, data }) {
   console.log(data);
-  const angle = useMemo(() => {
-    return Math.floor(Math.random() * 360);
-  }, []);
 
   const zoomLevel = useReactFlowStore((store) => store.transform[2]);
   //console.log(zoomLevel);
-  const scale = useStore((state) => state.scale);
   const planetSize = Math.min(
     Math.max((getWidth(data.info.size) * 5) / (zoomLevel * 1), 30),
     5000
   );
-
-  const radius = (parseInt(data.orbitRadius) * scale * 10) / 2;
-
-  const getCoords = useCallback(() => {
-    return {
-      x: radius * Math.sin((Math.PI * angle) / 180),
-      y: radius * Math.cos((Math.PI * angle) / 180),
-    };
-  }, [radius, angle]);
 
   return (
     <>
@@ -84,6 +69,7 @@ export function PlanetNode({ selected, data }) {
 
       <div
         className={`PLANET__node ${selected ? "PLANET__node-selected" : ""}`}
+        onClick={(e) => console.log(e)}
         style={{
           position: "relative",
           width: `${planetSize}px`,
@@ -93,9 +79,6 @@ export function PlanetNode({ selected, data }) {
 
           borderRadius: "100%",
           textAlign: "center",
-          transform: `translateX(${getCoords().x}px) translateY(${
-            getCoords().y
-          }px)`,
         }}
       >
         {zoomLevel > 0.04 || parseInt(data.orbitRadius) > 200 ? (

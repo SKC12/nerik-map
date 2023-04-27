@@ -30,6 +30,13 @@ const nodeTypes = {
   sphereLimitNode: SphereLimitsNode,
 };
 
+function getCoords(radius, angle) {
+  return {
+    x: radius * Math.sin((Math.PI * angle) / 180),
+    y: radius * Math.cos((Math.PI * angle) / 180),
+  };
+}
+
 function PlanetMap(props) {
   const planetScreenData = useStore((state) => state.planetScreenData, shallow);
   const sphereRadius = planetScreenData[0].info.sphereRadius;
@@ -37,7 +44,10 @@ function PlanetMap(props) {
     let node = {
       id: planet.name + planet.orbitRadius,
       type: "planetNode",
-      position: { x: 0, y: 0 },
+      position: getCoords(
+        (parseInt(planet.orbitRadius) * scale * 10) / 2,
+        planet.info.angle
+      ),
       data: planet,
       draggable: false,
     };
