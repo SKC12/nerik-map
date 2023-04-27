@@ -6,10 +6,10 @@ import ReactFlow, {
   ReactFlowProvider,
 } from "reactflow";
 import "reactflow/dist/style.css";
-import PlanetLeftSB from "./PlanetLeftSB";
-import PlanetRightSB from "./PlanetRightSB";
-import "../style/PlanetMap.css";
-import useStore from "../store";
+import PlanetLeftSB from "./Sidebar/PlanetLeftSB";
+import PlanetRightSB from "./Sidebar/PlanetRightSB";
+import "../../style/PlanetMap.css";
+import useStore from "../../store";
 import { shallow } from "zustand/shallow";
 import { PlanetNode } from "./PlanetNode";
 import PlanetOuterBgNode from "./PlanetOuterBgNode";

@@ -1,4 +1,4 @@
-import useStore from "../store";
+import useStore from "../../store";
 
 export function SphereLimitsNode({ data }) {
   const scale = useStore((state) => state.scale);

@@ -1,5 +1,5 @@
-import bg from "../img/quadrants.svg";
-import phlogiston from "../img/phlogiston.webp";
+import bg from "../../img/quadrants.svg";
+import phlogiston from "../../img/phlogiston.webp";
 
 export function BgNode({ data }) {
   let width = data.width;

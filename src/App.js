@@ -1,5 +1,5 @@
 import "./style/Main.css";
-import SphereMap from "./Components/SphereMap";
+import SphereMap from "./Components/SphereMap/SphereMap";
 import { useEffect, useRef, useState } from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { loadCSVSpheres, loadCSVFlows } from "./data-loader";
@@ -11,7 +11,7 @@ import useStore from "./store";
 import { shallow } from "zustand/shallow";
 import { Sphere } from "./models/Sphere";
 import { Flow } from "./models/Flow";
-import PlanetMap from "./Components/PlanetMap";
+import PlanetMap from "./Components/PlanetMap/PlanetMap";
 
 const scale = 5;
 

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import TextField from "@mui/material/TextField";
 import { Autocomplete } from "@mui/material";
-import DelConfirmationDialog from "./DelConfirmationDialog";
-import useStore from "../store";
+import DelConfirmationDialog from "../../DelConfirmationDialog";
+import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
 
 function getFormattedFlowType(type) {

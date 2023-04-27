@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../style/SideBar.css";
+import "../../../style/SideBar.css";
 import LeftSBFlows from "./LeftSBFlows";
 import LeftSBSphere from "./LeftSBSphere";
 import LeftSBOptions from "./LeftSBOptions";

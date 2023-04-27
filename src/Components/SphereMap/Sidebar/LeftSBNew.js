@@ -1,11 +1,11 @@
 import { Autocomplete, Button, Slider } from "@mui/material";
 import TextField from "@mui/material/TextField";
-import { getStyle } from "../Components/utils.js";
+import { getStyle } from "../../utils";
 
 import { useState } from "react";
-import greySphere from "../img/Grey_Sphere.webp";
+import greySphere from "../../../img/Grey_Sphere.webp";
 
-import useStore from "../store";
+import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
 
 let style = {

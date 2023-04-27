@@ -1,6 +1,6 @@
 import ReactFlow from "reactflow";
 import "reactflow/dist/style.css";
-import "../style/SphereMap.css";
+import "../../style/SphereMap.css";
 import { useEffect, useState, useRef, useCallback } from "react";
 
 import { SphereNode } from "./SphereNode";
@@ -8,10 +8,10 @@ import { BgNode } from "./BgNode";
 
 import FloatingEdge from "./FloatingEdge.js";
 import FloatingConnectionLine from "./FloatingConnectionLine.js";
-import LeftSideBar from "./LeftSideBar";
-import RightSideBar from "./RightSideBar";
+import LeftSideBar from "./Sidebar/LeftSideBar";
+import RightSideBar from "./Sidebar/RightSideBar";
 
-import useStore from "../store";
+import useStore from "../../store";
 import { shallow } from "zustand/shallow";
 
 const scale = 5;

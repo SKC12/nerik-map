@@ -1,4 +1,4 @@
-import bg from "../img/Innercircle.svg";
+import bg from "../../img/Innercircle.svg";
 
 export function PlanetInnerBgNode({ data }) {
   let width = data.width;

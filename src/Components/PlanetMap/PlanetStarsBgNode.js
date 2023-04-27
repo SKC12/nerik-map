@@ -1,4 +1,4 @@
-import stars from "../img/stars.webp";
+import stars from "../../img/stars.webp";
 
 export function StarsBgNode({ data }) {
   let width = data.width;

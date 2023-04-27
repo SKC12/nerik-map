@@ -1,14 +1,14 @@
-import "../style/Sphere.css";
+import "../../style/Sphere.css";
 import { Handle, Position } from "reactflow";
-import useStore from "../store";
+import useStore from "../../store";
 import { useStore as useReactFlowStore } from "reactflow";
 import { useCallback, useMemo } from "react";
-import airPlanet from "../img/PlanetGasGiant_02_Regular_Orange_Thumb.webp";
-import firePlanet from "../img/PlanetAtmo_05_Regular_Red_Thumb.webp";
-import earthPlanet from "../img/PlanetAtmo_01_Regular_BlueOrange_Thumb.webp";
-import icePlanet from "../img/PlanetNoAtmo_01_Regular_BlueWhite_Thumb.webp";
-import waterPlanet from "../img/PlanetGasGiant_01_Regular_Blue_Thumb.webp";
-import livePlanet from "../img/PlanetAtmo_03_Regular_Green_Thumb.webp";
+import airPlanet from "../../img/PlanetGasGiant_02_Regular_Orange_Thumb.webp";
+import firePlanet from "../../img/PlanetAtmo_05_Regular_Red_Thumb.webp";
+import earthPlanet from "../../img/PlanetAtmo_01_Regular_BlueOrange_Thumb.webp";
+import icePlanet from "../../img/PlanetNoAtmo_01_Regular_BlueWhite_Thumb.webp";
+import waterPlanet from "../../img/PlanetGasGiant_01_Regular_Blue_Thumb.webp";
+import livePlanet from "../../img/PlanetAtmo_03_Regular_Green_Thumb.webp";
 
 function getWidth(size) {
   switch (size) {

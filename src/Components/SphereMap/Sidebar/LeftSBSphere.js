@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import TextField from "@mui/material/TextField";
-import DelConfirmationDialog from "./DelConfirmationDialog";
+import DelConfirmationDialog from "../../DelConfirmationDialog";
 import { Slider } from "@mui/material";
-import useStore from "../store";
+import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
 
 function LeftSBSphere(props) {

@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import { useCallback, useRef } from "react";
-import useStore from "../store";
+import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
 
 function LeftSBOptions(props) {

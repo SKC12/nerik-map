@@ -1,7 +1,7 @@
-import "../style/Sphere.css";
+import "../../style/Sphere.css";
 import { Handle, Position } from "reactflow";
-import greySphere from "../img/Grey_Sphere.webp";
-import useStore from "../store";
+import greySphere from "../../img/Grey_Sphere.webp";
+import useStore from "../../store";
 import { shallow } from "zustand/shallow";
 
 export function SphereNode({ selected, data }) {

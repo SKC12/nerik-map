@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../style/SideBar.css";
+import "../../../style/SideBar.css";
 
 function PlanetRightSB(props) {
   return (

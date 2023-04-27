@@ -1,7 +1,7 @@
 import React from "react";
 import { getSimpleBezierPath } from "reactflow";
 
-import { getEdgeParams } from "./utils.js";
+import { getEdgeParams } from "../utils";
 
 function FloatingConnectionLine({
   targetX,
