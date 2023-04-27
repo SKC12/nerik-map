@@ -69,7 +69,6 @@ export function PlanetNode({ selected, data }) {
 
       <div
         className={`PLANET__node ${selected ? "PLANET__node-selected" : ""}`}
-        onClick={(e) => console.log(e)}
         style={{
           position: "relative",
           width: `${planetSize}px`,

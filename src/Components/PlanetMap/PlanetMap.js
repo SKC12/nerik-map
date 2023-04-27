@@ -145,7 +145,6 @@ function PlanetMap(props) {
       >
         <div
           onClick={() => {
-            console.log("CLICK");
             leavePlanetScreen();
           }}
           className="PLANETMAP__return-container"

@@ -1,5 +1,5 @@
-function PlanetNewSB(props) {
+function PlanetOptionsSB(props) {
   return <div />;
 }
 
-export default PlanetNewSB;
+export default PlanetOptionsSB;

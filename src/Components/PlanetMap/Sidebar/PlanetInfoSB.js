@@ -49,9 +49,11 @@ function PlanetInfoSB(props) {
   const selectedNode = props.selectedNode;
 
   const selectedData = selectedNode ? selectedNode.data.info : null;
-  console.log(selectedData);
+  //console.log(selectedData);
   const [tempData, setTempData] = useState(selectedData);
   const [nodes, setNodes] = props.nodeState;
+  const setSphereNodes = useStore((state) => state.setNodes, shallow);
+  const SphereNodes = useStore((state) => state.nodes, shallow);
 
   const reactFlowInstance = props.reactFlowInstance;
 
@@ -65,12 +67,30 @@ function PlanetInfoSB(props) {
   const onClickEdit = () => {
     setEditMode(!editMode);
   };
+
+  console.log("SPHERENODES", SphereNodes);
+
   const deleteNode = (node) => {
+    console.log("SPHERENODES", SphereNodes);
     if (node) reactFlowInstance.deleteElements({ nodes: [node] });
+    setSphereNodes(
+      SphereNodes.map((node) => {
+        if (node.id === selectedData.shortName) {
+          node.data.planets = node.data.planets.filter((planet) => {
+            return (
+              planet.name !== selectedData.name ||
+              planet.orbitRadius !== selectedData.orbitRadius
+            );
+          });
+        }
+        return node;
+      })
+    );
+    console.log("SPHERENODES", SphereNodes);
   };
 
   const onClickDelete = () => {
-    //setDelDialogOpen(true);
+    setDelDialogOpen(true);
   };
 
   const onClickCancel = () => {
@@ -122,7 +142,7 @@ function PlanetInfoSB(props) {
             </svg>
           </div>
           <DelConfirmationDialog
-            title="Delete this Sphere?"
+            title="Delete this Planet?"
             onDelete={() => deleteNode(selectedNode)}
             open={delDialogOpen}
             setOpen={setDelDialogOpen}
