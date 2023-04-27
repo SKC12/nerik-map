@@ -82,12 +82,14 @@ export async function loadCSVSpheres(sphereData, planetData) {
         //console.log(planetInfo);
         if (planetInfo) {
           planetInfo.sphereRadius = obj.sphereRadius;
+          planetInfo.orbitRadius = 0;
           planetInfo.angle = Math.floor(Math.random() * 360);
           planet.info = planetInfo;
         } else if (obj["onMap?"] === "Yes" && planet.name !== "Empty") {
           planetInfo = {
             angle: Math.floor(Math.random() * 360),
             name: planet.name,
+            orbitRadius: 0,
             size: "I",
             diameter: "",
             shape: "\ue008",
@@ -123,11 +125,13 @@ export async function loadCSVSpheres(sphereData, planetData) {
           let planetInfo = planetsDataArray.find((p) => p.name === planet.name);
           if (planetInfo) {
             planetInfo.sphereRadius = obj.sphereRadius;
+            planetInfo.orbitRadius = planet.orbitRadius;
             planetInfo.angle = Math.floor(Math.random() * 360);
             planet.info = planetInfo;
           } else if (obj["onMap?"] === "Yes" && planet.name !== "Empty") {
             planetInfo = {
               name: planet.name,
+              orbitRadius: planet.orbitRadius,
               angle: Math.floor(Math.random() * 360),
               size: "C",
               diameter: "",

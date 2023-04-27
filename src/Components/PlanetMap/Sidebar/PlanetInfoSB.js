@@ -173,6 +173,25 @@ function PlanetInfoSB(props) {
         }}
         sx={inputStyle}
       />
+      <label className="LEFTSB__data-label">
+        Orbit Radius (Million Miles):
+      </label>
+      <TextField
+        variant="standard"
+        className="LEFTSB__data"
+        onChange={(e) =>
+          setTempData({ ...tempData, orbitRadius: e.target.value })
+        }
+        value={tempData.orbitRadius}
+        disabled={!editMode}
+        inputProps={{
+          maxLength: 30,
+        }}
+        InputProps={{
+          disableUnderline: true,
+        }}
+        sx={inputStyle}
+      />
       <label className="LEFTSB__data-label">Size:</label>
       <TextField
         variant="standard"
