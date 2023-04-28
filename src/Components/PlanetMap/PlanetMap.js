@@ -16,6 +16,7 @@ import PlanetOuterBgNode from "./PlanetOuterBgNode";
 import PlanetInnerBgNode from "./PlanetInnerBgNode";
 import StarsBgNode from "./PlanetStarsBgNode";
 import SphereLimitsNode from "./PlanetSphereLimitsNode";
+import { getCoords } from "../utils";
 
 const scale = 5;
 
@@ -29,13 +30,6 @@ const nodeTypes = {
   starsBg: StarsBgNode,
   sphereLimitNode: SphereLimitsNode,
 };
-
-function getCoords(radius, angle) {
-  return {
-    x: radius * Math.sin((Math.PI * angle) / 180),
-    y: radius * Math.cos((Math.PI * angle) / 180),
-  };
-}
 
 function PlanetMap(props) {
   const planetScreenData = useStore((state) => state.planetScreenData, shallow);

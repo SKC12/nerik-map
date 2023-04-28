@@ -4,7 +4,7 @@ import DelConfirmationDialog from "../../DelConfirmationDialog";
 import { Slider } from "@mui/material";
 import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
-import { getShapeFromUnicode } from "../../utils";
+import { getCoords, getShapeFromUnicode } from "../../utils";
 
 const inputStyle = {
   "& .MuiInputBase-input.Mui-disabled": {
@@ -50,6 +50,7 @@ function PlanetInfoSB(props) {
 
   const selectedData = selectedNode ? selectedNode.data.info : null;
   //console.log(selectedData);
+  const scale = props.scale;
   const [tempData, setTempData] = useState(selectedData);
   const [nodes, setNodes] = props.nodeState;
   const setSphereNodes = useStore((state) => state.setNodes, shallow);
@@ -68,16 +69,16 @@ function PlanetInfoSB(props) {
     setEditMode(!editMode);
   };
 
-  console.log("SPHERENODES", SphereNodes);
-
   const deleteNode = (node) => {
-    console.log("SPHERENODES", SphereNodes);
+    //delete node from planetMap
     if (node) reactFlowInstance.deleteElements({ nodes: [node] });
+    //delete planet from stored sphere
     setSphereNodes(
       SphereNodes.map((node) => {
         if (node.id === selectedData.shortName) {
           node.data.planets = node.data.planets.filter((planet) => {
             return (
+              //for cases where name is blank, check radius
               planet.name !== selectedData.name ||
               planet.orbitRadius !== selectedData.orbitRadius
             );
@@ -86,7 +87,6 @@ function PlanetInfoSB(props) {
         return node;
       })
     );
-    console.log("SPHERENODES", SphereNodes);
   };
 
   const onClickDelete = () => {
@@ -99,17 +99,25 @@ function PlanetInfoSB(props) {
   };
 
   const onClickSave = () => {
-    // setNodes(
-    //   nodes.map((node) => {
-    //     if (node.id === selectedData.shortName) {
-    //       console.log(node);
-    //       node.data = tempData;
-    //       console.log(node);
-    //     }
-
-    //     return node;
-    //   })
-    // );
+    //console.log(selectedData.name + selectedData.orbitRadius, nodes);
+    //update planetMap nodes
+    setNodes(
+      nodes.map((node) => {
+        if (node.id === selectedData.name + selectedData.orbitRadius) {
+          //console.log("node", node);
+          node.data.info = tempData;
+          node.data.name = tempData.name;
+          node.data.orbitRadius = tempData.orbitRadius;
+          node.id = node.data.name + node.data.orbitRadius;
+          node.position = getCoords(
+            (parseInt(tempData.orbitRadius) * scale * 10) / 2,
+            tempData.angle
+          );
+          //console.log("node", node, SphereNodes);
+        }
+        return node;
+      })
+    );
     setEditMode(false);
   };
 

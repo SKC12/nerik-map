@@ -179,12 +179,12 @@ function LeftSBFlow(props) {
     setEdges(
       edges.map((edg) => {
         if (edg.id === selectedEdge.id) {
-          console.log(edg);
+          //console.log(edg);
           edg.id = `${data.sphereW} to ${data.sphereE}`;
           edg.source = data.sphereW;
           edg.target = data.sphereE;
           edg.data = data;
-          console.log(edg);
+          //console.log(edg);
         }
 
         return edg;

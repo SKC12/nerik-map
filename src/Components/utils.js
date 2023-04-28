@@ -193,3 +193,10 @@ export function getUnicodeFromShape(unicode) {
       return "";
   }
 }
+
+export function getCoords(radius, angle) {
+  return {
+    x: radius * Math.sin((Math.PI * angle) / 180),
+    y: radius * Math.cos((Math.PI * angle) / 180),
+  };
+}

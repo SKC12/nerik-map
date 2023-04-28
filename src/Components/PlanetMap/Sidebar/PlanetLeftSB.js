@@ -79,6 +79,7 @@ function PlanetLeftSB(props) {
             selectedNode={selectedNode}
             reactFlowInstance={reactFlowInstance}
             nodeState={[nodes, setNodes]}
+            scale={scale}
           />
         ) : null}
 

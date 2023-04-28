@@ -64,9 +64,9 @@ function LeftSBSphere(props) {
     setNodes(
       nodes.map((node) => {
         if (node.id === selectedData.shortName) {
-          console.log(node);
+          //console.log(node);
           node.data = tempData;
-          console.log(node);
+          //console.log(node);
         }
 
         return node;

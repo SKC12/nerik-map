@@ -54,7 +54,7 @@ function getBackgroundImage(type) {
 }
 
 export function PlanetNode({ selected, data }) {
-  console.log(data);
+  //console.log(data);
 
   const zoomLevel = useReactFlowStore((store) => store.transform[2]);
   //console.log(zoomLevel);
