@@ -8,6 +8,7 @@ function PlanetLeftSB(props) {
   const [selectedTab, setSelectedTab] = useState("aboutTab");
   const selectedNode = props.selectedNode;
   const [nodes, setNodes] = props.nodeState;
+  const planetScreenData = props.planetScreenData;
 
   const scale = props.scale;
   const reactFlowInstance = props.reactFlowInstance;
@@ -83,7 +84,15 @@ function PlanetLeftSB(props) {
           />
         ) : null}
 
-        {selectedTab === "newTab" ? <PlanetNewSB scale={scale} /> : null}
+        {selectedTab === "newTab" ? (
+          <PlanetNewSB
+            selectedNode={selectedNode}
+            reactFlowInstance={reactFlowInstance}
+            nodeState={[nodes, setNodes]}
+            scale={scale}
+            planetScreenData={planetScreenData}
+          />
+        ) : null}
         {selectedTab === "optionsTab" ? (
           <PlanetOptionsSB reactFlowInstance={reactFlowInstance} />
         ) : null}

@@ -237,6 +237,8 @@
 .LEFTSB__data-container{
     display: flex;
     flex-direction: column;
+    min-width: 65px;
+
 }
 
 .LEFTSB__data-link{
@@ -328,11 +330,10 @@
     flex-shrink: 0;
 }
 
-
 .LEFTSB__new-button-container{
     display: flex;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .LEFTSB__new-dropdown{
@@ -396,4 +397,12 @@
 .LEFTSB__planet-shape-container{
     display: flex;
     align-items: center;
+}
+
+
+.LEFTSB__planet-size-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
 }

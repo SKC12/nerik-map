@@ -126,6 +126,7 @@ function PlanetMap(props) {
         selectedNode={selectedNode}
         scale={scale}
         nodeState={[nodes, setNodes]}
+        planetScreenData={planetScreenData}
       />
       <div
         ref={reactFlowRef}
@@ -161,7 +162,7 @@ function PlanetMap(props) {
               [baseMapWidth * 290, baseMapHeight * 290],
             ]}
             onInit={setReactFlowInstance}
-            deleteKeyCode="Delete"
+            deleteKeyCode={null}
           >
             <Background />
             {/* <Controls /> */}

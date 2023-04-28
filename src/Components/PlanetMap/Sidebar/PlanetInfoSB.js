@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import TextField from "@mui/material/TextField";
 import DelConfirmationDialog from "../../DelConfirmationDialog";
-import { Autocomplete, Slider } from "@mui/material";
+import { Autocomplete } from "@mui/material";
 import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
 import {
