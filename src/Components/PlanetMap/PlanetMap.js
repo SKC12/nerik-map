@@ -169,7 +169,7 @@ function PlanetMap(props) {
           </ReactFlow>
         </ReactFlowProvider>
       </div>
-      <PlanetRightSB />
+      <PlanetRightSB scale={scale} planetScreenData={planetScreenData} />
     </>
   );
 }

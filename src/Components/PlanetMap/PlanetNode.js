@@ -80,6 +80,7 @@ export function PlanetNode({ selected, data }) {
           }`,
           borderRadius: "100%",
           textAlign: "center",
+          cursor: "pointer",
         }}
       >
         {zoomLevel > 0.04 || parseInt(data.orbitRadius) > 200 ? (
