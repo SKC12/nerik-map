@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
 import TextField from "@mui/material/TextField";
 import DelConfirmationDialog from "../../DelConfirmationDialog";
-import { Slider } from "@mui/material";
+import { Autocomplete, Slider } from "@mui/material";
 import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
-import { getCoords, getShapeFromUnicode } from "../../utils";
+import {
+  getCoords,
+  getShapeFromUnicode,
+  getUnicodeFromShape,
+} from "../../utils";
 
 const inputStyle = {
   "& .MuiInputBase-input.Mui-disabled": {
@@ -24,24 +28,36 @@ const inputStyle = {
   },
 };
 
-const symbolInputStyle = {
-  "& .MuiInputBase-input.Mui-disabled": {
-    borderStyle: "none",
-    WebkitTextFillColor: "rgb(213, 213, 230);",
-    backgroundColor: "rgb(81, 85, 102)",
-  },
+const selectStyle = {
   "& .MuiInputBase-input": {
-    WebkitTextFillColor: "rgb(84, 84, 104);",
+    WebkitTextFillColor: "rgb(84, 84, 104)",
     backgroundColor: "white",
-    fontSize: "14px",
     border: "black 1px solid",
-    borderRadius: "4px",
-    padding: "2px",
-    margins: "0px",
-    paddingLeft: "8px",
-    fontFamily: "Symbol",
+
+    fontSize: "14px",
+  },
+  "& .MuiSelect-select": {
+    padding: "0px",
+    paddingLeft: "4px",
   },
 };
+
+const sizeOptions = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
+
+const typeOptions = ["Earth", "Fire", "Water", "Air", "Ice", "Live"];
+
+const shapeOptions = [
+  "Special",
+  "Belt",
+  "Regular",
+  "Flat",
+  "Amorphous",
+  "Cube",
+  "Ellipsoid",
+  "Sphere",
+  "Cluster",
+  "Irregular",
+];
 
 function PlanetInfoSB(props) {
   const [editMode, setEditMode] = useState(false);
@@ -55,6 +71,7 @@ function PlanetInfoSB(props) {
   const [nodes, setNodes] = props.nodeState;
   const setSphereNodes = useStore((state) => state.setNodes, shallow);
   const SphereNodes = useStore((state) => state.nodes, shallow);
+  const [typeInputValue, setTypeInputValue] = useState("");
 
   const reactFlowInstance = props.reactFlowInstance;
 
@@ -207,13 +224,16 @@ function PlanetInfoSB(props) {
       <TextField
         variant="standard"
         className="LEFTSB__data"
-        onChange={(e) =>
-          setTempData({ ...tempData, orbitRadius: e.target.value })
-        }
+        onChange={(e) => {
+          const regex = /^[0-9/b]+$/;
+          if (e.target.value === "" || regex.test(e.target.value)) {
+            setTempData({ ...tempData, orbitRadius: e.target.value });
+          }
+        }}
         value={tempData.orbitRadius}
         disabled={!editMode}
         inputProps={{
-          maxLength: 30,
+          maxLength: 5,
         }}
         InputProps={{
           disableUnderline: true,
@@ -221,31 +241,41 @@ function PlanetInfoSB(props) {
         sx={inputStyle}
       />
       <label className="LEFTSB__data-label">Size:</label>
-      <TextField
-        variant="standard"
-        className="LEFTSB__data"
-        onChange={(e) => setTempData({ ...tempData, size: e.target.value })}
-        value={tempData.size}
-        disabled={!editMode}
-        inputProps={{
-          maxLength: 30,
-        }}
-        InputProps={{
-          disableUnderline: true,
-        }}
-        sx={inputStyle}
-      />
+      {editMode ? (
+        <Autocomplete
+          disableClearable
+          size="small"
+          value={tempData.size}
+          onChange={(e, newValue) => {
+            setTempData({ ...tempData, size: newValue });
+          }}
+          sx={selectStyle}
+          options={sizeOptions}
+          renderInput={(params) => <TextField {...params} />}
+          ListboxProps={{
+            sx: {
+              fontSize: "14px",
+            },
+          }}
+        ></Autocomplete>
+      ) : (
+        <p className="LEFTSB__flow-data">{tempData.size}</p>
+      )}
+
       <label className="LEFTSB__data-label">Planet Diameter (Miles):</label>
       <TextField
         variant="standard"
         className="LEFTSB__data"
-        onChange={(e) =>
-          setTempData({ ...tempData, sphereRadius: e.target.value })
-        }
+        onChange={(e) => {
+          const regex = /^[0-9/b]+$/;
+          if (e.target.value === "" || regex.test(e.target.value)) {
+            setTempData({ ...tempData, sphereRadius: e.target.value });
+          }
+        }}
         value={tempData.sphereRadius}
         disabled={!editMode}
         inputProps={{
-          maxLength: 30,
+          maxLength: 10,
         }}
         InputProps={{
           disableUnderline: true,
@@ -253,25 +283,37 @@ function PlanetInfoSB(props) {
         sx={inputStyle}
       />
       <label className="LEFTSB__data-label">Shape:</label>
-      <div className="LEFTSB__planet-shape-container">
-        <TextField
-          variant="standard"
-          className="LEFTSB__data"
-          onChange={(e) => setTempData({ ...tempData, shape: e.target.value })}
-          value={tempData.shape}
-          disabled={!editMode}
-          inputProps={{
-            maxLength: 30,
+
+      {editMode ? (
+        <Autocomplete
+          disableClearable
+          size="small"
+          value={getShapeFromUnicode(tempData.shape)}
+          onChange={(e, newValue) => {
+            setTempData({
+              ...tempData,
+              shape: getUnicodeFromShape(newValue),
+            });
           }}
-          InputProps={{
-            disableUnderline: true,
+          sx={selectStyle}
+          options={shapeOptions}
+          renderInput={(params) => <TextField {...params} />}
+          ListboxProps={{
+            sx: {
+              fontSize: "14px",
+            },
           }}
-          sx={symbolInputStyle}
-        />
-        <p className="LEFTSB__flow-data">
-          {getShapeFromUnicode(tempData.shape)}
-        </p>
-      </div>
+        ></Autocomplete>
+      ) : (
+        <div className="LEFTSB__planet-shape-container">
+          <p className="LEFTSB__flow-data" style={{ fontFamily: "Symbol" }}>
+            {tempData.shape}
+          </p>
+          <p className="LEFTSB__flow-data">
+            {getShapeFromUnicode(tempData.shape)}
+          </p>
+        </div>
+      )}
 
       <label className="LEFTSB__data-label">Shape Details:</label>
       <TextField
@@ -289,29 +331,48 @@ function PlanetInfoSB(props) {
         sx={inputStyle}
       />
       <label className="LEFTSB__data-label">Type:</label>
-      <TextField
-        variant="standard"
-        className="LEFTSB__data"
-        onChange={(e) => setTempData({ ...tempData, type: e.target.value })}
-        value={tempData.type}
-        disabled={!editMode}
-        inputProps={{
-          maxLength: 30,
-        }}
-        InputProps={{
-          disableUnderline: true,
-        }}
-        sx={inputStyle}
-      />
+      {editMode ? (
+        <Autocomplete
+          disableClearable
+          size="small"
+          value={tempData.type}
+          freeSolo={true}
+          onChange={(e, newValue) => {
+            setTempData({ ...tempData, type: newValue });
+          }}
+          inputValue={typeInputValue}
+          onInputChange={(e, newInputValue) => {
+            if (newInputValue.length < 15) {
+              setTypeInputValue(newInputValue);
+              setTempData({ ...tempData, type: newInputValue });
+            }
+          }}
+          sx={selectStyle}
+          options={typeOptions}
+          renderInput={(params) => <TextField {...params} />}
+          ListboxProps={{
+            sx: {
+              fontSize: "14px",
+            },
+          }}
+        ></Autocomplete>
+      ) : (
+        <p className="LEFTSB__flow-data">{tempData.type}</p>
+      )}
       <label className="LEFTSB__data-label">Moons:</label>
       <TextField
         variant="standard"
         className="LEFTSB__data"
-        onChange={(e) => setTempData({ ...tempData, moons: e.target.value })}
+        onChange={(e) => {
+          const regex = /^[0-9/b]+$/;
+          if (e.target.value === "" || regex.test(e.target.value)) {
+            setTempData({ ...tempData, moons: e.target.value });
+          }
+        }}
         value={tempData.moons}
         disabled={!editMode}
         inputProps={{
-          maxLength: 30,
+          maxLength: 2,
         }}
         InputProps={{
           disableUnderline: true,
@@ -322,11 +383,16 @@ function PlanetInfoSB(props) {
       <TextField
         variant="standard"
         className="LEFTSB__data"
-        onChange={(e) => setTempData({ ...tempData, rings: e.target.value })}
+        onChange={(e) => {
+          const regex = /^[0-9/b]+$/;
+          if (e.target.value === "" || regex.test(e.target.value)) {
+            setTempData({ ...tempData, rings: e.target.value });
+          }
+        }}
         value={tempData.rings}
         disabled={!editMode}
         inputProps={{
-          maxLength: 30,
+          maxLength: 2,
         }}
         InputProps={{
           disableUnderline: true,
