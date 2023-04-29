@@ -119,7 +119,11 @@ export async function loadCSVSpheres(sphereData, planetData) {
         if (currentLine[j] || currentLine[j + 1]) {
           let planet = {};
           planet.name = currentLine[j];
-          planet.orbitRadius = currentLine[j + 1];
+          planet.orbitRadius
+            ? (planet.orbitRadius = currentLine[j + 1])
+            : (planet.orbitRadius = Math.floor(
+                Math.random() * 4000
+              ).toString());
           planet.orbitTrack = currentLine[j + 2];
           //find planetData for orbital bodies
           let planetInfo = planetsDataArray.find((p) => p.name === planet.name);
