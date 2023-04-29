@@ -13,7 +13,7 @@ import { shallow } from "zustand/shallow";
 import { PlanetNode } from "./PlanetNode";
 import PlanetOuterBgNode from "./PlanetOuterBgNode";
 import PlanetInnerBgNode from "./PlanetInnerBgNode";
-import StarsBgNode from "./PlanetStarsBgNode";
+import PhlogistonBgNode from "./PlanetPhlogistonBgNode";
 import SphereLimitsNode from "./PlanetSphereLimitsNode";
 import { getCoords } from "../utils";
 
@@ -26,7 +26,7 @@ const nodeTypes = {
   planetNode: PlanetNode,
   outerBg: PlanetOuterBgNode,
   innerBg: PlanetInnerBgNode,
-  starsBg: StarsBgNode,
+  phlogistonBg: PhlogistonBgNode,
   sphereLimitNode: SphereLimitsNode,
 };
 
@@ -54,13 +54,13 @@ function PlanetMap(props) {
   const [nodes, setNodes] = useState(
     [
       {
-        id: "starsBg",
-        type: "starsBg",
+        id: "phlogistonBg",
+        type: "phlogistonBg",
         position: { x: 0, y: 0 },
         data: { width: baseMapWidth * 600, height: baseMapHeight * 600 },
         draggable: false,
         selectable: false,
-        zIndex: -2,
+        zIndex: -3,
       },
       {
         id: "outerBg",
@@ -87,7 +87,7 @@ function PlanetMap(props) {
         data: { sphereRadius: sphereRadius },
         draggable: false,
         selectable: false,
-        zIndex: -1,
+        zIndex: -2,
       },
     ].concat(initialNodes)
   );
