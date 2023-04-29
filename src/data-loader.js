@@ -113,7 +113,7 @@ export async function loadCSVSpheres(sphereData, planetData) {
           planet.info = planetInfo;
           // console.log(planet.name, "from ", obj.shortName, " NOT FOUND");
         }
-        planets.push(new Planet(planet));
+        if (planet.name !== "Empty") planets.push(new Planet(planet));
       }
       if (headers[j].includes("Planet")) {
         if (currentLine[j] || currentLine[j + 1]) {
