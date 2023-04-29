@@ -140,7 +140,7 @@ function SphereMap(props) {
   }, [hideUnknownSpheres, updateHideUnknownSpheres]);
 
   //console.log("NODES", nodes);
-  console.log("EDGES", edges);
+  //console.log("EDGES", edges);
 
   return (
     <>
