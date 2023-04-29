@@ -93,8 +93,6 @@ function PlanetNewSB(props) {
   const SphereNodes = useStore((state) => state.nodes, shallow);
   const [typeInputValue, setTypeInputValue] = useState("");
 
-  const reactFlowInstance = props.reactFlowInstance;
-
   const onClickSave = () => {
     let newNode = {
       id: tempData.name + tempData.orbitRadius,

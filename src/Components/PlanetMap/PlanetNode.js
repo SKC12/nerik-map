@@ -1,12 +1,19 @@
 import "../../style/Sphere.css";
 import { Handle, Position } from "reactflow";
 import { useStore as useReactFlowStore } from "reactflow";
-import airPlanet from "../../img/PlanetGasGiant_02_Regular_Orange_Thumb.webp";
-import firePlanet from "../../img/PlanetAtmo_05_Regular_Red_Thumb.webp";
-import earthPlanet from "../../img/PlanetAtmo_01_Regular_BlueOrange_Thumb.webp";
-import icePlanet from "../../img/PlanetNoAtmo_01_Regular_BlueWhite_Thumb.webp";
-import waterPlanet from "../../img/PlanetGasGiant_01_Regular_Blue_Thumb.webp";
-import livePlanet from "../../img/PlanetAtmo_03_Regular_Green_Thumb.webp";
+// import airPlanet from "../../img/PlanetGasGiant_02_Regular_Orange_Thumb.webp";
+// import firePlanet from "../../img/PlanetAtmo_05_Regular_Red_Thumb.webp";
+// import earthPlanet from "../../img/PlanetAtmo_01_Regular_BlueOrange_Thumb.webp";
+// import icePlanet from "../../img/PlanetNoAtmo_01_Regular_BlueWhite_Thumb.webp";
+// import waterPlanet from "../../img/PlanetGasGiant_01_Regular_Blue_Thumb.webp";
+// import livePlanet from "../../img/PlanetAtmo_03_Regular_Green_Thumb.webp";
+
+import airPlanet from "../../img/air.webm";
+import firePlanet from "../../img/fire.webm";
+import earthPlanet from "../../img/earth.webm";
+import icePlanet from "../../img/ice.webm";
+import waterPlanet from "../../img/water.webm";
+import livePlanet from "../../img/live.webm";
 
 function getWidth(size) {
   switch (size) {
@@ -73,8 +80,8 @@ export function PlanetNode({ selected, data }) {
           position: "relative",
           width: `${planetSize}px`,
           height: `${planetSize}px`,
-          backgroundImage: `url(${getBackgroundImage(data.info.type)})`,
-          backgroundSize: "cover",
+          // backgroundImage: `url(${getBackgroundImage(data.info.type)})`,
+          // backgroundSize: "cover",
           filter: `${
             selected ? `drop-shadow(0px 0px ${2 / zoomLevel}px white)` : ""
           }`,
@@ -83,6 +90,17 @@ export function PlanetNode({ selected, data }) {
           cursor: "pointer",
         }}
       >
+        <video
+          width={`${planetSize * 1}px`}
+          height={`${planetSize * 1}px`}
+          loop
+          autoPlay
+        >
+          <source
+            type="video/webm"
+            src={getBackgroundImage(data.info.type)}
+          ></source>
+        </video>
         {zoomLevel > 0.04 || parseInt(data.orbitRadius) > 200 ? (
           <div
             style={{

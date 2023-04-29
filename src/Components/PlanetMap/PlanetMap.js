@@ -2,7 +2,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import ReactFlow, {
   applyEdgeChanges,
   applyNodeChanges,
-  Background,
   ReactFlowProvider,
 } from "reactflow";
 import "reactflow/dist/style.css";
@@ -121,32 +120,32 @@ function PlanetMap(props) {
 
   return (
     <>
-      <PlanetLeftSB
-        reactFlowInstance={reactFlowInstance}
-        selectedNode={selectedNode}
-        scale={scale}
-        nodeState={[nodes, setNodes]}
-        planetScreenData={planetScreenData}
-      />
-      <div
-        ref={reactFlowRef}
-        style={{
-          height: canvasHeight,
-          width: canvasWidth,
-          position: "relative",
-          zIndex: 10,
-          cursor: "pointer",
-        }}
-      >
+      <ReactFlowProvider>
+        <PlanetLeftSB
+          reactFlowInstance={reactFlowInstance}
+          selectedNode={selectedNode}
+          scale={scale}
+          nodeState={[nodes, setNodes]}
+          planetScreenData={planetScreenData}
+        />
         <div
-          onClick={() => {
-            leavePlanetScreen();
+          ref={reactFlowRef}
+          style={{
+            height: canvasHeight,
+            width: canvasWidth,
+            position: "relative",
+            zIndex: 10,
+            cursor: "pointer",
           }}
-          className="PLANETMAP__return-container"
         >
-          X
-        </div>
-        <ReactFlowProvider>
+          <div
+            onClick={() => {
+              leavePlanetScreen();
+            }}
+            className="PLANETMAP__return-container"
+          >
+            X
+          </div>
           <ReactFlow
             nodes={nodes}
             edges={edges}
@@ -164,12 +163,12 @@ function PlanetMap(props) {
             onInit={setReactFlowInstance}
             deleteKeyCode={null}
           >
-            <Background />
+            {/* <Background /> */}
             {/* <Controls /> */}
           </ReactFlow>
-        </ReactFlowProvider>
-      </div>
-      <PlanetRightSB scale={scale} planetScreenData={planetScreenData} />
+        </div>
+        <PlanetRightSB scale={scale} planetScreenData={planetScreenData} />
+      </ReactFlowProvider>
     </>
   );
 }

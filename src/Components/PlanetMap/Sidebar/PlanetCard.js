@@ -5,6 +5,8 @@ import earthPlanet from "../../../img/earth.webm";
 import icePlanet from "../../../img/ice.webm";
 import waterPlanet from "../../../img/water.webm";
 import livePlanet from "../../../img/live.webm";
+import { useReactFlow } from "reactflow";
+import { getCoords } from "../../utils";
 
 function getBackgroundImage(type) {
   if (type && type.includes("Earth")) {
@@ -25,9 +27,20 @@ function getBackgroundImage(type) {
 }
 
 function PlanetCard(props) {
+  const { setCenter } = useReactFlow();
+  const scale = props.scale;
   const planet = props.planet;
+  const coords = getCoords(
+    (parseInt(planet.orbitRadius) * scale * 10) / 2,
+    planet.info.angle
+  );
   return (
-    <div className="RIGHTSB__planet-card">
+    <div
+      className="RIGHTSB__planet-card"
+      onClick={(e) => {
+        setCenter(coords.x, coords.y, { duration: 2000 });
+      }}
+    >
       <div className="RIGHTSB__planet-card-img-container">
         <video width={"60px"} loop autoPlay>
           <source
