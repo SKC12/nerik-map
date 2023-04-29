@@ -36,7 +36,7 @@ function App() {
   const planetScreenData = useStore((state) => state.planetScreenData, shallow);
 
   //console.log(containerDimensions);
-  console.log(planetScreenData);
+  //console.log(planetScreenData);
 
   useEffect(() => {
     async function loadSpheres(sphereData) {
