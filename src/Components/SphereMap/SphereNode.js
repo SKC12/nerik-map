@@ -54,14 +54,7 @@ export function SphereNode({ selected, data }) {
         style={style}
       >
         {selected ? (
-          <div
-            className="SPHERE__planets-icon-contaier"
-            onClick={() => setPlanetScreenData(data.planets)}
-            style={{
-              right: `-${parseInt(width) / 6}px`,
-              top: `-${parseInt(width) / 6}px`,
-            }}
-          >
+          <div className="SPHERE__planets-icon-contaier">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -69,8 +62,14 @@ export function SphereNode({ selected, data }) {
               strokeWidth="1.5"
               stroke="currentColor"
               className="SPHERE__planets-icon"
-              width={`${parseInt(width) / 3}px`}
-              height={`${parseInt(width) / 3}px`}
+              width={`10px`}
+              height={`10px`}
+              onClick={() => setPlanetScreenData(data.planets)}
+              style={{
+                transform: `translate(${parseInt(width) / 3}px, -${
+                  parseInt(width) / 3
+                }px) scale(${parseInt(width) / 30})  `,
+              }}
             >
               <path
                 strokeLinecap="round"
