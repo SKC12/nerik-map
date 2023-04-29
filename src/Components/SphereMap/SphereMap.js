@@ -126,8 +126,6 @@ function SphereMap(props) {
   }, [animated, updateAnimation]);
 
   useEffect(() => {
-    console.log(projectedTime);
-
     updateProjectedTime(projectedTime);
   }, [projectedTime, updateProjectedTime]);
 

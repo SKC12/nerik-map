@@ -120,13 +120,13 @@ const useStore = create((set, get) => ({
     set({
       nodes: newNodes,
     });
-    console.log("set nodes", get().nodes);
+    //console.log("set nodes", get().nodes);
   },
   setEdges: (newEdges) => {
     set({
       edges: newEdges,
     });
-    console.log("set edges", get().nodes);
+    //console.log("set edges", get().nodes);
   },
   setFlowRiverColors: (newFlowRiverColors) => {
     set({
@@ -137,14 +137,13 @@ const useStore = create((set, get) => ({
     set({
       planetScreenData: planetsData,
     });
-    console.log(get().planetScreenData);
+    //console.log(get().planetScreenData);
   },
   leavePlanetScreen: () => {
-    console.log("LEAVE");
     set({
       planetScreenData: null,
     });
-    console.log(get().planetScreenData);
+    //console.log(get().planetScreenData);
   },
 }));
 
