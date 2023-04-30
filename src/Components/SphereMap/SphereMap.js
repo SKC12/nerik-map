@@ -73,7 +73,7 @@ function SphereMap(props) {
   const selectEdge = edges.filter((edg) => edg.selected === true)[0];
 
   //console.log(selectedEdge, selectedNode);
-  //console.log(nodes, edges);
+  console.log(nodes, edges);
   useEffect(() => {
     setSelectedNode(selectNode);
   }, [selectNode]);

@@ -12,6 +12,7 @@ import { shallow } from "zustand/shallow";
 import { Sphere } from "./models/Sphere";
 import { Flow } from "./models/Flow";
 import PlanetMap from "./Components/PlanetMap/PlanetMap";
+import StartScreen from "./Components/StartScreen";
 
 const scale = 5;
 
@@ -38,44 +39,60 @@ function App() {
   //console.log(containerDimensions);
   //console.log(planetScreenData);
 
-  useEffect(() => {
-    async function loadSpheres(sphereData) {
-      //let sphereArray = [];
-      let sphereArray = await loadCSVSpheres(sphereData, planetData);
+  async function loadNerikSpheres() {
+    //let sphereArray = [];
+    let sphereArray = await loadCSVSpheres(sphereData, planetData);
 
-      //let flowsArray = [];
-      let flowsArray = await loadCSVFlows(flowsData);
+    //let flowsArray = [];
+    let flowsArray = await loadCSVFlows(flowsData);
 
-      let bgSphere = {
-        id: "bg",
-        type: "bgNode",
-        position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
-        data: { width: baseMapWidth, height: baseMapHeight },
-        draggable: false,
-        selectable: false,
-        zIndex: -1,
-      };
+    let bgSphere = {
+      id: "bg",
+      type: "bgNode",
+      position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
+      data: { width: baseMapWidth, height: baseMapHeight },
+      draggable: false,
+      selectable: false,
+      zIndex: -1,
+    };
 
-      setNodes(Sphere.getNodes(sphereArray, scale).concat(bgSphere));
-      setEdges(Flow.getEdges(flowsArray, flowRiverColors, scale));
-      setLoaded(true);
-    }
-    if (!loaded) {
-      loadSpheres(sphereData);
-    }
-  }, [loaded, flowRiverColors, setNodes, setEdges]);
+    setNodes(Sphere.getNodes(sphereArray, scale).concat(bgSphere));
+    setEdges(Flow.getEdges(flowsArray, flowRiverColors, scale));
+    setLoaded(true);
+  }
+
+  function loadFromScratch() {
+    let bgSphere = {
+      id: "bg",
+      type: "bgNode",
+      position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
+      data: { width: baseMapWidth, height: baseMapHeight },
+      draggable: false,
+      selectable: false,
+      zIndex: -1,
+    };
+
+    setNodes([bgSphere]);
+    setLoaded(true);
+  }
+
+  // useEffect(() => {
+  //   if (!loaded) {
+  //     loadNerikSpheres(sphereData);
+  //   }
+  // }, [loaded, flowRiverColors, setNodes, setEdges]);
 
   // console.log("nodes and edges", nodes, edges);
   //console.log("LOADED", loaded);
 
   useEffect(() => {
-    if (refContainer.current && loaded) {
+    if (refContainer.current) {
       setContainerDimensions({
         width: refContainer.current.offsetHeight * bgRatio,
         height: refContainer.current.offsetHeight,
       });
     }
-  }, [bgRatio, loaded]);
+  }, [bgRatio]);
 
   const theme = createTheme({
     palette: {
@@ -111,7 +128,13 @@ function App() {
               />
             )}
           </div>
-        ) : null}
+        ) : (
+          <StartScreen
+            width={containerDimensions.width}
+            loadNerikSpheres={loadNerikSpheres}
+            loadFromScratch={loadFromScratch}
+          />
+        )}
       </ThemeProvider>
     </div>
   );
