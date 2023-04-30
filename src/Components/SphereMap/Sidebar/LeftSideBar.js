@@ -123,6 +123,7 @@ function LeftSideBar(props) {
             selectedEdge={selectedEdge}
             setSelectedEdge={setSelectedEdge}
             reactFlowInstance={reactFlowInstance}
+            scale={scale}
           />
         ) : null}
         {selectedTab === "newTab" ? <LeftSBNew scale={scale} /> : null}

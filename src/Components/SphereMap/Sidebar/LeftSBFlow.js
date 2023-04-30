@@ -4,6 +4,7 @@ import { Autocomplete } from "@mui/material";
 import DelConfirmationDialog from "../../DelConfirmationDialog";
 import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
+import { getStyle } from "../../utils";
 
 function getFormattedFlowType(type) {
   if (type.includes("erratic")) return "Erratic";
@@ -17,6 +18,7 @@ function getTempData(data) {
 
 function LeftSBFlow(props) {
   const reactFlowInstance = props.reactFlowInstance;
+  const scale = props.scale;
 
   const flowRiverColors = useStore((state) => state.flowRiverColors, shallow);
   const setFlowRiverColors = useStore(
@@ -184,6 +186,7 @@ function LeftSBFlow(props) {
           edg.source = data.sphereW;
           edg.target = data.sphereE;
           edg.data = data;
+          edg.style = getStyle(data, flowRiverColors, 5);
           //console.log(edg);
         }
 
