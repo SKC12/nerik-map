@@ -1,13 +1,12 @@
-import { Button } from "@mui/material";
-import { useCallback, useRef } from "react";
+import { Backdrop, Button, CircularProgress } from "@mui/material";
+import { useCallback, useRef, useState } from "react";
 import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
-import { toPng, toBlob, toCanvas } from "html-to-image";
-import html2canvas from "html2canvas";
-import domtoimage from "dom-to-image";
+import { toCanvas } from "html-to-image";
 
 function LeftSBOptions(props) {
   const reactFlowInstance = props.reactFlowInstance;
+  const [loading, setLoading] = useState(false);
 
   const isAnimated = useStore((state) => state.isAnimated);
   const toggleAnimated = useStore((state) => state.toggleAnimated);
@@ -29,10 +28,6 @@ function LeftSBOptions(props) {
   const setNodes = useStore((state) => state.setNodes, shallow);
 
   const hiddenFileRef = useRef(null);
-
-  // const animationChange = () => {
-  //   setIsAnimated(!isAnimated);
-  // };
 
   const unknownPathsChange = () => {
     toggleHideUnknownPaths();
@@ -58,197 +53,61 @@ function LeftSBOptions(props) {
     }
   }, [reactFlowInstance]);
 
-  // const downloadAsImage = useCallback(() => {
-  //   const exportAsImage = async (element) => {
-  //     const canvas = await html2canvas(element, {
-  //       scale: 3,
-  //       ignoreElements: (element) => {
-  //         if (!element.classList.contains("react-flow__edge")) {
-  //           console.log(element);
-  //           return true;
-  //         }
-  //       },
-  //     });
-  //     console.log(canvas);
-  //     const data = canvas.toDataURL("image/png", 1.0);
-  //     const a = document.createElement("a");
-  //     a.href = data;
-  //     a.download = "flowmap.png";
-  //     a.click();
-  //   };
-
-  //   if (reactFlowInstance) {
-  //     //const element = reactFlowRef.current;
-  //     const element = document.querySelector(".react-flow");
-  //     exportAsImage(element);
-  //   }
-  // }, [reactFlowInstance]);
-
-  // const downloadAsImage = useCallback(() => {
-  //   if (reactFlowInstance) {
-  //     //const element = document.querySelector(".react-flow");
-  //     const element = reactFlowRef.current;
-  //     toPng(element, {
-  //       filter: (node) => {
-  //         console.log(node);
-  //         if (node?.classList?.contains("react-flow__edge")) {
-  //           console.log(node);
-  //           return false;
-  //         }
-  //         return true;
-  //       },
-  //     })
-  //       .then((dataUrl) => {
-  //         //console.log(dataUrl);
-  //         const a = document.createElement("a");
-  //         a.href = dataUrl;
-  //         a.download = "flowmap.png";
-  //         a.click();
-  //       })
-  //       .catch((e) => console.log(e));
-  //   }
-  // }, [reactFlowInstance, reactFlowRef]);
-
-  // const downloadAsImage = useCallback(() => {
-  //   const element = reactFlowRef.current;
-
-  //   const getImage = async () => {
-  //     console.log("loading images");
-  //     let edgesImage = await toPng(element, {
-  //       pixelRatio: 4,
-  //       filter: (node) => {
-  //         //console.log(node);
-  //         if (node?.classList?.contains("react-flow__edge")) {
-  //           //console.log(node);
-  //           return false;
-  //         }
-  //         return true;
-  //       },
-  //     });
-
-  //     let nodesImage = await toPng(element, {
-  //       pixelRatio: 4,
-
-  //       filter: (node) => {
-  //         //console.log(node);
-  //         if (node?.classList?.contains("react-flow__nodes")) {
-  //           //console.log(node);
-  //           return false;
-  //         }
-  //         return true;
-  //       },
-  //     });
-  //     console.log("loaded images", edgesImage, nodesImage);
-
-  //     let canvas = document.createElement("canvas");
-  //     canvas.width = 5975;
-  //     canvas.height = 4205;
-
-  //     let img1 = new Image();
-  //     img1.src = edgesImage;
-
-  //     img1.onload = () => {
-  //       console.log("img1 load");
-  //       canvas.getContext("2d").drawImage(img1, 0, 0);
-  //     };
-  //     let img2 = new Image();
-  //     img2.src = nodesImage;
-  //     img2.onLoad = () => {
-  //       console.log("img2 load");
-
-  //       console.log("created images", img1, img2);
-
-  //       canvas.getContext("2d").drawImage(img2, 0, 0);
-
-  //       var combined = new Image();
-  //       combined.src = canvas.toDataURL();
-  //       combined.onLoad = () => {
-  //         console.log("combined image", combined);
-
-  //         const a = document.createElement("a");
-  //         a.href = canvas.toDataURL();
-  //         a.download = "flowmap.png";
-  //         a.click();
-  //       };
-  //     };
-
-  //     //return { edgesBlob: edgesImage, nodesBlob: nodesImage };
-  //   };
-
-  const downloadAsImage = useCallback(() => {
-    const element = reactFlowRef.current;
-
-    const getImage = async () => {
-      console.log("loading images");
-      let edgesCanvas = await toCanvas(element, {
-        pixelRatio: 6,
-        filter: (node) => {
-          //console.log(node);
-          if (node?.classList?.contains("react-flow__edge")) {
-            //console.log(node);
-            return false;
-          }
-          return true;
-        },
-      });
-
-      let nodesCanvas = await toCanvas(element, {
-        pixelRatio: 6,
-
-        filter: (node) => {
-          //console.log(node);
-          if (node?.classList?.contains("react-flow__nodes")) {
-            //console.log(node);
-            return false;
-          }
-          return true;
-        },
-      });
-
-      console.log("loaded images", edgesCanvas, nodesCanvas);
-
-      edgesCanvas.getContext("2d").drawImage(nodesCanvas, 0, 0);
-
-      console.log("combined image");
-
-      const a = document.createElement("a");
-      a.href = edgesCanvas.toDataURL();
-      a.download = "flowmap.png";
-      a.click();
-
-      console.log("downloaded image");
-
-      //return { edgesBlob: edgesImage, nodesBlob: nodesImage };
-    };
-
+  const downloadAsImage = () => {
     if (reactFlowInstance) {
       getImage();
-      //   toBlob(reactFlowRef.current)
-      //     .then((blob) => {
-      //       if (window.saveAs) {
-      //         window.saveAs(blob, "flowmap.png");
-      //       } else {
-      //         console.log("nope");
-      //       }
-      //     })
-      //     .catch((e) => console.log(e));
     }
-  }, [reactFlowInstance, reactFlowRef]);
+  };
 
-  // const downloadAsImage = useCallback(() => {
-  //   if (reactFlowInstance) {
-  //     domtoimage
-  //       .toBlob(reactFlowRef.current)
-  //       .then((blob) => {
-  //         if (window.saveAs) {
-  //           window.saveAs(blob, "flowmap.png");
-  //         } else {
-  //           console.log("nope");
-  //         }
-  //       })
-  //       .catch((e) => console.error(e));
-  //   }
-  // }, [reactFlowInstance, reactFlowRef]);
+  const getImage = async () => {
+    const element = reactFlowRef.current;
+    setLoading(true);
+
+    console.log("loading images");
+    let edgesCanvas = await toCanvas(element, {
+      pixelRatio: 6,
+      filter: (node) => {
+        //console.log(node);
+        if (
+          node?.classList?.contains("react-flow__edge") ||
+          node?.classList?.contains("SPHERE__grid")
+        ) {
+          //console.log(node);
+          return false;
+        }
+        return true;
+      },
+    });
+
+    let nodesCanvas = await toCanvas(element, {
+      pixelRatio: 6,
+
+      filter: (node) => {
+        //console.log(node);
+        if (node?.classList?.contains("react-flow__nodes")) {
+          //console.log(node);
+          return false;
+        }
+        return true;
+      },
+    });
+
+    console.log("loaded images", edgesCanvas, nodesCanvas);
+
+    edgesCanvas.getContext("2d").drawImage(nodesCanvas, 0, 0);
+
+    console.log("combined image");
+
+    const a = document.createElement("a");
+    a.href = edgesCanvas.toDataURL();
+    a.download = "flowmap.png";
+    a.click();
+
+    console.log("downloaded image");
+    setLoading(false);
+
+    //return { edgesBlob: edgesImage, nodesBlob: nodesImage };
+  };
 
   const loadFromLocalStorage = useCallback(() => {
     const loadData = async () => {
@@ -280,6 +139,19 @@ function LeftSBOptions(props) {
 
   return (
     <div>
+      <Backdrop open={loading} sx={{ zIndex: 20 }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "10px",
+          }}
+        >
+          <CircularProgress />
+          Processing image...
+        </div>
+      </Backdrop>
       <h3>Settings:</h3>
       <div className="LEFTSB__option-container">
         <input

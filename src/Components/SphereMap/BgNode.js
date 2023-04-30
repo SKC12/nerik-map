@@ -20,7 +20,7 @@ export function BgNode({ data }) {
           backgroundSize: "cover",
         }}
       >
-        <div style={style}></div>
+        <div className="SPHERE__grid" style={style}></div>
       </div>
     </>
   );
