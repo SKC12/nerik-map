@@ -86,7 +86,7 @@ function SphereMap(props) {
     updateFlowRiverColors(flowRiverColors);
   }, [flowRiverColors, updateFlowRiverColors]);
 
-  const onDragSphereOver = useCallback(
+  const onSphereDrop = useCallback(
     (e) => {
       e.preventDefault();
 
@@ -111,12 +111,15 @@ function SphereMap(props) {
           isKnown: "yes",
         },
       };
-      addNode(newSphere);
+      console.log(nodes.filter((nd) => nd.id === newSphere.id));
+      if (!nodes.filter((nd) => nd.id === newSphere.id).length) {
+        addNode(newSphere);
+      }
     },
-    [reactFlowInstance, addNode, scale]
+    [reactFlowInstance, addNode, nodes, scale]
   );
 
-  const onSphereDrop = useCallback((e) => {
+  const onDragSphereOver = useCallback((e) => {
     e.preventDefault();
     e.dataTransfer.effect = "move";
   }, []);

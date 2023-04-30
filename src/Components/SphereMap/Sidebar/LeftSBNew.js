@@ -74,9 +74,12 @@ function LeftSBNew(props) {
     return flowRivers;
   }, []);
 
+  console.log("nodes", nodes);
+
   const sphereOptions = nodes
     ? nodes
         .reduce((options, nd) => {
+          console.log(options, nd);
           if (nd.data.shortName) {
             options.push(nd.data.shortName);
           }
