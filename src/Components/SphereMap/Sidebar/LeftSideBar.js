@@ -127,7 +127,10 @@ function LeftSideBar(props) {
         ) : null}
         {selectedTab === "newTab" ? <LeftSBNew scale={scale} /> : null}
         {selectedTab === "optionsTab" ? (
-          <LeftSBOptions reactFlowInstance={reactFlowInstance} />
+          <LeftSBOptions
+            reactFlowInstance={reactFlowInstance}
+            reactFlowRef={props.reactFlowRef}
+          />
         ) : null}
         {selectedTab === "aboutTab" ? (
           <div>
