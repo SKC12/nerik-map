@@ -18,7 +18,6 @@ function getTempData(data) {
 
 function LeftSBFlow(props) {
   const reactFlowInstance = props.reactFlowInstance;
-  const scale = props.scale;
 
   const flowRiverColors = useStore((state) => state.flowRiverColors, shallow);
   const setFlowRiverColors = useStore(

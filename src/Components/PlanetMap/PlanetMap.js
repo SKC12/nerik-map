@@ -114,6 +114,22 @@ function PlanetMap(props) {
     []
   );
 
+  const onClickSelect = useCallback(
+    (planet) => {
+      setNodes(
+        nodes.map((nd) => {
+          if (nd.id === planet.name + planet.orbitRadius) {
+            nd.selected = true;
+          } else {
+            nd.selected = false;
+          }
+          return nd;
+        })
+      );
+    },
+    [nodes]
+  );
+
   const selectNode = nodes.filter((nd) => nd.selected === true)[0];
 
   useEffect(() => {
@@ -169,7 +185,11 @@ function PlanetMap(props) {
             {/* <Controls /> */}
           </ReactFlow>
         </div>
-        <PlanetRightSB scale={scale} planetScreenData={planetScreenData} />
+        <PlanetRightSB
+          onClickSelect={onClickSelect}
+          scale={scale}
+          planetScreenData={planetScreenData}
+        />
       </ReactFlowProvider>
     </>
   );
