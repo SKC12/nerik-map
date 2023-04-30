@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "../../../style/SideBar.css";
 import PlanetInfoSB from "./PlanetInfoSB";
 import PlanetNewSB from "./PlanetNewSB";
-import PlanetOptionsSB from "./PlanetOptionsSB";
 
 function PlanetLeftSB(props) {
   const [selectedTab, setSelectedTab] = useState("aboutTab");
@@ -92,9 +91,6 @@ function PlanetLeftSB(props) {
             scale={scale}
             planetScreenData={planetScreenData}
           />
-        ) : null}
-        {selectedTab === "optionsTab" ? (
-          <PlanetOptionsSB reactFlowInstance={reactFlowInstance} />
         ) : null}
         {selectedTab === "aboutTab" ? (
           <div>
