@@ -79,11 +79,11 @@ function PlanetNewSB(props) {
     notes: "",
     "onMap?": "Yes",
     population: "",
-    shortName: planetScreenData[0].info.shortName,
+    shortName: planetScreenData.shortName,
     source: "",
-    sphere: planetScreenData[0].sphere,
+    sphere: planetScreenData.sphere,
     website: "",
-    sphereRadius: planetScreenData[0].sphereRadius,
+    sphereRadius: planetScreenData.sphereRadius,
   };
 
   const scale = props.scale;

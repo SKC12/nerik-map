@@ -33,8 +33,9 @@ const nodeTypes = {
 function PlanetMap(props) {
   const planetScreenData = useStore((state) => state.planetScreenData, shallow);
   console.log(planetScreenData);
-  const sphereRadius = planetScreenData[0].info.sphereRadius;
-  const initialNodes = planetScreenData.map((planet) => {
+  const planets = planetScreenData.planets;
+  const sphereRadius = planetScreenData.sphereRadius;
+  const initialNodes = planets.map((planet) => {
     let node = {
       id: planet.name + planet.orbitRadius,
       type: "planetNode",

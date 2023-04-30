@@ -65,7 +65,7 @@ export function SphereNode({ selected, data }) {
               className="SPHERE__planets-icon"
               width={`10px`}
               height={`10px`}
-              onClick={() => setPlanetScreenData(data.planets)}
+              onClick={() => setPlanetScreenData(data)}
               style={{
                 transform: `translate(${parseInt(width) / 3}px, -${
                   parseInt(width) / 3

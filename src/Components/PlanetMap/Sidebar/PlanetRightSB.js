@@ -3,7 +3,7 @@ import PlanetCard from "./PlanetCard";
 
 function PlanetRightSB(props) {
   const scale = props.scale;
-  const planetScreenData = props.planetScreenData.sort(
+  const planets = props.planetScreenData.planets.sort(
     (a, b) => parseInt(a.orbitRadius) - parseInt(b.orbitRadius)
   );
   //console.log(planetScreenData);
@@ -12,7 +12,7 @@ function PlanetRightSB(props) {
     <div className="RIGHTSB">
       <div className="RIGHTSB__inner-container">
         <div className="RIGHTSB__planet-card-container">
-          {planetScreenData.map((planet) => {
+          {planets.map((planet) => {
             return (
               <PlanetCard
                 key={planet.name + planet.orbitRadius}
