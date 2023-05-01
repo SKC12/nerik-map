@@ -24,8 +24,6 @@
     color: rgb(213, 213, 230);
     flex-grow: 1;
     flex-basis: 0;
-
-
 }
 
 .LEFTSB__header{
@@ -244,6 +242,8 @@
 .LEFTSB__data-link{
     color: rgb(184, 184, 196);
     word-break: break-all;
+    text-transform: none;
+
 
 }
 

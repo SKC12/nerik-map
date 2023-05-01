@@ -5,6 +5,12 @@ import { Slider } from "@mui/material";
 import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
 
+function getLink(link) {
+  return link.startsWith("http://") || link.startsWith("https://")
+    ? link
+    : "http://" + link;
+}
+
 function LeftSBSphere(props) {
   const [editMode, setEditMode] = useState(false);
   const [delDialogOpen, setDelDialogOpen] = useState(false);
@@ -333,20 +339,34 @@ function LeftSBSphere(props) {
         sx={inputStyle}
       />
       <label className="LEFTSB__data-label">Website:</label>
-      <TextField
-        variant="standard"
-        className="LEFTSB__data"
-        onChange={(e) => setTempData({ ...tempData, website: e.target.value })}
-        value={tempData.website}
-        disabled={!editMode}
-        inputProps={{
-          maxLength: 30,
-        }}
-        InputProps={{
-          disableUnderline: true,
-        }}
-        sx={inputStyle}
-      />
+      {editMode ? (
+        <TextField
+          variant="standard"
+          className="LEFTSB__data"
+          onChange={(e) =>
+            setTempData({ ...tempData, website: e.target.value })
+          }
+          value={tempData.website}
+          disabled={!editMode}
+          inputProps={{
+            maxLength: 30,
+          }}
+          InputProps={{
+            disableUnderline: true,
+          }}
+          sx={inputStyle}
+        />
+      ) : (
+        <a
+          href={getLink(tempData.website)}
+          className="LEFTSB__flow-data LEFTSB__data-link"
+          rel="noreferrer"
+          target="_Blank"
+        >
+          {tempData.website}
+        </a>
+      )}
+
       <label className="LEFTSB__data-label">Known?</label>
       {editMode ? (
         <input
