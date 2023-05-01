@@ -75,8 +75,6 @@ function SphereMap(props) {
   const selectNode = nodes.filter((nd) => nd.selected === true)[0];
   const selectEdge = edges.filter((edg) => edg.selected === true)[0];
 
-  //console.log(selectedEdge, selectedNode);
-  //console.log(nodes, edges);
   useEffect(() => {
     setSelectedNode(selectNode);
   }, [selectNode]);
@@ -212,9 +210,6 @@ function SphereMap(props) {
   useEffect(() => {
     updateHideUnknownSpheres(hideUnknownSpheres);
   }, [hideUnknownSpheres, updateHideUnknownSpheres]);
-
-  //console.log("NODES", nodes);
-  //console.log("EDGES", edges);
 
   return (
     <>
