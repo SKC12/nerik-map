@@ -149,7 +149,7 @@ function LeftSBNew(props) {
         isKnown: "yes",
         editedSpeed: "no",
         typeExtraInfo: "",
-        scale,
+        scale: scale,
       };
 
       if (node1.position.x < node2.position.x) {
@@ -219,7 +219,7 @@ function LeftSBNew(props) {
         type: "floating",
         style: getStyle(data, flowRiverColors, 5),
       };
-      console.log(newEdge);
+      console.log("newEdge", newEdge);
       if (!edges.find((edg) => edg.id === newEdge.id)) {
         setEdges(edges.concat(newEdge));
       } else {

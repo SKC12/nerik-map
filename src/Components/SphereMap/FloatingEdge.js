@@ -12,8 +12,9 @@ import { getEdgeParams } from "./../utils.js";
 function getTranslate(data, scale) {
   let yCoordW = parseInt(data.yCoordW);
   let yCoordE = parseInt(data.yCoordE);
-  let xCoordW = parseInt(data.xCoordW);
   let xCoordE = parseInt(data.xCoordE);
+  let xCoordW = parseInt(data.xCoordW);
+  console.log("data", data, scale, yCoordW, yCoordE, xCoordW);
 
   //console.log(data, yCoordW < yCoordE);
   if (Math.abs(xCoordW - xCoordE) / Math.abs(yCoordW - yCoordE) >= 0.75) {
@@ -93,6 +94,7 @@ function FloatingEdge({
   });
 
   const translate = getTranslate(data, scale);
+  console.log("translate", translate);
 
   const textStyle = {
     fontSize: `${0.75 * scale}px`,

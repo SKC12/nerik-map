@@ -152,6 +152,7 @@ function SphereMap(props) {
         setSelectedEdge={setSelectedEdge}
         reactFlowInstance={reactFlowInstance}
         reactFlowRef={reactFlowRef}
+        scale={scale}
       />
       <div
         ref={reactFlowRef}
