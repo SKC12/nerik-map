@@ -35,6 +35,8 @@ const defaultFlowRiverColors = {
 const useStore = create((set, get) => ({
   nodes: [],
   edges: [],
+  dataLoaded: false,
+  toggleDataLoaded: () => set((state) => ({ dataLoaded: !state.dataLoaded })),
   scale: 5,
   planetScreenData: null,
   flowRiverColors: defaultFlowRiverColors,
@@ -144,6 +146,40 @@ const useStore = create((set, get) => ({
       planetScreenData: null,
     });
     //console.log(get().planetScreenData);
+  },
+  loadFromLocalStorage: async () => {
+    const data = JSON.parse(localStorage.getItem("sbej-flowmap"));
+    if (data) {
+      set({
+        nodes: data.nodes || [],
+      });
+      set({
+        edges: data.edges || [],
+      });
+      set({
+        dataLoaded: true,
+      });
+    }
+  },
+
+  loadFromFile: (event) => {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      let data = JSON.parse(e.target.result);
+      if (data) {
+        set({
+          nodes: data.nodes || [],
+        });
+        set({
+          edges: data.edges || [],
+        });
+        set({
+          dataLoaded: true,
+        });
+      }
+    };
+    reader.readAsText(file);
   },
 }));
 

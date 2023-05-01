@@ -31,6 +31,8 @@ function App() {
   const setEdges = useStore((state) => state.setEdges, shallow);
   const setNodes = useStore((state) => state.setNodes, shallow);
   const flowRiverColors = useStore((state) => state.flowRiverColors);
+  const dataLoaded = useStore((state) => state.dataLoaded);
+  const toggleDataLoaded = useStore((state) => state.toggleDataLoaded);
 
   const [loaded, setLoaded] = useState(false);
 
@@ -58,7 +60,7 @@ function App() {
 
     setNodes(Sphere.getNodes(sphereArray, scale).concat(bgSphere));
     setEdges(Flow.getEdges(flowsArray, flowRiverColors, scale));
-    setLoaded(true);
+    toggleDataLoaded();
   }
 
   function loadFromScratch() {
@@ -73,7 +75,7 @@ function App() {
     };
 
     setNodes([bgSphere]);
-    setLoaded(true);
+    toggleDataLoaded();
   }
 
   // useEffect(() => {
@@ -114,7 +116,7 @@ function App() {
   return (
     <div ref={refContainer} className="App">
       <ThemeProvider theme={theme}>
-        {loaded && containerDimensions.width ? (
+        {dataLoaded && containerDimensions.width ? (
           <div className="main-container">
             {planetScreenData === null ? (
               <SphereMap
