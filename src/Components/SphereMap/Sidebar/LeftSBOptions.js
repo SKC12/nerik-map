@@ -27,6 +27,7 @@ function LeftSBOptions(props) {
   const setEdges = useStore((state) => state.setEdges, shallow);
   const setNodes = useStore((state) => state.setNodes, shallow);
 
+  const toggleDataLoaded = useStore((state) => state.toggleDataLoaded, shallow);
   const hiddenFileRef = useRef(null);
 
   const unknownPathsChange = () => {
@@ -57,6 +58,10 @@ function LeftSBOptions(props) {
     if (reactFlowInstance) {
       getImage();
     }
+  };
+
+  const returnToMain = () => {
+    toggleDataLoaded();
   };
 
   const getImage = async () => {
@@ -252,6 +257,15 @@ function LeftSBOptions(props) {
           variant="contained"
         >
           Download as image
+        </Button>
+        <hr style={{ width: "100%" }}></hr>
+        <Button
+          className="LEFTSB__option-button"
+          onClick={returnToMain}
+          disableElevation
+          variant="contained"
+        >
+          Return to main screen
         </Button>
       </div>
     </div>

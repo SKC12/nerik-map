@@ -2,6 +2,10 @@ import { Button } from "@mui/material";
 import { useRef } from "react";
 import useStore from "../store";
 import "../style/Start.css";
+import blankBG from "../img/blankBG.webp";
+import customBG from "../img/customBG.webp";
+import NerikMapBG from "../img/NerikMapBG.webp";
+import updateMapBG from "../img/updateMapBG.webp";
 
 function StartScreen(props) {
   const width = props.width;
@@ -20,7 +24,12 @@ function StartScreen(props) {
           width: width,
         }}
       >
-        <div className="START__option">
+        <div
+          className="START__option"
+          style={{
+            backgroundImage: `url(${NerikMapBG})`,
+          }}
+        >
           <Button
             onClick={loadNerikSpheres}
             className="START__button"
@@ -30,7 +39,12 @@ function StartScreen(props) {
             Original Nerik's Map
           </Button>
         </div>
-        <div className="START__option">
+        <div
+          className="START__option"
+          style={{
+            backgroundImage: `url(${updateMapBG})`,
+          }}
+        >
           <Button
             onClick={loadUpdatedSpheres}
             className="START__button"
@@ -40,7 +54,12 @@ function StartScreen(props) {
             Updated Nerik's Map
           </Button>
         </div>
-        <div className="START__option">
+        <div
+          className="START__option"
+          style={{
+            backgroundImage: `url(${blankBG})`,
+          }}
+        >
           <Button
             onClick={loadFromScratch}
             className="START__button"
@@ -50,7 +69,12 @@ function StartScreen(props) {
             Start from Scratch
           </Button>
         </div>
-        <div className="START__option">
+        <div
+          className="START__option"
+          style={{
+            backgroundImage: `url(${customBG})`,
+          }}
+        >
           <div className="START__button-container">
             <Button
               onClick={(e) => {
