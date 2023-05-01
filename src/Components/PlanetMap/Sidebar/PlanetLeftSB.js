@@ -52,17 +52,6 @@ function PlanetLeftSB(props) {
           )}
 
           <div
-            id="optionsTab"
-            onClick={handleTabClick}
-            className={`${
-              selectedTab === "optionsTab"
-                ? "LEFTSB_selected-tab"
-                : "LEFTSB__tab"
-            }`}
-          >
-            Options
-          </div>
-          <div
             id="aboutTab"
             onClick={handleTabClick}
             className={`${
