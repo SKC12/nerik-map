@@ -6,6 +6,7 @@ import "../style/Start.css";
 function StartScreen(props) {
   const width = props.width;
   const loadNerikSpheres = props.loadNerikSpheres;
+  const loadUpdatedSpheres = props.loadUpdatedSpheres;
   const loadFromScratch = props.loadFromScratch;
   const loadFromLocalStorage = useStore((state) => state.loadFromLocalStorage);
   const loadFromFile = useStore((state) => state.loadFromFile);
@@ -31,6 +32,7 @@ function StartScreen(props) {
         </div>
         <div className="START__option">
           <Button
+            onClick={loadUpdatedSpheres}
             className="START__button"
             disableElevation
             variant="contained"
