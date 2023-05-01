@@ -133,10 +133,10 @@ function LeftSBNew(props) {
     let dataString = JSON.stringify(transferData);
     //console.log("ID", id);
     event.dataTransfer.setData("text/plain", dataString);
-    var img = new Image();
-    img.src =
-      "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=";
-    event.dataTransfer.setDragImage(img, 0, 0);
+    // var img = new Image();
+    // img.src =
+    //   "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=";
+    // event.dataTransfer.setDragImage(img, 0, 0);
   };
 
   const createFlowRiver = (event) => {
