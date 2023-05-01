@@ -14,9 +14,7 @@ function getTranslate(data, scale) {
   let yCoordE = parseInt(data.yCoordE);
   let xCoordE = parseInt(data.xCoordE);
   let xCoordW = parseInt(data.xCoordW);
-  console.log("data", data, scale, yCoordW, yCoordE, xCoordW);
 
-  //console.log(data, yCoordW < yCoordE);
   if (Math.abs(xCoordW - xCoordE) / Math.abs(yCoordW - yCoordE) >= 0.75) {
     return {
       west: `(-${0.5 * scale}px,-${0.5 * scale}px)`,
@@ -94,7 +92,6 @@ function FloatingEdge({
   });
 
   const translate = getTranslate(data, scale);
-  console.log("translate", translate);
 
   const textStyle = {
     fontSize: `${0.75 * scale}px`,

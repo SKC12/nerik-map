@@ -1,4 +1,4 @@
-import ReactFlow from "reactflow";
+import ReactFlow, { getConnectedEdges } from "reactflow";
 import "reactflow/dist/style.css";
 import "../../style/SphereMap.css";
 import { useEffect, useState, useRef, useCallback } from "react";
@@ -13,6 +13,7 @@ import RightSideBar from "./Sidebar/RightSideBar";
 
 import useStore from "../../store";
 import { shallow } from "zustand/shallow";
+import { getStyle } from "../utils";
 
 const scale = 5;
 
@@ -55,6 +56,8 @@ function SphereMap(props) {
     updateHideUnknownPaths,
     updateHideUnknownSpheres,
   } = useStore(selector, shallow);
+  const setEdges = useStore((state) => state.setEdges, shallow);
+  const setNodes = useStore((state) => state.setNodes, shallow);
 
   const animated = useStore((state) => state.isAnimated);
   const projectedTime = useStore((state) => state.projectedTime);
@@ -73,7 +76,7 @@ function SphereMap(props) {
   const selectEdge = edges.filter((edg) => edg.selected === true)[0];
 
   //console.log(selectedEdge, selectedNode);
-  console.log(nodes, edges);
+  //console.log(nodes, edges);
   useEffect(() => {
     setSelectedNode(selectNode);
   }, [selectNode]);
@@ -85,6 +88,77 @@ function SphereMap(props) {
   useEffect(() => {
     updateFlowRiverColors(flowRiverColors);
   }, [flowRiverColors, updateFlowRiverColors]);
+
+  const onDragEnd = useCallback(
+    (e, node) => {
+      let position = node.position;
+      const newNode = {
+        ...node,
+        data: {
+          ...node.data,
+          xCoord: `${position.x / scale + 11}`,
+          yCoord: `${position.y / scale + 11}`,
+        },
+      };
+
+      let conenctedEdges = getConnectedEdges([node], edges);
+      let newEdges = conenctedEdges.map((edg) => {
+        if (edg.data.sphereW === newNode.data.shortName) {
+          edg.data.xCoordW = newNode.data.xCoord;
+          edg.data.yCoordW = newNode.data.yCoord;
+        } else if (edg.data.sphereE === newNode.data.shortName) {
+          edg.data.xCoordE = newNode.data.xCoord;
+          edg.data.yCoordE = newNode.data.yCoord;
+        }
+
+        edg.data.dist = Math.sqrt(
+          Math.pow(parseInt(edg.data.xCoordW) - parseInt(edg.data.xCoordE), 2) +
+            Math.pow(parseInt(edg.data.yCoordW) - parseInt(edg.data.yCoordE), 2)
+        ).toFixed(2);
+
+        if (edg.data.type === "uniW") {
+          if (edg.data.timeW) {
+            edg.data.speed = (edg.data.dist / edg.data.timeW).toFixed(2);
+          }
+        } else if (edg.data.type === "uniE") {
+          if (edg.data.timeW) {
+            edg.data.speed = (edg.data.dist / edg.data.timeE).toFixed(2);
+          }
+        } else {
+          if (edg.data.timeW && edg.data.timeE) {
+            edg.data.speed = (
+              edg.data.dist /
+              ((parseInt(edg.data.timeW) + parseInt(edg.data.timeE)) / 2)
+            ).toFixed(2);
+          }
+        }
+        edg.style = getStyle(edg.data, flowRiverColors, scale);
+
+        return edg;
+      });
+
+      setNodes(
+        nodes.map((nd) => {
+          if (nd.id === node.id) {
+            nd = newNode;
+          }
+          return nd;
+        })
+      );
+
+      setEdges(
+        edges.map((edg) => {
+          for (let i = 0; i < newEdges.length; i++) {
+            if (edg.id === newEdges[i].id) {
+              edg = newEdges[i];
+            }
+          }
+          return edg;
+        })
+      );
+    },
+    [scale, nodes, setNodes, edges, setEdges, flowRiverColors]
+  );
 
   const onSphereDrop = useCallback(
     (e) => {
@@ -106,12 +180,11 @@ function SphereMap(props) {
           planets: [],
           scale,
           xCoord: `${position.x / scale + 11}`,
-          yCoord: `${position.x / scale + 11}`,
+          yCoord: `${position.y / scale + 11}`,
           "onMap?": "Yes",
           isKnown: "yes",
         },
       };
-      console.log(nodes.filter((nd) => nd.id === newSphere.id));
       if (!nodes.filter((nd) => nd.id === newSphere.id).length) {
         addNode(newSphere);
       }
@@ -176,6 +249,7 @@ function SphereMap(props) {
             [567 * scale, 399 * scale],
           ]}
           nodesDraggable={draggable}
+          onNodeDragStop={onDragEnd}
           onDrop={onSphereDrop}
           onDragOver={onDragSphereOver}
           onInit={setReactFlowInstance}

@@ -65,7 +65,6 @@ function LeftSBNew(props) {
     (state) => state.setFlowRiverColors,
     shallow
   );
-  //console.log(flowRiverColors);
 
   const flowRiverOptions = edges.reduce((flowRivers, edge) => {
     if (!flowRivers.includes(edge.data.flowRiver)) {
@@ -74,12 +73,9 @@ function LeftSBNew(props) {
     return flowRivers;
   }, []);
 
-  console.log("nodes", nodes);
-
   const sphereOptions = nodes
     ? nodes
         .reduce((options, nd) => {
-          console.log(options, nd);
           if (nd.data.shortName) {
             options.push(nd.data.shortName);
           }
@@ -131,12 +127,7 @@ function LeftSBNew(props) {
     let transferData = sphereData;
     if (!sphereData.shortName) transferData.shortName = getId(1);
     let dataString = JSON.stringify(transferData);
-    //console.log("ID", id);
     event.dataTransfer.setData("text/plain", dataString);
-    // var img = new Image();
-    // img.src =
-    //   "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=";
-    // event.dataTransfer.setDragImage(img, 0, 0);
   };
 
   const createFlowRiver = (event) => {
@@ -219,7 +210,7 @@ function LeftSBNew(props) {
         type: "floating",
         style: getStyle(data, flowRiverColors, 5),
       };
-      console.log("newEdge", newEdge);
+
       if (!edges.find((edg) => edg.id === newEdge.id)) {
         setEdges(edges.concat(newEdge));
       } else {

@@ -11,7 +11,6 @@ function getNodeIntersection(intersectionNode, targetNode) {
   const x = p1.x + dx;
   const dy = radius * Math.sin(angle);
   const y = p1.y - dy;
-  //console.log(p1, h, w, radius, angle, dx, dy, x, y);
 
   return { x, y };
 }
@@ -23,8 +22,6 @@ function getEdgePosition(node, intersectionPoint) {
   const ny = Math.round(n.y);
   const px = Math.round(intersectionPoint.x);
   const py = Math.round(intersectionPoint.y);
-
-  //console.log("N", n, px, py, nx, ny, n.width);
 
   if (px <= nx - n.width / 2) {
     return Position.Left;
@@ -62,6 +59,7 @@ export function getEdgeParams(source, target) {
 
 export function getStyle(flow, flowRiverColors, scale = 1) {
   let speedRatio = 5;
+  let strokeRatio = scale / speedRatio;
 
   let style = {};
   let color = flowRiverColors[flow.flowRiver]
@@ -71,34 +69,34 @@ export function getStyle(flow, flowRiverColors, scale = 1) {
   switch (flow.type) {
     case "regular":
       style = {
-        strokeWidth: scale * (flow.speed / speedRatio),
+        strokeWidth: strokeRatio * flow.speed,
         strokeDasharray: `${0.5 * scale}`,
       };
       break;
     case "predominantW":
       style = {
-        strokeWidth: scale * (flow.speed / speedRatio),
+        strokeWidth: strokeRatio * flow.speed,
         strokeDasharray: `${1 * scale}`,
         animation: `dash 100s linear 0s infinite`,
       };
       break;
     case "predominantE":
       style = {
-        strokeWidth: scale * (flow.speed / speedRatio),
+        strokeWidth: strokeRatio * flow.speed,
         strokeDasharray: `${1 * scale}`,
         animation: `dash 100s linear 0s infinite reverse`,
       };
       break;
     case "uniW":
       style = {
-        strokeWidth: scale * (flow.speed / speedRatio),
+        strokeWidth: strokeRatio * flow.speed,
         strokeDasharray: `${2 * scale} ${2 * scale}`,
         animation: `dash 20s linear 0s infinite`,
       };
       break;
     case "uniE":
       style = {
-        strokeWidth: scale * (flow.speed / speedRatio),
+        strokeWidth: strokeRatio * flow.speed,
         strokeDasharray: `${2 * scale} ${2 * scale}`,
         animation: `dash 20s linear 0s infinite reverse`,
       };
@@ -114,7 +112,7 @@ export function getStyle(flow, flowRiverColors, scale = 1) {
       break;
     case "erratic":
       style = {
-        strokeWidth: scale * (flow.speed / speedRatio),
+        strokeWidth: strokeRatio * flow.speed,
         strokeDasharray: `${1 * scale} ${1 * scale} ${0.5 * scale} ${
           0.5 * scale
         } ${0.5 * scale} ${1 * scale}`,
@@ -123,7 +121,7 @@ export function getStyle(flow, flowRiverColors, scale = 1) {
       break;
     case "tide":
       style = {
-        strokeWidth: scale * (flow.speed / speedRatio),
+        strokeWidth: strokeRatio * flow.speed,
         strokeDasharray: `${1 * scale} ${1 * scale} ${0.5 * scale} ${
           1 * scale
         }`,
@@ -132,7 +130,7 @@ export function getStyle(flow, flowRiverColors, scale = 1) {
       break;
     default:
       style = {
-        strokeWidth: scale * (flow.speed / speedRatio),
+        strokeWidth: strokeRatio * flow.speed,
       };
   }
   if (flow.isKnown === "no") style.opacity = "50%";
