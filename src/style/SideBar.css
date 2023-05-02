@@ -28,7 +28,59 @@
     flex-basis: 0;
 }
 
-@media (max-width:800px){
+.LEFTSB__header{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: calc(100% - 40px);
+}
+
+.RIGHTSB__open-tab{
+    display: none;
+}
+
+@media (orientation:landscape) and (max-width:1000px){
+
+    .LEFTSB {
+        
+        min-width: 250px;
+        
+    }
+   
+    .RIGHTSB {
+
+        position: absolute;
+        
+        max-width: 350px;
+        top: 0;
+        right: 0px;
+        z-index: 20;
+    }
+    .LEFTSB__header{
+        height: 75px;
+       
+    }
+
+    .RIGHTSB__open-tab{
+        position: absolute;
+        left: -20px;
+        top: calc(25vh - 30px);
+        width: 20px;
+        height: 60px;
+        background-color: rgb(57, 57, 73);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        stroke: rgb(213, 213, 230);
+    }
+}
+
+
+
+@media (orientation:portrait){
     .LEFTSB {
         position: absolute;
         bottom: 0;
@@ -45,25 +97,40 @@
         flex-grow: 1;
         flex-basis: 0;
         z-index: 10;
+        
     }
     .RIGHTSB {
 
         position: absolute;
+        min-width: 350px;
+        
         max-width: 350px;
+        top: 0;
         right: 0px;
-
-       transform: translate(350px);
+        z-index: 20;
+    }
+    .LEFTSB__header{
+        height: 75px;
+       
     }
 
+    .RIGHTSB__open-tab{
+        position: absolute;
+        left: -20px;
+        top: calc(25vh - 30px);
+        width: 20px;
+        height: 60px;
+        background-color: rgb(57, 57, 73);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        stroke: rgb(213, 213, 230);
+    }
 }
 
-.LEFTSB__header{
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: calc(100% - 40px);
-}
+
 
 .LEFTSB__logo{
 

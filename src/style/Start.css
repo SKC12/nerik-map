@@ -44,3 +44,34 @@
     flex-direction: column;
     gap: 30px;
 }
+
+@media (orientation:portrait){
+    .START__option-container{        
+        flex-direction: column;    
+    }
+    .START__option{        
+        background-size: 100% auto;      
+    
+    }
+}
+
+@media (orientation:landscape) and (max-width:1000px){
+    .START__option{        
+       width: 25vw !important;      
+    
+    }
+    .START__option-container{
+        background-color: rgb(81, 85, 102);
+        height: 100%;
+        display: flex;
+        filter: grayscale(0%);
+        transition: 1s;
+        position: absolute;
+        width: 100vw;
+    
+    }
+  
+    .START__button{
+        width: 120px;
+    }
+}

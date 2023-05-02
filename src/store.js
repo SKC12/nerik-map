@@ -53,7 +53,12 @@ const useStore = create((set, get) => ({
   hideUnknownSpheres: false,
   toggleHideUnknownSpheres: () =>
     set((state) => ({ hideUnknownSpheres: !state.hideUnknownSpheres })),
-
+  verticalLayout: false,
+  setVerticalLayout: (newVerticalLayout) => {
+    set({
+      verticalLayout: newVerticalLayout,
+    });
+  },
   onNodesChange: (changes) => {
     set({
       nodes: applyNodeChanges(changes, get().nodes),

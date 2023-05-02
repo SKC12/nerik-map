@@ -44,6 +44,8 @@ function App() {
 
   const planetScreenData = useStore((state) => state.planetScreenData, shallow);
 
+  const setVerticalLayout = useStore((state) => state.setVerticalLayout);
+
   //console.log(containerDimensions);
   //console.log(planetScreenData);
 
@@ -126,6 +128,10 @@ function App() {
 
   useEffect(() => {
     if (refContainer.current) {
+      console.log(
+        refContainer.current.offsetWidth,
+        refContainer.current.offsetHeight
+      );
       if (
         refContainer.current.offsetHeight < refContainer.current.offsetWidth
       ) {
@@ -136,11 +142,12 @@ function App() {
       } else {
         setContainerDimensions({
           width: refContainer.current.offsetWidth,
-          height: refContainer.current.offsetWidth / bgRatio,
+          height: refContainer.current.offsetHeight / 2,
         });
+        setVerticalLayout(true);
       }
     }
-  }, [bgRatio]);
+  }, [refContainer.current?.width, bgRatio, setVerticalLayout]);
 
   const theme = createTheme({
     palette: {
