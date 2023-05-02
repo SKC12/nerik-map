@@ -1,6 +1,6 @@
 .LEFTSB {
     height: 100vh;
-    min-width: 350px;
+    min-width: 30px;
     /* max-width: 335px; */
     background-color: rgb(57, 57, 73);
     display: flex;
@@ -12,9 +12,11 @@
     flex-basis: 0;
 }
 
+
+
 .RIGHTSB {
     height: 100vh;
-    min-width: 350px;
+    min-width: 300px;
     /* max-width: 335px; */
     background-color: rgb(57, 57, 73);
     display: flex;
@@ -24,6 +26,35 @@
     color: rgb(213, 213, 230);
     flex-grow: 1;
     flex-basis: 0;
+}
+
+@media (max-width:800px){
+    .LEFTSB {
+        position: absolute;
+        bottom: 0;
+        
+        height: 50vh;
+        width: 100vw;
+        /* max-width: 335px; */
+        background-color: rgb(57, 57, 73);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: rgb(213, 213, 230);
+        flex-grow: 1;
+        flex-basis: 0;
+        z-index: 10;
+    }
+    .RIGHTSB {
+
+        position: absolute;
+        max-width: 350px;
+        right: 0px;
+
+       transform: translate(350px);
+    }
+
 }
 
 .LEFTSB__header{
@@ -41,7 +72,7 @@
 .LEFTSB__tabs-container{
     display: flex;
     height: 40px;
-    
+    overflow-x: auto;    
 }
 
 .LEFTSB__tab{
@@ -75,13 +106,14 @@
     height: calc(100% - 40px);
     background-color: rgb(81, 85, 102);
     padding: 10px;
+    overflow: auto;
+
 }
 
 .LEFTSB__inner-container{
     margin-bottom: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    overflow: scroll;
     position: relative;
 
 

@@ -32,6 +32,12 @@ function App() {
   });
   const setEdges = useStore((state) => state.setEdges, shallow);
   const setNodes = useStore((state) => state.setNodes, shallow);
+  const projectedTime = useStore((state) => state.projectedTime);
+  const toggleProjectedTime = useStore(
+    (state) => state.toggleProjectedTime,
+    shallow
+  );
+
   const flowRiverColors = useStore((state) => state.flowRiverColors);
   const dataLoaded = useStore((state) => state.dataLoaded);
   const toggleDataLoaded = useStore((state) => state.toggleDataLoaded);
@@ -90,6 +96,7 @@ function App() {
         Flow.getEdges(newFlowsArray, flowRiverColors, scale)
       )
     );
+    if (!projectedTime) toggleProjectedTime();
     toggleDataLoaded();
   }
 
@@ -119,10 +126,19 @@ function App() {
 
   useEffect(() => {
     if (refContainer.current) {
-      setContainerDimensions({
-        width: refContainer.current.offsetHeight * bgRatio,
-        height: refContainer.current.offsetHeight,
-      });
+      if (
+        refContainer.current.offsetHeight < refContainer.current.offsetWidth
+      ) {
+        setContainerDimensions({
+          width: refContainer.current.offsetHeight * bgRatio,
+          height: refContainer.current.offsetHeight,
+        });
+      } else {
+        setContainerDimensions({
+          width: refContainer.current.offsetWidth,
+          height: refContainer.current.offsetWidth / bgRatio,
+        });
+      }
     }
   }, [bgRatio]);
 

@@ -28,7 +28,7 @@ function PlanetLeftSB(props) {
           {selectedNode ? (
             <>
               <div
-                id="sphereTab"
+                id="planetTab"
                 onClick={handleTabClick}
                 className={`${
                   selectedTab === "planetTab"

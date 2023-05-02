@@ -41,7 +41,13 @@ function PlanetCard(props) {
       className="RIGHTSB__planet-card"
       onClick={(e) => {
         onClickSelect(planet);
-        setCenter(coords.x, coords.y, { duration: 2000 });
+        setCenter(
+          coords.x,
+          coords.y,
+          parseInt(planet.orbitRadius) > 200
+            ? { duration: 2000, zoom: 0.1 }
+            : { duration: 2000 }
+        );
       }}
     >
       <div className="RIGHTSB__planet-card-img-container">
