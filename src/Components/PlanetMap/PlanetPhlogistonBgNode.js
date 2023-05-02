@@ -1,4 +1,4 @@
-import stars from "../../img/phlogiston.webp";
+import phlogiston from "../../img/phlogiston.webp";
 
 export function StarsBgNode({ data }) {
   let width = data.width;
@@ -7,7 +7,7 @@ export function StarsBgNode({ data }) {
   let style = {
     width: width,
     height: height,
-    backgroundImage: `url("${stars}")`,
+    backgroundImage: `url("${phlogiston}")`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
   };

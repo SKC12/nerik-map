@@ -117,21 +117,9 @@ function App() {
     toggleDataLoaded();
   }
 
-  // useEffect(() => {
-  //   if (!loaded) {
-  //     loadNerikSpheres(sphereData);
-  //   }
-  // }, [loaded, flowRiverColors, setNodes, setEdges]);
-
-  // console.log("nodes and edges", nodes, edges);
-  //console.log("LOADED", loaded);
-
   useEffect(() => {
-    if (refContainer.current) {
-      console.log(
-        refContainer.current.offsetWidth,
-        refContainer.current.offsetHeight
-      );
+    if (!refContainer.current) return;
+    const resizeObserver = new ResizeObserver(() => {
       if (
         refContainer.current.offsetHeight < refContainer.current.offsetWidth
       ) {
@@ -146,8 +134,10 @@ function App() {
         });
         setVerticalLayout(true);
       }
-    }
-  }, [refContainer.current?.width, bgRatio, setVerticalLayout]);
+    });
+    resizeObserver.observe(refContainer.current);
+    return () => resizeObserver.disconnect();
+  }, [bgRatio, setVerticalLayout]);
 
   const theme = createTheme({
     palette: {
@@ -163,8 +153,6 @@ function App() {
       fontFamily: ["Helvetica", "sans-serif"],
     },
   });
-
-  //console.log(loaded && containerDimensions.width);
 
   return (
     <div ref={refContainer} className="App">
