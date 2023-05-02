@@ -65,7 +65,6 @@ function PlanetInfoSB(props) {
   const selectedNode = props.selectedNode;
 
   const selectedData = selectedNode ? selectedNode.data.info : null;
-  //console.log(selectedData);
   const scale = props.scale;
   const [tempData, setTempData] = useState(selectedData);
   const [nodes, setNodes] = props.nodeState;
@@ -79,8 +78,6 @@ function PlanetInfoSB(props) {
     setTempData(selectedData);
     setEditMode(false);
   }, [selectedData]);
-
-  //console.log("tempData", tempData, selectedData);
 
   const onClickEdit = () => {
     setEditMode(!editMode);
@@ -116,12 +113,9 @@ function PlanetInfoSB(props) {
   };
 
   const onClickSave = () => {
-    //console.log(selectedData.name + selectedData.orbitRadius, nodes);
-    //update planetMap nodes
     setNodes(
       nodes.map((node) => {
         if (node.id === selectedData.name + selectedData.orbitRadius) {
-          //console.log("node", node);
           node.data.info = tempData;
           node.data.name = tempData.name;
           node.data.orbitRadius = tempData.orbitRadius;
@@ -130,7 +124,6 @@ function PlanetInfoSB(props) {
             (parseInt(tempData.orbitRadius) * scale * 10) / 2,
             tempData.angle
           );
-          //console.log("node", node, SphereNodes);
         }
         return node;
       })

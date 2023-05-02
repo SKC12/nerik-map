@@ -68,16 +68,14 @@ function LeftSBOptions(props) {
     const element = reactFlowRef.current;
     setLoading(true);
 
-    console.log("loading images");
+    //console.log("loading images");
     let edgesCanvas = await toCanvas(element, {
       pixelRatio: 6,
       filter: (node) => {
-        //console.log(node);
         if (
           node?.classList?.contains("react-flow__edge") ||
           node?.classList?.contains("SPHERE__grid")
         ) {
-          //console.log(node);
           return false;
         }
         return true;
@@ -88,30 +86,26 @@ function LeftSBOptions(props) {
       pixelRatio: 6,
 
       filter: (node) => {
-        //console.log(node);
         if (node?.classList?.contains("react-flow__nodes")) {
-          //console.log(node);
           return false;
         }
         return true;
       },
     });
 
-    console.log("loaded images", edgesCanvas, nodesCanvas);
+    //console.log("loaded images", edgesCanvas, nodesCanvas);
 
     edgesCanvas.getContext("2d").drawImage(nodesCanvas, 0, 0);
 
-    console.log("combined image");
+    //console.log("combined image");
 
     const a = document.createElement("a");
     a.href = edgesCanvas.toDataURL();
     a.download = "flowmap.png";
     a.click();
 
-    console.log("downloaded image");
+    //console.log("downloaded image");
     setLoading(false);
-
-    //return { edgesBlob: edgesImage, nodesBlob: nodesImage };
   };
 
   const loadFromLocalStorage = useCallback(() => {

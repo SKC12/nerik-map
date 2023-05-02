@@ -61,10 +61,7 @@ function getBackgroundImage(type) {
 }
 
 export function PlanetNode({ selected, data }) {
-  //console.log(data);
-
   const zoomLevel = useReactFlowStore((store) => store.transform[2]);
-  //console.log(zoomLevel);
   const planetSize = Math.min(
     Math.max((getWidth(data.info.size) * 5) / (zoomLevel * 1), 30),
     5000

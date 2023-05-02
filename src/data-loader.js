@@ -12,65 +12,53 @@ async function fetchCSV(data) {
 }
 
 async function loadCSVPlanets(data) {
-  console.log("loading planets");
+  //console.log("loading planets");
   let csv = await fetchCSV(data);
   let lines = csv.split("\n");
   let headers = lines[0].split(";");
-  //console.log(headers);
   let planets = [];
   for (let i = 1; i < lines.length; i++) {
     let obj = {};
     let currentLine = lines[i].split(";");
     for (let j = 0; j < currentLine.length; j++) {
-      //console.log(headers[j]);
-
       obj[headers[j]] = currentLine[j];
     }
-    //console.log(obj);
     planets.push(obj);
   }
-  //console.log(spheres);
   return planets;
 }
 
 export async function loadCSVFlows(data) {
-  console.log("loading flows");
+  //console.log("loading flows");
   let csv = await fetchCSV(data);
   let lines = csv.split("\n");
   let headers = lines[0].split(";");
-  //console.log(headers);
   let flows = [];
   for (let i = 1; i < lines.length; i++) {
     let obj = {};
     let currentLine = lines[i].split(";");
     for (let j = 0; j < currentLine.length; j++) {
-      //console.log(headers[j]);
-
       obj[headers[j]] = currentLine[j];
     }
-    //console.log(obj);
     flows.push(new Flow(obj));
   }
-  //console.log(spheres);
   return flows;
 }
 
 export async function loadCSVSpheres(sphereData, planetData) {
-  console.log("loading spheres");
+  //console.log("loading spheres");
 
   let planetsDataArray = await loadCSVPlanets(planetData);
 
   let csv = await fetchCSV(sphereData);
   let lines = csv.split("\n");
   let headers = lines[0].split(";");
-  //console.log(headers);
   let spheres = [];
   for (let i = 1; i < lines.length; i++) {
     let obj = {};
     let planets = [];
     let currentLine = lines[i].split(";");
     for (let j = 0; j < currentLine.length; j++) {
-      //console.log(headers[j]);
       if (headers[j].includes("primaryBody")) {
         obj[headers[j]] = currentLine[j];
         let planet = {};
@@ -79,7 +67,6 @@ export async function loadCSVSpheres(sphereData, planetData) {
         planet.orbitTrack = "I1";
         //find planetData for primary body
         let planetInfo = planetsDataArray.find((p) => p.name === planet.name);
-        //console.log(planetInfo);
         if (planetInfo) {
           planetInfo.sphereRadius = obj.sphereRadius;
           planetInfo.orbitRadius = 0;
@@ -111,7 +98,6 @@ export async function loadCSVSpheres(sphereData, planetData) {
             sphereRadius: obj.sphereRadius,
           };
           planet.info = planetInfo;
-          // console.log(planet.name, "from ", obj.shortName, " NOT FOUND");
         }
         if (planet.name !== "Empty") planets.push(new Planet(planet));
       }
@@ -161,8 +147,6 @@ export async function loadCSVSpheres(sphereData, planetData) {
               sphereRadius: obj.sphereRadius,
             };
             planet.info = planetInfo;
-
-            // console.log(planet.name, "from ", obj.shortName, " NOT FOUND");
           }
           planets.push(new Planet(planet));
         }
@@ -170,10 +154,8 @@ export async function loadCSVSpheres(sphereData, planetData) {
         obj[headers[j]] = currentLine[j];
       }
     }
-    //console.log(obj);
     obj.planets = planets;
     spheres.push(new Sphere(obj));
   }
-  //console.log(spheres);
   return spheres;
 }

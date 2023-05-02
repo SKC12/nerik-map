@@ -23,8 +23,6 @@ export function SphereNode({ selected, data }) {
       ? (data.sphereRadius * data.scale) / 3300 + "px"
       : `${1 * data.scale}px`;
 
-  //console.log(data.shortName, data.sphereRadius, width, height, fontSize);
-
   let style = {
     width: width,
     height: height,

@@ -11,7 +11,6 @@ function PlanetRightSB(props) {
   const planets = props.planetScreenData.planets.sort(
     (a, b) => parseInt(a.orbitRadius) - parseInt(b.orbitRadius)
   );
-  //console.log(planetScreenData);
 
   return (
     <div

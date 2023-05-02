@@ -94,8 +94,6 @@ function LeftSBFlow(props) {
     setEditMode(false);
   }, [selectedData]);
 
-  //console.log("tempData", tempData, selectedData);
-
   const onClickEdit = () => {
     setEditMode(!editMode);
   };
@@ -114,18 +112,8 @@ function LeftSBFlow(props) {
   };
 
   const onClickSave = () => {
-    //console.log(tempData, nodes);
     const node1 = nodes.find((nd) => nd.data.shortName === tempData.sphereW);
     const node2 = nodes.find((nd) => nd.data.shortName === tempData.sphereE);
-    // console.log(
-    //   tempData,
-    //   node1,
-    //   node2,
-    //   node1.position.x,
-    //   node2.position.x,
-    //   node1.position.x < node2.position.x
-    // );
-
     let data = {};
 
     //Reverse coords if node1 isn't the western node.
@@ -180,13 +168,11 @@ function LeftSBFlow(props) {
     setEdges(
       edges.map((edg) => {
         if (edg.id === selectedEdge.id) {
-          //console.log(edg);
           edg.id = `${data.sphereW} to ${data.sphereE}`;
           edg.source = data.sphereW;
           edg.target = data.sphereE;
           edg.data = data;
           edg.style = getStyle(data, flowRiverColors, 5);
-          //console.log(edg);
         }
 
         return edg;

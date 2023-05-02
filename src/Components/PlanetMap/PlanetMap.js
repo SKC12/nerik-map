@@ -32,7 +32,6 @@ const nodeTypes = {
 
 function PlanetMap(props) {
   const planetScreenData = useStore((state) => state.planetScreenData, shallow);
-  //console.log(planetScreenData);
   const planets = planetScreenData.planets;
   const sphereRadius = planetScreenData.sphereRadius;
   const initialNodes = planets.map((planet) => {
@@ -48,8 +47,6 @@ function PlanetMap(props) {
     };
     return node;
   });
-
-  //console.log(initialNodes);
 
   const canvasWidth = props.width;
   const canvasHeight = props.height;
@@ -96,7 +93,6 @@ function PlanetMap(props) {
   const [selectedNode, setSelectedNode] = useState(null);
 
   const [edges, setEdges] = useState([]);
-  //console.log(nodes);
   const reactFlowRef = useRef(null);
   const [reactFlowInstance, setReactFlowInstance] = useState(null);
 

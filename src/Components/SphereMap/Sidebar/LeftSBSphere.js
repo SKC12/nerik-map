@@ -15,13 +15,10 @@ function LeftSBSphere(props) {
   const [editMode, setEditMode] = useState(false);
   const [delDialogOpen, setDelDialogOpen] = useState(false);
   const selectedNode = props.selectedNode;
-
   const selectedData = selectedNode ? selectedNode.data : null;
-  //console.log(selectedData);
   const [tempData, setTempData] = useState(selectedData);
   const [known, setKnown] = useState(tempData.isKnown === "yes");
   const nodes = useStore((state) => state.nodes, shallow);
-
   const setNodes = useStore((state) => state.setNodes, shallow);
   const reactFlowInstance = props.reactFlowInstance;
 
@@ -48,8 +45,6 @@ function LeftSBSphere(props) {
     setEditMode(false);
   }, [selectedData]);
 
-  //console.log("tempData", tempData, selectedData);
-
   const onClickEdit = () => {
     setEditMode(!editMode);
   };
@@ -70,9 +65,7 @@ function LeftSBSphere(props) {
     setNodes(
       nodes.map((node) => {
         if (node.id === selectedData.shortName) {
-          //console.log(node);
           node.data = tempData;
-          //console.log(node);
         }
 
         return node;
