@@ -134,8 +134,32 @@ function LeftSideBar(props) {
           />
         ) : null}
         {selectedTab === "aboutTab" ? (
-          <div>
-            <h2>Settings:</h2>
+          <div className="SB__about">
+            <p>
+              This project is an attempt to recreate the popular Unofficial Map
+              of the Flow created by Charles "Nerik" Taylor for Spelljammer,
+              found <a href="https://nerik.orpheusweb.co.uk/">here</a>. It is an
+              amazing contribution to the hobby that connects a huge number of
+              official and unofficial worlds through the phlogiston. From
+              Forgotten Realms, to Golarion, to a vastitude of small little
+              worlds created by the community during the era of mailing lists.
+            </p>
+            <p>
+              Unfortunately, a big portion of the information contained on this
+              map has been lost in time. Expect some broken links and some
+              worlds with little or no data at all.
+            </p>
+            <p>
+              Special thanks to TSR, WotC, and every single creator that
+              contributed to this hobby and allowed the creation of something
+              like this.
+            </p>
+            <p>
+              A shout-out to <a href="https://jb2a.com">JB2A</a>, the source of
+              the Crystal Sphere and Planet images used in this website, shared
+              under a CC-BY-NC-SA license. Can't recommend them enough as a
+              source of animations for VTTs.
+            </p>
           </div>
         ) : null}
       </div>

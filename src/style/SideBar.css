@@ -566,3 +566,10 @@
 .RIGHTSB__planet-card-img{
     width: 50px;
 }
+
+.SB__about{
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 15px;
+    padding: 5px;
+}
