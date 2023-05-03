@@ -40,6 +40,10 @@ const useStore = create((set, get) => ({
   scale: 5,
   planetScreenData: null,
   flowRiverColors: defaultFlowRiverColors,
+  minZoom: 3,
+  setMinZoom: (zoomLevel) => {
+    set({ minZoom: zoomLevel });
+  },
   isAnimated: false,
   toggleAnimated: () => set((state) => ({ isAnimated: !state.isAnimated })),
   projectedTime: false,

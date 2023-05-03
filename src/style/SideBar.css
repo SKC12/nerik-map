@@ -397,6 +397,10 @@
     
     accent-color: rgb(57, 57, 73);
 }
+.LEFTSB__option-slider{
+    max-width: 100px;
+    margin-left: 15px;
+}
 
 .LEFTSB__new-sphere-container{
     display: flex;

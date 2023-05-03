@@ -49,34 +49,34 @@ function App() {
   const setVerticalLayout = useStore((state) => state.setVerticalLayout);
 
   async function loadNerikSpheres() {
-    // if (nerikJSON) {
-    //   let data = nerikJSON;
-    //   if (data) {
-    //     setNodes(data.nodes);
-    //     setEdges(data.edges);
-    //     toggleDataLoaded();
-    //   }
-    // } else {
-    //let sphereArray = [];
-    let sphereArray = await loadCSVSpheres(sphereData, planetData);
+    if (nerikJSON) {
+      let data = nerikJSON;
+      if (data) {
+        setNodes(data.nodes);
+        setEdges(data.edges);
+        toggleDataLoaded();
+      }
+    } else {
+      //let sphereArray = [];
+      let sphereArray = await loadCSVSpheres(sphereData, planetData);
 
-    //let flowsArray = [];
-    let flowsArray = await loadCSVFlows(flowsData);
+      //let flowsArray = [];
+      let flowsArray = await loadCSVFlows(flowsData);
 
-    let bgSphere = {
-      id: "bg",
-      type: "bgNode",
-      position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
-      data: { width: baseMapWidth, height: baseMapHeight },
-      draggable: false,
-      selectable: false,
-      zIndex: -1,
-    };
+      let bgSphere = {
+        id: "bg",
+        type: "bgNode",
+        position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
+        data: { width: baseMapWidth, height: baseMapHeight },
+        draggable: false,
+        selectable: false,
+        zIndex: -1,
+      };
 
-    setNodes(Sphere.getNodes(sphereArray, scale));
-    setEdges(Flow.getEdges(flowsArray, flowRiverColors, scale));
-    toggleDataLoaded();
-    //}
+      setNodes(Sphere.getNodes(sphereArray, scale).concat(bgSphere));
+      setEdges(Flow.getEdges(flowsArray, flowRiverColors, scale));
+      toggleDataLoaded();
+    }
   }
 
   async function loadUpdatedSpheres() {

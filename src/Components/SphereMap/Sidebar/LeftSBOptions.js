@@ -1,4 +1,4 @@
-import { Backdrop, Button, CircularProgress } from "@mui/material";
+import { Backdrop, Button, CircularProgress, Slider } from "@mui/material";
 import { useCallback, useRef, useState } from "react";
 import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
@@ -21,6 +21,8 @@ function LeftSBOptions(props) {
   const toggleHideUnknownSpheres = useStore(
     (state) => state.toggleHideUnknownSpheres
   );
+  const minZoom = useStore((state) => state.minZoom);
+  const setMinZoom = useStore((state) => state.setMinZoom, shallow);
 
   const reactFlowRef = props.reactFlowRef;
 
@@ -200,6 +202,23 @@ function LeftSBOptions(props) {
           Hide unknown Spheres and Flows
         </label>
       </div>
+      <div className="LEFTSB__option-container">
+        <label className="LEFTSB__data-label">Minimum Zoom Level</label>
+        <Slider
+          aria-label="Zoom Level"
+          step={1}
+          marks
+          min={1}
+          max={5}
+          value={minZoom}
+          onChange={(e) => {
+            setMinZoom(e.target.value);
+          }}
+          sx={{ p: 0 }}
+          className="LEFTSB__data LEFTSB__option-slider"
+        ></Slider>
+      </div>
+
       <hr></hr>
       <h3>Storage:</h3>
       <div className="LEFTSB__option-button-container">

@@ -64,6 +64,7 @@ function SphereMap(props) {
   const hideUnknownPaths = useStore((state) => state.hideUnknownPaths);
   const hideUnknownSpheres = useStore((state) => state.hideUnknownSpheres);
   const draggable = useStore((state) => state.draggable);
+  const minZoom = useStore((state) => state.minZoom);
 
   const [selectedNode, setSelectedNode] = useState(null);
   const [selectedEdge, setSelectedEdge] = useState(null);
@@ -239,7 +240,7 @@ function SphereMap(props) {
           connectionLineComponent={FloatingConnectionLine}
           nodeOrigin={[0.5, 0.5]}
           fitView={true}
-          minZoom={canvasHeight / baseMapHeight}
+          minZoom={(canvasHeight / baseMapHeight) * minZoom}
           maxZoom={30}
           translateExtent={[
             [0, 0],
