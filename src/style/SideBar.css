@@ -51,7 +51,9 @@
     width: 95px;
     display: flex;
     align-items: center;
-    filter: invert(11%) sepia(10%) saturate(1143%) hue-rotate(201deg) brightness(99%) contrast(94%)
+    margin-left: 5px;
+    /* filter: invert(92%) sepia(6%) saturate(427%) hue-rotate(202deg) brightness(91%) contrast(99%); */
+    filter: invert(92%) sepia(3%) saturate(1395%) hue-rotate(202deg) brightness(98%) contrast(84%);
 }
 
 .LEFTSB__title-container{
@@ -60,6 +62,7 @@
     font-size: 20px;
     /* color: rgb(36, 36, 48); */
     text-align: center;
+    margin-right: 5px;
 }
 
 .LEFTSB__title-container > p{
@@ -70,6 +73,7 @@
     display: block;
     height: auto;
     width: 100%;
+    
 }
 
 .RIGHTSB__open-tab{
