@@ -42,7 +42,7 @@ function LeftSideBar(props) {
           </div>
           <div className="LEFTSB__title-container">
             <p>The Incomplete</p>
-            <p>Map of the spheres</p>
+            <p>Map of the Spheres</p>
           </div>
         </div>
         <div className="LEFTSB__tabs-container">
