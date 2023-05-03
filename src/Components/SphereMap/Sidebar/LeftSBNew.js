@@ -91,7 +91,7 @@ function LeftSBNew(props) {
   const [sphereData, setSphereData] = useState({
     shortName: getId(1),
     sphere: "Newspherespace",
-    sphereRadius: "10000",
+    sphereRadius: 10000,
     region: "",
     flowRiver: "",
     population: "",

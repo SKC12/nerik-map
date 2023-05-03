@@ -10,10 +10,15 @@ body{
     display: flex;
 }
 
+.root{
+    display: flex;
+    align-items: center;
+}
 
 
 .App{
     height: 100vh;
+    max-width: 1920px;
 }
 
 @media (orientation:portrait){

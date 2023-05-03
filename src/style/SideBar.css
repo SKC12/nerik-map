@@ -73,6 +73,9 @@
 }
 
 @media (orientation:landscape) and (max-width:1000px){
+    .LEFTSB__logo-container{
+        display: none;
+    }
 
     .LEFTSB {
         
@@ -113,6 +116,9 @@
 
 
 @media (orientation:portrait){
+    .LEFTSB__logo-container{
+        display: none;
+    }
     .LEFTSB {
         position: absolute;
         bottom: 0;

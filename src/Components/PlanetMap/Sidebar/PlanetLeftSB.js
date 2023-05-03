@@ -29,7 +29,8 @@ function PlanetLeftSB(props) {
             <img className="LEFTSB__logo" src={logo} alt="logo"></img>
           </div>
           <div className="LEFTSB__title-container">
-            <p>The Incomplete Map of the Spheres</p>
+            <p>{`The Incomplete
+             Map of the spheres`}</p>
           </div>
         </div>
         <div className="LEFTSB__tabs-container">
