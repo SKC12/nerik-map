@@ -1,6 +1,6 @@
 .LEFTSB {
     height: 100vh;
-    min-width: 30px;
+    min-width: 350px;
     /* max-width: 335px; */
     background-color: rgb(57, 57, 73);
     display: flex;
@@ -16,7 +16,7 @@
 
 .RIGHTSB {
     height: 100vh;
-    min-width: 300px;
+    min-width: 350px;
     /* max-width: 335px; */
     background-color: rgb(57, 57, 73);
     display: flex;
