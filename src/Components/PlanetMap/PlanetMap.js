@@ -176,6 +176,7 @@ function PlanetMap(props) {
             ]}
             onInit={setReactFlowInstance}
             deleteKeyCode={null}
+            proOptions={{ hideAttribution: true }}
           >
             {/* <Background /> */}
             {/* <Controls /> */}

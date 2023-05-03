@@ -251,6 +251,7 @@ function SphereMap(props) {
           onDragOver={onDragSphereOver}
           onInit={setReactFlowInstance}
           deleteKeyCode="Delete"
+          proOptions={{ hideAttribution: true }}
         >
           {/* <Background /> */}
           {/* <Controls /> */}
