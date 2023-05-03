@@ -96,7 +96,7 @@ function FloatingEdge({
   const textStyle = {
     fontSize: `${0.75 * scale}px`,
     fontWeight: "bold",
-    textShadow: "0 0 1px black, 0 0 1px black, 0 0 1px black",
+    textShadow: "0 0 0.1px black, 0 0 0.1px black, 0 0 0.1px black",
     zIndex: 3,
   };
 
