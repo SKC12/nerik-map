@@ -203,16 +203,16 @@ function LeftSBOptions(props) {
         </label>
       </div>
       <div className="LEFTSB__option-container">
-        <label className="LEFTSB__data-label">Minimum Zoom Level</label>
+        <label className="LEFTSB__data-label">Max Zoom Out Level</label>
         <Slider
           aria-label="Zoom Level"
           step={1}
           marks
-          min={1}
-          max={5}
-          value={minZoom}
+          min={-5}
+          max={-1}
+          value={minZoom * -1}
           onChange={(e) => {
-            setMinZoom(e.target.value);
+            setMinZoom(e.target.value * -1);
           }}
           sx={{ p: 0 }}
           className="LEFTSB__data LEFTSB__option-slider"

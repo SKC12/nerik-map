@@ -14,7 +14,6 @@ import RightSideBar from "./Sidebar/RightSideBar";
 import useStore from "../../store";
 import { shallow } from "zustand/shallow";
 import { getStyle } from "../utils";
-
 const scale = 5;
 
 let baseMapHeight = 399 * scale;
