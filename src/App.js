@@ -8,6 +8,8 @@ import flowsData from "./data/flows.csv";
 import planetData from "./data/planets.csv";
 import newSpheresData from "./data/newSpheres.csv";
 import newFlowsData from "./data/newFlows.csv";
+import nerikJSON from "./data/nerikMap.json";
+import updatedJSON from "./data/updatedMap.json";
 
 import useStore from "./store";
 import { shallow } from "zustand/shallow";
@@ -50,56 +52,76 @@ function App() {
   //console.log(planetScreenData);
 
   async function loadNerikSpheres() {
-    //let sphereArray = [];
-    let sphereArray = await loadCSVSpheres(sphereData, planetData);
+    if (nerikJSON) {
+      let data = nerikJSON;
+      if (data) {
+        setNodes(data.nodes);
+        setEdges(data.edges);
+        toggleDataLoaded();
+      }
+    } else {
+      //let sphereArray = [];
+      let sphereArray = await loadCSVSpheres(sphereData, planetData);
 
-    //let flowsArray = [];
-    let flowsArray = await loadCSVFlows(flowsData);
+      //let flowsArray = [];
+      let flowsArray = await loadCSVFlows(flowsData);
 
-    let bgSphere = {
-      id: "bg",
-      type: "bgNode",
-      position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
-      data: { width: baseMapWidth, height: baseMapHeight },
-      draggable: false,
-      selectable: false,
-      zIndex: -1,
-    };
+      let bgSphere = {
+        id: "bg",
+        type: "bgNode",
+        position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
+        data: { width: baseMapWidth, height: baseMapHeight },
+        draggable: false,
+        selectable: false,
+        zIndex: -1,
+      };
 
-    setNodes(Sphere.getNodes(sphereArray, scale).concat(bgSphere));
-    setEdges(Flow.getEdges(flowsArray, flowRiverColors, scale));
-    toggleDataLoaded();
+      setNodes(Sphere.getNodes(sphereArray, scale).concat(bgSphere));
+      setEdges(Flow.getEdges(flowsArray, flowRiverColors, scale));
+      toggleDataLoaded();
+    }
   }
 
   async function loadUpdatedSpheres() {
-    let sphereArray = await loadCSVSpheres(sphereData, planetData);
-    let newSpheresArray = await loadCSVSpheres(newSpheresData, planetData);
+    if (updatedJSON) {
+      let data = updatedJSON;
+      if (data) {
+        setNodes(data.nodes);
+        setEdges(data.edges);
+        toggleDataLoaded();
+      }
+    } else {
+      let sphereArray = await loadCSVSpheres(sphereData, planetData);
+      let newSpheresArray = await loadCSVSpheres(newSpheresData, planetData);
 
-    let flowsArray = await loadCSVFlows(flowsData);
-    let newFlowsArray = await loadCSVFlows(newFlowsData);
+      let flowsArray = await loadCSVFlows(flowsData);
+      let newFlowsArray = await loadCSVFlows(newFlowsData);
 
-    let bgSphere = {
-      id: "bg",
-      type: "bgNode",
-      position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
-      data: { width: baseMapWidth, height: baseMapHeight },
-      draggable: false,
-      selectable: false,
-      zIndex: -1,
-    };
+      let bgSphere = {
+        id: "bg",
+        type: "bgNode",
+        position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
+        data: { width: baseMapWidth, height: baseMapHeight },
+        draggable: false,
+        selectable: false,
+        zIndex: -1,
+      };
 
-    setNodes(
-      Sphere.getNodes(sphereArray, scale)
-        .concat(Sphere.getNodes(newSpheresArray, scale))
-        .concat(bgSphere)
-    );
-    setEdges(
-      Flow.getEdges(flowsArray, flowRiverColors, scale).concat(
-        Flow.getEdges(newFlowsArray, flowRiverColors, scale)
-      )
-    );
-    if (!projectedTime) toggleProjectedTime();
-    toggleDataLoaded();
+      console.log("SPHERES ARRAY", sphereArray);
+
+      setNodes(
+        Sphere.getNodes(sphereArray, scale)
+          .concat(Sphere.getNodes(newSpheresArray, scale))
+          .concat(bgSphere)
+      );
+      setEdges(
+        Flow.getEdges(flowsArray, flowRiverColors, scale).concat(
+          Flow.getEdges(newFlowsArray, flowRiverColors, scale)
+        )
+      );
+      if (!projectedTime) toggleProjectedTime();
+      toggleDataLoaded();
+    }
   }
 
   function loadFromScratch() {

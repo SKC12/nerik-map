@@ -4,6 +4,7 @@ import { Flow } from "./models/Flow";
 
 async function fetchCSV(data) {
   const response = await fetch(data);
+  console.log("response", response);
   const reader = response.body.getReader();
   const result = await reader.read();
   const decoder = new TextDecoder("utf-8");
@@ -51,6 +52,7 @@ export async function loadCSVSpheres(sphereData, planetData) {
   let planetsDataArray = await loadCSVPlanets(planetData);
 
   let csv = await fetchCSV(sphereData);
+  console.log("CSV", csv.length);
   let lines = csv.split("\n");
   let headers = lines[0].split(";");
   let spheres = [];
