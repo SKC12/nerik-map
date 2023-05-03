@@ -11,7 +11,7 @@
     height: 100%;
     display: flex;
     filter: grayscale(0%);
-    transition: 1s;
+    transition: 300ms;
 
 }
 
@@ -24,7 +24,7 @@
     background-size: auto 100%;
     background-position: center;
     filter: grayscale(100%);
-    transition: 500ms;
+    transition: 300ms;
 
 
 }
@@ -60,12 +60,7 @@
        width: 25vw !important;      
     
     }
-    .START__option-container{
-        background-color: rgb(81, 85, 102);
-        height: 100%;
-        display: flex;
-        filter: grayscale(0%);
-        transition: 1s;
+    .START__option-container{        
         position: absolute;
         width: 100vw;
     

@@ -5,6 +5,8 @@ import LeftSBSphere from "./LeftSBSphere";
 import LeftSBOptions from "./LeftSBOptions";
 import LeftSBFlow from "./LeftSBFlow";
 import LeftSBNew from "./LeftSBNew";
+import logo from "../../../img/SBEJ.png";
+
 function LeftSideBar(props) {
   const [selectedTab, setSelectedTab] = useState("aboutTab");
   const [selectedNode, setSelectedNode] = [
@@ -34,7 +36,14 @@ function LeftSideBar(props) {
   return (
     <div className="LEFTSB">
       <div className="LEFTSB__header">
-        <div className="LEFTSB__logo"></div>
+        <div className="LEFTSB__logo-container">
+          <div className="LEFTSB__img-container">
+            <img className="LEFTSB__logo" src={logo} alt="logo"></img>
+          </div>
+          <div className="LEFTSB__title-container">
+            <p>The Incomplete Map of the Spheres</p>
+          </div>
+        </div>
         <div className="LEFTSB__tabs-container">
           {selectedNode ? (
             <>
