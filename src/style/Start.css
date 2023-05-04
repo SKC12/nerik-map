@@ -1,13 +1,13 @@
 .START__bg{
     height: 100%;
-    background-color: rgb(57, 57, 73);
+    background-color: var(--bg);
     display: flex;
     justify-content: center;
 
 }
 
 .START__option-container{
-    background-color: rgb(81, 85, 102);
+    background-color: var(--bg-lighter);
     height: 100%;
     display: flex;
     filter: grayscale(0%);

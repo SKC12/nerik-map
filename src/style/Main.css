@@ -6,6 +6,14 @@ body{
     background-color: rgb(156, 170, 182);
 }
 
+:root{
+    --bg:rgb(57, 57, 73);
+    --bg-lighter:rgb(81, 85, 102);
+    --bg-very-light:rgb(145, 145, 153);
+    --text-dark:rgb(57, 57, 73);
+    --text-light:rgb(213, 213, 230);
+}
+
 .main-container{
     display: flex;
 }
@@ -18,7 +26,6 @@ body{
 
 .App{
     height: 100vh;
-    max-width: 1920px;
 }
 
 @media (orientation:portrait){

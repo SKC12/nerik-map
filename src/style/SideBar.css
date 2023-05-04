@@ -2,28 +2,28 @@
     height: 100vh;
     min-width: 350px;
     /* max-width: 335px; */
-    background-color: rgb(57, 57, 73);
+    background-color: var(--bg);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: rgb(213, 213, 230);
+    color: var(--text-light);
     flex-grow: 1;
     flex-basis: 0;
 }
 
-
-
 .RIGHTSB {
     height: 100vh;
+    /* min-width: 25em; */
     min-width: 350px;
+
     /* max-width: 335px; */
-    background-color: rgb(57, 57, 73);
+    background-color: var(--bg);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: rgb(213, 213, 230);
+    color: var(--text-light);
     flex-grow: 1;
     flex-basis: 0;
 }
@@ -42,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(81, 85, 102);
+    background-color: var(--bg-lighter);
     margin-bottom: 20px;
     border-radius: 15px;
 }
@@ -93,9 +93,9 @@
    
     .RIGHTSB {
 
-        position: absolute;
-        
-        max-width: 350px;
+        position: absolute;  
+        min-width: 320px;      
+        max-width: 320px;
         top: 0;
         right: 0px;
         z-index: 20;
@@ -111,13 +111,13 @@
         top: calc(25vh - 30px);
         width: 20px;
         height: 60px;
-        background-color: rgb(57, 57, 73);
+        background-color: var(--bg);
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
-        stroke: rgb(213, 213, 230);
+        stroke: var(--text-light);
     }
 }
 
@@ -134,12 +134,10 @@
         height: 50vh;
         width: 100vw;
         /* max-width: 335px; */
-        background-color: rgb(57, 57, 73);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        color: rgb(213, 213, 230);
         flex-grow: 1;
         flex-basis: 0;
         z-index: 10;
@@ -148,9 +146,9 @@
     .RIGHTSB {
 
         position: absolute;
-        min-width: 350px;
+        min-width: 320px;
         
-        max-width: 350px;
+        max-width: 320px;
         top: 0;
         right: 0px;
         z-index: 20;
@@ -166,13 +164,11 @@
         top: calc(25vh - 30px);
         width: 20px;
         height: 60px;
-        background-color: rgb(57, 57, 73);
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
-        stroke: rgb(213, 213, 230);
     }
 }
 
@@ -200,7 +196,7 @@
 }
 
 .LEFTSB_selected-tab{
-    background-color: rgb(81, 85, 102);
+    background-color: var(--bg-lighter);
     padding: 10px;
     min-width: 70px;
     display: flex;
@@ -217,7 +213,7 @@
 .LEFTSB__inner-container, .RIGHTSB__inner-container{
     width: calc(100% - 40px);
     height: calc(100% - 40px);
-    background-color: rgb(81, 85, 102);
+    background-color: var(--bg-lighter);
     padding: 10px;
     overflow: auto;
 
@@ -233,8 +229,8 @@
 }
 
 .LEFTSB__icon-container{
-    color: rgb(57, 57, 73);
-    background-color: rgb(145, 145, 153);
+    color: var(--text-dark);
+    background-color: var(--bg-very-light);
     position: absolute;
     padding: 2px;    
     display: flex;
@@ -385,7 +381,7 @@
 }
 
 .LEFTSB__data-link{
-    color: rgb(184, 184, 196);
+    color: var(--text-light);
     word-break: break-all;
     text-transform: none;
 
@@ -409,7 +405,7 @@
 }
 .LEFTSB__option-checkbox:checked, .LEFTSB__flow-checkbox, .LEFTSB__sphere-checkbox{
     
-    accent-color: rgb(57, 57, 73);
+    accent-color: var(--text-dark);
 }
 .LEFTSB__option-slider{
     max-width: 100px;
@@ -489,7 +485,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(57, 57, 73);
+    background-color: var(--bg);
     border-radius: 10px;
     margin-bottom: 10px;
 
@@ -557,14 +553,14 @@
 }
 
 .RIGHTSB__planet-card{
-    background-color: rgb(213, 213, 230);
+    background-color: var(--bg-very-light);
     color: rgb(57, 57, 73);
     display: flex;
     margin: 10px;
     border-radius: 15px;  
     align-items: center;
     justify-content:space-around;
-    border: 2px solid rgb(57, 57, 73);
+    border: 2px solid var(--bg);
     gap: 10px;
     cursor: pointer;
 

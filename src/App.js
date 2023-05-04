@@ -166,6 +166,11 @@ function App() {
 
   useLayoutEffect(() => {
     if (!refContainer.current) return;
+    console.log(
+      refContainer.current.offsetHeight,
+      refContainer.current.offsetWidth
+    );
+
     const resizeObserver = new ResizeObserver(() => {
       if (
         refContainer.current.offsetHeight < refContainer.current.offsetWidth

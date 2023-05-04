@@ -16,7 +16,7 @@ function PlanetRightSB(props) {
     <div
       className="RIGHTSB"
       style={{
-        transform: `${open ? "" : "translate(350px)"}`,
+        transform: `${open ? "" : "translate(320px)"}`,
       }}
     >
       <div className="RIGHTSB__open-tab" onClick={() => setOpen(!open)}>

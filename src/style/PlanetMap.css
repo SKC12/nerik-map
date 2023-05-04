@@ -3,8 +3,8 @@
     right: 0;
     top: 0;
     z-index: 100;
-    background-color: rgb(57, 57, 73);
-    color:rgb(213, 213, 230);
+    background-color: var(--bg);
+    color:var(--text-light);
     padding: 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
