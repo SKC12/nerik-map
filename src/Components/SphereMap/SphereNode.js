@@ -4,46 +4,56 @@ import greySphere from "../../img/Grey_Sphere.webp";
 
 import useStore from "../../store";
 import { shallow } from "zustand/shallow";
+import { useMemo } from "react";
 
 export function SphereNode({ selected, data }) {
   const setPlanetScreenData = useStore(
     (state) => state.setPlanetScreenData,
     shallow
   );
-  let width =
-    data.sphereRadius >= 400
-      ? (data.sphereRadius * data.scale) / 600 + "px"
-      : `${1 * data.scale}px`;
-  let height =
-    data.sphereRadius >= 400
-      ? (data.sphereRadius * data.scale) / 600 + "px"
-      : `${1 * data.scale}px`;
-  let fontSize =
-    data.sphereRadius !== "0" && data.sphereRadius > 400
-      ? (data.sphereRadius * data.scale) / 3300 + "px"
-      : `${1 * data.scale}px`;
 
-  let style = {
-    width: width,
-    height: height,
-    backgroundImage: `url(${greySphere})`,
-    opacity: `${data.isKnown === "yes" ? "100%" : "70%"}`,
+  let width = useMemo(() => {
+    if (data.sphereRadius >= 400) {
+      return (data.sphereRadius * data.scale) / 600 + "px";
+    } else return `${1 * data.scale}px`;
+  }, [data.scale, data.sphereRadius]);
 
-    fontSize: fontSize,
-  };
+  let height = useMemo(() => {
+    if (data.sphereRadius >= 400) {
+      return (data.sphereRadius * data.scale) / 600 + "px";
+    } else return `${1 * data.scale}px`;
+  }, [data.scale, data.sphereRadius]);
 
-  let nameTranslateStyle = {
-    transform: `translate(${
-      Math.max((data.sphereRadius * data.scale) / 600, 1 * data.scale) + "px"
-    },-0px)`,
-    position: "absolute",
-    left: "0px",
-    bottom: "0px",
-    fontSize: `${0.75 * data.scale}px`,
-    color: "rgb(236, 236, 236)",
-    textShadow:
-      "0.1px 0.1px 0px black, -0.1px -0.1px 0px black,  0.1px -0.1px 0px black,  -0.1px 0.1px 0px black",
-  };
+  const fontSize = useMemo(() => {
+    if (data.sphereRadius !== "0" && data.sphereRadius > 400) {
+      return (data.sphereRadius * data.scale) / 3300 + "px";
+    } else return `${1 * data.scale}px`;
+  }, [data.scale, data.sphereRadius]);
+
+  let style = useMemo(() => {
+    return {
+      width: width,
+      height: height,
+      backgroundImage: `url(${greySphere})`,
+      opacity: `${data.isKnown === "yes" ? "100%" : "70%"}`,
+      fontSize: fontSize,
+    };
+  }, [data.isKnown, fontSize, height, width]);
+
+  let nameTranslateStyle = useMemo(() => {
+    return {
+      transform: `translate(${
+        Math.max((data.sphereRadius * data.scale) / 600, 1 * data.scale) + "px"
+      },-0px)`,
+      position: "absolute",
+      left: "0px",
+      bottom: "0px",
+      fontSize: `${0.75 * data.scale}px`,
+      color: "rgb(236, 236, 236)",
+      textShadow:
+        "0.1px 0.1px 0px black, -0.1px -0.1px 0px black,  0.1px -0.1px 0px black,  -0.1px 0.1px 0px black",
+    };
+  }, [data.scale, data.sphereRadius]);
 
   return (
     <>

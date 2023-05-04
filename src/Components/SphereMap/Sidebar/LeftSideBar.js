@@ -8,7 +8,7 @@ import LeftSBNew from "./LeftSBNew";
 import logo from "../../../img/SBEJ.png";
 
 function LeftSideBar(props) {
-  const [selectedTab, setSelectedTab] = useState("aboutTab");
+  const [selectedTab, setSelectedTab] = useState("newTab");
   const [selectedNode, setSelectedNode] = [
     props.selectedNode,
     props.setSelectedNode,

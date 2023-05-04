@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useMemo } from "react";
 import {
   useStore,
   // getBezierPath,
@@ -43,7 +43,6 @@ function FloatingEdge({
   style,
 }) {
   const scale = data.scale;
-
   const sourceNode = useStore(
     useCallback((store) => store.nodeInternals.get(source), [source])
   );
@@ -52,53 +51,70 @@ function FloatingEdge({
   );
 
   //If animation is not enable, remove it from style
-  let edgeStyle;
-  !data.animation
-    ? (edgeStyle = { ...style, animation: "" })
-    : (edgeStyle = style);
+  let edgeStyle = useMemo(() => {
+    if (data.animation) {
+      return style;
+    } else return { ...style, animation: "" };
+  }, [data.animation, style]);
 
   if (selected)
     edgeStyle = { ...edgeStyle, filter: "drop-shadow(0px 0px 2px white)" };
 
   //Check for data.Time, if it doesn't exist, check if projectedTime is enabled
-  let travelTime = { west: "", east: "" };
-  data.timeE
-    ? (travelTime.east = `-> ${data.timeE}`)
-    : data.projectedTime && !data.type.includes("uniW")
-    ? (travelTime.east = "-> " + Math.floor(data.dist / data.speed))
-    : (travelTime.east = "");
-  data.timeW
-    ? (travelTime.west = `<- ${data.timeW}`)
-    : data.projectedTime && !data.type.includes("uniE")
-    ? (travelTime.west = "<- " + Math.floor(data.dist / data.speed))
-    : (travelTime.west = "");
+  const travelTime = useMemo(() => {
+    let tempTravelTime = { west: "", east: "" };
+    data.timeE
+      ? (tempTravelTime.east = `-> ${data.timeE}`)
+      : data.projectedTime && !data.type.includes("uniW")
+      ? (tempTravelTime.east = "-> " + Math.floor(data.dist / data.speed))
+      : (tempTravelTime.east = "");
+    data.timeW
+      ? (tempTravelTime.west = `<- ${data.timeW}`)
+      : data.projectedTime && !data.type.includes("uniE")
+      ? (tempTravelTime.west = "<- " + Math.floor(data.dist / data.speed))
+      : (tempTravelTime.west = "");
+
+    return tempTravelTime;
+  }, [
+    data.dist,
+    data.projectedTime,
+    data.speed,
+    data.timeE,
+    data.timeW,
+    data.type,
+  ]);
+
+  const [edgePath] = useMemo(() => {
+    const { sx, sy, tx, ty, sourcePos, targetPos } = getEdgeParams(
+      sourceNode,
+      targetNode
+    );
+    return getSimpleBezierPath({
+      sourceX: sx,
+      sourceY: sy,
+      sourcePosition: sourcePos,
+      targetPosition: targetPos,
+      targetX: tx,
+      targetY: ty,
+    });
+  }, [sourceNode, targetNode]);
+
+  const translate = useMemo(() => {
+    return getTranslate(data, scale);
+  }, [data, scale]);
+
+  const textStyle = useMemo(() => {
+    return {
+      fontSize: `${0.75 * scale}px`,
+      fontWeight: "bold",
+      textShadow: "0 0 0.1px black, 0 0 0.1px black, 0 0 0.1px black",
+      zIndex: 3,
+    };
+  }, [scale]);
 
   if (!sourceNode || !targetNode) {
     return null;
   }
-
-  const { sx, sy, tx, ty, sourcePos, targetPos } = getEdgeParams(
-    sourceNode,
-    targetNode
-  );
-
-  const [edgePath] = getSimpleBezierPath({
-    sourceX: sx,
-    sourceY: sy,
-    sourcePosition: sourcePos,
-    targetPosition: targetPos,
-    targetX: tx,
-    targetY: ty,
-  });
-
-  const translate = getTranslate(data, scale);
-
-  const textStyle = {
-    fontSize: `${0.75 * scale}px`,
-    fontWeight: "bold",
-    textShadow: "0 0 0.1px black, 0 0 0.1px black, 0 0 0.1px black",
-    zIndex: 3,
-  };
 
   return (
     <>

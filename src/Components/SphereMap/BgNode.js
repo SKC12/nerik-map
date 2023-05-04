@@ -12,6 +12,7 @@ export function BgNode({ data }) {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
   };
+
   return (
     <>
       <div

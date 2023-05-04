@@ -7,7 +7,6 @@ import { SphereNode } from "./SphereNode";
 import { BgNode } from "./BgNode";
 
 import FloatingEdge from "./FloatingEdge.js";
-import FloatingConnectionLine from "./FloatingConnectionLine.js";
 import LeftSideBar from "./Sidebar/LeftSideBar";
 import RightSideBar from "./Sidebar/RightSideBar";
 
@@ -236,7 +235,6 @@ function SphereMap(props) {
           onEdgesChange={onEdgesChange}
           onConnect={onConnect}
           edgeTypes={edgeTypes}
-          connectionLineComponent={FloatingConnectionLine}
           nodeOrigin={[0.5, 0.5]}
           fitView={true}
           minZoom={(canvasHeight / baseMapHeight) * minZoom}

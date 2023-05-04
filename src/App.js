@@ -1,6 +1,6 @@
 import "./style/Main.css";
 import SphereMap from "./Components/SphereMap/SphereMap";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState, useLayoutEffect, useCallback } from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { loadCSVSpheres, loadCSVFlows } from "./data-loader";
 import sphereData from "./data/spheres.csv";
@@ -23,6 +23,21 @@ const scale = 5;
 let baseMapHeight = 399 * scale;
 let baseMapWidth = 567 * scale;
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "rgb(57, 57, 73)",
+      contrastText: "rgb(213, 213, 230)",
+    },
+    text: {
+      primary: "rgb(84, 84, 104)",
+    },
+  },
+  typography: {
+    fontFamily: ["Helvetica", "sans-serif"],
+  },
+});
+
 function App() {
   //width/heigth of the coordinates background
   let bgRatio = 1.421;
@@ -39,30 +54,100 @@ function App() {
     (state) => state.toggleProjectedTime,
     shallow
   );
-
   const flowRiverColors = useStore((state) => state.flowRiverColors);
   const dataLoaded = useStore((state) => state.dataLoaded);
   const toggleDataLoaded = useStore((state) => state.toggleDataLoaded);
-
   const planetScreenData = useStore((state) => state.planetScreenData, shallow);
-
   const setVerticalLayout = useStore((state) => state.setVerticalLayout);
 
-  async function loadNerikSpheres() {
-    if (nerikJSON) {
-      let data = nerikJSON;
-      if (data) {
-        setNodes(data.nodes);
-        setEdges(data.edges);
+  const loadNerikSpheres = useCallback(() => {
+    async function load() {
+      if (nerikJSON) {
+        let data = nerikJSON;
+        if (data) {
+          setNodes(data.nodes);
+          setEdges(data.edges);
+          toggleDataLoaded();
+        }
+      } else {
+        //let sphereArray = [];
+        let sphereArray = await loadCSVSpheres(sphereData, planetData);
+
+        //let flowsArray = [];
+        let flowsArray = await loadCSVFlows(flowsData);
+
+        let bgSphere = {
+          id: "bg",
+          type: "bgNode",
+          position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
+          data: { width: baseMapWidth, height: baseMapHeight },
+          draggable: false,
+          selectable: false,
+          zIndex: -1,
+        };
+
+        setNodes(Sphere.getNodes(sphereArray, scale).concat(bgSphere));
+        setEdges(Flow.getEdges(flowsArray, flowRiverColors, scale));
         toggleDataLoaded();
       }
-    } else {
-      //let sphereArray = [];
-      let sphereArray = await loadCSVSpheres(sphereData, planetData);
+    }
 
-      //let flowsArray = [];
-      let flowsArray = await loadCSVFlows(flowsData);
+    load();
+  }, [setNodes, setEdges, toggleDataLoaded, flowRiverColors]);
 
+  const loadUpdatedSpheres = useCallback(() => {
+    async function load() {
+      if (updatedJSON) {
+        let data = updatedJSON;
+        if (data) {
+          setNodes(data.nodes);
+          setEdges(data.edges);
+          toggleDataLoaded();
+        }
+      } else {
+        let sphereArray = await loadCSVSpheres(sphereData, planetData);
+        let newSpheresArray = await loadCSVSpheres(newSpheresData, planetData);
+
+        let flowsArray = await loadCSVFlows(flowsData);
+        let newFlowsArray = await loadCSVFlows(newFlowsData);
+
+        let bgSphere = {
+          id: "bg",
+          type: "bgNode",
+          position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
+          data: { width: baseMapWidth, height: baseMapHeight },
+          draggable: false,
+          selectable: false,
+          zIndex: -1,
+        };
+
+        setNodes(
+          Sphere.getNodes(sphereArray, scale)
+            .concat(Sphere.getNodes(newSpheresArray, scale))
+            .concat(bgSphere)
+        );
+        setEdges(
+          Flow.getEdges(flowsArray, flowRiverColors, scale).concat(
+            Flow.getEdges(newFlowsArray, flowRiverColors, scale)
+          )
+        );
+        if (!projectedTime) toggleProjectedTime();
+        toggleDataLoaded();
+      }
+    }
+
+    load();
+  }, [
+    flowRiverColors,
+    projectedTime,
+    setEdges,
+    setNodes,
+    toggleDataLoaded,
+    toggleProjectedTime,
+  ]);
+
+  const loadFromScratch = useCallback(() => {
+    function load() {
       let bgSphere = {
         id: "bg",
         type: "bgNode",
@@ -73,68 +158,13 @@ function App() {
         zIndex: -1,
       };
 
-      setNodes(Sphere.getNodes(sphereArray, scale).concat(bgSphere));
-      setEdges(Flow.getEdges(flowsArray, flowRiverColors, scale));
+      setNodes([bgSphere]);
       toggleDataLoaded();
     }
-  }
+    load();
+  }, [setNodes, toggleDataLoaded]);
 
-  async function loadUpdatedSpheres() {
-    if (updatedJSON) {
-      let data = updatedJSON;
-      if (data) {
-        setNodes(data.nodes);
-        setEdges(data.edges);
-        toggleDataLoaded();
-      }
-    } else {
-      let sphereArray = await loadCSVSpheres(sphereData, planetData);
-      let newSpheresArray = await loadCSVSpheres(newSpheresData, planetData);
-
-      let flowsArray = await loadCSVFlows(flowsData);
-      let newFlowsArray = await loadCSVFlows(newFlowsData);
-
-      let bgSphere = {
-        id: "bg",
-        type: "bgNode",
-        position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
-        data: { width: baseMapWidth, height: baseMapHeight },
-        draggable: false,
-        selectable: false,
-        zIndex: -1,
-      };
-
-      setNodes(
-        Sphere.getNodes(sphereArray, scale)
-          .concat(Sphere.getNodes(newSpheresArray, scale))
-          .concat(bgSphere)
-      );
-      setEdges(
-        Flow.getEdges(flowsArray, flowRiverColors, scale).concat(
-          Flow.getEdges(newFlowsArray, flowRiverColors, scale)
-        )
-      );
-      if (!projectedTime) toggleProjectedTime();
-      toggleDataLoaded();
-    }
-  }
-
-  function loadFromScratch() {
-    let bgSphere = {
-      id: "bg",
-      type: "bgNode",
-      position: { x: baseMapWidth / 2, y: baseMapHeight / 2 },
-      data: { width: baseMapWidth, height: baseMapHeight },
-      draggable: false,
-      selectable: false,
-      zIndex: -1,
-    };
-
-    setNodes([bgSphere]);
-    toggleDataLoaded();
-  }
-
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!refContainer.current) return;
     const resizeObserver = new ResizeObserver(() => {
       if (
@@ -155,21 +185,6 @@ function App() {
     resizeObserver.observe(refContainer.current);
     return () => resizeObserver.disconnect();
   }, [bgRatio, setVerticalLayout]);
-
-  const theme = createTheme({
-    palette: {
-      primary: {
-        main: "rgb(57, 57, 73)",
-        contrastText: "rgb(213, 213, 230)",
-      },
-      text: {
-        primary: "rgb(84, 84, 104)",
-      },
-    },
-    typography: {
-      fontFamily: ["Helvetica", "sans-serif"],
-    },
-  });
 
   return (
     <div ref={refContainer} className="App">
