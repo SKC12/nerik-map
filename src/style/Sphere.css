@@ -18,7 +18,7 @@
 
 .SPHERE__name{
     white-space: nowrap;
-    color: rgb(84, 84, 104);
+    color: var(--text-dark);
 }
 
 .SPHERE__name-translated{
@@ -41,7 +41,7 @@
 }
 .SPHERE__planets-icon{
     /* position: absolute; */
-    stroke: rgb(57, 57, 73);
+    stroke: var(--text-dark);
     background-color: var(--bg-very-light);
     border-radius: 50%;
     cursor: pointer;
