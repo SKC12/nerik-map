@@ -1,4 +1,4 @@
-import ReactFlow, { getConnectedEdges } from "reactflow";
+import ReactFlow, { getConnectedEdges, ReactFlowProvider } from "reactflow";
 import "reactflow/dist/style.css";
 import "../../style/SphereMap.css";
 import { useEffect, useState, useRef, useCallback } from "react";
@@ -213,7 +213,7 @@ function SphereMap(props) {
   }, [hideUnknownSpheres, updateHideUnknownSpheres]);
 
   return (
-    <>
+    <ReactFlowProvider>
       <LeftSideBar
         selectedNode={selectedNode}
         setSelectedNode={setSelectedNode}
@@ -256,7 +256,7 @@ function SphereMap(props) {
         </ReactFlow>
       </div>
       <RightSideBar edges={edges} />
-    </>
+    </ReactFlowProvider>
   );
 }
 

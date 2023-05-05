@@ -6,9 +6,10 @@ import LeftSBOptions from "./LeftSBOptions";
 import LeftSBFlow from "./LeftSBFlow";
 import LeftSBNew from "./LeftSBNew";
 import logo from "../../../img/SBEJ.png";
+import LeftSBSearch from "./LeftSBSearch";
 
 function LeftSideBar(props) {
-  const [selectedTab, setSelectedTab] = useState("newTab");
+  const [selectedTab, setSelectedTab] = useState("searchTab");
   const [selectedNode, setSelectedNode] = [
     props.selectedNode,
     props.setSelectedNode,
@@ -26,7 +27,7 @@ function LeftSideBar(props) {
       ? setSelectedTab("sphereTab")
       : selectedEdge
       ? setSelectedTab("flowTab")
-      : setSelectedTab("newTab");
+      : setSelectedTab("searchTab");
   }, [selectedNode, selectedEdge]);
 
   const handleTabClick = (e) => {
@@ -84,15 +85,30 @@ function LeftSideBar(props) {
               Flow
             </div>
           ) : (
-            <div
-              id="newTab"
-              onClick={handleTabClick}
-              className={`${
-                selectedTab === "newTab" ? "LEFTSB_selected-tab" : "LEFTSB__tab"
-              }`}
-            >
-              New
-            </div>
+            <>
+              <div
+                id="searchTab"
+                onClick={handleTabClick}
+                className={`${
+                  selectedTab === "searchTab"
+                    ? "LEFTSB_selected-tab"
+                    : "LEFTSB__tab"
+                }`}
+              >
+                Search
+              </div>
+              <div
+                id="newTab"
+                onClick={handleTabClick}
+                className={`${
+                  selectedTab === "newTab"
+                    ? "LEFTSB_selected-tab"
+                    : "LEFTSB__tab"
+                }`}
+              >
+                New
+              </div>
+            </>
           )}
 
           <div
@@ -137,6 +153,8 @@ function LeftSideBar(props) {
           />
         ) : null}
         {selectedTab === "newTab" ? <LeftSBNew scale={scale} /> : null}
+        {selectedTab === "searchTab" ? <LeftSBSearch scale={scale} /> : null}
+
         {selectedTab === "optionsTab" ? (
           <LeftSBOptions
             reactFlowInstance={reactFlowInstance}

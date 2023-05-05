@@ -637,5 +637,63 @@
     padding: 5px;
 }
 
+.LEFTSB__sphere-card{
+    background-color: var(--bg-very-light);
+    color: var(--text-dark);
+    display: flex;
+    margin: 10px;
+    border-radius: 15px;  
+    align-items: center;
+    justify-content:space-around;
+    border: 2px solid var(--bg);
+    gap: 10px;
+    cursor: pointer;
+
+}
+.LEFTSB__sphere-card-img-container{
+    min-width: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    
+}
+.LEFTSB__sphere-card-data-container{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;  
+    flex-grow: 1;
+
+}
+.LEFTSB__sphere-card-info-container{
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.LEFTSB__sphere-card-data{
+    margin:0px;
+    font-size: 0.8em;
+}
+.LEFTSB__sphere-card-name{
+    margin:0px;
+    padding-left: 5px;
+}
+
+.LEFTSB__sphere-card-container{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.LEFTSB__sphere-card-img{
+    width: 3em;
+    background-color: white;
+    border-radius: 100%;
+}
+
 
 
