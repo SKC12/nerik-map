@@ -46,7 +46,7 @@ function LeftSBSearch(props) {
   const filteredNodes = filterSpheres(searchInput, nodes);
 
   return (
-    <div>
+    <div className="LEFTSB__search-main-container">
       <div className="LEFTSB__search-container">
         <TextField
           variant="standard"
@@ -79,9 +79,9 @@ function LeftSBSearch(props) {
         />
       </div>
 
-      <div className="RIGHTSB__sphere-card-container">
+      <div className="LEFTSB__sphere-card-container">
         {filteredNodes.map((nd) => {
-          return <SphereCard node={nd} />;
+          return <SphereCard key={nd.shortName} node={nd} />;
         })}
       </div>
     </div>

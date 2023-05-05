@@ -698,6 +698,11 @@
 .LEFTSB__search-icon{
     fill: var(--text-light);
 }
+
+.LEFTSB__search-main-container{
+    height: 95%;
+}
+
 .LEFTSB__search-container{
     width: 100%;
     display: flex;
