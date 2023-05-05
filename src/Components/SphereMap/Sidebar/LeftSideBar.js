@@ -163,7 +163,7 @@ function LeftSideBar(props) {
           <div className="SB__about">
             <p>
               This project is an attempt to recreate the popular map created by
-              Charles "Nerik" Taylor for Spelljammer, found
+              Charles "Nerik" Taylor for Spelljammer, found{" "}
               <a href="https://nerik.orpheusweb.co.uk/">here</a>.
             </p>
             <p>
