@@ -326,7 +326,7 @@
     flex-wrap: wrap;
     overflow-y: auto;    
     scroll-behavior: auto;
-    max-height: calc(100% - 110px);
+    /* max-height: calc(100% - 110px); */
       
 }
 
@@ -341,7 +341,7 @@
 
 .RIGHTSB__legend-flow-img{
     height: 4px;
-    width: 3em;
+    width: 2em;
     flex-shrink: 0;
 }
 
