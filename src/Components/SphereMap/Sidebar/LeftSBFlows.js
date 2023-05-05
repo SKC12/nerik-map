@@ -18,7 +18,7 @@ function Flow(props) {
 
   return (
     <>
-      <div key={edge.id} className="LEFTSB__flow-container">
+      <div className="LEFTSB__flow-container">
         <div className="LEFTSB__flow-item-container">
           <label className="LEFTSB__flow-main-label">
             &#8226; {direction === "incoming" ? edge.source : edge.target}
@@ -62,9 +62,9 @@ function LeftSBFlows(props) {
     let connectedEdges = getConnectedEdges([node], edges).map((edge) => {
       if (!hideUnkownPaths || edge.data.isKnown === "yes") {
         if (edge.source !== node.id && edge.data.type !== "uniW") {
-          return <Flow edge={edge} direction={"incoming"} />;
+          return <Flow key={edge.id} edge={edge} direction={"incoming"} />;
         } else if (edge.source === node.id && edge.data.type !== "uniE") {
-          return <Flow edge={edge} direction={"outgoing"} />;
+          return <Flow key={edge.id} edge={edge} direction={"outgoing"} />;
         } else return null;
       } else return null;
     });
