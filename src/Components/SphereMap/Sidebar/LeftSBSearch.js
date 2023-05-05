@@ -1,3 +1,4 @@
+import { InputAdornment } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import { useCallback, useState } from "react";
 import { shallow } from "zustand/shallow";
@@ -46,19 +47,38 @@ function LeftSBSearch(props) {
 
   return (
     <div>
-      <TextField
-        variant="standard"
-        className="LEFTSB__data"
-        onChange={(e) => setSearchInput(e.target.value)}
-        value={searchInput}
-        inputProps={{
-          maxLength: 30,
-        }}
-        InputProps={{
-          disableUnderline: true,
-        }}
-        sx={inputStyle}
-      />
+      <div className="LEFTSB__search-container">
+        <TextField
+          variant="standard"
+          id="searchbar"
+          type="search"
+          className="LEFTSB__data LEFTSB__search"
+          onChange={(e) => setSearchInput(e.target.value)}
+          value={searchInput}
+          inputProps={{
+            maxLength: 30,
+          }}
+          InputProps={{
+            disableUnderline: true,
+            startAdornment: (
+              <InputAdornment position="start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-search LEFTSB__search-icon"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </InputAdornment>
+            ),
+          }}
+          sx={inputStyle}
+        />
+      </div>
+
       <div className="RIGHTSB__sphere-card-container">
         {filteredNodes.map((nd) => {
           return <SphereCard node={nd} />;
