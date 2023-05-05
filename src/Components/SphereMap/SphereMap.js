@@ -13,9 +13,6 @@ import RightSideBar from "./Sidebar/RightSideBar";
 import useStore from "../../store";
 import { shallow } from "zustand/shallow";
 import { getStyle } from "../utils";
-const scale = 5;
-
-let baseMapHeight = 399 * scale;
 
 const nodeTypes = { sphereNode: SphereNode, bgNode: BgNode };
 const edgeTypes = {
@@ -54,6 +51,7 @@ function SphereMap(props) {
     updateHideUnknownPaths,
     updateHideUnknownSpheres,
   } = useStore(selector, shallow);
+  let baseMapHeight = 399 * scale;
   const setEdges = useStore((state) => state.setEdges, shallow);
   const setNodes = useStore((state) => state.setNodes, shallow);
 
@@ -177,7 +175,7 @@ function SphereMap(props) {
         data: {
           ...data,
           planets: [],
-          scale,
+          scale: scale,
           xCoord: `${position.x / scale + 11}`,
           yCoord: `${position.y / scale + 11}`,
           "onMap?": "Yes",
@@ -221,7 +219,6 @@ function SphereMap(props) {
         setSelectedEdge={setSelectedEdge}
         reactFlowInstance={reactFlowInstance}
         reactFlowRef={reactFlowRef}
-        scale={scale}
       />
       <div
         ref={reactFlowRef}

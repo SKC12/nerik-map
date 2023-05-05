@@ -18,10 +18,7 @@ import { Flow } from "./models/Flow";
 import PlanetMap from "./Components/PlanetMap/PlanetMap";
 import StartScreen from "./Components/StartScreen";
 
-const scale = 5;
-
-let baseMapHeight = 399 * scale;
-let baseMapWidth = 567 * scale;
+let bgRatio = 1.421;
 
 const theme = createTheme({
   palette: {
@@ -40,7 +37,10 @@ const theme = createTheme({
 
 function App() {
   //width/heigth of the coordinates background
-  let bgRatio = 1.421;
+  const scale = useStore((state) => state.scale);
+
+  let baseMapHeight = 399 * scale;
+  let baseMapWidth = 567 * scale;
 
   const refContainer = useRef();
   const [containerDimensions, setContainerDimensions] = useState({
@@ -93,7 +93,15 @@ function App() {
     }
 
     load();
-  }, [setNodes, setEdges, toggleDataLoaded, flowRiverColors]);
+  }, [
+    setNodes,
+    setEdges,
+    toggleDataLoaded,
+    baseMapWidth,
+    baseMapHeight,
+    scale,
+    flowRiverColors,
+  ]);
 
   const loadUpdatedSpheres = useCallback(() => {
     async function load() {
@@ -138,8 +146,11 @@ function App() {
 
     load();
   }, [
+    baseMapHeight,
+    baseMapWidth,
     flowRiverColors,
     projectedTime,
+    scale,
     setEdges,
     setNodes,
     toggleDataLoaded,
@@ -162,7 +173,7 @@ function App() {
       toggleDataLoaded();
     }
     load();
-  }, [setNodes, toggleDataLoaded]);
+  }, [baseMapHeight, baseMapWidth, setNodes, toggleDataLoaded]);
 
   useLayoutEffect(() => {
     if (!refContainer.current) return;
@@ -189,7 +200,7 @@ function App() {
     });
     resizeObserver.observe(refContainer.current);
     return () => resizeObserver.disconnect();
-  }, [bgRatio, setVerticalLayout]);
+  }, [setVerticalLayout]);
 
   return (
     <div ref={refContainer} className="App">

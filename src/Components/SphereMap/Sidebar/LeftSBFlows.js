@@ -1,6 +1,7 @@
 import { getConnectedEdges } from "reactflow";
 import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
+import { useCallback } from "react";
 
 function getFormattedFlowType(type) {
   if (type.includes("predominant")) return "Predominant";
@@ -58,18 +59,21 @@ function LeftSBFlows(props) {
   const edges = useStore((state) => state.edges, shallow);
   const hideUnkownPaths = useStore((state) => state.hideUnkownPaths);
 
-  const getFlowsJSX = (node) => {
-    let connectedEdges = getConnectedEdges([node], edges).map((edge) => {
-      if (!hideUnkownPaths || edge.data.isKnown === "yes") {
-        if (edge.source !== node.id && edge.data.type !== "uniW") {
-          return <Flow key={edge.id} edge={edge} direction={"incoming"} />;
-        } else if (edge.source === node.id && edge.data.type !== "uniE") {
-          return <Flow key={edge.id} edge={edge} direction={"outgoing"} />;
+  const getFlowsJSX = useCallback(
+    (node) => {
+      let connectedEdges = getConnectedEdges([node], edges).map((edge) => {
+        if (!hideUnkownPaths || edge.data.isKnown === "yes") {
+          if (edge.source !== node.id && edge.data.type !== "uniW") {
+            return <Flow key={edge.id} edge={edge} direction={"incoming"} />;
+          } else if (edge.source === node.id && edge.data.type !== "uniE") {
+            return <Flow key={edge.id} edge={edge} direction={"outgoing"} />;
+          } else return null;
         } else return null;
-      } else return null;
-    });
-    return <div className="LEFTSB__flows-container">{connectedEdges}</div>;
-  };
+      });
+      return <div className="LEFTSB__flows-container">{connectedEdges}</div>;
+    },
+    [edges, hideUnkownPaths]
+  );
 
   return selectedNode ? getFlowsJSX(selectedNode) : null;
 }

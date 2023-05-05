@@ -58,57 +58,61 @@ function LeftSBOptions(props) {
 
   const downloadAsImage = () => {
     if (reactFlowInstance) {
-      getImage();
+      getImage(reactFlowRef);
     }
   };
 
-  const returnToMain = () => {
-    toggleDataLoaded();
-  };
+  // const returnToMain = () => {
+  //   toggleDataLoaded();
+  // };
 
-  const getImage = async () => {
-    const element = reactFlowRef.current;
-    setLoading(true);
+  const getImage = useCallback((reactFlowRef) => {
+    const load = async () => {
+      const element = reactFlowRef.current;
+      setLoading(true);
 
-    //console.log("loading images");
-    let edgesCanvas = await toCanvas(element, {
-      pixelRatio: 6,
-      filter: (node) => {
-        if (
-          node?.classList?.contains("react-flow__edge") ||
-          node?.classList?.contains("SPHERE__grid")
-        ) {
-          return false;
-        }
-        return true;
-      },
-    });
+      //console.log("loading images");
+      let edgesCanvas = await toCanvas(element, {
+        pixelRatio: 6,
+        filter: (node) => {
+          if (
+            node?.classList?.contains("react-flow__edge") ||
+            node?.classList?.contains("SPHERE__grid")
+          ) {
+            return false;
+          }
+          return true;
+        },
+      });
 
-    let nodesCanvas = await toCanvas(element, {
-      pixelRatio: 6,
+      let nodesCanvas = await toCanvas(element, {
+        pixelRatio: 6,
 
-      filter: (node) => {
-        if (node?.classList?.contains("react-flow__nodes")) {
-          return false;
-        }
-        return true;
-      },
-    });
+        filter: (node) => {
+          if (node?.classList?.contains("react-flow__nodes")) {
+            return false;
+          }
+          return true;
+        },
+      });
 
-    //console.log("loaded images", edgesCanvas, nodesCanvas);
+      //console.log("loaded images", edgesCanvas, nodesCanvas);
 
-    edgesCanvas.getContext("2d").drawImage(nodesCanvas, 0, 0);
+      edgesCanvas.getContext("2d").drawImage(nodesCanvas, 0, 0);
 
-    //console.log("combined image");
+      //console.log("combined image");
 
-    const a = document.createElement("a");
-    a.href = edgesCanvas.toDataURL();
-    a.download = "flowmap.png";
-    a.click();
+      const a = document.createElement("a");
+      a.href = edgesCanvas.toDataURL();
+      a.download = "flowmap.png";
+      a.click();
 
-    //console.log("downloaded image");
-    setLoading(false);
-  };
+      //console.log("downloaded image");
+      setLoading(false);
+    };
+
+    load(reactFlowRef);
+  }, []);
 
   const loadFromLocalStorage = useCallback(() => {
     const loadData = async () => {
@@ -274,7 +278,7 @@ function LeftSBOptions(props) {
         <hr style={{ width: "100%" }}></hr>
         <Button
           className="LEFTSB__option-button"
-          onClick={returnToMain}
+          onClick={toggleDataLoaded}
           disableElevation
           variant="contained"
         >

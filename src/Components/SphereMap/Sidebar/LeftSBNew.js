@@ -59,7 +59,7 @@ function LeftSBNew(props) {
   const setEdges = useStore((state) => state.setEdges, shallow);
   const edges = useStore((state) => state.edges, shallow);
   const nodes = useStore((state) => state.nodes, shallow);
-  const scale = props.scale;
+  const scale = useStore((state) => state.scale);
   const flowRiverColors = useStore((state) => state.flowRiverColors, shallow);
   const setFlowRiverColors = useStore(
     (state) => state.setFlowRiverColors,
@@ -208,7 +208,7 @@ function LeftSBNew(props) {
         target: data.sphereE,
         data: data,
         type: "floating",
-        style: getStyle(data, flowRiverColors, 5),
+        style: getStyle(data, flowRiverColors, scale),
       };
 
       if (!edges.find((edg) => edg.id === newEdge.id)) {

@@ -11,6 +11,24 @@ function getLink(link) {
     : "http://" + link;
 }
 
+const inputStyle = {
+  "& .MuiInputBase-input.Mui-disabled": {
+    borderStyle: "none",
+    WebkitTextFillColor: "rgb(213, 213, 230);",
+    backgroundColor: "rgb(81, 85, 102)",
+  },
+  "& .MuiInputBase-input": {
+    WebkitTextFillColor: "rgb(84, 84, 104);",
+    backgroundColor: "white",
+    fontSize: "14px",
+    border: "black 1px solid",
+    borderRadius: "4px",
+    padding: "2px",
+    margins: "0px",
+    paddingLeft: "8px",
+  },
+};
+
 function LeftSBSphere(props) {
   const [editMode, setEditMode] = useState(false);
   const [delDialogOpen, setDelDialogOpen] = useState(false);
@@ -21,24 +39,6 @@ function LeftSBSphere(props) {
   const nodes = useStore((state) => state.nodes, shallow);
   const setNodes = useStore((state) => state.setNodes, shallow);
   const reactFlowInstance = props.reactFlowInstance;
-
-  const inputStyle = {
-    "& .MuiInputBase-input.Mui-disabled": {
-      borderStyle: "none",
-      WebkitTextFillColor: "rgb(213, 213, 230);",
-      backgroundColor: "rgb(81, 85, 102)",
-    },
-    "& .MuiInputBase-input": {
-      WebkitTextFillColor: "rgb(84, 84, 104);",
-      backgroundColor: "white",
-      fontSize: "14px",
-      border: "black 1px solid",
-      borderRadius: "4px",
-      padding: "2px",
-      margins: "0px",
-      paddingLeft: "8px",
-    },
-  };
 
   useEffect(() => {
     setTempData(selectedData);

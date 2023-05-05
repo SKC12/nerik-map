@@ -19,7 +19,6 @@ function LeftSideBar(props) {
     props.setSelectedEdge,
   ];
 
-  const scale = props.scale;
   const reactFlowInstance = props.reactFlowInstance;
 
   useEffect(() => {
@@ -149,11 +148,10 @@ function LeftSideBar(props) {
             selectedEdge={selectedEdge}
             setSelectedEdge={setSelectedEdge}
             reactFlowInstance={reactFlowInstance}
-            scale={scale}
           />
         ) : null}
-        {selectedTab === "newTab" ? <LeftSBNew scale={scale} /> : null}
-        {selectedTab === "searchTab" ? <LeftSBSearch scale={scale} /> : null}
+        {selectedTab === "newTab" ? <LeftSBNew /> : null}
+        {selectedTab === "searchTab" ? <LeftSBSearch /> : null}
 
         {selectedTab === "optionsTab" ? (
           <LeftSBOptions

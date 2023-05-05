@@ -1,41 +1,47 @@
-import { useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import useStore from "../../../store";
 
 function RightSideBar(props) {
   const verticalLayout = useStore((state) => state.verticalLayout);
   const [open, setOpen] = useState(!verticalLayout);
   const edges = props.edges;
-  const legendLine = <line x1="1" y1="0" x2="50" y2="0"></line>;
-  const getFlowRiverJSX = () => {
-    let flowRivers = [];
+  const legendLine = useMemo(() => {
+    return <line x1="1" y1="0" x2="50" y2="0"></line>;
+  }, []);
 
-    return edges.map((edge) => {
-      if (!flowRivers.includes(edge.data.flowRiver) && edge.data.flowRiver) {
-        flowRivers.push(edge.data.flowRiver);
+  const getFlowRiverJSX = useCallback(
+    (edges) => {
+      let flowRivers = [];
 
-        return (
-          <div
-            key={edge.data.flowRiver}
-            className="RIGHTSB__legend-flowRiver-container"
-          >
-            <svg
-              className="RIGHTSB__legend-flow-img"
-              style={{
-                strokeWidth: "6px",
-                stroke: edge.style.stroke,
-                fill: "none",
-                strokeDasharray: "3px",
-              }}
+      return edges.map((edge) => {
+        if (!flowRivers.includes(edge.data.flowRiver) && edge.data.flowRiver) {
+          flowRivers.push(edge.data.flowRiver);
+
+          return (
+            <div
+              key={edge.data.flowRiver}
+              className="RIGHTSB__legend-flowRiver-container"
             >
-              {legendLine}
-            </svg>
+              <svg
+                className="RIGHTSB__legend-flow-img"
+                style={{
+                  strokeWidth: "6px",
+                  stroke: edge.style.stroke,
+                  fill: "none",
+                  strokeDasharray: "3px",
+                }}
+              >
+                {legendLine}
+              </svg>
 
-            <p className="RIGHTSB__legend-flow-name">{edge.data.flowRiver}</p>
-          </div>
-        );
-      } else return null;
-    });
-  };
+              <p className="RIGHTSB__legend-flow-name">{edge.data.flowRiver}</p>
+            </div>
+          );
+        } else return null;
+      });
+    },
+    [legendLine]
+  );
 
   return (
     <div
@@ -193,7 +199,7 @@ function RightSideBar(props) {
           </div>
           <hr></hr>
           <div className="RIGHTSB__legend-florRivers-container">
-            {getFlowRiverJSX()}
+            {getFlowRiverJSX(edges)}
           </div>
         </div>
       </div>
