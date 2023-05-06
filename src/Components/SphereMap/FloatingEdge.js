@@ -1,11 +1,11 @@
 import { useCallback, useMemo } from "react";
 import {
-  useStore,
   // getBezierPath,
   // getStraightPath,
   getSimpleBezierPath,
 } from "reactflow";
 import "../../style/Sphere.css";
+import { useStore as useReactFlowStore } from "reactflow";
 
 import { getEdgeParams } from "./../utils.js";
 
@@ -43,19 +43,21 @@ function FloatingEdge({
   style,
 }) {
   const scale = data.scale;
-  const sourceNode = useStore(
+  const zoomLevel = useReactFlowStore((store) => store.transform[2]);
+  const sourceNode = useReactFlowStore(
     useCallback((store) => store.nodeInternals.get(source), [source])
   );
-  const targetNode = useStore(
+  const targetNode = useReactFlowStore(
     useCallback((store) => store.nodeInternals.get(target), [target])
   );
 
   //If animation is not enable, remove it from style
   let edgeStyle = useMemo(() => {
+    if (zoomLevel < 1.5) return { ...style, strokeDasharray: "" };
     if (data.animation) {
       return style;
     } else return { ...style, animation: "" };
-  }, [data.animation, style]);
+  }, [data.animation, style, zoomLevel]);
 
   if (selected)
     edgeStyle = { ...edgeStyle, filter: "drop-shadow(0px 0px 2px white)" };
