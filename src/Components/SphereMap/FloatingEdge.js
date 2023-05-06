@@ -53,7 +53,7 @@ function FloatingEdge({
 
   //If animation is not enable, remove it from style
   let edgeStyle = useMemo(() => {
-    if (zoomLevel < 1.5) return { ...style, strokeDasharray: "" };
+    // if (zoomLevel < 1.5) return { ...style, strokeDasharray: "" };
     if (data.animation) {
       return style;
     } else return { ...style, animation: "" };
