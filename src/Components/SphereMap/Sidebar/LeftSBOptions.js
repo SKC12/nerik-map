@@ -240,7 +240,7 @@ function LeftSBOptions(props) {
           disableElevation
           variant="contained"
         >
-          Restore from local storage
+          Load from local storage
         </Button>
         <Button
           className="LEFTSB__option-button"
