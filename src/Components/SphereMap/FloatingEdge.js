@@ -51,13 +51,12 @@ function FloatingEdge({
     useCallback((store) => store.nodeInternals.get(target), [target])
   );
 
-  //If animation is not enable, remove it from style
+  //If animation is not enabled, remove it from style
   let edgeStyle = useMemo(() => {
-    // if (zoomLevel < 1.5) return { ...style, strokeDasharray: "" };
     if (data.animation) {
       return style;
     } else return { ...style, animation: "" };
-  }, [data.animation, style, zoomLevel]);
+  }, [data.animation, style]);
 
   if (selected)
     edgeStyle = { ...edgeStyle, filter: "drop-shadow(0px 0px 2px white)" };
