@@ -44,7 +44,7 @@ const useStore = create((set, get) => ({
   setMinZoom: (zoomLevel) => {
     set({ minZoom: zoomLevel });
   },
-  isAnimated: false,
+  isAnimated: true,
   toggleAnimated: () => set((state) => ({ isAnimated: !state.isAnimated })),
   projectedTime: false,
   toggleProjectedTime: () =>

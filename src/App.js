@@ -110,6 +110,7 @@ function App() {
         if (data) {
           setNodes(data.nodes);
           setEdges(data.edges);
+          if (!projectedTime) toggleProjectedTime();
           toggleDataLoaded();
         }
       } else {
