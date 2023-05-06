@@ -106,13 +106,15 @@ function FloatingEdge({
   }, [data, scale]);
 
   const textStyle = useMemo(() => {
+    if (zoomLevel < 1.5) return { display: "none" };
+
     return {
       fontSize: `${0.75 * scale}px`,
       fontWeight: "bold",
       textShadow: "0 0 0.1px black, 0 0 0.1px black, 0 0 0.5px black",
       zIndex: 3,
     };
-  }, [scale]);
+  }, [scale, zoomLevel]);
 
   if (!sourceNode || !targetNode) {
     return null;
