@@ -40,7 +40,7 @@ const useStore = create((set, get) => ({
   scale: 5,
   planetScreenData: null,
   flowRiverColors: defaultFlowRiverColors,
-  minZoom: 3,
+  minZoom: 1,
   setMinZoom: (zoomLevel) => {
     set({ minZoom: zoomLevel });
   },
