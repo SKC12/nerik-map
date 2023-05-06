@@ -102,10 +102,15 @@ function PlanetLeftSB(props) {
                 It connects a huge number of official and unofficial worlds
                 through the phlogiston, using what little official information
                 existed at the time and filling the gaps when necessary. You can
-                find settings such as the Forgotten Realms inside Realmspace,
-                Golarion in Golarionspace, Ebberon in Shardspace, along a
-                vastitude of homebrew worlds created by the community at the
-                time and even some spheres based games or movies.
+                find settings such as the Forgotten Realms, Golarion and
+                Ebberon, along a bunch of homebrew worlds created by the
+                community at the time and even some spheres based on games or
+                movies.
+              </p>
+              <p>
+                Unfortunately, a big portion of the information contained on
+                this map has been lost in time. Expect some broken links and
+                some worlds where very little is known.
               </p>
               <p>
                 Special thanks to TSR, WotC, and every single creator that
