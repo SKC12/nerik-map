@@ -6,7 +6,6 @@ import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
 
 function SphereCard(props) {
-  const key = props.key;
   const { setCenter } = useReactFlow();
   const nodes = useStore((state) => state.nodes, shallow);
   const setNodes = useStore((state) => state.setNodes, shallow);
@@ -29,13 +28,12 @@ function SphereCard(props) {
 
   return (
     <div
-      key={key}
       className="LEFTSB__sphere-card"
       onClick={(e) => {
         onClickSelect(node);
         setCenter(coords.x, coords.y, {
           duration: 2000,
-          zoom: 8,
+          zoom: 4,
         });
       }}
     >

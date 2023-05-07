@@ -26,29 +26,37 @@ const inputStyle = {
 function LeftSBSearch(props) {
   const nodes = useStore((state) => state.nodes, shallow);
   const [searchInput, setSearchInput] = useState("");
+  const hideUnknownPaths = useStore((state) => state.hideUnknownPaths);
 
-  const filterSpheres = useCallback((searchInput, nodes) => {
-    const lowerInput = searchInput.toLowerCase();
-    return nodes.filter((nd) => {
-      if (nd.type !== "sphereNode") return false;
-      if (
-        nd.data.shortName.toLowerCase().includes(lowerInput) ||
-        // nd.data.description.toLowerCase().includes(lowerInput) ||
-        nd.data.sphere.toLowerCase().includes(lowerInput) ||
-        nd.data.source.toLowerCase().includes(lowerInput) ||
-        nd.data.creator.toLowerCase().includes(lowerInput)
-      ) {
-        return true;
-      }
-      return false;
-    });
-  }, []);
+  const filterSpheres = useCallback(
+    (searchInput, nodes) => {
+      const lowerInput = searchInput.toLowerCase();
+      return nodes
+        .filter((nd) => {
+          if (nd.type !== "sphereNode") return false;
+          if (hideUnknownPaths && nd.data.isKnown === "no") return false;
+          if (
+            nd.data.shortName.toLowerCase().includes(lowerInput) ||
+            // nd.data.description.toLowerCase().includes(lowerInput) ||
+            nd.data.sphere.toLowerCase().includes(lowerInput) ||
+            nd.data.source.toLowerCase().includes(lowerInput) ||
+            nd.data.creator.toLowerCase().includes(lowerInput)
+          ) {
+            return true;
+          }
+          return false;
+        })
+        .sort((a, b) => (a.data.shortName > b.data.shortName ? 1 : -1));
+    },
+    [hideUnknownPaths]
+  );
   const filteredNodes = filterSpheres(searchInput, nodes);
 
   return (
     <div className="LEFTSB__search-main-container">
       <div className="LEFTSB__search-container">
         <TextField
+          key="textfield"
           variant="standard"
           id="searchbar"
           type="search"
@@ -81,7 +89,7 @@ function LeftSBSearch(props) {
 
       <div className="LEFTSB__sphere-card-container">
         {filteredNodes.map((nd) => {
-          return <SphereCard key={nd.shortName} node={nd} />;
+          return <SphereCard key={nd.data.shortName} node={nd} />;
         })}
       </div>
     </div>
