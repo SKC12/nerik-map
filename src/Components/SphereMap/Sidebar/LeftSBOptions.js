@@ -21,13 +21,13 @@ function LeftSBOptions(props) {
   const toggleHideUnknownSpheres = useStore(
     (state) => state.toggleHideUnknownSpheres
   );
+  const loadFromLocalStorage = useStore((state) => state.loadFromLocalStorage);
+  const loadFromFile = useStore((state) => state.loadFromFile);
+
   const minZoom = useStore((state) => state.minZoom);
   const setMinZoom = useStore((state) => state.setMinZoom, shallow);
 
   const reactFlowRef = props.reactFlowRef;
-
-  const setEdges = useStore((state) => state.setEdges, shallow);
-  const setNodes = useStore((state) => state.setNodes, shallow);
 
   const toggleDataLoaded = useStore((state) => state.toggleDataLoaded, shallow);
   const hiddenFileRef = useRef(null);
@@ -122,34 +122,6 @@ function LeftSBOptions(props) {
 
     load(reactFlowRef);
   }, []);
-
-  const loadFromLocalStorage = useCallback(() => {
-    const loadData = async () => {
-      const data = JSON.parse(localStorage.getItem("sbej-flowmap"));
-      if (data) {
-        setNodes(data.nodes || []);
-        setEdges(data.edges || []);
-      }
-    };
-
-    loadData();
-  }, [setEdges, setNodes]);
-
-  const loadFromFile = useCallback(
-    (event) => {
-      const file = event.target.files[0];
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        let data = JSON.parse(e.target.result);
-        if (data) {
-          setNodes(data.nodes || []);
-          setEdges(data.edges || []);
-        }
-      };
-      reader.readAsText(file);
-    },
-    [setEdges, setNodes]
-  );
 
   return (
     <div>
