@@ -65,7 +65,7 @@ function PlanetCard(props) {
           <p className="RIGHTSB__planet-card-data">{planet.info.type}</p>
           <p className="RIGHTSB__planet-card-data">Size {planet.info.size}</p>
           <p className="RIGHTSB__planet-card-data">
-            {planet.info.orbitRadius}M mi.
+            {parseInt(planet.orbitRadius)}M mi.
           </p>
         </div>
       </div>
