@@ -14,7 +14,7 @@ function LeftSBOptions(props) {
   const toggleProjectedTime = useStore((state) => state.toggleProjectedTime);
   const draggable = useStore((state) => state.draggable);
   const toggleDraggable = useStore((state) => state.toggleDraggable);
-  const hideUnknownPaths = useStore((state) => state.hideUnkownPaths);
+  const hideUnknownPaths = useStore((state) => state.hideUnknownPaths);
   const toggleHideUnknownPaths = useStore(
     (state) => state.toggleHideUnknownPaths
   );
@@ -40,21 +40,30 @@ function LeftSBOptions(props) {
   const saveToLocalStorage = useCallback(() => {
     if (reactFlowInstance) {
       const data = reactFlowInstance.toObject();
+      data.settings = {
+        animated: isAnimated,
+        projectedTime: projectedTime,
+        hideUnknownPaths: hideUnknownPaths,
+      };
       localStorage.setItem("sbej-flowmap", JSON.stringify(data));
     }
-  }, [reactFlowInstance]);
+  }, [hideUnknownPaths, isAnimated, projectedTime, reactFlowInstance]);
 
   const downloadAsFile = useCallback(() => {
     if (reactFlowInstance) {
       const data = JSON.stringify(reactFlowInstance.toObject());
-
+      data.settings = {
+        animated: isAnimated,
+        projectedTime: projectedTime,
+        hideUnknownPaths: hideUnknownPaths,
+      };
       const blob = new Blob([data], { type: "application/json" });
       const a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
       a.download = "flowmap.json";
       a.click();
     }
-  }, [reactFlowInstance]);
+  }, [hideUnknownPaths, isAnimated, projectedTime, reactFlowInstance]);
 
   const downloadAsImage = () => {
     if (reactFlowInstance) {

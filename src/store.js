@@ -165,6 +165,20 @@ const useStore = create((set, get) => ({
       set({
         edges: data.edges || [],
       });
+      if (data.settings) {
+        set({
+          isAnimated: data.settings.animated,
+        });
+        set({
+          hideUnknownPaths: data.settings.hideUnknownPaths,
+        });
+        set({
+          hideUnknownSpheres: data.settings.hideUnknownPaths,
+        });
+        set({
+          projectedTime: data.settings.projectedTime,
+        });
+      }
       set({
         dataLoaded: true,
       });
@@ -183,6 +197,20 @@ const useStore = create((set, get) => ({
         set({
           edges: data.edges || [],
         });
+        if (data.settings) {
+          set({
+            isAnimated: data.settings.animated,
+          });
+          set({
+            hideUnknownPaths: data.settings.hideUnknownPaths,
+          });
+          set({
+            hideUnknownSpheres: data.settings.hideUnknownPaths,
+          });
+          set({
+            projectedTime: data.settings.projectedTime,
+          });
+        }
         set({
           dataLoaded: true,
         });
