@@ -1,4 +1,6 @@
 sphereW;xCoordW;yCoordW;sphereE;xCoordE;yCoordE;speed;dist;type;typeExtraInfo;timeW;timeE;flowRiver;isKnown;editedSpeed
 Exandria;195;232;Realm;217;230;1.16;22.09;regular;;19;19;Other;yes;no
 Krynn;167;230;Exandria;195;232;1.22;28.07;regular;;23;23;Other;yes;no
-MTG;236;205;Mirror;247;220;1.16;18.60;regular;;16;16;Other;no;no
+Dominia;236;205;Mirror;247;220;1.16;18.60;regular;;16;16;Other;no;no
+Pyre;521;235;Siberys;540;207;1.13;33.84;regular;;30;30;Other;no;no
+Patria;236;185;Clown;230;172;1.19;14.32;regular;;12;12;Other;no;no

@@ -1,173 +1,231 @@
 name;size;diameter;shape;details;type;primaryBody;moons;rings;enviroment;population;description;sphere;shortName;onMap?;notes;source;creator;website
+The Maw;?;;?;;?;;;;;;;Passarspace;Passar;Yes;;;;
+Typhis' Playground;D;;;;Air;;;;;;;Aeneaspace;Aenea;Yes;;;;
+Egent;;;;;Air;;;;;Uninhabited?;;Alanthusspace;Alanthus;Yes;;;Susan Brown;
+Tengkuo;E;;;;Air;;;;;;;Algolspace;Algol;Yes;;;;
+Rani;G;;❄;;Air;;;;;;;Ametsuchispace;Ametsuchi;Yes;;;;
+Anki 6;G;;;;Air;;;;;;;Ankispace;Anki;Yes;;;;
+Anki 7;G;;;;Air;;;;;;;Ankispace;Anki;Yes;;;;
+Samhdi;E;;;;Air;;;;;;;Aquaspace;Aqua;Yes;;;;
+Awan;G;88.856;;;Air;;4;;;;;Arthspace;Arth;Yes;;;;
+Oloro;F;31.690;;;Air;;5;;;;;Arthspace;Arth;Yes;;;;
+Xplanet7;G;74.875;;;Air;;7;ice;;;;Arthspace;Arth;Yes;;;;
+Athtin;D;1.450;◗;Disc;Air;Poltina;;;hot;;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
+Nyseme;G;73.600;❑;;Air;;;;;Humans, Gnomes, Kenkus;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
+Surg;J;;;;Air;;;;;;;Atridaspace;Atrida;Yes;arctic dinosaus & Xorn-like;;;
+Avidarel Mist Belt;;;‡;;Air;;;;;;;Avidarelspace;Avidarel;Yes;;;;
+Dustbite;F;;;;Air;;4;;;;;Banesun;Banesun;Yes;;;;
+Hp'Xyn;G;;;;Air;;6;2;;;;Banesun;Banesun;Yes;Water core;;;
+Karanst;F;;Ο;;Air;;;;;;;Beltoun;Beltoun;Yes;;;;
+Talf;J;;;;Air;;;;;;;Beltoun;Beltoun;Yes;;;;
+Xafibel;J;;❄;;Air;;;;;;;Beltoun;Beltoun;Yes;;;;
+Calisto;F;;;;Air;;5;;;;;Bloodspace;Blood;Yes;;;;
+Laerme;G;;;;Air;;4;;;;;Bloodspace;Blood;Yes;;;;
+Hulior;G;;;;Air;;3;;;;;Ceyparisphere;Ceypari;Yes;;;;
+Wind Shell;;;;Shell;Air;;;;;;;Ceyparisphere;Ceypari;Yes;;;;
+Aphrodite;G;;;;Air;;5;1;;;;CharSpace  ;Char;Yes;;;;
+Apollo;F;;;;Air;;3;;;;;CharSpace  ;Char;Yes;;;;
+Zeus;G;;;;Air;;6;;;;;CharSpace  ;Char;Yes;;;;
+Bialtur;I;;;;Air;;;;;;;Chromaspace;Chroma;Yes;;;;
+Chronos;;;;;Air;;;;;;;Chronosspace ;Chronos;Yes;magocracy;;;
+Eros;;;;;Air;;;;;;;Chronosspace ;Chronos;Yes;;;;
+Rainbow;G;;;;Air;;3;;foul atmosphere;;;Cloudspace;Cloud;Yes;3 moons (Athanor, Paradise, Snowflake);;;
+Sequel;I;;;;Air;;;;;;;Countspace  ;Count;Yes;;;;
+Series;F;;;;Air;;;;;;;Countspace  ;Count;Yes;;;;
+Rajaat;F;;;;Air;;3;;;;;Crimson Sphere;Crimson;Yes;;;;
+Tayorala;J;;❄;;Air;;;;;;;Cy'Prenspace;Cy'Pren;Yes;;;;
+Aversia;H;648.000;;;Air;;;fire;;;;Dreadmindspace;Dreadmind;Yes;;;;
+Revulas;D;1.281;◗;;Air;;;;;;;Dreadmindspace;Dreadmind;Yes;;;;
+Odorngshrah;G;;;;Air;;9;;;Dragons;;Elespatio/Latierra;Elespatio;Yes;;;;
+Flanting;;;Ο;;Air;;;;;;;Emongspace;Emong;Yes;;;Susan Brown;
+Drer;D;;;;Air;;;;;;;Fallspace;Fall;Yes;;;;
+Ssovos;G;;;;Air;;5;;;;;Falxspace;Falx;Yes;5 moons (Eldreth, Thoon, Yrpic, Ryloth, Phios);;;
+Yrykos;D;;;;Air;;;;;;;Falxspace;Falx;Yes;;;;
+Aerlofalyn;;;;;Air;;;;;;;Falynspace;Falyn;Yes;destroyed by goblinoid forces in the First Unhuman War.;The Maelstrom's Eye, p39.;;
+Lyro;;;;;Air;;;;;;;Sword World Space;Forcelia;Yes;;;;
+Airbound;F;;;;Air;;;;;;;Formspace;Form;Yes;;;;
+Belagin;G;;;;Air;;;;;;;Gatespace;Gate;Yes;;;;
+Krensar;F;;△;;Air;;;;;;;Gatespace;Gate;Yes;Octahedron;;;
+Cloud Giant;J;;;;Air;;;;;;;Giantspace ;Giant;Yes;;;;
+Gladius Belt;;;‡;;Air;;;;;;gladitorial culture;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
+Morriah;I;;;;Air;;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
+Bretheda;G;;;;Air;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Bretheda
+Liavara;F;;;;Air;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Liavara
+Zephyr;C;400;;;Air;Golotspace Belt;;;;;;Golotspace;Golot;Yes;;;Tim Goff;http://lost.spelljammer.org/DrawingBoard/worlds/Vodoni/Golotspace/AsteroidBelt.html
+Gorth 5;E;;;;Air;;;;;;;Gorthspace;Gorth;Yes;;;Charles Taylor;
+Kal'kalo;D;;△;Hemisphere;Air;Sacafeda;;;music;;;Gossamerspace;Gossamer;Yes;;;;
+Sacafeda;H;;;;Air;;6;5;;;;Gossamerspace;Gossamer;Yes;;;;
+Edill;G;;;;Air;;;;;;;Greyspace;Grey;Yes;;;;
+Gnibile;G;;;;Air;;;;;;;Greyspace;Grey;Yes;;;;
+Umbala;C;;Ο;;Air;;;;;;;Grommspace  ;Gromm;Yes;;;;
+Zeanith;B;;❄;;Air;;;;;;;Harthspace;Harth;Yes;;;;
+Loom;G;;Ο;Ovoid;Air;;;;;;;Heartspace;Heart;Yes;;;;
+Arish;G;;◗;Disk;Air;;;;;;;Heatspace  ;Heat;Yes;;;;
+Heat;E;;‡;;Air;;;;;;;Heatspace  ;Heat;Yes;;;;
+Apoll;C;;❑;;Air;;;fire;;;;Hyrkulspace;Hyrkul;Yes;;;;
+Hephæ;D;;;;Air;;4;;hot;;;Hyrkulspace;Hyrkul;Yes;;;;
+Zeu;H;;;;Air;;13;;;;;Hyrkulspace;Hyrkul;Yes;;;;
+Springtime;G;;;;Air;;22;;;;;Imperial Space;Imperial;Yes;;;;
+The Eye of the Wyrm;G;99.200;;;Air;;;earth;;;;Ironspace;Iron;Yes;;Privateer Press;;http://privateerpress.com/iron-kingdoms
+Enutpen;F;30.775;;;Air;;9;1;Poisonous;Uninhabited;;Majspace;Maj;Yes;;;;
+Nrutas;G;74.898;;;Air;;many;many;Poisonous;Uninhabited;;Majspace;Maj;Yes;;;;
+Retipuj;G;86.881;;;Air;;many;1;Poisonous;Uninhabited;;Majspace;Maj;Yes;;;;
+Sunaru;F;31.763;;;Air;;15;1;Poisonous;Uninhabited;;Majspace;Maj;Yes;;;;
+Khoronus;G;;;;Air;;;;;;;Mystaraspace;Mystara;Yes;;;;
+Tarastiae;G;;;;Air;;;1;;;;Mystaraspace;Mystara;Yes;;;;
+The Fraze;A;;‡;;Air;;;;;;;Nalspace;Nal;Yes;;;;
+Alabeth;G;;;;Air;;;;;;;Nebulaspace;Nebula;Yes;;SJR4 p.33;;
+Gnassas;F;;;;Air;;;;;Kindori;;Nerenspace;Neren;Yes;;;;
+Phobost;C;;;;Air;;;;Frozen;;;Nexspace  ;Nex;Yes;;;;
+Plateau;E;;;;Air;;;;;;;Nivelspace;Nivel;Yes;;;;
+Hurlock;F;;❄;;Air;;;;;;;Octorspace;Octor;Yes;Nebula;;;
+Kolin;H;;;;Air;;2;;;;;Octorspace;Octor;Yes;;;;
+Gobul;;;;;Air;;;;;Dragons;;Omnispace;Omni;Yes;layered;;;
+Corrigere;E;;;;Air;;;;Toxic deeps;;;Orthospace;Ortho;Yes;;;;
+Tefir;G;;;;Air;;;fire;;;;Osraspace;Osra;Yes;;;;
+Artimis;F;;;;Air;;6;;;;;Pheolitespace;Pheolite;Yes;;;;
+The Dust Clouds;D;;;;Air;;;;;;;Ragespace  ;Rage;Yes;;;;
+Garolas;G;;;;Air;;12;;;;;Ragestarspace;Ragestar;Yes;;;;
+Gia-Uetau'auv'twg;F;;;;Air;;;Air;;Beholders;;Ragestarspace;Ragestar;Yes;;;;
+Shaseth;G;;;;Air;;11;;;;;Ragestarspace;Ragestar;Yes;;;;
+Thaskal-Ngr;G;;;;Air;;17;;;;;Ragestarspace;Ragestar;Yes;;;;
+Twins of Tempest;F;;;;Air;;;;;;Twin Gas Giants;Ragestarspace;Ragestar;Yes;;;;http://lost.spelljammer.org/DrawingBoard/worlds/TwinsOfTempest.html
+Coliar;G;;;;Air;;;;;;;Realmspace;Realm;Yes;;;;
+Knol;G;;;;Air;;;;;;;Rhymespace;Rhyme;Yes;;;;
+Saros;D;;;;Air;;1;;;;;Runedarspace;Runedar;Yes;1 fire moon;;;
+Bomryn;F;;;;Air;;1;;;;;Saruspace;Saru;Yes;sargasso, moon (Cirvir);;;
+Maranuir;F;;;;Air;;5;;Cold;;;Saruspace;Saru;Yes;;;;
+Areatia;;;;;Air;Sarûnia;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
+Phy;C;;;;Air;;;;;;;Seaspace  ;Sea;Yes;;;;
+Rhy;C;;;;Air;;;;;;;Seaspace  ;Sea;Yes;;;;
+Sky Tyrant;I;;;;Air;;;;;;;Seaspace  ;Sea;Yes;;;;
+Thy;C;;;;Air;;;;;;;Seaspace  ;Sea;Yes;;;;
+Dofloogah;;;;;Air;;2;green flame;;;;Seskotspace;Seskot;Yes;;;;
+Wirrit;B;;;;Air;;;;;;;Shadowspace;Shadow;Yes;;;;
+The Devourer;F;25.677;;;Air;;125;Thin Red;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
+The Fury;G;52.143;;;Air;;42;Thin ice;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
+The Keeper;F;26.098;;;Air;;96;;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
+The Shadow;G;94.247;;;Air;;12;;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
+Nubis;E;;;;Air;;;;;;;Skyspace  ;Sky;Yes;;SJR4 p.37;;
+Gandorine;;;;;Air;;;;;;;Solarisspace;Solaris;Yes;;;;
+Debargen;G;;;;Air;;;;;;;Splitspace part 2;Split 2;Yes;;;;
+Tixmar;G;;;;Air;;;;;;;Splitspace part 2;Split 2;Yes;;;;
+Trisgafgyit;E;;;;Air;;;;;;;Squirrnspace  ;Squirrn;Yes;;;;
+Cloak of Shrouding;I;;;Shell;Air;;;;;;;Ssuwspace;Ssuw;Yes;;;;
+Ellel;;;;;Air;;;;;;;Taur-Utu space;Taur-Utu;Yes;;;;
+Rollthunder;F;14.800;❑;;Air;;;;Hotter than Normal;;;Thunderspace;Thunder;Yes;;;;
+Enolis;H;;❄;;Air;;;;;;;Thuriaspace;Thuria;Yes;;;;
+Saurishian;F;;;;Air;;7;;;;;Timespace  ;Time;Yes;;;;
+Threnth;D;;;;Air;;;;;;;Tukonspace;Tukon;Yes;;;Charles Taylor;
+Copper Nebula;I;;;;Air;;;;;;;Tyrspace;Tyr;Yes;;;;
+Thaoul;F;;;;Air;;5;;Poisonous;;;Tyrspace;Tyr;Yes;;;;
+Lattice, Vergonspace;G;;;;Air;;;;;Humans;;Vergonspace;Vergon;Yes;;SJA4 p.52;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
+The Stormgirdle;A;;‡;;Air;;;;;;;Vodonikaspace;Vodonika;Yes;;;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
+Voskogorath;F;;△;Icosahedron;Air;;;colourful;;;;Voskospace;Vosko;Yes;;;;www.frozenstar.net/BTFS/Gazette.htm
+Ellera;;;;;Air;;;;Hot, poisonous;;;Warrenspace;Warren;Yes;;;ripvanwormer;http://www.thepiazza.org.uk/bb/viewtopic.php?p=64744&sid=186501b3ecac842060e9f04e6b6c5a83#p64744
+K'Chill;G;;;;Air;;5;;;Mutant insects;;Warrenspace;Warren;Yes;;;ripvanwormer;http://www.thepiazza.org.uk/bb/viewtopic.php?p=64744&sid=186501b3ecac842060e9f04e6b6c5a83#p64744
+Nooti;B;;‡;;Air;;;;;;;Wayspace;Way;Yes;;;;
+Oh;A;;;;Air;;;;;;;Wayspace;Way;Yes;;;;
+Web 4;G;;;;Air;;;;;;;Webspace;Web;Yes;;;;
+Aphigor;E;;;;Air;;;;;;;Wehrspace  ;Wehr;Yes;;;;
+Kasoon;E;;;;Air;;;;;;;Wehrspace  ;Wehr;Yes;Radience;;;
+Hellium;A;;;;Air;;;;;;;Wickedspace  ;Wicked;Yes;;;;
+Bescha;F;;◗;;Air;;;;;;;Windyspace;Windy;Yes;;;;
+Kinis;F;;;;Air;;;;;;;Windyspace;Windy;Yes;;;;
+Borcus;D;;❄;;Air;;1;;violent storms;;;Wyrmspace ;Wyrm;Yes;moon (Arod);;;
+Charax;;;;;Air;;;;;;;Ytherik System;Ytherik;Yes;;;;
+Huatepec;;;;;Air;;;;;;;Ytherik System;Ytherik;Yes;;;;
+Karakos;;;;;Air;;;;;;;Ytherik System;Ytherik;Yes;;;;
+Onozuki;;;;;Air;;;;;;;Ytherik System;Ytherik;Yes;;;;
+Kavur;G;;;;Air;;;;warm;Zelani;;Zalanispace;Zalani;Yes;;;;http://www.archlich.com/kotsc/Places/VodoniCluster/Zalanispace.html
+Quetze;F;;;Flexable;Air/Earth;;;;;;;Korvspace;Korv;Yes;Xenophobic Natives;;;
+Tarrak Gar;B;49;❄;Comet;Air/Fire;;;;;;;Dukagshspace;Dukagsh;Yes;;;;
+Likar;H;;;;Air/Water;;;;;;;Rhymespace;Rhyme;Yes;;;;
+Siberys Islands;A-D;;‡;;Air/Water;;;;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
+Comet ring;A-B;;‡;;Air/Water;;;;;;;Tukonspace;Tukon;Yes;;;Charles Taylor;
+Steam;C;;;;Air/Water;;;;;;;Vistaspace;Vista;Yes;;;;
+The God's Fury;H;;‡;;All;;;;;;;Jadespace ;Jade;Yes;;;;
+Locus;A;;;;Artificial;;;;;;Flying City;Archaeusspace;Archaeus;Yes;;;;
+Cyriss;F;11.150;△;;Artificial;;;;;;;Ironspace;Iron;Yes;Home of Goddess Cyriss;Privateer Press;;http://privateerpress.com/iron-kingdoms
+Arabani Citadel;A;;△;;Artificial;;;;;;;Ragespace  ;Rage;Yes;Drow base;;;
+Penumbra;K;500.000.000;◗;Disk;Artificial;;;;;;;Truespace;True;Yes;;;;
+The Grey Belt;E;;‡;;Ash;;;;;;;Wehrspace  ;Wehr;Yes;Dust belt;;;
+Great Crystaline Stratis;S;;;;Crystal;;;;;;;Bloodstarspace;Bloodstar;Yes;;;;
+The Dark Zone;F;;❄;;Darkness;;;;;;;Golotspace;Golot;Yes;;;;
 Al'malamut;E;;;;Earth;;;;Mild;;;'Malspace;'Mal;Yes;;Empire of Sand;Ville Lavonius;http://www.spelljammer.org/worlds/locs/Almalamut.html
-Ptah's Furnace;H;;△;Octahedron;Fire;;;;;;;'Malspace;'Mal;Yes;;;;
-Deshret;E;;;;Fire;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
-Marinias;G;;;;Water;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
 Moon;D;;;;Earth;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
-Orb;C;;;;Water;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
-Reign;A;;‡;;Fire;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
-Shakalee;D;;;;Live;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
-Sun, A'Lantaenspace;;;;;Fire;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
 Terrene;E;;;;Earth;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
 Volca;D;;;;Earth;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
-Adramis;E;7.800;;;Water;;;;;Aquatic;;Adramisspace;Adramis;Yes;;Beyond the Moons;Jaime Lopez;http://www.spelljammer.org/worlds/locs/Adramis/Adramis.html
-B'aslar;;;;;;;;;;;;Adramisspace;Adramis;Yes;;Beyond the Moons;Jaime Lopez;http://www.spelljammer.org/worlds/locs/Adramis/Adramis.html
 Galebdhur Belt;;;‡;;Earth;;;;;;;Adramisspace;Adramis;Yes;;Beyond the Moons;Jaime Lopez;http://www.spelljammer.org/worlds/locs/Adramis/Adramis.html
 Aenea;E;;;;Earth;;2;;;;;Aeneaspace;Aenea;Yes;;;;
-Aeneaspace Sun;H;;;;Fire;;;;;;;Aeneaspace;Aenea;Yes;;;;
 Andra's Garden;F;;;;Earth;;;1;;;;Aeneaspace;Aenea;Yes;;;;
-Gorlan;D;;;;Water;;1;;;;;Aeneaspace;Aenea;Yes;;;;
 Klask;C;;;;Earth;;;;Void;;;Aeneaspace;Aenea;Yes;;;;
 Ragnor's Chain;C;;‡;;Earth;;;;;;;Aeneaspace;Aenea;Yes;;;;
 T'Meshna;D;;;;Earth;;1;;;;;Aeneaspace;Aenea;Yes;;;;
 Terris' Belt;A;;‡;;Earth;;;;;;;Aeneaspace;Aenea;Yes;;;;
-Typhis' Playground;D;;;;Air;;;;;;;Aeneaspace;Aenea;Yes;;;;
 Darkness;A;;‡;;Earth;;;;;;;Agraspace;Agra;Yes;;;;
 Gortharin;F;;;;Earth;;3;;;;;Agraspace;Agra;Yes;3 moons (Aradea, Clangeddin's Might, Depths);;;
 Graedor;C;;;;Earth;;1;;;;;Agraspace;Agra;Yes;moon (Bill);;;
-Hearth;C;;;;Fire;;;;;;;Agraspace;Agra;Yes;;;;
 Manalith;C;;◗;Triangle;Earth;;1;;;;;Agraspace;Agra;Yes;moon (Ash);;;
 Mithore;A;;‡;;Earth;;;;;;;Agraspace;Agra;Yes;;;;
 Moleshome;A;;‡;;Earth;;;;;;;Agraspace;Agra;Yes;;;;
 Scorch;B;;;;Earth;;;;;;;Agraspace;Agra;Yes;;;;
-Scorch;F;;;;Fire;;;;;;;Agraspace;Agra;Yes;;;;
 Scorch;A;;;;Earth;;;;;;;Agraspace;Agra;Yes;;;;
 Sparklebelt;A;;‡;;Earth;;;;;;;Agraspace;Agra;Yes;;;;
-Stout;H;;;;Water;;2;;;;;Agraspace;Agra;Yes;2 moons (Mouse, Blazer);;;
 Vergadain's Road;A;;‡;;Earth;;;;;;;Agraspace;Agra;Yes;;;;
-Agurlis;;;‡;;Water;;;;;;;Alanthusspace;Alanthus;Yes;;;Susan Brown;
-Egent;;;;;Air;;;;;Uninhabited?;;Alanthusspace;Alanthus;Yes;;;Susan Brown;
 Europa;;;◗;;Earth;;;;;;;Alanthusspace;Alanthus;Yes;;;Susan Brown;
 Finmar;;;;;Earth;;;;Arctic;;;Alanthusspace;Alanthus;Yes;;;Susan Brown;
 Shadow;;;;;Earth;;;;;;;Alanthusspace;Alanthus;Yes;;;Susan Brown;
-Sun, Alanthusspace;;;;;Fire;;;;;;;Alanthusspace;Alanthus;Yes;;;Susan Brown;
 Alava;I;;◗;;Earth;;;;;;;Alavaspace;Alava;Yes;;;;
-Sun, Alavaspace;;;;;Fire;;;;;;;Alavaspace;Alava;Yes;;;;
-Amar-E;J;;◗;Disk;Fire;;;;;;;Algolspace;Algol;Yes;Mirror/Sun;;;
 Henkuo;E;;;;Earth;;;;;;;Algolspace;Algol;Yes;;;;
-Jigoku;E;;;;Lava;;;;;;;Algolspace;Algol;Yes;;;;
-Tengkuo;E;;;;Air;;;;;;;Algolspace;Algol;Yes;;;;
-Terukuo;E;;;;Ice;;;;;;;Algolspace;Algol;Yes;;;;
 Asahi;D;;;;Earth;;;;;;;Ametsuchispace;Ametsuchi;Yes;;;;
-Bhoomi;E;;◗;Disk;Live;;;;;;;Ametsuchispace;Ametsuchi;Yes;;;;
-Chisama;I;;;;Fire;;;;;;;Ametsuchispace;Ametsuchi;Yes;;;;
-Kanshou Belt;A;;‡;;Metal;;;;;;;Ametsuchispace;Ametsuchi;Yes;;;;
-Rani;G;;❄;;Air;;;;;;;Ametsuchispace;Ametsuchi;Yes;;;;
-Srivijaya;J;;;;Water;;;;;;;Ametsuchispace;Ametsuchi;Yes;;;;
 Zhongguó;F;;❑;;Earth;;;;;;;Ametsuchispace;Ametsuchi;Yes;;;;
 Anki 1;;;◗;Disk;Earth;;;earth;;;;Ankispace;Anki;Yes;;;;
 Anki 2;;;;;Earth;;;;;;;Ankispace;Anki;Yes;;;;
 Anki 3;;;❑;;Earth;;;;;;;Ankispace;Anki;Yes;;;;
-Anki 6;G;;;;Air;;;;;;;Ankispace;Anki;Yes;;;;
-Anki 7;G;;;;Air;;;;;;;Ankispace;Anki;Yes;;;;
-Kigal;;;;;;;;;;;;Ankispace;Anki;Yes;;;;
 Kigal;E;;;;Earth;;1;;;;;Ankispace;Anki;Yes;;;;
-Nanna/Sin;;;;;;Kigal;;;;;;Ankispace;Anki;Yes;;;;
-The Corkscrew;D;;‡;;Water;;4;;;;;Ankispace;Anki;Yes;;;;
-Eternal 1;D;;;;Fire;;;;;;;Aquaspace;Aqua;Yes;;;;
-Eternal 2;D;;;;Fire;;;;;;;Aquaspace;Aqua;Yes;;;;
-Samhdi;E;;;;Air;;;;;;;Aquaspace;Aqua;Yes;;;;
-Shejkano;C;;;Shell;Live;;;;;;;Aquaspace;Aqua;Yes;;;;
-The Great Reef;Sp;;‡;;Live;;;;;;;Aquaspace;Aqua;Yes;Ringworld (E - H thick);;;
-Warldus;E;;;;Live;;;;;;;Aquaspace;Aqua;Yes;;;;
-Whirlpool;F;;;;Special;;;;;;;Aquaspace;Aqua;Yes;Black hole;;;
 Archaeus;F;;;;Earth;;7;;;;;Archaeusspace;Archaeus;Yes;;;;
 Ardan;C;;;;Earth;;;;;;Purple;Archaeusspace;Archaeus;Yes;;;;
 Drome;C;;;;Earth;;;;;;Amber;Archaeusspace;Archaeus;Yes;;;;
-Greater Sun;I;;;;Fire;Sun Centre;;;;;;Archaeusspace;Archaeus;Yes;Red;;;
-Jhang;C;;;;Fire;;;;;;Crimson;Archaeusspace;Archaeus;Yes;;;;
-Læolis;C;;;;Water;;;;;;Blue;Archaeusspace;Archaeus;Yes;;;;
-Lesser Sun;G;;;;Fire;Sun Centre;;;;;;Archaeusspace;Archaeus;Yes;Yellow;;;
-Locus;A;;;;Artificial;;;;;;Flying City;Archaeusspace;Archaeus;Yes;;;;
-Phandir;C;;;;Live;;;;;;Green;Archaeusspace;Archaeus;Yes;;;;
-Sun Centre;N/A;;;;N/A;;2;;;;;Archaeusspace;Archaeus;Yes;;;;
 Talisandre;C;;;;Earth;;;;;;Silver;Archaeusspace;Archaeus;Yes;;;;
 Zar;C;;;;Earth;;;;;;Dark/Black;Archaeusspace;Archaeus;Yes;;;;
 Arkaela;C;;;;Earth;;1;;;;;Arkaelaspace;Arkaela;Yes;moon (Azeret);;;
 Arobarelless;D;;;;Earth;;;;;;;Arkaelaspace;Arkaela;Yes;;;;
-Bleem;S;;?;;Special;;;;;;;Arkaelaspace;Arkaela;Yes;;;;
 Gozan;F;;;;Earth;;2;;;;;Arkaelaspace;Arkaela;Yes;2 moons (Farren, Borlatas);;;
-The Sun, Arkaelaspace;G;;;;Fire;;4;;;;;Arkaelaspace;Arkaela;Yes;;;;
 Arth;E;7.891;;;Earth;;1;;;;;Arthspace;Arth;Yes;;;;
 Athspace Asteroid Belt;A-C;;‡;;Earth;;;;;;;Arthspace;Arth;Yes;;;;
-Awan;G;88.856;;;Air;;4;;;;;Arthspace;Arth;Yes;;;;
 Fynn;B;14;;;Earth;Xula;;;;;;Arthspace;Arth;Yes;;;;
 Khumrar;D;3.033;;;Earth;;;;;;;Arthspace;Arth;Yes;;;;
-Oloro;F;31.690;;;Air;;5;;;;;Arthspace;Arth;Yes;;;;
-The Sun, Arthspace;H;870.106;;;Fire;;;;;;;Arthspace;Arth;Yes;;;;
 Velvun;E;7.519;;;Earth;;;;;;;Arthspace;Arth;Yes;;;;
 Xiva;A;8;;;Earth;Xula;;;;;;Arthspace;Arth;Yes;;;;
-Xplanet7;G;74.875;;;Air;;7;ice;;;;Arthspace;Arth;Yes;;;;
-Xplanet9;F;30.758;;;Water;;10;;;;;Arthspace;Arth;Yes;;;;
 Xula;E;4.225;;;Earth;;2;;;;;Arthspace;Arth;Yes;;;;
 Armat;E;;;;Earth;;;;Volcanic;;;Artonspace;Arton;Yes;;;;
 Blanash;H;;;;Earth;;;;;;;Artonspace;Arton;Yes;;;;
 Fisk;F;;◗;;Earth;;;;;;;Artonspace;Arton;Yes;;;;
-Sol, Artonspace;G;;◗;Square;Fire;;;;;;;Artonspace;Arton;Yes;;;;
-Sun, Artonspace;G;;;;Fire;;;;;;;Artonspace;Arton;Yes;;;;
 Teuton;A;;‡;;Earth;;;;;;;Artonspace;Arton;Yes;;;;
-Sun, Ashspace;;;;;Fire;;;;;;;Ashspace;Ash;Yes;;;;
-Astra;C;150;;;Portal;;;;;Rastipedes, Formians;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
-Athtin;D;1.450;◗;Disc;Air;Poltina;;;hot;;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
-Chenia;F;19.200;◗;Hexagon;Fire;;;;;;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
 Cube 572;C;800;❑;;Earth;;;Dust & rocks;;Bladelings, Spikers, Warforged;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
 Essenust;C;320;;;Earth;Poltina;;;;;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
 Gib Enost;C;130-350;;;Earth;Poltina;;;;Neraphs;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
 Jurgarten;F;22.300;;;Earth;;;;;;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
 New Baator;D;2.812;;;Earth;;;;;Humans, Devils;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
-Nyseme;G;73.600;❑;;Air;;;;;Humans, Gnomes, Kenkus;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
-Poltina;F;30.400;;;Water;;3;;;;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
 The Rimfelsir Belt;C;;‡;;Earth;;;;;Centaurs, Satyrs;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
 Tonzura;D;;;;Earth;;;;;;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
-Atrida;G;;;;Fire;;;;;;;Atridaspace;Atrida;Yes;;;;
-Avernus;E;;;;Lava;;;;;;;Atridaspace;Atrida;Yes;;;;
 Blazolg;C;;;;Earth;;;;Sulphuros hellworld;;;Atridaspace;Atrida;Yes;;;;
 Chor;D;;;;Earth;;;;;;;Atridaspace;Atrida;Yes;Dead;;;
-Fasdoi;D;;;;Ice;;;;;;;Atridaspace;Atrida;Yes;;;;
-Loksdu;D;;;;Ice;;;;;;;Atridaspace;Atrida;Yes;;;;
-Surg;J;;;;Air;;;;;;;Atridaspace;Atrida;Yes;arctic dinosaus & Xorn-like;;;
-Virgo;D;;;;Water;;;;;;;Atridaspace;Atrida;Yes;Erratic, Myth Gaelen?;;;
 Werrul;E;;;;Earth;;;;;;;Atridaspace;Atrida;Yes;Atridæ homeworld?;;;
 Avidarel Core;A;;;Elongated Dodecahedron;Earth;;;;;;;Avidarelspace;Avidarel;Yes;;Beyond Countless Doorways;Malhavok;http://www.montecook.com
 Avidarel Dust Belt;;;‡;;Earth;;;;;;;Avidarelspace;Avidarel;Yes;;;;
-Avidarel Mist Belt;;;‡;;Air;;;;;;;Avidarelspace;Avidarel;Yes;;;;
 Avidarel Splinters;I;;;;Earth;;;;;;;Avidarelspace;Avidarel;Yes;;;;
-Bandor Cluster;;;;;;;;;;;;Bandorspace;Bandor;Yes;;;;
-Banesun;H;;;;Fire;;;;;;;Banesun;Banesun;Yes;;;;
-Bestial;B;;;;Live;;;;;Elves;;Banesun;Banesun;Yes;;;;
-Brightflame;D;;;;Fire;;2;;;;;Banesun;Banesun;Yes;Artificial;;;
-Darkstar;C;;❄;;Fire;;;;;Lakshu;;Banesun;Banesun;Yes;;;;
-Dustbite;F;;;;Air;;4;;;;;Banesun;Banesun;Yes;;;;
 Four Point;E;;;;Earth;;;;;Undead;;Banesun;Banesun;Yes;;;;
 Frost;D;;;;Earth;;1;;;;;Banesun;Banesun;Yes;moon (Retribution - Scro base);;;
 Gith's Fury;B;;‡;;Earth;;;;;;;Banesun;Banesun;Yes;;;;
-Hp'Xyn;G;;;;Air;;6;2;;;;Banesun;Banesun;Yes;Water core;;;
 Nightshade;A;;;;Earth;;;;;Drow, duergar;;Banesun;Banesun;Yes;;;;
 S'hilk;E;;;;Earth;;5;;;Illithids;;Banesun;Banesun;Yes;;;;
-Shazzel;D;;;;Water;;;;;Lizard-men;;Banesun;Banesun;Yes;;;;
-The Fringe;A;;‡;;Water;;;;Icy;;;Banesun;Banesun;Yes;;;;
-The Fringe;;;;;;;;;;;;Banesun;Banesun;Yes;;;;
 The Gauntlet;A;;‡;;Earth;;;;;;;Banesun;Banesun;Yes;;;;
 Thrikos;E;;;;Earth;;1;;;;;Banesun;Banesun;Yes;moon (Dargonclaw);;;
-Beltoun/Marth;D;;;;Live/Water;;;;;;;Beltoun;Beltoun;Yes;;;;
-Gordu;G;;;;Fire;;;;;;;Beltoun;Beltoun;Yes;;;;
-Karanst;F;;Ο;;Air;;;;;;;Beltoun;Beltoun;Yes;;;;
-Sapalash;C;;;;Water;;;;;;;Beltoun;Beltoun;Yes;;;;
-Talf;J;;;;Air;;;;;;;Beltoun;Beltoun;Yes;;;;
-Xafibel;J;;❄;;Air;;;;;;;Beltoun;Beltoun;Yes;;;;
-Dayface;J;;;;Fire/Shadow;;;;;;;Beyondspace;Beyond;Yes;Dumbell;;;
-Dwirm;G;;;;Water;;;;;;;Beyondspace;Beyond;Yes;;;;
-Ethithol;F;;;;Fire;;;;;;;Beyondspace;Beyond;Yes;Tetrahedron, artifact?;;;
-Garstand;E;;;;Smoke;;;;;;;Beyondspace;Beyond;Yes;wrecked;;;
-Gundred;D;;;;Steam;;;;;;;Beyondspace;Beyond;Yes;Wrecked;;;
 Nimroth;D;;;;Earth;;;;;;;Beyondspace;Beyond;Yes;;;;
-Slane;G;;;;Lava;;;;;;;Beyondspace;Beyond;Yes;Teardrop;;;
 Æbrynis;E;;;;Earth;;1;;;;;Bloodspace;Blood;Yes;Birthright setting;Birthright;;
-Avani;H;;;;Fire;;;;;;;Bloodspace;Blood;Yes;;;;
-Calisto;F;;;;Air;;5;;;;;Bloodspace;Blood;Yes;;;;
-Harth, Bloodspace;G;;;;Water;;;;Icy;;;Bloodspace;Blood;Yes;;;;
 Kurmath;D;;;;Earth;;;;;;;Bloodspace;Blood;Yes;;;;
-Laerme;G;;;;Air;;4;;;;;Bloodspace;Blood;Yes;;;;
 Rosstien;D;;;;Earth;;2;;;;;Bloodspace;Blood;Yes;;;;
 Rournil;;;;;Earth;Æbrynis;N/A;;;;;Bloodspace;Blood;Yes;;;;
 Waypoint;D;;;;Earth;;;;;;;Bloodspace;Blood;Yes;;Into the Void p.186;TSR;None
@@ -183,14 +241,8 @@ Bloodstar Outpost 6;A;;◗;;Earth;;;;;;;Bloodstarspace;Bloodstar;Yes;;;;
 Bloodstar Outpost 7;A;;◗;;Earth;;;;;;;Bloodstarspace;Bloodstar;Yes;;;;
 Bloodstar Outpost 8;A;;◗;;Earth;;;;;;;Bloodstarspace;Bloodstar;Yes;;;;
 Bloodstar Outpost 9;A;;◗;;Earth;;;;;;;Bloodstarspace;Bloodstar;Yes;;;;
-Great Crystaline Stratis;S;;;;Crystal;;;;;;;Bloodstarspace;Bloodstar;Yes;;;;
 The Center;A;;◗;;Earth;;;;;;;Bloodstarspace;Bloodstar;Yes;;;;
-World Tree;;;;;Live;;;;;;;Bugspace;Bug;Yes;Fills Sphere;;;
 Calatain;E;;;;Earth;;;;;;;Calatainspace;Calatain;Yes;;;;
-Crusher;G;;;;Fire;;;;;;;Calatainspace;Calatain;Yes;;;;
-Ruby;H;;;;Fire;;;;;;;Calatainspace;Calatain;Yes;;;;
-“Sun”, Casaspace;C;;;;Fire;;;;;;;Casaspace;Casa;Yes;;;;
-Barbuda;C;;;;Water;;;;;;;Casaspace;Casa;Yes;;SJR4 p.30;;
 Barre Sinister;A;;;;Earth;;;;;;;Casaspace;Casa;Yes;;SJA2 p.60;;
 Diamondhammer's Stake;A;;;;Earth;;;;;;;Casaspace;Casa;Yes;;;;
 Flicker;A;;;;Earth;;;;;;;Casaspace;Casa;Yes;;;;
@@ -204,111 +256,53 @@ Scavverbone;A;;;Knife;Earth;;;;;;;Casaspace;Casa;Yes;;;;
 Shipwrecker;B;;;;Earth;;;;;;;Casaspace;Casa;Yes;;Role Aids #712;;
 Spiral;C;;;;Earth;;;;;;;Casaspace;Casa;Yes;;;;
 Unipaxala;A;;;;Earth;;;;;;;Casaspace;Casa;Yes;The Peace Asteroid (from Comic);;;
-Brek|qq|zz;A;;◗;;Earth;;;;;;;Preyspace  ;Prey;Yes;;;;
-Abrek;;;;;Water;Hechir;;;;;;Celenaresspace;Celenares;Yes;;;;
-Bisreai;;;;;Fire;;;;;;;Celenaresspace;Celenares;Yes;;;;
-Cambomc;;;;;;Locni;;;;;;Celenaresspace;Celenares;Yes;;;;
-Dra Eeh;;;;;;Ecurb;;;;;;Celenaresspace;Celenares;Yes;;;;
 Ecurb;D;;;;Earth;;1;;;;;Celenaresspace;Celenares;Yes;;;;
 Ecurb;;;;;Earth;;1;;;Dwarves, Elves;;Celenaresspace;Celenares;Yes;moon (Dra Eeh);;;
-Hechaeb;;;;;;Mitt;;;;;;Celenaresspace;Celenares;Yes;;;;
-Hechir;;;;;Water;;1;;;;;Celenaresspace;Celenares;Yes;moon (Abrek);;;
-Hechir;;;;;Water;;1;;;;;Celenaresspace;Celenares;Yes;;;;
-Kipsnei;;;;;;Nodge;;;;;;Celenaresspace;Celenares;Yes;;;;
 Libb;F;;;;Earth;;1;;;;;Celenaresspace;Celenares;Yes;;;;
 Libb;;;;;Earth;;1;;;Humans, Elves;;Celenaresspace;Celenares;Yes;moon (Nocseren);;;
 Locni;E;;;;Earth;;1;;;;;Celenaresspace;Celenares;Yes;;;;
-Locni;;;;;Live;;1;;;Elves;;Celenaresspace;Celenares;Yes;moon (Cambomc);;;
 Mitt;;;;;Earth;;1;;;;;Celenaresspace;Celenares;Yes;moon (Hechaeb);;;
 Mitt;;;;;Earth;;1;;;;;Celenaresspace;Celenares;Yes;;;;
-Nocseren;;;;;;Libb;;;;;;Celenaresspace;Celenares;Yes;;;;
 Nodge;C;;;;Earth;;1;;;;;Celenaresspace;Celenares;Yes;;;;
 Nodge;;;;;Earth;;1;;;;;Celenaresspace;Celenares;Yes;moon (Kipsnei);;;
 Asifor;E;;;;Earth;;;;;;;Ceyparisphere;Ceypari;Yes;;;;
 Boja;;;;;Earth;;;;;;;Ceyparisphere;Ceypari;Yes;;;;
-Burning Crown;;;‡;Ring;Fire;;;;;;;Ceyparisphere;Ceypari;Yes;;;;
 Ceyparis;;;;;Earth;;;;;;;Ceyparisphere;Ceypari;Yes;Dense metal;;;
-Hulior;G;;;;Air;;3;;;;;Ceyparisphere;Ceypari;Yes;;;;
-Wind Shell;;;;Shell;Air;;;;;;;Ceyparisphere;Ceypari;Yes;;;;
-Aphrodite;G;;;;Air;;5;1;;;;CharSpace  ;Char;Yes;;;;
-Apollo;F;;;;Air;;3;;;;;CharSpace  ;Char;Yes;;;;
 Ares;D;;;;Earth;;;;desert;;;CharSpace  ;Char;Yes;;;;
 Charion;E;;;;Earth;;3;;;;;CharSpace  ;Char;Yes;3 moons (Hermes/Nike, Hecate, Hera);;;
 CharSpace Belt;B;;‡;;Earth;;;;;;;CharSpace  ;Char;Yes;100m thick;;;
-Hades;F;;;;Water;;;;Icy;;;CharSpace  ;Char;Yes;gate to hades;;;
-Sol, CharSpace;H;;;;Fire;;;;;;;CharSpace  ;Char;Yes;;;;
-Zeus;G;;;;Air;;6;;;;;CharSpace  ;Char;Yes;;;;
-Eye of Law, Chargespace;F;;Ο;;Water;;;;;;;Chargespace;Charge;Yes;;;;
-Justice;D;;;;Water;;;;;;;Chargespace;Charge;Yes;;;;
 Scales;B;;;;Earth;;;;;;;Chargespace;Charge;Yes;Pyramidal;;;
-Source;G;;;;Fire;;;;;;;Chargespace;Charge;Yes;;;;
 The Boundry;A;;;;Earth;;;;;;;Chargespace;Charge;Yes;;;;
 Dom;A;;;;Earth;;;;;;;Charmspace  ;Charm;Yes;;;;
 Enchantress;D;;;;Earth;;;;;;;Charmspace  ;Charm;Yes;;;;
 Neo Dom;C;;;;Earth;;;;;;;Charmspace  ;Charm;Yes;;;;
-Sun, Charmspace;G;;;;Fire;;;;;;;Charmspace  ;Charm;Yes;;;;
 Chik-Tani;F;;Ο;;Earth;;;;;Insectoids;;Chitinspace;Chitin;Yes;;;;
-Choja-Ruk;F;;Ο;Oblate;Water;;;;;Crustacians;;Chitinspace;Chitin;Yes;;;;
-Insect's Eyes;G;;;Insect Eyes;Fire;;;;;;;Chitinspace;Chitin;Yes;;;;
 Keddak-Ti;G;;◗;;Earth;;;;;Thri-Kreen, K'r'rrr;;Chitinspace;Chitin;Yes;;;;
 Rakak-Ord;G;;◗;;Earth;;;;;Thri-Kreen;;Chitinspace;Chitin;Yes;;;;
 Ryttos;G;;△;Bowl;Earth;;;;;K'r'rrr;;Chitinspace;Chitin;Yes;;;;
 Taithek;G;;△;Bowl;Earth;;;;;;;Chitinspace;Chitin;Yes;;;;
-Bialtur;I;;;;Air;;;;;;;Chromaspace;Chroma;Yes;;;;
 Nyvisien;E;;;;Earth;;;;;;;Chromaspace;Chroma;Yes;;;;
-Rothir;D;;;;Fire;;;;;;;Chromaspace;Chroma;Yes;Red;;;
-Samaldia;D;;‡;;Water;;;;;;;Chromaspace;Chroma;Yes;;;;
 Therosien;E;;;;Earth;;;;;;;Chromaspace;Chroma;Yes;;;;
-Ulzir;D;;;;Fire;;;;;;;Chromaspace;Chroma;Yes;Blue;;;
-Vandir;D;;;;Fire;;;;;;;Chromaspace;Chroma;Yes;Green;;;
 Yertasien;E;;;;Earth;;;;;;;Chromaspace;Chroma;Yes;;;;
-Aquilus;G;;;;Water;;;;;;;Chronosspace ;Chronos;Yes;;;;
-Chronos;;;;;Air;;;;;;;Chronosspace ;Chronos;Yes;magocracy;;;
-Eros;;;;;Air;;;;;;;Chronosspace ;Chronos;Yes;;;;
-Pyrus;H;;;;Fire;;;;;;;Chronosspace ;Chronos;Yes;"""Sun""";;;
-Clay;;;;;;;;;;;;Clayspace ;Clay;Yes;;;;
-Sun, Clayspace;;;;;Fire;;;;;;;Clayspace ;Clay;Yes;;;;
-Eye of Law;D;;;;Fire;;;;;;;Cloakspace  ;Cloak;Yes;;;;
 Haven;A;;;;Earth;;;;;;;Cloakspace  ;Cloak;Yes;;;;
-Hidden One;J;;;;Water;;;;;;;Cloakspace  ;Cloak;Yes;;;;
 Dust Belt;A;;‡;;Earth;;;;;;;Cloudspace;Cloud;Yes;100m thick;;;
-Rainbow;G;;;;Air;;3;;foul atmosphere;;;Cloudspace;Cloud;Yes;3 moons (Athanor, Paradise, Snowflake);;;
-Sun, Cloudspace;H;;;;Fire;;;;;Uninhabited;;Cloudspace;Cloud;Yes;;;;
 Talerra;E;;;;Earth;;1;;;;;Cloudspace;Cloud;Yes;;;;
-Denaeb;;;;;;;;;;;;Clusterspace;Cluster;Yes;;;;
-Firefall;;;;;Fire;;;;;;;Clusterspace;Cluster;Yes;;;;
-Islands of the Sun;;;‡;;;;;;;;;Clusterspace;Cluster;Yes;;;;
-The Fringe;A;;‡;;Water;;;;Icy;;;Clusterspace;Cluster;Yes;;;;
-The Fringe;;;;;;;;;;;;Clusterspace;Cluster;Yes;;;;
-Sun, Coldspace;G;;;;Fire;;;;;;Dim;Coldspace;Cold;Yes;;;;
 Bodi;D;;;;Earth;;;;;;;Colorspace  ;Color;Yes;;SJR4 p.16;;
 Gongleti;G;;;;Earth;;;;;;;Colorspace  ;Color;Yes;;;;
-Oogli;E;;;;Fire;;;;;;;Colorspace  ;Color;Yes;;;;
 Cessation;A;;;;Earth;;;;;;;Countspace  ;Count;Yes;;;;
-Chronicle;G;;;;Water;;;;;;;Countspace  ;Count;Yes;;;;
-Cycle;D;;;;Water;;;;;;;Countspace  ;Count;Yes;;;;
 Epilogue;B;;;;Earth;;;;;;;Countspace  ;Count;Yes;;;;
 Generation;C;;;;Earth;;;;;;;Countspace  ;Count;Yes;;;;
-Sequel;I;;;;Air;;;;;;;Countspace  ;Count;Yes;;;;
-Series;F;;;;Air;;;;;;;Countspace  ;Count;Yes;;;;
 Sextant;E;;;;Earth;;;;;;;Countspace  ;Count;Yes;;;;
-Sun, Countspace;J;;;;Fire;;;;;;;Countspace  ;Count;Yes;;;;
 Trilogy;H;;;;Earth;;;;;;;Countspace  ;Count;Yes;;;;
 Cyndet;;;;;Earth;;;;;;;Crackedspace;Cracked;Yes;;;;
-Igniter;;;;;;;;;;;;Crackedspace;Cracked;Yes;;;;
-Searral;;;;;Water;;;;;;;Crackedspace;Cracked;Yes;;;;
 The Spindle;;;△;;Earth;;;;;;;Crackedspace;Cracked;Yes;;;;
-Athor;E;;❑;;Water;;;;;Athoras;;Cradlespace;Cradle;Yes;;;;
-Berga;E;;;;Live;;;;;Berganies;;Cradlespace;Cradle;Yes;;;;
 Casarom;F;;‡;Ring;Earth;;;;;Casarins;;Cradlespace;Cradle;Yes;;;;
 Hunysar;D;;;Spheroid;Earth;;;;;;;Cradlespace;Cradle;Yes;;;;
 Izambe;F;;◗;Disc;Earth;;;;;Izams;;Cradlespace;Cradle;Yes;;;;
 Jeiba;E;;△;Star;Earth;;;;;Jeibans;;Cradlespace;Cradle;Yes;;;;
 Kokor;E;;△;Cylinder;Earth;;;;;K'karos;;Cradlespace;Cradle;Yes;;;;
 Lon-Parr;E;;;;Earth;;;;;Parr-lons;;Cradlespace;Cradle;Yes;;;;
-Lorond;E;;;;Water;;;;;Lorondin;;Cradlespace;Cradle;Yes;;;;
 Madar;D;;;;Earth;;;;;Madarins;;Cradlespace;Cradle;Yes;;;;
-Meyassidh;H;;;Tentacled Sphere;Fire;;;;;;;Cradlespace;Cradle;Yes;;;;
 Munnac;D;;;;Earth;;;;;Uninhabited;;Cradlespace;Cradle;Yes;;;;
 Nahed;D;;△;Bowl;Earth;;;;;Nahedils;;Cradlespace;Cradle;Yes;;;;
 Olotrima;E;;△;Jack;Earth;;;;;Olotris;;Cradlespace;Cradle;Yes;;;;
@@ -319,248 +313,108 @@ Voska;D;;Ο;;Earth;;;;Cold;Muvosks;;Cradlespace;Cradle;Yes;;;;
 Wachimar;E;;◗;Rectangular;Earth;;;;;Wachimons;;Cradlespace;Cradle;Yes;;;;
 Yano;D;;Ο;Oblate;Earth;;;;;Yanokais;;Cradlespace;Cradle;Yes;;;;
 Athas;E;;;;Earth;;;;;;;Crimson Sphere;Crimson;Yes;Dark Sun campaign world;;;
-Black Gulf;S;;?;;Special;;;;;;;Crimson Sphere;Crimson;Yes;;;;
 Cinder;C;;;;Earth;;;;;;;Crimson Sphere;Crimson;Yes;;;;
-Dark Sun;I;;;;Fire;;;;;;;Crimson Sphere;Crimson;Yes;;;;
 K'ydon;C;;;;Earth;;;;;;;Crimson Sphere;Crimson;Yes;;;;
 Naftun;E;;;;Earth;The Shadow;;;;;;Crimson Sphere;Crimson;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
-Rajaat;F;;;;Air;;3;;;;;Crimson Sphere;Crimson;Yes;;;;
 The Sextant;A/B;;‡;;Earth;;;;;;;Crimson Sphere;Crimson;Yes;;;;
-Articka;I;;;;Water;;;;frozen surface;;;Cryospace;Cryo;Yes;;;;
-Lumus;F;;;;Fire;;;;;;;Cryospace;Cryo;Yes;;;;
 Crystal Shell;S;;;Lines shell;Earth;;;;;;;Crystalspace;Crystal;Yes;;;;
-Crystalspace Sun;I;;;;Fire;;;;;;;Crystalspace;Crystal;Yes;;;;
-Bright Rocks;J;;‡;;Ice;;;;;;;Cubespace;Cube;Yes;;;;
 Brock;C;;;;Earth;;;;;;;Cubespace;Cube;Yes;;;;
-Cubestar;G;;❑;;Fire;;;;;;;Cubespace;Cube;Yes;;;;
 Diamond Rock;B;;△;Pyramid;Earth;;;;;;;Cubespace;Cube;Yes;crystalline;;;
 Kyral;G;;;;Earth;;1;;;;;Cy'Prenspace;Cy'Pren;Yes;moon (Missos);;;
-Suryn;H;;;;Fire;;;;;;;Cy'Prenspace;Cy'Pren;Yes;;;;
-Tayorala;J;;❄;;Air;;;;;;;Cy'Prenspace;Cy'Pren;Yes;;;;
 Vistrilon;G;;;;Earth;;1;;;;;Cy'Prenspace;Cy'Pren;Yes;moon (Rivsha);;;
 Forbidden Reach;A;;;;Earth;;;;;;;Darkspace;Dark;Yes;;;;
-Hope;H;;;;Fire;;;;;;;Darkspace;Dark;Yes;;;;
 New Thesalys;A;;;;Earth;;;;;;;Darkspace;Dark;Yes;;;;
 The Breach;A;;;;Earth;;;;;;;Darkspace;Dark;Yes;;;;
 Verin;;;;;Earth;;;;;;;Darkspace;Dark;Yes;;;;
-Darnan;I;;;;Fire;;;;;;;Darnannonspace;Darnannon;Yes;;;;
 Darnannon;E;;;;Earth;;;;;;;Darnannonspace;Darnannon;Yes;;;;
 Dolbuth;D;;;;Earth;;;;;;;Darnannonspace;Darnannon;Yes;;;;
 Kar Loch;F;;;Shell;Earth;;;;;;;Darnannonspace;Darnannon;Yes;asteroid shell;;;
 Orthean;A;;;Shell;Earth;;;;;;;Darnannonspace;Darnannon;Yes;Asteroid shell;;;
 Sha Loch;F;;;;Earth;;;;frozen;;;Darnannonspace;Darnannon;Yes;;;;
-Gemstone;;;;;;;;;;;;Diamondspace;Diamond;Yes;;;;
 Cliff;B;;△;Wedge;Earth;;;;;;;Dirkspace  ;Dirk;Yes;;;;
 Dagger;C;;◗;;Earth;;;;;;;Dirkspace  ;Dirk;Yes;;;;
 Dirk;C;;◗;;Earth;;;;;;;Dirkspace  ;Dirk;Yes;;;;
-Fireforge;G;;;;Fire;;;;;;;Dirkspace  ;Dirk;Yes;;;;
 Knife;B;;◗;;Earth;;;;;;;Dirkspace  ;Dirk;Yes;;;;
 Whetstone;E;;◗;;Earth;;;;;;;Dirkspace  ;Dirk;Yes;;;;
-Adonia;E;;;;Live;;;;;;;Dragonspace;Dragon;Yes;;;;
-Ardath;;;;;;Draconia;;;;;;Dragonspace;Dragon;Yes;;;;
-Aurel;J;;△;Star;Fire;;;;;;;Dragonspace;Dragon;Yes;Gate to elemental plane of fire;;;
-Azuria;E;;;;Water;;;;;;;Dragonspace;Dragon;Yes;;;;
-Ballock;E;;;;Fire;;;;;;;Dragonspace;Dragon;Yes;Irregular orbit;;;
 Draconia;G;;;;Earth;;3;;;Allyri;;Dragonspace;Dragon;Yes;;;;
-Permafrost;E;;◗;;Water;;;;Iceworld;;;Dragonspace;Dragon;Yes;;;;
 Sunmask;C;;❑;;Earth;;;;;;;Dragonspace;Dragon;Yes;;;;
 The Rocks;A&B;;‡;;Earth;;;;Thin atmosphere;;;Dragonspace;Dragon;Yes;;;;
-Valdemar;;;;;;Draconia;;;;;;Dragonspace;Dragon;Yes;;;;
-Warlock;;;;;;Draconia;;;;;;Dragonspace;Dragon;Yes;;;;
 Abhorrenon;H;479.000;;;Earth;;1;;;Illithids, slaves;;Dreadmindspace;Dreadmind;Yes;;;;
-Angstar;H;997.000;;;Fire;;;;Cool, Dim;Efreet;;Dreadmindspace;Dreadmind;Yes;;;;
-Aversia;H;648.000;;;Air;;;fire;;;;Dreadmindspace;Dreadmind;Yes;;;;
-Dismaia;C;540;❄;;Water;;1;;;;;Dreadmindspace;Dreadmind;Yes;;;;
-Dreadstar;E;9.826;❑;;Fire;;;;Cool, Dim;;;Dreadmindspace;Dreadmind;Yes;;;;
-Fearon;J;20.300.000;❑;;Fire;;;fire;Dim;;;Dreadmindspace;Dreadmind;Yes;;;;
 Phobios;G;41.000;◗;;Earth;;1;;;Illithids, slaves;;Dreadmindspace;Dreadmind;Yes;;;;
-Qualmind;F;14.900;‡;;Water;;;;Colder than normal;;;Dreadmindspace;Dreadmind;Yes;;;;
-Revulas;D;1.281;◗;;Air;;;;;;;Dreadmindspace;Dreadmind;Yes;;;;
 Bahgtru's Teeth;A;3;‡;;Earth;;;;;;;Dukagshspace;Dukagsh;Yes;;;;
-Dukagsh;G;45.250;;;Live;;;;;Scro;;Dukagshspace;Dukagsh;Yes;;Dragon Annual #1;;
-Gruumsh's Eye;J;68.700.000;◗;;Fire;;;;;;;Dukagshspace;Dukagsh;Yes;;;;
-Luthic;E;5.650;△;;Live;Dukagsh;;;;;;Dukagshspace;Dukagsh;Yes;;;;
-Shargaas;F;14.360;;;Water;;;Obsidian;;;;Dukagshspace;Dukagsh;Yes;;;;
-Tarrak Gar;B;49;❄;Comet;Air/Fire;;;;;;;Dukagshspace;Dukagsh;Yes;;;;
 Dungeonsphere  ;I;7.842.010;;;Earth;;;;;;;Dungeonsphere  ;Dungeon;Yes;;;;
-Inner Dustspace Belt;;;‡;;;;;;;;;Dustspace;Dust;Yes;;;;
-Mid Dustspace Belt;;;‡;;;;;;;;;Dustspace;Dust;Yes;;;;
-Outer Dustspace Belt;;;‡;;;;;;;;;Dustspace;Dust;Yes;;;;
-Red Sun;;;;;Fire;;;;;;;Dustspace;Dust;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
-Akatosh;;;;;;;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
-Arkay;;;;;;;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
-Dibella;;;;;;Mara;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
-Julianos;;;;;;;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
-Kynareth;;;;;;;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
-Mara;;;;;;Zenithar;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
 Masser;D;2.842;;Hollow, patchy sphere;Earth;Nirn;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
 Nirn;E;5.441;;;Earth;;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
 Secunda;D;1.214;;Hollow, patchy sphere;Earth;Masser;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
-Stendarr;;;;;;Julianos;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
-Zenithar;;;;;;;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
-Avedine;D;;;;Water;;;;;uninhabited;;Elespatio/Latierra;Elespatio;Yes;;;;
 D'Necat;E;;;;Earth;;1;;;Good Beholders!;;Elespatio/Latierra;Elespatio;Yes;moon (Grrshak);;;
 Dhagana;C;;;;Earth;;;;;Lizard-men;;Elespatio/Latierra;Elespatio;Yes;;;;
 Elespatio Belt;A;;‡;;Earth;;;;;;;Elespatio/Latierra;Elespatio;Yes;;;;
 Latierra;E;;;;Earth;;7;;;;;Elespatio/Latierra;Elespatio;Yes;7 moons (Hecate, Math Mathonwy, O-Kuni-Nushi, Isis, Soma, Mon, Sehaine/Eilistraee);;;
-Odorngshrah;G;;;;Air;;9;;;Dragons;;Elespatio/Latierra;Elespatio;Yes;;;;
 Palatora;C;;◗;Disk;Earth;;;;;uninhabited;;Elespatio/Latierra;Elespatio;Yes;;;;
-Ra;J;;;;Fire;;;;;;;Elespatio/Latierra;Elespatio;Yes;;;;
 Uraniva;D;;;;Earth;;;;;Orcs;;Elespatio/Latierra;Elespatio;Yes;;;;
 Værniss;E;;;;Earth;;2;;;Good Illithids;;Elespatio/Latierra;Elespatio;Yes;2 moons (Isytha, Rissess);;;
-Sun, Elysak System;;;;;Fire;;;;;;;Elysak System;Elysak;Yes;;;;
 Cracked Embers;A-C;;‡;;Earth;;;;;;;Emberspace;Ember;Yes;;;;
 Gray Embers;A-C;;‡;;Earth;;;;Ash;Xorn;;Emberspace;Ember;Yes;;;;
-Red Embers;A-C;;‡;;Earth/Fire;;;;molten;Efreet;;Emberspace;Ember;Yes;;;;
-Despoina;;;;;;;;;;;;Emeraldspace;Emerald;Yes;;;;
-Galactea;;;;;;;;;;;;Emeraldspace;Emerald;Yes;;;;
-Larissa;;;;;;;;;;;;Emeraldspace;Emerald;Yes;;;;
-Proteus;;;;;;;;;;;;Emeraldspace;Emerald;Yes;;;;
-Thalassa;D;;;;Water;;;;;;;Emeraldspace;Emerald;Yes;;SJR4 p.25;;
-Flanting;;;Ο;;Air;;;;;;;Emongspace;Emong;Yes;;;Susan Brown;
 Mystra;;;◗;;Earth;;;;Barren;Uninhabited;;Emongspace;Emong;Yes;;;Susan Brown;
 Segra;;;;;Earth;;;;Desolate;;;Emongspace;Emong;Yes;;;Susan Brown;
-Sun, Emongspace;;;;;Fire;;;;;;;Emongspace;Emong;Yes;;;Susan Brown;
 Tenalp;;;;;Earth;;;;;;;Emongspace;Emong;Yes;Mineral rich;;Susan Brown;
 Trantor;;;;;Earth;;;;Woodland;;;Emongspace;Emong;Yes;;;Susan Brown;
 Urdlea;;;Ο;;Earth;;;;Barren desert;;;Emongspace;Emong;Yes;;;Susan Brown;
-Agron;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
-Beastra;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
-Freemor;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
-Genla;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
-Great Tree;L;1.000.000.000;;Tree;Live;;;;;;;Faeriespace;Faerie;Yes;;;;
-Krag;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
-Mish;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
-Morath;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
-Tiqua;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
-Drer;D;;;;Air;;;;;;;Fallspace;Fall;Yes;;;;
 Ir;B;;;;Earth;;;;;;;Fallspace;Fall;Yes;;;;
 Mer, Fallspace;E;;;;Earth;;;;;;;Fallspace;Fall;Yes;;;;
-Skern;F;;;;Water;;;;Ice;;;Fallspace;Fall;Yes;;;;
-Sun, Fallspace;G;;;;Fire;;;;;;;Fallspace;Fall;Yes;;;;
 Sur;C;;;;Earth;;;;;;;Fallspace;Fall;Yes;;;;
 Falx;F;;;;Earth;;;;;;;Falxspace;Falx;Yes;;SJR4 p.7;;
-Furnace;J;;;;Fire;;;;;;;Falxspace;Falx;Yes;;;;
 Kithrup;D;;;;Earth;;;;;;;Falxspace;Falx;Yes;;From Startide Rising;;
 Pharagos;E;;;;Earth;;;;;Githyanki & Githzeri;;Falxspace;Falx;Yes;;From Dungeon #100;;http://en.wikipedia.org/wiki/Forerunner_(Dungeons_&_Dragons)
 Ssirik Akuar;E;;;;Earth;;;;;;;Falxspace;Falx;Yes;;From Dragon #150;;
-Ssovos;G;;;;Air;;5;;;;;Falxspace;Falx;Yes;5 moons (Eldreth, Thoon, Yrpic, Ryloth, Phios);;;
-Yrykos;D;;;;Air;;;;;;;Falxspace;Falx;Yes;;;;
-Aerlofalyn;;;;;Air;;;;;;;Falynspace;Falyn;Yes;destroyed by goblinoid forces in the First Unhuman War.;The Maelstrom's Eye, p39.;;
 Torus;F;;△;Torus;Earth;;;;;;;Farabaspace;Faraba;Yes;;SJR4 p.44;;
-Dreki;;;;;;;;;;;;Fjordspace;Fjord;Yes;;;;
-Jotun;;;;;;;;;;;;Fjordspace;Fjord;Yes;;;;
 Midgard;;;;;Earth;;;;;;;Fjordspace;Fjord;Yes;;;;
-Muspell;;;;;;;;;;;;Fjordspace;Fjord;Yes;;;;
-Nithav;;;;;;;;;;;;Fjordspace;Fjord;Yes;;;;
-Sól;;;;;Fire;;;;;;;Fjordspace;Fjord;Yes;;;;
-Eclipse, Flatspace;D;;◗;;Water;;;;;;;Flatspace  ;Flat;Yes;;;;
 Nia;B;;◗;;Earth;;;;;;;Flatspace  ;Flat;Yes;;;;
 Plata;C;;◗;;Earth;;;;;;;Flatspace  ;Flat;Yes;;SJR4 p. 46;;
-Sun, Flatspace;H;;◗;;Fire;;;;;;;Flatspace  ;Flat;Yes;;;;
-Arcryth;;;;;Live;;;;;;;Sword World Space;Forcelia;Yes;;;;
 Forcelia;E;7.582;;;Earth;;;;;;;Sword World Space;Forcelia;Yes;;"""Record of Lodos War"" etc.";;
-Lyro;;;;;Air;;;;;;;Sword World Space;Forcelia;Yes;;;;
-Pharis;I;2.325.132;;;Fire;;;;;;;Sword World Space;Forcelia;Yes;;;;
-Raylo;;;;;Metal;;;;;;;Sword World Space;Forcelia;Yes;;;;
-Tarsen;;;;;Water;;;;;;;Sword World Space;Forcelia;Yes;;;;
-Airbound;F;;;;Air;;;;;;;Formspace;Form;Yes;;;;
 Earthbound;F;;;;Earth;;;;;;;Formspace;Form;Yes;;;;
-Firebound;F;;;;Fire;;;;;;;Formspace;Form;Yes;;;;
-Waterbound;F;;;;Water;;;;;;;Formspace;Form;Yes;;;;
-Sun, Freezespace;;;;;Fire;;;;;;;Freezespace;Freeze;Yes;;;;
-Fungo 1;;;;;;;;;;;;Fungospace;Fungo;Yes;;;;
-Fungo 2;;;;;;;;;;;;Fungospace;Fungo;Yes;;;;
-Fungo 3;;;;;;;;;;;;Fungospace;Fungo;Yes;;;;
-Fungo 4;;;;;;;;;;;;Fungospace;Fungo;Yes;;;;
-Fungo 5;;;;;;;;;;;;Fungospace;Fungo;Yes;;;;
-Sun, Fungospace;;;;;Fire;;;;;;;Fungospace;Fungo;Yes;;;;
-Aeslir;D;;◗;;Water;;;;;;;Gatespace;Gate;Yes;;;;
-Belagin;G;;;;Air;;;;;;;Gatespace;Gate;Yes;;;;
 Dauveron;D;;;;Earth;;;;;;;Gatespace;Gate;Yes;;;;
 Ganae;E;;;;Earth;;;;;;;Gatespace;Gate;Yes;;;;
-Hasaril;H;;;;Fire;;;;;;;Gatespace;Gate;Yes;;;;
-Krensar;F;;△;;Air;;;;;;;Gatespace;Gate;Yes;Octahedron;;;
 Lindrac;F;;❑;;Earth;;;;;;;Gatespace;Gate;Yes;;;;
-Phaeris;D;;Ο;;Fire;;;;;;;Gatespace;Gate;Yes;;;;
 The Braid;D;;‡;;Earth;;;;;;;Gatespace;Gate;Yes;;;;
-The Strinads;D;;;;Fire;;;;;;;Gatespace;Gate;Yes;;;;
-Wegrya;E;;;;Water;;;;;;;Gatespace;Gate;Yes;;;;
-Cloud Giant;J;;;;Air;;;;;;;Giantspace ;Giant;Yes;;;;
 Cyclop;I;;;;Earth;;;;;;;Giantspace ;Giant;Yes;;;;
 Desert Giant;I;;;;Earth;;;;;;;Giantspace ;Giant;Yes;;;;
 Ettin;I;;;;Earth;;;;;;;Giantspace ;Giant;Yes;;;;
 Firbolg;I;;;;Earth;;;;;;;Giantspace ;Giant;Yes;;;;
-Fire Giant;J;;;;Fire;;;;;;;Giantspace ;Giant;Yes;;;;
 Fog Giant;I;;;;Earth;;;;;;;Giantspace ;Giant;Yes;;;;
 Fomorian;I;;❄;;Earth;;;;;;;Giantspace ;Giant;Yes;;;;
-Frost Giant;I;;;;Water;;;;Frozen;;;Giantspace ;Giant;Yes;;;;
 Hill Giant;I;;;;Earth;;;;;;;Giantspace ;Giant;Yes;;;;
 Jungle Giant;I;;;;Earth;;;;;;;Giantspace ;Giant;Yes;Own Sun;;;
 Mountain Giant;I;;;;Earth;;;;;;;Giantspace ;Giant;Yes;;;;
 Bragar;D;;;;Earth;;;3 water;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
 Connatra;F;;;;Earth;;;ice;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
-Feth;;;❄;;Fire;;1;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
-Gladius Belt;;;‡;;Air;;;;;;gladitorial culture;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
 Kaluf;;;△;Regular polyhedron;Earth;;3;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
-Kushor;F;;◗;;Fire;;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
-Mairee;;;;;Water;;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
-Marusinal;C;;◗;;Water;;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
 Mono;;;;;Earth;MonoTakaRhee;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
 MonoTakaRhee;;;;;Earth;;;;;;3 earth bodies;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
-Morriah;I;;;;Air;;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
 Rhee;;;;;Earth;MonoTakaRhee;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
-Soliel;J;;;;Fire;;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
 Taka;;;;;Earth;MonoTakaRhee;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
-Telakka;C;;;;Water;;;;Ice, void;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
-Trofuth;E;;;;Fire;;?;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
-Xinthus;F;;;;Fire;;;earth;lava surface;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
-Zharree Belt;G;;‡;;Water;;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
-Tel’Quesseron;;;;;;;;;;Elves;;Glowrings Sphere;Glowrings;Yes;Conquered by Scro;;;
 Aballon;D;;;;Earth;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;http://pathfinder.wikia.com/wiki/Aballon
 Akiton;E;;;;Earth;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Akiton
 Apostae;D;;;;Earth;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Apostae
 Aucturn;E;;;;Earth;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Aucturn
-Bretheda;G;;;;Air;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Bretheda
 Castrovel;E;;;;Earth;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Castrovel
 Eox;D;;;;Earth;;;;Void;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Eox
-Golarion;E;;;;Live;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Golarion
-Liavara;F;;;;Air;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Liavara
-Sun, Golarion;H;;;;Fire;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Solar_System
-The Diaspora;A;;‡;;Earth/Ice;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Diaspora
 Triaxus;E;;;;Earth;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Triaxus
 Verces;E;;;;Earth;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Verces
 Alfar;B;90;;;Earth;Golotspace Belt;;;;Elves;;Golotspace;Golot;Yes;;;Tim Goff;http://lost.spelljammer.org/DrawingBoard/worlds/Vodoni/Golotspace/AsteroidBelt.html
 Bel;C;950;;;Earth;Golotspace Belt;;;;Humans, Gnomes;;Golotspace;Golot;Yes;;;Tim Goff;http://lost.spelljammer.org/DrawingBoard/worlds/Vodoni/Golotspace/AsteroidBelt.html
-Carci;C;400;;;Water;Golotspace Belt;;;Partially frozen;;;Golotspace;Golot;Yes;;;Tim Goff;http://lost.spelljammer.org/DrawingBoard/worlds/Vodoni/Golotspace/AsteroidBelt.html
 Delphos;C;500;;;Earth;Golotspace Belt;;;;Humans;;Golotspace;Golot;Yes;;;Tim Goff;http://lost.spelljammer.org/DrawingBoard/worlds/Vodoni/Golotspace/AsteroidBelt.html
 Golot / Dragonworld;E;;;;Earth;;1;;;;;Golotspace;Golot;Yes;Moon (Olympus);;Tim Goff;http://lost.spelljammer.org/DrawingBoard/worlds/Vodoni/Golotspace/
 Golotspace Belt;;;‡;;Earth;;;;;;;Golotspace;Golot;Yes;Surrounds Sol;;Tim Goff;http://lost.spelljammer.org/DrawingBoard/worlds/Vodoni/Golotspace/
 Hecate;C;600;;;Earth;Golotspace Belt;;;;Centaurs, Minotaurs;;Golotspace;Golot;Yes;;;Tim Goff;http://lost.spelljammer.org/DrawingBoard/worlds/Vodoni/Golotspace/AsteroidBelt.html
 Suynama;D;;;;Earth;;;;;;;Golotspace;Golot;Yes;;;Tim Goff;http://lost.spelljammer.org/DrawingBoard/worlds/Vodoni/Golotspace/
 The Bright Swarm;A;;;;Earth;;;;;;Meteor Swarm;Golotspace;Golot;Yes;;;;
-The Dark Zone;F;;❄;;Darkness;;;;;;;Golotspace;Golot;Yes;;;;
-The Sun, Golotspace;F;;;;Fire;;;;;;;Golotspace;Golot;Yes;;;;
-Zephyr;C;400;;;Air;Golotspace Belt;;;;;;Golotspace;Golot;Yes;;;Tim Goff;http://lost.spelljammer.org/DrawingBoard/worlds/Vodoni/Golotspace/AsteroidBelt.html
 Gorth;E;;◗;;Earth;;1;;Lush, ancient forests;Vodoni Humans;;Gorthspace;Gorth;Yes;;SJA4 p.52;TSR;http://www.archlich.com/kotsc/Places/VodoniCluster/Gorthspace.html
 Gorth 1;H;;;;Earth;;;fire;scorched desert;Azar;;Gorthspace;Gorth;Yes;;;Charles Taylor;
-Gorth 5;E;;;;Air;;;;;;;Gorthspace;Gorth;Yes;;;Charles Taylor;
-Gorth 5 Moon;D;;;;Fire;Gorth 5;;;;;;Gorthspace;Gorth;Yes;;;Charles Taylor;
-Gorth Fireflies;D;;;;Fire;Gorth;;;;;;Gorthspace;Gorth;Yes;;;Charles Taylor;
 Gorth Prime;F;;;;Earth;;;;Void;;Reflective;Gorthspace;Gorth;Yes;;;;
-Gorth's Second Sun;F;;△;;Fire;Gorth's Sun;;water/ice;;;;Gorthspace;Gorth;Yes;;;Charles Taylor;
-Gorth's Sun;J;;;;Fire;;1;fire;;;;Gorthspace;Gorth;Yes;;;Charles Taylor;
-Gorthspace Belt;D;;‡;;Water;;;;Cold;;;Gorthspace;Gorth;Yes;;;Charles Taylor;
-Endeir;D;;❄;;Water;;;glowing gas;warm;Aquatic nomads;;Gossamerspace;Gossamer;Yes;;;;
-Hon'orma;C;;;;Live;Sacafeda;;;;Humans;;Gossamerspace;Gossamer;Yes;;;;
-Kal'kalo;D;;△;Hemisphere;Air;Sacafeda;;;music;;;Gossamerspace;Gossamer;Yes;;;;
 Kodizana;D;;Ο;;Earth;;1;;Cold, volcanic;Humans, Nycters, Goblins;;Gossamerspace;Gossamer;Yes;;;;
-Pan'raku;B;;Ο;;Live;Kodizana;;;;;;Gossamerspace;Gossamer;Yes;;;;
 Perathen;E;;;;Earth;;;earth;agrarian;Halflings;;Gossamerspace;Gossamer;Yes;;;;
-Rak'saya;D;;;;Water;Sacafeda;;;;;;Gossamerspace;Gossamer;Yes;;;;
 Rayelmi;C;;◗;;Earth;;;fire;;Reigar, Lakshu;;Gossamerspace;Gossamer;Yes;;;;
-Sacafeda;H;;;;Air;;6;5;;;;Gossamerspace;Gossamer;Yes;;;;
-Serril;G;;‡;Ring;Fire;;;;;;;Gossamerspace;Gossamer;Yes;;;;
 Tai'danuul;C;;;;Earth;Sacafeda;;;;;;Gossamerspace;Gossamer;Yes;liveworld?;;;
 Tas'bure;C;;;Female human;Earth;Sacafeda;;;;Humans, Halflings, Reigar;;Gossamerspace;Gossamer;Yes;Sculpted;;;
 Ulforin;D;;Ο;;Earth;;;Ice spirals;Icy;Uldra, other arctic races;;Gossamerspace;Gossamer;Yes;;;;
@@ -569,246 +423,130 @@ Boran;C;;;;Earth;;;;;;;Greatspace;Great;Yes;;;;
 Hecht;D;;;;Earth;;;;;;;Greatspace;Great;Yes;;;;
 Karrington;B;;;;Earth;;;;;;;Greatspace;Great;Yes;;;;
 Lagor's World;F;;;;Earth;;;;;;;Greatspace;Great;Yes;;;;
-Lanth;I;;;;Fire;;;;;;;Greatspace;Great;Yes;;;;
 Longpoint;G;;;;Earth;;;;;;;Greatspace;Great;Yes;;;;
 Skora;C;;;;Earth;;;;;;;Greatspace;Great;Yes;;;;
 Thesalys;E;;;;Earth;;;;;;;Greatspace;Great;Yes;;;;
 Borka;A;;;;Earth;;;;;;;Greyspace;Grey;Yes;;;;
-Conatha;C;;Ο;;Water;;;;;;;Greyspace;Grey;Yes;;;;
-Edill;G;;;;Air;;;;;;;Greyspace;Grey;Yes;;;;
 Ginsel;C;;;;Earth;;;;;;;Greyspace;Grey;Yes;;;;
-Gnibile;G;;;;Air;;;;;;;Greyspace;Grey;Yes;;;;
 Greela;E;;;;Earth;;;;;;;Greyspace;Grey;Yes;;;;
 Kule;B;;;;Earth;;;;;;;Greyspace;Grey;Yes;;;;
-Liga;G;;;;Fire;;;;;;;Greyspace;Grey;Yes;;;;
 Oerth;E;;;;Earth;;;;;;;Greyspace;Grey;Yes;;Greyhawk;;
 Raenei;D;;;;Earth;;;;;;;Greyspace;Grey;Yes;;;;
 The Grinder;B;;‡;;Earth;;;;;;;Greyspace;Grey;Yes;Shell;;;
 The Spectre;B;;◗;;Earth;;;;;;;Greyspace;Grey;Yes;;;;
 Gaya;F;;;;Earth;;;;;;;Grommspace  ;Gromm;Yes;;;;
-Ntwadumela;F;;;;Fire;;;;;;;Grommspace  ;Gromm;Yes;;;;
-Sawai;C;;;;Water;;;;;;;Grommspace  ;Gromm;Yes;;;;
-Umbala;C;;Ο;;Air;;;;;;;Grommspace  ;Gromm;Yes;;;;
 Agmar;E;;;;Earth;;;;;;;Guardspace;Guard;Yes;;;;
 Calim;G;;;;Earth;;;;Snowy;;;Guardspace;Guard;Yes;;;;
 Grothag;E;;◗;Disk;Earth;;;;;;;Guardspace;Guard;Yes;Vikings!;;;
 Hurmus;D;;;;Earth;;;;Desert;;;Guardspace;Guard;Yes;;;;
 Stattoo;C;;;;Earth;;;;Eternal Spring;;;Guardspace;Guard;Yes;;;;
-Sun, Guardspace;H;;;;Fire;;;;;;;Guardspace;Guard;Yes;;;;
-Tallin;E;;;;Water;;;;;;;Guardspace;Guard;Yes;;;;
 Winsfar;E;;;;Earth;;;2;;;;Guardspace;Guard;Yes;;;;
 Alava, Harthspace;I;;◗;;Earth;;;;;;;Harthspace;Harth;Yes;;;;
 Harth;F;;;;Earth;;;;;;;Harthspace;Harth;Yes;;;;
 Macgarth;B;;;;Earth;;;;;;;Harthspace;Harth;Yes;;;;
-Sun, Harthspace;J;;;;Fire;;;;;;;Harthspace;Harth;Yes;;;;
 Traven;I;;‡;;Earth;;;;;;;Harthspace;Harth;Yes;;;;
-Zeanith;B;;❄;;Air;;;;;;;Harthspace;Harth;Yes;;;;
-The Heart;J;;;;Fire;;;;;;;Heartspace;Heart;Yes;"Heartspace's enormous primary ""beats"" (giving the sphere its name), pulsing from dark to light slowly within the space of about ten minutes. It is a deep red star, otherwise as typical as any other. This sun is one of the largest of all the spheres.";;;
 Crescent;B;;△;Crescent;Earth;;;;;;;Heartspace;Heart;Yes;Great Archive;;;
 Desolate;D;;;;Earth;;;;;;;Heartspace;Heart;Yes;;;;
 Lirak's Cube;A;;❑;;Earth;;;1;;;;Heartspace;Heart;Yes;;;;
-Loom;G;;Ο;Ovoid;Air;;;;;;;Heartspace;Heart;Yes;;;;
 Starfall;B;;◗;;Earth;;;;;;;Heartspace;Heart;Yes;;;;
 The Vein;A;;‡;;Earth;;;;;;;Heartspace;Heart;Yes;;;;
-Arish;G;;◗;Disk;Air;;;;;;;Heatspace  ;Heat;Yes;;;;
 Borgash;E;;;;Earth;;;;400°;;;Heatspace  ;Heat;Yes;;;;
-Buurn;D;;;;Fire;;;;;;;Heatspace  ;Heat;Yes;Hourglass;;;
-Flame;H;;;;Fire;;;;;;;Heatspace  ;Heat;Yes;;;;
 Florint;E;;;;Earth;;;;;;;Heatspace  ;Heat;Yes;;;;
-Heat;E;;‡;;Air;;;;;;;Heatspace  ;Heat;Yes;;;;
 Scorch;B;;;;Earth;;;;;;;Heatspace  ;Heat;Yes;;;;
-Scorch;F;;;;Fire;;;;;;;Heatspace  ;Heat;Yes;;;;
 Scorch;A;;;;Earth;;;;;;;Heatspace  ;Heat;Yes;;;;
-Central Daystar;I;;;;Fire;;;;;;;Herdspace;Herd;Yes;;;;
 Shell Land;S;;;Shell;Earth;;;;;;;Herdspace;Herd;Yes;;;;
 Hark;C;;◗;;Earth;;;;;;;Horrorspace;Horror;Yes;;;;
-What Remains;A;;;;Mix;;;;;;;Horrorspace;Horror;Yes;;;;
-Aphrod;F;;;;Water;;;ice;Icy;;;Hyrkulspace;Hyrkul;Yes;;;;
-Apoll;C;;❑;;Air;;;fire;;;;Hyrkulspace;Hyrkul;Yes;;;;
 Demet;D;;◗;;Earth;;8;1;;;;Hyrkulspace;Hyrkul;Yes;;;;
-Helios;H;;;;Fire;;;;;;;Hyrkulspace;Hyrkul;Yes;;;;
-Hephæ;D;;;;Air;;4;;hot;;;Hyrkulspace;Hyrkul;Yes;;;;
 Hyrkul;E;;;;Earth;;1;;;;;Hyrkulspace;Hyrkul;Yes;;;;
 Hyrkulspace Asteroid Belt;A;;‡;;Earth;;;;;;;Hyrkulspace;Hyrkul;Yes;;;;
-Posayd;D;;;;Water;;3;;;;;Hyrkulspace;Hyrkul;Yes;;;;
-Zeu;H;;;;Air;;13;;;;;Hyrkulspace;Hyrkul;Yes;;;;
-Charon;C;;;;Fire;;;;;;;Igniaspace;Ignia;Yes;;;;
-Charon;C;;;;Water;;;;;;;Igniaspace;Ignia;Yes;;SJR4 p.27;;
 Fagras;F;;;;Earth;;;;void;;;Igniaspace;Ignia;Yes;;;;
-Ignia;C;;;;Fire;;;;;;;Igniaspace;Ignia;Yes;;;;
 Tanor;D;;;;Earth;;;;void;;;Igniaspace;Ignia;Yes;;;;
-Thalassa;D;;;;Water;;;;;;;Igniaspace;Ignia;Yes;;SJR4 p.25;;
 Dragon;E;;;;Earth;;2;;;;;Imperial Space;Imperial;Yes;2 moons (Fireball, Salamander);;;
-Gleaming Star;G;;;;Fire;;;;;;;Imperial Space;Imperial;Yes;;;;
 Gold Coin;F;;△;Hemisphere;Earth;;1;;;;;Imperial Space;Imperial;Yes;asteroid chain, moon (Tyrant);;;
 Ironshod;C;;❑;;Earth;;;;;;;Imperial Space;Imperial;Yes;iron-rich, toxic;;;
 Nimbus;;;;;Earth;;;;;;;Imperial Space;Imperial;Yes;;;;
-Sequena's Tears;A;;‡;;Water;;;;;;;Imperial Space;Imperial;Yes;;;;
-Springtime;G;;;;Air;;22;;;;;Imperial Space;Imperial;Yes;;;;
 Commons;A;;◗;;Earth;;;;;;;Inspace ;In;Yes;;;;
-Dawnbreaker;G;;;;Fire;;;;;;;Inspace ;In;Yes;;;;
-Gnome's Haven;C;;;;Earth/Fire/Water;;;;;;;Inspace ;In;Yes;;;;
 Growthspawn;D-F;;;;Earth;;;;;;;Inspace ;In;Yes;Resizes?;;;
-The Portal;A;;?;;Portal;;;;;;;Inspace ;In;Yes;Portal;;;
-The Portal;A;;?;;Portal;;;;;;;Inspace ;In;Yes;;;;
 Toll Ring;A;;‡;;Earth;;;;;;;Inspace ;In;Yes;;;;
-Artis;D;1.206;;;Water;Caen;;;Ice;;;Ironspace;Iron;Yes;;Privateer Press;;http://privateerpress.com/iron-kingdoms
 Caen;E;7.493;;;Earth;;3;;;;;Ironspace;Iron;Yes;Iron Kingdoms campaign setting;Privateer Press;;http://privateerpress.com/iron-kingdoms
-Calder;D;2.412;;;Water;Caen;;;;;;Ironspace;Iron;Yes;;Privateer Press;;http://privateerpress.com/iron-kingdoms
-Cyriss;F;11.150;△;;Artificial;;;;;;;Ironspace;Iron;Yes;Home of Goddess Cyriss;Privateer Press;;http://privateerpress.com/iron-kingdoms
 Laris;D;2.646;;;Earth;Caen;;;;;;Ironspace;Iron;Yes;;Privateer Press;;http://privateerpress.com/iron-kingdoms
 Lucant;C;925;;;Earth;;;;;;;Ironspace;Iron;Yes;;Privateer Press;;http://privateerpress.com/iron-kingdoms
-Sun, Ironspace;H;871.100;;;Fire;;;;;;;Ironspace;Iron;Yes;;Privateer Press;;http://privateerpress.com/iron-kingdoms
-The Eye of the Wyrm;G;99.200;;;Air;;;earth;;;;Ironspace;Iron;Yes;;Privateer Press;;http://privateerpress.com/iron-kingdoms
-Barbuda;C;;;;Water;;;;;;;Islandspace;Island;Yes;;SJR4 p.30;;
 Britania;D;;;;Earth;;;;;;;Islandspace;Island;Yes;;;;
-Cretoria;H;;;;Earth/Water;;;;;;;Islandspace;Island;Yes;;;;
-Fireye;F;;;;Fire;;;;;;;Islandspace;Island;Yes;;;;
-Arcanius;A;;△;Pyramid;Live;;;;;;;Jadespace ;Jade;Yes;;;;
 Delk;D;;;;Earth;;3;;;;;Jadespace ;Jade;Yes;;;;
-Dracos;F;;;;Water;;5;;;;;Jadespace ;Jade;Yes;;;;
-Hem;D;;;;Water;;1;1;;;;Jadespace ;Jade;Yes;ring halo;;;
 Junda;E;;;;Earth;;1;;;;;Jadespace ;Jade;Yes;1 phase moon;;;
 Merk;F;;Ο;;Earth;;7;;;;;Jadespace ;Jade;Yes;;;;
-Orbus;G;;△;Torus;Fire;;;;;;;Jadespace ;Jade;Yes;+cluster;;;
 Parla;D;;;;Earth;;;;;;;Jadespace ;Jade;Yes;;;;
-Rainuss;E;;△;Torus;Live;;2;3;;;;Jadespace ;Jade;Yes;2 moons & 3 halo rings;;;
 StarLancus;C;;△;Icosahedron;Earth;;1;;;;;Jadespace ;Jade;Yes;;;;
 Thannes;D;;△;Dish;Earth;;;;;;;Jadespace ;Jade;Yes;Dual;;;
-The God's Fury;H;;‡;;All;;;;;;;Jadespace ;Jade;Yes;;;;
 Titan;D;;;;Earth;;1;;;;;Jadespace ;Jade;Yes;1 large moon;;;
 UsSpey;D;;‡;;Earth;;;;;;;Jadespace ;Jade;Yes;;;;
 Warance;D;;;;Earth;;2;;;;;Jadespace ;Jade;Yes;;;;
 Diggings Cold;G;;;;Earth;;;;;;;Keelspace  ;Keel;Yes;;;;
 Diggings Hot;G;;;;Earth;;;;;;;Keelspace  ;Keel;Yes;;;;
-Shipwright;A;;;;Water;;;;;;;Keelspace  ;Keel;Yes;;;;
-Sun, Keelspace;H;;;;Fire;;;;;;;Keelspace  ;Keel;Yes;;;;
 Anzar;D;;;;Earth;;;3;;;;Knightspace  ;Knight;Yes;Advanced crystal magi-tech;;;
-Foran;G;;;;Live;;;;;;;Knightspace  ;Knight;Yes;;;;
-Hy;F;;❄;;Water;;;;Voidworld;;;Knightspace  ;Knight;Yes;;;;
-Seeker;A;;?;;Portal;;;;;;;Knightspace  ;Knight;Yes;;;;
 Serinth;E;;△;Tetrahedron;Earth;;2;;;;;Knightspace  ;Knight;Yes;2 moons (Maar, Sharl);;;
 Glayse;C;;;;Earth;;;;;;;Korvspace;Korv;Yes;Neogi base;;;
 Ilthurk;C;;△;Torus;Earth;;;;;;;Korvspace;Korv;Yes;;;;
 Klegrn's Bones;B;;‡;;Earth;;;;;;;Korvspace;Korv;Yes;;;;
 Korvada;E;;;;Earth;;2;;;;;Korvspace;Korv;Yes;2 moons (Xbral, Angue);;;
 Lipoca;F;;;;Earth;;;;;;;Korvspace;Korv;Yes;;;;
-Quetze;F;;;Flexable;Air/Earth;;;;;;;Korvspace;Korv;Yes;Xenophobic Natives;;;
-Sidar;E;;❑;;Live;;;;;;;Korvspace;Korv;Yes;;;;
-Tezcat;F;;;;Fire;;;;;;;Korvspace;Korv;Yes;;;;
-Trerze;D;;Ο;;Water;;;;;;;Korvspace;Korv;Yes;;;;
 Thri-Kreen Homeworld;;;;;Earth;;;;;Thri-Kreen;;Kreenspace;Kreen;Yes;;;;
-Xixchil Homeworld;;;;;Live;;;;;Xixchil;;Kreenspace;Kreen;Yes;The Xixchil's homeworld is a live world with many predators.;MC9 Spelljammer Monstrous Compendium II 'Xixchil';;
 Krull;E;;;;Earth;;;;;;;Krullspace;Krull;Yes;;;;
-Chislev;E;;;;Live;;;;;;;Krynnspace;Krynn;Yes;;;;
 Krynn;D;;;;Earth;;3;;;;;Krynnspace;Krynn;Yes;Dragonlance campaign world;Dragoinlance;;
 Krynn;E?;;;;Earth;;;;;;;Krynnspace;Krynn;Yes;(after removal from Krynnspace);Dragonlance;;
 Nehsmyth;C;;Ο;Ovoid;Earth;;;;;Neogi;;Krynnspace;Krynn;Yes;;;;
 Reorx;D;;;;Earth;;1;;;;;Krynnspace;Krynn;Yes;;;;
-Sirion;D;;;;Fire;;;;;;;Krynnspace;Krynn;Yes;Inert;;;
 Stellar Islands;A;;;;Earth;;;;;;;Krynnspace;Krynn;Yes;;;;
-Sun, Krynnspace;H;;;;Fire;;;;;;;Krynnspace;Krynn;Yes;;;;
 Zivilyn;F;;;;Earth;;;;;;;Krynnspace;Krynn;Yes;;;;
-The Peeper;A;;;;Water;Xenix;;;Ice;;;Lahsphere;Lah;Yes;;Beyond the Moons;Ville Lavonius;http://www.spelljammer.org/worlds/locs/Xenix.html
 Xenix;D;2.500;;;Earth;;1;;;;;Lahsphere;Lah;Yes;;Beyond the Moons;Ville Lavonius;http://www.spelljammer.org/worlds/locs/Xenix.html
 Lharn;E;5.000;△;Yo-Yo;Earth;;1;;;Humanoids, Drow;;Lharnspace;Lharn;Yes;;Beyond the Moons;Afterburner;http://www.spelljammer.org/worlds/locs/Lharn.html
-Mefesk;;;;;;;;;;Wolf-people;;Lorpulanspace;Lorpulan;Yes;;;;
 Chian Cluster;D;;;;Earth;;;;;;;Lostspace;Lost;Yes;;;;
 Golgotha;D;;;;Earth;;1;;;;;Lostspace;Lost;Yes;Moon cluster (Haze);;;
 Ious;C;;;;Earth;;;;;;;Lostspace;Lost;Yes;;;;
 Rime;D;;;;Earth;;;;;;;Lostspace;Lost;Yes;;;;
-Sun, Lostspace;F;;;;Fire;;;;;;;Lostspace;Lost;Yes;;;;
-World of the Lost Ones;;;;;;;;;;Clockwork Horrors;;Lost One's Sphere;Lost One's;Yes;Homeworld of the clockwork horrors.;MC7 Monstrous Compendium Spelljammer Appendix. Dragon #350, page 59.;;
-Furnaus;;;;;Fire;;;;;Hostile Fire Elementals;;Luftrain Sphere;Luftrain;Yes;;;Susan Brown;
 Hervanus;;;;;Earth;;;;;;;Luftrain Sphere;Luftrain;Yes;;;Susan Brown;
 Klictar;;;;;Earth;;;;;Feudal Horse Lords;;Luftrain Sphere;Luftrain;Yes;;;Susan Brown;
 Luftrain Belt;A-B;;‡;;Earth;;;;;;;Luftrain Sphere;Luftrain;Yes;Destroyed by Scro?;;Susan Brown;
 Tantar;;;;;Earth;;;;Voidworld;;;Luftrain Sphere;Luftrain;Yes;;;Susan Brown;
-Bior;G;;;;Live;;1;;;;;Maginciaspace;Magincia;Yes;;;;
 Gaia;E;;;;Earth;;2;;Flooded;;;Maginciaspace;Magincia;Yes;;;;
 Magincaspace Belt;B;;‡;;Earth;;;;;;;Maginciaspace;Magincia;Yes;100,000 miles thick;;;
 Rashaag;D;1.100;;;Earth;;many;;;;;Maginciaspace;Magincia;Yes;;;;
-Sol, Maginicaspace;H;;;;Fire;;;;;;;Maginciaspace;Magincia;Yes;;;;
 Uranus, Magincaspace;F;16.200;;;Earth;;4;;;;;Maginciaspace;Magincia;Yes;Blue-purple, 4 moon;;;
 Vos;J;62.300.000;;;Earth;;;;slightly poisonous;;;Maginciaspace;Magincia;Yes;;;;
 Ainatit;C;980;;;Earth;Sunaru;;;;;;Majspace;Maj;Yes;;;;
 Dioretsa;A-C;;‡;;Earth;;;;;Dwarves;;Majspace;Maj;Yes;;;;
 Edemenag;D;3.274;;;Earth;Retipuj;;;;;;Majspace;Maj;Yes;;;;
-Enutpen;F;30.775;;;Air;;9;1;Poisonous;Uninhabited;;Majspace;Maj;Yes;;;;
-Los;H;;;;Fire;;;;;;;Majspace;Maj;Yes;;;;
 Maj;E;7.918;;;Earth;;1;;;Humans;;Majspace;Maj;Yes;;;;
 Natit;D;3.201;;;Earth;Nrutas;;;;Drow;;Majspace;Maj;Yes;;;;
 Noom;D;2.159;;;Earth;Maj;;;;Winged Goblins;;Majspace;Maj;Yes;;;;
 Norebo;C;946;;;Earth;Sunaru;;;;;;Majspace;Maj;Yes;;;;
 Notirt;D;1.682;;;Earth;Enutpen;;;;;;Majspace;Maj;Yes;;;;
-Nrutas;G;74.898;;;Air;;many;many;Poisonous;Uninhabited;;Majspace;Maj;Yes;;;;
 Otulp;D;1.433;;;Earth;;3;;;;;Majspace;Maj;Yes;;;;
-Retipuj;G;86.881;;;Air;;many;1;Poisonous;Uninhabited;;Majspace;Maj;Yes;;;;
 Sram;E;4.220;;;Earth;;2;;;Hobgoblins, Goats;;Majspace;Maj;Yes;2 moons (Phobos, Deimos);;;
-Sunaru;F;31.763;;;Air;;15;1;Poisonous;Uninhabited;;Majspace;Maj;Yes;;;;
 Sunev;E;7.521;;;Earth;;;;;Scro, Elves;;Majspace;Maj;Yes;;;;
 Yrcurem;D;3.032;;;Earth;;;;;Misc. Humanoids;;Majspace;Maj;Yes;;;;
-Carrigmore;;;;;;;;;;;;Malhavokspace;Malhavok;Yes;;;;
-Ouno;;;;;;;;;;;;Malhavokspace;Malhavok;Yes;;;;
-Palpatur;;;;;;;;;;;;Malhavokspace;Malhavok;Yes;;;;
-Praemal;;;;;;;;;;;;Malhavokspace;Malhavok;Yes;;;;
-Serran;;;;;;;;;;;;Malhavokspace;Malhavok;Yes;;;;
-Sun, Malhavokspace;;;;;Fire;;;;;;;Malhavokspace;Malhavok;Yes;;;;
-Yragon;;;;;;;;;;;;Malhavokspace;Malhavok;Yes;;;;
 Anxles;;;;;Earth;;;;;;;Marlspace;Marl;Yes;;;Susan Brown;
-Aqualis;;;;;Water;;;;;;;Marlspace;Marl;Yes;;;Susan Brown;
 Necklace of Kerless;A-D;;‡;;Earth;;;;;;;Marlspace;Marl;Yes;;;Susan Brown;
-Sun, Marlspace;;;;;Fire;;;;;;;Marlspace;Marl;Yes;;;Susan Brown;
 Acrutias;E;;;;Earth;;;;;;;Merspace;Mer;Yes;;;;
-Falakyr;D;;;;Water;;4;;;;;Merspace;Mer;Yes;;;;
 Grissa;C;;;;Earth;;;;;;;Merspace;Mer;Yes;;;;
 Grissa Cluster;;;;;Earth;Grissa;;;;;;Merspace;Mer;Yes;;;;
 Kelsier;;;;;Earth;Mer;;;;;;Merspace;Mer;Yes;;;;
 Maasal;F;;;;Earth;;;;;;;Merspace;Mer;Yes;;;;
-Mer;E;;;;Water;;2;;;;;Merspace;Mer;Yes;;;;
-Syril;;;;;Water;Mer;;;;;;Merspace;Mer;Yes;;;;
-Thul;G;;;;Fire;;;;;;Aquamarine;Merspace;Mer;Yes;;;;
 Garatoch;E;;;;Earth;;1;;Mostly ocean;;;Metalspace;Metal;Yes;;;;
-The Soul Forge;H;;;;Fire;;1;;;Uninhabited;;Metalspace;Metal;Yes;;;;
 Verdigris;C;;;;Earth;;;;;;;Metalspace;Metal;Yes;;;;
-Inner Mindspace Belt;;;;;;;;;;;;Mindspace;Mind;Yes;;;;
-Mind 1;;;;;;;;;;;;Mindspace;Mind;Yes;;;;
-Mind 2;;;;;;;;;;;;Mindspace;Mind;Yes;;;;
-Mind 3;;;;;Water;;;;Ice;;;Mindspace;Mind;Yes;;;;
-Outer Mindspace Belt;;;;;;;;;;;;Mindspace;Mind;Yes;;;;
-Sun, Mindspace;;;;;Fire;;;;;;;Mindspace;Mind;Yes;;;;
-Dead World;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
-Desert World;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
-Fire World;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
-Melodya;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
-Mirror Prime;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
-Sun, Mirrorspace;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
-Sun, Mirrorspace;;;;;Fire;;;;;;;Mirrorspace;Mirror;Yes;;;;
-Tamargon;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
-The Backwaters;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
-Wartorn;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
 Aquaria;B;;;;Earth;;;;;;;Mongospace;Mongo;Yes;;Flash Gordan;;
 Arboria, Mongo;B;;△;Bowl;Earth;;;;Forested;Elves;;Mongospace;Mongo;Yes;;Flash Gordan;;
-Mingo Vortex;;;;;;;;;;;;Mongospace;Mongo;Yes;;;;
 Char;B;;;;Earth;;;;;Scro;;Moragspace;Morag;Yes;;;;
-Gamaro Base;A;;;;Special;;;;;;;Moragspace;Morag;Yes;Dead Gammeroid, Scro base;;;
 Mine 1;A;;;;Earth;;;;;Scro;;Moragspace;Morag;Yes;;;;
 Mine 2;A;;;;Earth;;;;;Scro;;Moragspace;Morag;Yes;;;;
 Mine 3;A;;;;Earth;;;;;Scro;;Moragspace;Morag;Yes;;;;
 Mine 4;A;;;;Earth;;;;;Scro;;Moragspace;Morag;Yes;;;;
 Mine 5;A;;;;Earth;;;;;Scro;;Moragspace;Morag;Yes;;;;
-Moragsun;H;;;;Fire;;;;;;;Moragspace;Morag;Yes;;;;
 The Vice;B;;;;Earth;;;;;Scro;;Moragspace;Morag;Yes;;;;
-Watereye;B;;;;Water;;;;;Scro;;Moragspace;Morag;Yes;;;;
-Bondel;;;;;;;;;;;;Morunespace;Morune;Yes;;The Radiant Dragon, p285.;;
 Alphakisi;D;;;;Earth;;;;;;;Mystaraspace;Mystara;Yes;created after Asterius' destruction;;;
 Damocles;E;;◗;;Earth;;;;;;;Mystaraspace;Mystara;Yes;;;;
 Helae;F;;◗;;Earth;;;;;;;Mystaraspace;Mystara;Yes;;;;
-Ixionis;H;;;;Fire;;;;;;;Mystaraspace;Mystara;Yes;;;;
-Khoronus;G;;;;Air;;;;;;;Mystaraspace;Mystara;Yes;;;;
 Mystara;E;;;;Earth;;2;;;;;Mystaraspace;Mystara;Yes;Hollow, 2 moons (Pataera, Matera);;;
-Proteanis;F;;;;Water;;;;;;;Mystaraspace;Mystara;Yes;;;;
-Tarastiae;G;;;;Air;;;1;;;;Mystaraspace;Mystara;Yes;;;;
 Thanatoi;D;;;;Earth;;;;;;;Mystaraspace;Mystara;Yes;Created after Asterius' destruction;;;
 Valeriae;E;;;;Earth;;;;;;;Mystaraspace;Mystara;Yes;;;;
 Vaniae;E;;;;Earth;;2;;;;;Mystaraspace;Mystara;Yes;;;;
@@ -821,101 +559,56 @@ Jhangg-Lu;E;;;;Earth;;;;;;;Nacrespace;Nacre;Yes;Green pearl;;;
 Megadonalos;C;;;Shark;Earth;;;;;;;Nacrespace;Nacre;Yes;Living world;;;
 Ranmascea;B;;;Stingray;Earth;;;;;;;Nacrespace;Nacre;Yes;Living world;;;
 Selachea;D;;;Shark;Earth;;;;;;;Nacrespace;Nacre;Yes;Living world;;;
-Straash;K;;△;Teardrop;Fire;;;;;;;Nacrespace;Nacre;Yes;Sapphire Star;;;
-Sutorpea;A;;;Shark;Live;;;;;;;Nacrespace;Nacre;Yes;;;;
-The Ice Whale;J;;;Whale;Ice;;;;Frozen once-living world;;;Nacrespace;Nacre;Yes;;;;
 Yurnescea;B;;;Stingray;Earth;;;;;;;Nacrespace;Nacre;Yes;Living world;;;
-Fariam;D;;;;Fire;;;;;;;Nalspace;Nal;Yes;;;;
 Nalkak;E;;;;Earth;;;;;;;Nalspace;Nal;Yes;;;;
-Sun, Nalspace;I;;;;Fire;;;;;;;Nalspace;Nal;Yes;;;;
-The Fraze;A;;‡;;Air;;;;;;;Nalspace;Nal;Yes;;;;
 Tho;A;;‡;;Earth;;;;;;;Nalspace;Nal;Yes;;;;
-Alabeth;G;;;;Air;;;;;;;Nebulaspace;Nebula;Yes;;SJR4 p.33;;
 Noid;B;;❑;;Earth;;;;;;;Nebulaspace;Nebula;Yes;;;;
-Sun, Nebulaspace;G;;;;Fire;;;;;;;Nebulaspace;Nebula;Yes;;;;
 Flambach;B;;;;Earth;;;;Continuous Earthquakes;;;Nerenspace;Neren;Yes;;;;
-Gnassas;F;;;;Air;;;;;Kindori;;Nerenspace;Neren;Yes;;;;
 Gur'rith;C;;△;Teardrop;Earth;;;;;Beastmen;;Nerenspace;Neren;Yes;;;;
 Thark;D;;;;Earth;;;;Dry;;;Nerenspace;Neren;Yes;;;;
-The Fire Wheel;G;;◗;Wheel-shaped;Fire;;;;;;;Nerenspace;Neren;Yes;;;;
-Torquon;D;;;;Water;;;;;Frogmen;;Nerenspace;Neren;Yes;;;;
-Sun, Neverspace;;;;;Fire;;;;;;;Neverspace;Never;Yes;;;;
 Nex;E;;;;Earth;;12;;;;;Nexspace  ;Nex;Yes;;;;
-Phobost;C;;;;Air;;;;Frozen;;;Nexspace  ;Nex;Yes;;;;
 Goldblatt;F;;;;Earth;Voy;;;;;;Nivelspace;Nivel;Yes;;;;
 Jinx;E;;Ο;;Earth;;;;;;;Nivelspace;Nivel;Yes;;;;
 Nivel;J;90.000.000;‡;Solid Ring;Earth;;;;;;;Nivelspace;Nivel;Yes;;SJR4 p.40;;
-Plateau;E;;;;Air;;;;;;;Nivelspace;Nivel;Yes;;;;
-Threetee;I;;;;Fire;;;;;;;Nivelspace;Nivel;Yes;;;;
 Voy;A;;;;Earth;;1;Air;Void;;;Nivelspace;Nivel;Yes;;;;
-Nemeliador;;;;;;;;;;;;Numosspace;Numos;Yes;;;;
 Valendoar;C;;;;Earth;;;;;Elves;;Numosspace;Numos;Yes;;Beyond the Moons;Toby Mekelburg;http://www.spelljammer.org/worlds/locs/Valendoar.html
-New Sun;;;;;Fire;;;;;;;Nyrodspace;Nyrod;Yes;;;;
 Aldredd;;;;;Earth;;;;;;;Nyrodspace;Nyrod;Yes;;;;
 Aluvia;;;;;Earth;;;;;;;Nyrodspace;Nyrod;Yes;;;;
 Dracos, Nyrodspace;;;;;Earth;;;;;Dragons, Githyanki;;Nyrodspace;Nyrod;Yes;;;;
 Hel;;;;;Earth;;;;;Demons;;Nyrodspace;Nyrod;Yes;;;;
 Holtern;;;;;Earth;Nyrod;;;;;;Nyrodspace;Nyrod;Yes;;;;
-Infernus;;;;;Fire;;;;;;;Nyrodspace;Nyrod;Yes;;;;
 Kathenira;;;;;Earth;;;;;;;Nyrodspace;Nyrod;Yes;;;;
 Methadria Cluster;;;;;Earth;;;;;;;Nyrodspace;Nyrod;Yes;;;;
 N'gathia;;;;;Earth;Aldredd;;;Jungle;Mold men;;Nyrodspace;Nyrod;Yes;;;;
 Neir;;;;;Earth;;;;;Gnomes;;Nyrodspace;Nyrod;Yes;;;;
 Nyrod;;;;;Earth;;;;;;;Nyrodspace;Nyrod;Yes;;;;
 Polbin;;;;;Earth;Shroud;;;;Moon Dragons;;Nyrodspace;Nyrod;Yes;;;;
-Poulgeird;;;;;Water;Tandris;;;Frozen wasteland;;;Nyrodspace;Nyrod;Yes;;;;
 Reldain;;;;;Earth;;;;;Vampires;;Nyrodspace;Nyrod;Yes;;;;
 Shroud;;;;;Earth;;;;;;;Nyrodspace;Nyrod;Yes;;;;
 Taginole;;;;;Earth;Nyrod;;;;Undead;;Nyrodspace;Nyrod;Yes;;;;
 Tandris;;;;;Earth;;;;Plains, Forests;;;Nyrodspace;Nyrod;Yes;;;;
-The Red Star;;;;;Fire;;;;;;;Nyrodspace;Nyrod;Yes;;;;
 The remains of Shadow Keep;A;;;;Earth;Nyrod;;;;;;Nyrodspace;Nyrod;Yes;;;;
 The Sanctum;;;;;Earth;Reldain;;;;;;Nyrodspace;Nyrod;Yes;Ruins;;;
 Vudwa;;;;;Earth;Kathenira;;;;;;Nyrodspace;Nyrod;Yes;;;;
 Akdor;E;;;;Earth;;;;;;;Octorspace;Octor;Yes;;;;
-Arzol;I;;;;Fire;;;;;;;Octorspace;Octor;Yes;;;;
-Bogda;H;;;;Fire;;;;;;;Octorspace;Octor;Yes;;;;
-Borysov;D;;Ο;;Water;;5;;;;;Octorspace;Octor;Yes;;;;
-Florbeau;F;;;;Fire;;1;;;;;Octorspace;Octor;Yes;;;;
-Hurlock;F;;❄;;Air;;;;;;;Octorspace;Octor;Yes;Nebula;;;
-Kolin;H;;;;Air;;2;;;;;Octorspace;Octor;Yes;;;;
 Octorea;F;;;;Earth;;;;;;;Octorspace;Octor;Yes;spacefaring civilisation;;;
 Oyem;D;;❑;;Earth;;3;fire;;;;Octorspace;Octor;Yes;;;;
 Duranus;E;;;;Earth;;;;;;;Omnispace;Omni;Yes;population in billions;;;
-Gobul;;;;;Air;;;;;Dragons;;Omnispace;Omni;Yes;layered;;;
-Karnak;;;;;Live;;;;;;;Omnispace;Omni;Yes;;;;
-Lora;;;;;;;;;;;;Omnispace;Omni;Yes;;;;
-Maclear;;;;;Water;;1;;;;;Omnispace;Omni;Yes;moon (Tropika);;;
 Omni;;;;;Earth;;;;;;;Omnispace;Omni;Yes;;;;
-Tymar;;;;;Fire;;;;Inert;;;Omnispace;Omni;Yes;;;;
-Arariskein;I;;;;Fire;;;;;;Binary;Orthospace;Ortho;Yes;;;;
 Aufrec;E;5.000;;;Earth;;;fire;Scub plains & desert;Firenewts;;Orthospace;Ortho;Yes;;;;
-Corrigere;E;;;;Air;;;;Toxic deeps;;;Orthospace;Ortho;Yes;;;;
 Erta;J;;;Potato;Earth;;;;Void;;;Orthospace;Ortho;Yes;;;;
-Ortho;;;;;;;;;;;;Orthospace;Ortho;Yes;Harmonium homeworld.;The Factol's Manifesto.;;
 Ortho;F;;;;Earth;;;;Earthlike;Mostly Lawful;single continent;Orthospace;Ortho;Yes;Harmonium – dominated;;;
 Strec;F;;;;Earth;;4;;Earthlike;None;No animal life;Orthospace;Ortho;Yes;;;;
 Osrad;E;;;;Earth;;;;;Goblin-kin;;Osraspace;Osra;Yes;;;;
-Rastur;H;;;;Fire;;;;;;;Osraspace;Osra;Yes;;;;
 Rasturell;C;900;;;Earth;;;;Very hot;Azur, Fire Elementals;;Osraspace;Osra;Yes;;;;
-Ryan;C;200;;;Water;Torsia;;;Void;;;Osraspace;Osra;Yes;;;;
-Shard;B;5 × 25;△;;Water;Yarga;;;Ice;;;Osraspace;Osra;Yes;;;;
-Tefir;G;;;;Air;;;fire;;;;Osraspace;Osra;Yes;;;;
 The Curtain;B;;‡;;Earth;;;;;;;Osraspace;Osra;Yes;;;;
 Torsia;D;3.500;;;Earth;;1;;;None;;Osraspace;Osra;Yes;;;;
-Yarga;C;200;;;Water;;1;;frozen surface;;;Osraspace;Osra;Yes;;;;
 Arboria;;;;;Earth;;2;;;;;Osternaaspace;Osternaa;Yes;2 moons (Luna, Meridian);;;
 Asteroid X;;;;;Earth;;;;;;;Osternaaspace;Osternaa;Yes;;;;
-Gelidia;;;;;;;;;Icy;;;Osternaaspace;Osternaa;Yes;;;;
-Lucencia;;;;;Water;;4;;;;;Osternaaspace;Osternaa;Yes;moons (elemental);;;
 Octernaas;;;;;Earth;;1;;;;;Osternaaspace;Osternaa;Yes;;;;
-Sun, Osternaaspace;;;;;Fire;;;;;;;Osternaaspace;Osternaa;Yes;;;;
 Tarmitia;;;;;Earth;;;;;;;Osternaaspace;Osternaa;Yes;;;;
 Tenebrosia;;;;;Earth;;;;;;;Osternaaspace;Osternaa;Yes;;;;
 Eechinos;A;;;;Earth;;;;;;;Outspace  ;Out;Yes;;;;
-Hum;E;;;;Fire;;;;;;;Outspace  ;Out;Yes;;;;
-The Portal;A;;?;;Portal;;;;;;;Outspace  ;Out;Yes;Portal;;;
-The Portal;A;;?;;Portal;;;;;;;Outspace  ;Out;Yes;;;;
 Tirorka;A;;;;Earth;;;;;;;Outspace  ;Out;Yes;;;;
 Alpha Cluster;G;50.000;;;Earth;;;;;;;Passarspace;Passar;Yes;;;;
 Beta Cluster;F;11.000;;;Earth;;;;;;;Passarspace;Passar;Yes;;;;
@@ -923,222 +616,124 @@ Delta Cluster;G;60.000;;;Earth;;;;;;;Passarspace;Passar;Yes;;;;
 Epsilon Cluster;E;5.000;;;Earth;;;;;;;Passarspace;Passar;Yes;;;;
 Eta Cluster;D;1.000;;;Earth;;;;;;;Passarspace;Passar;Yes;;;;
 Gamma Cluster;G;70.000;;;Earth;;;;;;;Passarspace;Passar;Yes;;;;
-The Maw;?;;?;;?;;;;;;;Passarspace;Passar;Yes;;;;
 Zeta cluster;C;700;;;Earth;;;;;;;Passarspace;Passar;Yes;;;;
 Astrylon;;;;;Earth;;;;;;;Pathspace;Path;Yes;;Spelljammer #10  'Exile on Taladas';;
 Barrara;;;;;Earth;;;;;;;Pathspace;Path;Yes;;Spelljammer #10  'Exile on Taladas';;
-Dragonsun;;;;Dragon;Starbeast;;;;;;;Pearlspace;Pearl;Yes;;;;
 Pelinore;G;81.000;◗;;Earth;;;;;;;Pelinorespace;Pelinore;Yes;;;;
-Artimis;F;;;;Air;;6;;;;;Pheolitespace;Pheolite;Yes;;;;
 Chaos;F;;;;Earth;;many;;Volcanic;;;Pheolitespace;Pheolite;Yes;Volcanic, many moons (Mindweep, Zorruth;;;
 Ethwuld/Dethwuulf;E;;;;Earth;;3;;;;;Pheolitespace;Pheolite;Yes;3 moons (Lunithi, Ruinthi, Celenthi);;;
 Lagorith;D;;;;Earth;;1;;;Azer, fire newts, dragons;;Pheolitespace;Pheolite;Yes;;;;
 Outreach;E;;;;Earth;;3;;;;;Pheolitespace;Pheolite;Yes;Outcastes, 3 moons (K'pzzz'sh, Cor'zzune, Pulser);;;
-Pheos;H;;;;Fire;;;;;;;Pheolitespace;Pheolite;Yes;;;;
 Sun's Girdle;A;;‡;;Earth;;;;;;;Pheolitespace;Pheolite;Yes;Ocean ribbon;;;
 Hourus;;;;;Earth;;;;;;;Pillarspace;Pillar;Yes;;;;
 Minutus;;;;;Earth;;;;;;;Pillarspace;Pillar;Yes;;;;
 Secundus;;;;;Earth;;;;;;;Pillarspace;Pillar;Yes;;;;
-The Pillar;*;;△;Pillar;Fire;;;;;;;Pillarspace;Pillar;Yes;;;;
-The Vortex;;;;;;;;;;;;Pillarspace;Pillar;Yes;;;;
-Parcelius;;;;;;;;;;;;Plebosspace;Plebos;Yes;likely a fairly cosmopolitan, spelljammer-aware world.;Into the Void, p200.;;
+Brek|qq|zz;A;;◗;;Earth;;;;;;;Preyspace  ;Prey;Yes;;;;
 Crossfire;D;;;;Earth;;;;;;;Preyspace  ;Prey;Yes;;;;
 Neutrality;B;;;;Earth;;;;;;;Preyspace  ;Prey;Yes;;;;
 Skull;A;;;Skull;Earth;;;;;;;Preyspace  ;Prey;Yes;;;;
-The Comet;C;;;Comet;Fire;;;;;;;Preyspace  ;Prey;Yes;;;;
-Warclock;H;;;;Water;;;;;;;Preyspace  ;Prey;Yes;;;;
-Ignius Air;H;;;;Fire;;;;;;;Primespace;Prime;Yes;;;;
-Octapawn;A;;;;Water;;;;;;;Primespace;Prime;Yes;Octapus shaped;;;
 Prime;E;;;;Earth;;;;;;;Primespace;Prime;Yes;;;;
 Uvalessen;C;;Ο;;Earth;;;;;;;Primespace;Prime;Yes;;;;
 Ashen;D;;;;Earth;;;;dust world;;;Pyrespace;Pyre;Yes;;;;
 Chain of Tears;B;;‡;;Earth;;;;;;;Pyrespace;Pyre;Yes;;;;
 Moradin's Forge;D;;;;Earth;;;;;;;Pyrespace;Pyre;Yes;;;;
 Perianth;D;;;;Earth;;1;;;;;Pyrespace;Pyre;Yes;moon (Spider moon);;;
-Quelya;E;;;;Water;;;;;;;Pyrespace;Pyre;Yes;;;;
-The Pyre;H;;;;Fire;;;;;;;Pyrespace;Pyre;Yes;;;;
 Verdura;E;;;;Earth;;;;Jungle Planet;;;Pyrespace;Pyre;Yes;;;;
-Altanor;I;;;;Fire;;;;;;;Racespace  ;Race;Yes;;;;
 Aius;D;;;;Earth;;2;;;;;Ragespace  ;Rage;Yes;;;;
-Arabani Citadel;A;;△;;Artificial;;;;;;;Ragespace  ;Rage;Yes;Drow base;;;
-Blacksea;E;;;;Water;;4;;;;;Ragespace  ;Rage;Yes;4 moons (Dead Reef, Orb, The Web, Elamshin D'lil Yorn);;;
-Blackwood;B;;;;Live;;;;;;;Ragespace  ;Rage;Yes;;;;
-Blind Huntress;*;;;;Live;;;;;;;Ragespace  ;Rage;Yes;Tarrasque;;;
-Crimson Forge;B;;◗;;Fire;Aius;;;;Tanar'ri;;Ragespace  ;Rage;Yes;;;;
 Dark Crucifix;B;;△;Cylinder;Earth;;;;;;;Ragespace  ;Rage;Yes;;;;
 Executioner;A;;;;Earth;;;;;;;Ragespace  ;Rage;Yes;Dead;;;
-Glyph;J;;;Rune;Fire;;;;;;;Ragespace  ;Rage;Yes;;;;
-Hoodman's Guard;A;;;;;;;;;;;Ragespace  ;Rage;Yes;Base;;;
 Kanoxx;D;;;;Earth;;4;;;;;Ragespace  ;Rage;Yes;4 moons ('Ulga, 'Feha, 'Nabuo, 'Blaze);;;
-Krayus;C;;;;Water;;;;;;;Ragespace  ;Rage;Yes;;;;
 LordMasterBase;C;;;;Earth;;;;;Neogi;;Ragespace  ;Rage;Yes;;;;
 Misplaced;J;;‡;;Earth;;;;;;;Ragespace  ;Rage;Yes;;;;
 New Bral;A;;;;Earth;;;;;Pirates;;Ragespace  ;Rage;Yes;;;;
-Newhaven;A;;△;Station;;;;;;;;Ragespace  ;Rage;Yes;Arcane base;;;
 Order's Island;B;;◗;;Earth;;;;;;;Ragespace  ;Rage;Yes;Order;;;
 Ore;B;;;;Earth;Aius;;;;;;Ragespace  ;Rage;Yes;;;;
 Relic;E;;;;Earth;;;;Dead;;;Ragespace  ;Rage;Yes;;;;
 Slutmoor;A;;◗;;Earth;;;;;;;Ragespace  ;Rage;Yes;;;;
-The Bitch's Threesome;;;;;;;;;;;;Ragespace  ;Rage;Yes;;;;
-The Dust Clouds;D;;;;Air;;;;;;;Ragespace  ;Rage;Yes;;;;
 Void;?;;‡;;Earth;;;;;;;Ragespace  ;Rage;Yes;;;;
 Crystalribbon;A/B;;‡;;Earth;;;;;Primative Humans;;Ragestarspace;Ragestar;Yes;;;;
 Dormoin;E;5.000;;;Earth;;;;;Giff;;Ragestarspace;Ragestar;Yes;;;;
-Garolas;G;;;;Air;;12;;;;;Ragestarspace;Ragestar;Yes;;;;
-Gia-Uetau'auv'twg;F;;;;Air;;;Air;;Beholders;;Ragestarspace;Ragestar;Yes;;;;
 Iberoth;;;‡;;Earth;;;;;Humans & Minotaurs;;Ragestarspace;Ragestar;Yes;;;;
 Ilaalhazeig;E;8.000;;;Earth;Shaseth;;;;Illithids;Moon 3 of Shaseth;Ragestarspace;Ragestar;Yes;;;;
 Merchant's Belt;A-D;;‡;;Earth;;;;;;;Ragestarspace;Ragestar;Yes;Many Nations;;;
 Nashean;E;5.500;;;Earth;Shaseth;;;;Undead;Moon 8 of Shaseth;Ragestarspace;Ragestar;Yes;;;;
 Nimladir;E;5.000;;;Earth;Thaskal-Ngr;;;;;Moon 16 of Thaskal-Ngr;Ragestarspace;Ragestar;Yes;Ruins;;;
 Qex'pomili;E;8.000;;;Earth;;2;;Icy;;;Ragestarspace;Ragestar;Yes;;;;
-Rage Fire Ring;;;‡;;Earth/Fire;;;;Lava;;;Ragestarspace;Ragestar;Yes;;;;
-Ragestar;E;;;;Fire;;;;;;;Ragestarspace;Ragestar;Yes;;;;
 Shaien;D;2.000;;;Earth;;;;Hot Rock;;;Ragestarspace;Ragestar;Yes;;;;
-Shaseth;G;;;;Air;;11;;;;;Ragestarspace;Ragestar;Yes;;;;
 Skunitfar;E;9.000;;;Earth;Garolas;;;;Deepspawn;Moon 3 of Garolas;Ragestarspace;Ragestar;Yes;;;;
 Thaneth;E;4.500;;;Earth;Shaseth;;;Fungus World;;Moon 1 of Shaseth;Ragestarspace;Ragestar;Yes;;;;
-Thaskal-Ngr;G;;;;Air;;17;;;;;Ragestarspace;Ragestar;Yes;;;;
 Thrormain;E;8.000;;;Earth;Garolas;;;;Dwarves;Moon 7 of Garolas;Ragestarspace;Ragestar;Yes;;;;
 Thufur;F;14.500;;;Earth;;2;;Hot Rock;;;Ragestarspace;Ragestar;Yes;;;;
-Twins of Tempest;F;;;;Air;;;;;;Twin Gas Giants;Ragestarspace;Ragestar;Yes;;;;http://lost.spelljammer.org/DrawingBoard/worlds/TwinsOfTempest.html
 Winterlight;E;9.500;;;Earth;;;;;Elves;Melasiraenlith in High Elven;Ragestarspace;Ragestar;Yes;Major IEN port and elven world;;;
 Yofijat'mi;E;8.000;;;Earth;Thaskal-Ngr;;;;Pirates of Gith;Moon 11 of Thaskal-Ngr;Ragestarspace;Ragestar;Yes;;;;
 Zhl-Chal;;;‡;;Earth;;;;;;;Ragestarspace;Ragestar;Yes;;;;
-Zenuvia;;;;;;;;;;;;Rainspace;Rain;Yes;Gargantuan flytraps;;;
 Anadia;B;;;;Earth;;;;;;;Realmspace;Realm;Yes;;;;
-Chandos;F;;;;Water;;;;;;;Realmspace;Realm;Yes;;;;
-Coliar;G;;;;Air;;;;;;;Realmspace;Realm;Yes;;;;
 Garden;A;;;;Earth;;;;;;;Realmspace;Realm;Yes;;;;
 Glyth;E;;;;Earth;;;;;;;Realmspace;Realm;Yes;;;;
 H'Catha;C;;◗;;Earth;;;;;;;Realmspace;Realm;Yes;;;;
-Karpri;D;;;;Water;;;;;;;Realmspace;Realm;Yes;;;;
-The Sun, Realmspace;H;;;;Fire;;;;;;;Realmspace;Realm;Yes;;;;
 Toril;E;;;;Earth;;1;;;;;Realmspace;Realm;Yes;;Forgotten Realms campigh setting, moon;;
 Below;F;;;;Earth;;1;;;;;Refugespace;Refuge;Yes;moon (Refuge);;;
-Blaze;I;;;;Fire;;;;;;;Refugespace;Refuge;Yes;;;;
 Welcome;A;;;;Earth;;;;;;;Refugespace;Refuge;Yes;;;;
 Brimi;D;;;;Earth;;;;;;;Rhymespace;Rhyme;Yes;;;;
 Dragar;F;;;;Earth;;;;;;;Rhymespace;Rhyme;Yes;;;;
 Farm;D;;;;Earth;;;;;;;Rhymespace;Rhyme;Yes;;;;
 Hantimi;D;;;;Earth;;2;;;;;Rhymespace;Rhyme;Yes;;;;
-Knol;G;;;;Air;;;;;;;Rhymespace;Rhyme;Yes;;;;
-Likar;H;;;;Air/Water;;;;;;;Rhymespace;Rhyme;Yes;;;;
-Mesor;H;;;;Fire;;;;;;;Rhymespace;Rhyme;Yes;;;;
-Micor;H;;;;Fire;;;;;;;Rhymespace;Rhyme;Yes;;;;
 Rhymchaeld;F;;;;Earth;;;;;;;Rhymespace;Rhyme;Yes;;;;
 The Hammer;A-C;;‡;;Earth;;;;;;;Rhymespace;Rhyme;Yes;;;;
 Citadel Maker;J;;;;Earth;;;;;;;Rockspace  ;Rock;Yes;;;;
 Fallux;F;;;;Earth;;;;;;;Rockspace  ;Rock;Yes;;;;
-Minja;A;;;;Fire;;;;;;;Rockspace  ;Rock;Yes;;;;
-Sun, Rockspace;I;;;;Fire;;;;;;;Rockspace  ;Rock;Yes;;;;
 Toolfyd;C;;;;Earth;;;;;;;Rockspace  ;Rock;Yes;;;;
-Uptoor;E;;❑;;Water;;;;Ice;;;Rockspace  ;Rock;Yes;;;;
 Glorantha;E;6.854;❑;;Earth;;2;;;;;Runespace;Rune;Yes;Runequest role playing game;Runequest;Greg Stafford;
-Bryn;H;;;;Fire;;;;;;;Runedarspace;Runedar;Yes;;;;
 Ithindar;C;;;;Earth;;1;;;;;Runedarspace;Runedar;Yes;moon (Asteroid cluster);;;
 Myrios;C;;;;Earth;;;;;;;Runedarspace;Runedar;Yes;;;;
 Ororin;D;;;;Earth;;1;;;;;Runedarspace;Runedar;Yes;;;;
 Phymldar;D;;;;Earth;;;;;;;Runedarspace;Runedar;Yes;;;;
 Phymldar Asteroids;A;;‡;;Earth;;;;;;;Runedarspace;Runedar;Yes;;;;
-Saros;D;;;;Air;;1;;;;;Runedarspace;Runedar;Yes;1 fire moon;;;
 Thorak-Din;E;;;;Earth;;2;;;;;Runedarspace;Runedar;Yes;;;;
-Salzar;H;;;;Water;;;;;Salzar;;Salzarspace;Salzar;Yes;;SJA4 p.52;TSR;http://www.archlich.com/kotsc/Places/VodoniCluster/Salzarspace.html
-Ahhh;G;;‡;;Fire;;;;;;;Sandspace  ;Sand;Yes;;;;
 Dune;C;;;;Earth;;3;;;;;Sandspace  ;Sand;Yes;;;;
 Juniper;H;;;;Earth;;;;;;;Sandspace  ;Sand;Yes;;;;
-Sun, Sandspace;I;;;;Fire;;;;;;;Sandspace  ;Sand;Yes;;;;
 Thronton;C;;;;Earth;;;;;;;Sandspace  ;Sand;Yes;;;;
 Aloth;E;;;;Earth;;2;;;;;Saruspace;Saru;Yes;2 moons (Legomir, Narzog);;;
 Baraduithin;F;;;;Earth;;3;;5× gravity, cold;;;Saruspace;Saru;Yes;3 moons (Barakigil, Calabrant, Ologorn);;;
 Belemir Belt;A;;‡;;Earth;;;;;;;Saruspace;Saru;Yes;main spelljamming culture;;;
-Bomryn;F;;;;Air;;1;;;;;Saruspace;Saru;Yes;sargasso, moon (Cirvir);;;
 Calithorn;E;;;;Earth;;;;void;;;Saruspace;Saru;Yes;;;;
 Durgoth;F;;;;Earth;;;;triple-gravity, venus-like;;;Saruspace;Saru;Yes;;;;
 Farithm;D;;;;Earth;;;;void, hot, internal caverns;;;Saruspace;Saru;Yes;;;;
-Maranuir;F;;;;Air;;5;;Cold;;;Saruspace;Saru;Yes;;;;
-Saruthillion;H;;;;Fire;;;;;;;Saruspace;Saru;Yes;;;;
 Aerea;;;;Hollow;Earth;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
-Areatia;;;;;Air;Sarûnia;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
-Barexina;;;;;;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
 Caerwyn;;;;;Earth;;;;Temperature Extremes;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
-Drenaelea;;;;;;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
-Galatia;;;;;Water;Sarûnia;;;Ice;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
 Grenoriv;;;;;Earth;;;;hot;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
 Helatia;;;;;Earth;;;;Void;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
 Jraenor;;;;;Earth;;;;hot;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
-Lasarnia;;;;;;Sarûnia;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
 Luna;D;2.159;;;Earth;"Terra; Earth";;;;;;Sarûniaspace;Sarûnia;Yes;;;;
-Magania;;;;;Fire;Sarûnia;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
-Moltaria;;;;;Earth/Fire;;;;Magma;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
 Moon (Luna);D;2.159;;;Earth;Terra: Earth;;;;;;Sarûniaspace;Sarûnia;Yes;;;;
-Ninachta;;;;;;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
 Randojka;E;4.220;;;Earth;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
-Sarûnia;;;;;;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
 Sholnara;E;7.918;;;Earth;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
 Terania;;;;;Earth;Sarûnia;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
-Tinorous;;;;;;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
-Yellow Sun;;;;;;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
-Sarus;;;;;;;;;;;;Saurialspace;Saurial;Yes;;;;
 Charr;;;;;Earth;;;;;;;Scarredspace;Scarred;Yes;;;;
 Ravine;;;;;Earth;;;;;;;Scarredspace;Scarred;Yes;;;;
 Ring of Asterius;;;‡;Ring;Earth;;;;;;;Scarredspace;Scarred;Yes;;;;
-Tarnish;;;;;Fire;;;;;;;Scarredspace;Scarred;Yes;;;;
-The Husk;;;;Beetle;Live;;;;;;;Scarredspace;Scarred;Yes;;;;
-Gemini;E;;;;Water;;;;;;;Seaspace  ;Sea;Yes;;;;
-Phy;C;;;;Air;;;;;;;Seaspace  ;Sea;Yes;;;;
-Rhy;C;;;;Air;;;;;;;Seaspace  ;Sea;Yes;;;;
-Sky Tyrant;I;;;;Air;;;;;;;Seaspace  ;Sea;Yes;;;;
-Sun, Seaspace;H;;;;Fire;;;;;;;Seaspace  ;Sea;Yes;;;;
-Thalassa;D;;;;Water;;;;;;;Seaspace  ;Sea;Yes;;SJR4 p.25;;
-Thy;C;;;;Air;;;;;;;Seaspace  ;Sea;Yes;;;;
-Yorgpor;C;;;;Water;;;;;;;Seaspace  ;Sea;Yes;;;;
-Sun, Seeliespace II;;;;;Fire;;;;;;;Seeliespace II;Seelie II;Yes;;;;
-Seelispace IV centre;;;;;;;;;;;;Seeliespace IV;Seelie IV;Yes;;;;
-Angharradh;B;;;;Fire;;;;;;;Seldarspace;Seldar;Yes;3 bodies;;;
 Araushnee;D;;;;Earth;;;;;;;Seldarspace;Seldar;Yes;Abandoned;;;
 Felarathael;A;;;;Earth;;;;;;;Seldarspace;Seldar;Yes;;;;
 Lareth;F;;;;Earth;;1;;;;;Seldarspace;Seldar;Yes;moon (The Crescent Moon);;;
-Lashrael;A;;;;Fire;;;;;;;Seldarspace;Seldar;Yes;;;;
-Leafhome;H;;;Shell;Live;;;;;;;Seldarspace;Seldar;Yes;;;;
 Mestarine;C;;◗;;Earth;;1;;;;;Seldarspace;Seldar;Yes;moon (Twisted);;;
 Akeema;;;;;Earth;;1;;;;;Seskotspace;Seskot;Yes;;;;
-Dofloogah;;;;;Air;;2;green flame;;;;Seskotspace;Seskot;Yes;;;;
-Krastarrph Dell;;;;;Water;;;1;Icy;;;Seskotspace;Seskot;Yes;;;;
-Sun, Seskotspace;;;;;Fire;;;;;;;Seskotspace;Seskot;Yes;;;;
 T'Larick;;;‡;;Earth;;;;;;;Seskotspace;Seskot;Yes;;;;
-The Cold;;;#NAME?;;;;;;;;;Seskotspace;Seskot;Yes;;;;
-Valestra;;;;;Water;;8;;;;;Seskotspace;Seskot;Yes;;;;
-Vanosh;;;;;Live;;2;;;;;Seskotspace;Seskot;Yes;;;;
-Chonnot;B;;◗;;Water;;;;;;;Shadowspace;Shadow;Yes;;;;
 Ivussus;A;;;;Earth;;;;;;;Shadowspace;Shadow;Yes;;;;
-Kiffin;B;;◗;;Special;;;;;;;Shadowspace;Shadow;Yes;;;;
 Lukkum;B;;◗;;Earth;;;;;;;Shadowspace;Shadow;Yes;;;;
 Pajjax;B;;◗;;Earth;;;;;;;Shadowspace;Shadow;Yes;;;;
 Sohhoras;B;;;;Earth;;;;;;;Shadowspace;Shadow;Yes;;;;
 Tryggyt;C;;◗;;Earth;;;;;;;Shadowspace;Shadow;Yes;;;;
-Wirrit;B;;;;Air;;;;;;;Shadowspace;Shadow;Yes;;;;
-Suithine;F;;;;Water;;;;;;;Shamblespace;Shamble;Yes;;;;
 The Lagan Zone;A-C;;‡;;Earth;;;;;;;Shamblespace;Shamble;Yes;100m wide;;;
-Toilnys;F;;;;Fire;;;;;;;Shamblespace;Shamble;Yes;;;;
-Arawai;E;7.171;;;Live;;2;;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
 Aureon;E;8.886;;;Earth;;;;cold desert;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
 Balinor;E;4.630;;;Earth;;;;Void, tidaly locked;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
 Boldrei;E;6.442;;;Earth;;;;Icy;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
-Cygnus;D;;;;Unknown;;;;;;;Shardspace;Shard;Yes;;;;
 Ebberon;E;7926,38;;;Earth;;13;Siberys;;;;Shardspace;Shard;Yes;Ebberon campaign setting;;WotC;
 Eberron Islands;A-C;;‡;;Earth;;;;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
 Khyber Islands;A-C;;‡;;Earth;;;;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
 Olladra;E;8.609;;;Earth;;8;;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
 Onatar;E;4.630;;;Earth;;;;Void, tidaly locked;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
-Siberys Islands;A-D;;‡;;Air/Water;;;;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
-The Devourer;F;25.677;;;Air;;125;Thin Red;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
-The Fury;G;52.143;;;Air;;42;Thin ice;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
-The Keeper;F;26.098;;;Air;;96;;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
 The Mockery;F;25.677;;;Earth;;4;;Arid, poisonous atmosphere;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
-The Shadow;G;94.247;;;Air;;12;;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
 The Traveler;E;4.005;;;Earth;;;;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
-Sydia;;;;;;;;;;;;Sidiusspace;Sidius;Yes;Paladin Orders that hold the Spelljammer as a thing of whoreship;;;
 Baripah;;;;;Earth;;;;desert;;;Silkspace  ;Silk;Yes;Asteroid Belt;;;
 Biteray;;;;;Earth;;;;;;;Silkspace  ;Silk;Yes;Gamma World;;;
 Chillwind;;;;;Earth;;;;;Undead;;Silkspace  ;Silk;Yes;;;;
@@ -1146,153 +741,71 @@ Excell;;;;;Earth;;1;;;;;Silkspace  ;Silk;Yes;Super-heroes;;;
 Jera;;;;;Earth;;2;;;;;Silkspace  ;Silk;Yes;Fantasy;;;
 Oberah;;;;;Earth;;;;;;;Silkspace  ;Silk;Yes;High Tech;;;
 Shreeve;;;;;Earth;;;;;;;Silkspace  ;Silk;Yes;Early Tech;;;
-Silksun;H;;;;Fire;;;;;;;Silkspace  ;Silk;Yes;;;;
 Arborianna;E-;;;;Earth;;;;;Gold Elves;;Sillusspace;Sillus;Yes;Captured by Scro;Evermeet: Island of the Elves p.87;TSR;
-Lar;;;;;;;;;;;;Sillusspace;Sillus;Yes;;SJS1 p.5;Bruce Nesmith (TSR);
 Charatic;C;;;;Earth;;;;;;;Skyspace  ;Sky;Yes;;;;
 Huptee;A;;;;Earth;;;;;;;Skyspace  ;Sky;Yes;;;;
-Nubis;E;;;;Air;;;;;;;Skyspace  ;Sky;Yes;;SJR4 p.37;;
-Portal;H;;;;Fire;;;;;;;Skyspace  ;Sky;Yes;;;;
-Vixtil;F;;;;Fire;;;;;;;Skyspace  ;Sky;Yes;;;;
-Aramoth;B;;;;Fire;;;;;;;Solarisspace;Solaris;Yes;Irratic;;;
-Beacon;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
-Beros;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
-Caronax;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
 Cartania;E;;;;Earth;;4;;;;;Solarisspace;Solaris;Yes;4 moons (Lona, Irin, Shoki, Dira);;;
-Ephos;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
-Gandorine;;;;;Air;;;;;;;Solarisspace;Solaris;Yes;;;;
 Hydraxa;E;;;;Earth;;1;;;;;Solarisspace;Solaris;Yes;85% sea;;;
-Iris;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
 Jewyll;D;;;;Earth;Iris;1;;;;;Solarisspace;Solaris;Yes;moon (Iris);;;
 Karadex;A;;;;Earth;;;;;;;Solarisspace;Solaris;Yes;;;;
-Octerak;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
 Playards;A;;;6 worldlets;Earth;;;;;;;Solarisspace;Solaris;Yes;6 worldlets;;;
-Shorakoth;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
-Solaris;H;;;;Fire;;;;;;;Solarisspace;Solaris;Yes;;;;
-Swarm;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
-Tileria;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
-Tyrisa;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
 Aldos;D;;;;Earth;;1;;;;;Solicespace  ;Solice;Yes;;;;
 Apogee;E;;;;Earth;;2;;;;;Solicespace  ;Solice;Yes;;;;
 Dante;D;;;;Earth;;;;;;;Solicespace  ;Solice;Yes;;;;
 Millway;G;;;;Earth;;7;;;;;Solicespace  ;Solice;Yes;;;;
-Solice;H;;;;Fire;;;;;;;Solicespace  ;Solice;Yes;;;;
 Vista;E;;;;Earth;;;;;;;Solicespace  ;Solice;Yes;;;;
 Haven, Spiderspace;E;;;;Earth;;;1;;Drow;;Spiderspace;Spider;Yes;;;;
 Prison;A;;◗;Disk;Earth;;;;cold desert;;;Spiderspace;Spider;Yes;Q1, level 4;;;
 Shipyard;B;;;;Earth;;;;;;;Spiderspace;Spider;Yes;Artificial;;;
-SlaveWorld;C;;;;Water;;;;;;;Spiderspace;Spider;Yes;Ice mines;;;
-The Gems;G;;;;Fire;;;;;;;Spiderspace;Spider;Yes;5 suns;;;
 The Trap;D;;◗;Disk;Earth;;;;hot desert;;;Spiderspace;Spider;Yes;;;;
 Drider;C;;◗;;Earth;;;;;;;Spiderspace part 2;Spider 2;Yes;;;;
 Tranch;C;;◗;;Earth;;;;;;;Spiderspace part 2;Spider 2;Yes;;;;
-Web Core;D;;;;Live;;;;;;;Spiderspace part 2;Spider 2;Yes;;;;
 Widow;C;;◗;;Earth;;;;;;;Spiderspace part 2;Spider 2;Yes;;;;
 Crumbled;;;;;Earth;;;;;;;Spindlespace;Spindle;Yes;;;;
-Fragments;;;;;;;;;;;;Spindlespace;Spindle;Yes;;;;
-Lattice;;;;;;;;;;;;Spindlespace;Spindle;Yes;;;;
-Godshome;E;;;;;;;;;;;Splatterspace;Splatter;Yes;;;;
 Godshome;E;7.000;;Hollow;Earth;;;;;;;Splatterspace;Splatter;Yes;;;;
-Bewcartch;F;;;;Fire;;;;;;;Splitspace;Split;Yes;;;;
 Donema;D;;Ο;;Earth;;;;;;;Splitspace;Split;Yes;;;;
-Kasalsh;I;;◗;;Fire;;;;;;;Splitspace;Split;Yes;;;;
-Mehlcix;G;;;;Fire;;;;;;;Splitspace;Split;Yes;;;;
 Sycrubin;H;;;;Earth;;;;;;;Splitspace;Split;Yes;;;;
 Tybard;F;;❄;;Earth;;;;Void;;;Splitspace;Split;Yes;;;;
-Debargen;G;;;;Air;;;;;;;Splitspace part 2;Split 2;Yes;;;;
 Kestriff;D;;Ο;;Earth;;;;;;;Splitspace part 2;Split 2;Yes;;;;
 Naradia;H;;‡;;Earth;;;;;;;Splitspace part 2;Split 2;Yes;;;;
-Tixmar;G;;;;Air;;;;;;;Splitspace part 2;Split 2;Yes;;;;
-Todrima;F;;;;Fire;;;;;;;Splitspace part 2;Split 2;Yes;;;;
-Zontex;E;;❄;;Live;;;;;;;Splitspace part 2;Split 2;Yes;;;;
 Goyiarilt;E;;;;Earth;;;;Rainforest;Squirrn;;Squirrnspace  ;Squirrn;Yes;Rainforest, Squirrn homeworl;;;
-Ibbuchikshee;J;;;;Fire;;;;;;;Squirrnspace  ;Squirrn;Yes;;;;
 Reshgu;B;;;;Earth;;;;Rocky wilderness;;;Squirrnspace  ;Squirrn;Yes;;;;
-Squirrnspace Belt 1;E;;‡;;Varies;;;;;;;Squirrnspace  ;Squirrn;Yes;;;;
-Squirrnspace Belt 2;E;;‡;;Ice;;;;;;;Squirrnspace  ;Squirrn;Yes;;;;
-Squirrnspace Belt 3;E;;‡;;Varies;;;;;;;Squirrnspace  ;Squirrn;Yes;;;;
-Squirrnspace Belt 4;E;;‡;;Ice/Air;;;;;;;Squirrnspace  ;Squirrn;Yes;Cometary cloud;;;
-Trisgafgyit;E;;;;Air;;;;;;;Squirrnspace  ;Squirrn;Yes;;;;
 Holistic;A;;Ο;Egg;Earth;;;;;;;Ssssspace  ;Ssss;Yes;;;;
-Slin;B;;◗;;Water;;;;;;;Ssssspace  ;Ssss;Yes;;;;
-Stationary;G;;;;Fire;;;;;;;Ssssspace  ;Ssss;Yes;;;;
 Torus;F;;△;Torus;Earth;;;;;;;Ssssspace  ;Ssss;Yes;;SJR4 p.44;;
-Cloak of Shrouding;I;;;Shell;Air;;;;;;;Ssuwspace;Ssuw;Yes;;;;
 Forbidden Islands;B;;;;Earth;;;;Jungle;;;Ssuwspace;Ssuw;Yes;;;;
 Hex;B;;◗;;Earth;;;;;;;Ssuwspace;Ssuw;Yes;;;;
 Nightfell;B;;;;Earth;;;;;;;Ssuwspace;Ssuw;Yes;;;;
 Shield of Havour;A;;‡;;Earth;;;;;;;Ssuwspace;Ssuw;Yes;;;;
-Suun;F;;;;Fire;;3;;;;;Ssuwspace;Ssuw;Yes;;;;
 The Broken Islands;C;;;;Earth;;;;;;;Ssuwspace;Ssuw;Yes;;;;
-Prime Star;A;;;;Portal;;;;;;;Starspace;Star;Yes;to Radience;;;
 Akzaki;;;;;Earth;;;;Mountainous;Ogres;;Steel Star Space;Steel Star;Yes;;;;http://www.thepiazza.org.uk/bb/viewtopic.php?p=106943#p106943
 Corrokui;;;;;Earth;;;;Swamp;Ogres;;Steel Star Space;Steel Star;Yes;Gargantua;;;http://www.thepiazza.org.uk/bb/viewtopic.php?p=106943#p106943
-Hagane Taiyo;I;1.199.392;;;Fire;;5;;;Fire Elementals, Efreet;Steel-coloured;Steel Star Space;Steel Star;Yes;;;;http://www.thepiazza.org.uk/bb/viewtopic.php?p=106943#p106943
 Ika-Aan;;;;;Earth;;;;Desert and Grassland;Ogres;;Steel Star Space;Steel Star;Yes;;;;http://www.thepiazza.org.uk/bb/viewtopic.php?p=106943#p106943
 Korryl;;;;;Earth;;;;Forested;Ogres;;Steel Star Space;Steel Star;Yes;;;;http://www.thepiazza.org.uk/bb/viewtopic.php?p=106943#p106943
 Kyku;D;;;;Earth;Ur-Yon;;;;;;Steel Star Space;Steel Star;Yes;;;;
-Ping-Yong;C;;;;Water;Ur-Yon;;;;;;Steel Star Space;Steel Star;Yes;;;;
 Ryc;D;;◗;;Earth;Ur-Yon;;;;;Rice paddies;Steel Star Space;Steel Star;Yes;;;;
-Ur-Yon;F;15.500;;;Fire/Water;;3;;Volcanic Islands;Ogres, Goblins;;Steel Star Space;Steel Star;Yes;;;;http://www.thepiazza.org.uk/bb/viewtopic.php?p=106943#p106943
 Stormspace 1;;;;;Earth;;;;;;;Stormspace;Storm;Yes;;;;
 Stormspace 2;A;;‡;;Earth;;;;;;;Stormspace;Storm;Yes;;;;
 Brandish;C;;;;Earth;;1;;;;;Swordspace  ;Sword;Yes;;;;
-Gallant;G;;;;Fire;;;;;;;Swordspace  ;Sword;Yes;;;;
 Helm;A;;;;Earth;;;;;;;Swordspace  ;Sword;Yes;Helmet shaped;;;
 Sword;B;;;Sword;Earth;;;;;;;Swordspace  ;Sword;Yes;;;;
 Talangran;E;;;;Earth;;;;;;;Talangranspace  ;Talangran;Yes;This planet holds the Talangran Empire, a spelljamming aware groundling nation with superior technology and a thirst for Elven slaves.;"Dungeon #34 ""The Lady Rose""";;
 Caltrop;B;;△;;Earth;;;;;;;Tarraspace;Tarra;Yes;Tetrahedron- Juna Artifact;;;
-Dead Heart;E;;;;Fire;;;;;;;Tarraspace;Tarra;Yes;;;;
-Forge;K;;;;Fire;;;;;;;Tarraspace;Tarra;Yes;Red;;;
 Frost Ring;A;;‡;;Earth;;;;;;;Tarraspace;Tarra;Yes;;;;
 Iron Ring;B;;‡;;Earth;;;;;;;Tarraspace;Tarra;Yes;;;;
-Slime Ring;J;;‡;;Water;;;;;;;Tarraspace;Tarra;Yes;;;;
 Tarrasqueworld;E;;;;Earth;;;;;Tarrasques!;;Tarraspace;Tarra;Yes;;;;
-Ahto;G;;;;Water;;;;;;;Taur-Utu space;Taur-Utu;Yes;;;;
-Athirat;;;;;Water;;;;;;;Taur-Utu space;Taur-Utu;Yes;;;;
-Ellel;;;;;Air;;;;;;;Taur-Utu space;Taur-Utu;Yes;;;;
 Geb;E;;;;Earth;;1;;;;;Taur-Utu space;Taur-Utu;Yes;Tauran Empire, moon (Nanna-sin);;;
 Girru;D;;;;Earth;;;;;;;Taur-Utu space;Taur-Utu;Yes;trojan asteroids;;;
-Utu;G;;;;Fire;;;;;;;Taur-Utu space;Taur-Utu;Yes;;;;
-Diadoai;C;;;;;Tellene;;;;;;Tellenespace;Tellene;Yes;;;;
-Diadolai;;;;;;Tellene;;;;;;Tellenespace;Tellene;Yes;;;;
-Pelselond;;;;;;Tellene;;;;;;Tellenespace;Tellene;Yes;;;;
-Pelselond;C;;;;;Tellene;;;;;;Tellenespace;Tellene;Yes;;;;
-Tellene;;;;;;;3;;;;;Tellenespace;Tellene;Yes;The Kingdoms of Kalamar campaign setting.;Kingdoms of Kalamar  ;;
-The Brightstar;;;;;Fire;;;;;;;Tellenespace;Tellene;Yes;;;;
-Veshemo;;;;;;Tellene;;;;;;Tellenespace;Tellene;Yes;;;;
-Veshemo;D;;;;;Tellene;;;;;;Tellenespace;Tellene;Yes;;;;
 Terraspace Belt;A-C;;‡;;Earth;;;;;;;Heliosspace;Terra;Yes;;;;
-Lifegiver;I;;;;Fire;;;;;;;Thasiaspace;Thasia;Yes;;SJA4 p.52;TSR;http://www.archlich.com/kotsc/Places/VodoniCluster/Thasiaspace.html
-Thasia;G;88.500;;;Live;;;;;Thasians;;Thasiaspace;Thasia;Yes;;SJA4 p.52;TSR;http://www.archlich.com/kotsc/Places/VodoniCluster/Thasiaspace.html
-Birth Garden;;;‡;;Live;;;;;;;Thornspace  ;Thorn;Yes;Live worlds;;;
-Bramble;D;;;;Live;;;;;;;Thornspace  ;Thorn;Yes;;;;
-Briar;C;;;;Live;;;;;;;Thornspace  ;Thorn;Yes;;;;
-Comets;A;;;;Earth/Water;;;;;;;Thornspace  ;Thorn;Yes;Mother-trees;;;
-Forest;;;‡;;Live;;;;;;;Thornspace  ;Thorn;Yes;;;;
 Mulch;;;‡;;Earth;;;;;;;Thornspace  ;Thorn;Yes;;;;
-Patch;C;;;;Live;;;;;;;Thornspace  ;Thorn;Yes;Infinity Vine;;;
-Seed Cloud;;;❄;;Live;;;;;;;Thornspace  ;Thorn;Yes;Starfly Lives;;;
-Yaggdrysil;I;;;;Fire;;;;;;;Thornspace  ;Thorn;Yes;;;;
-Eclipse;J;;◗;;Fire;;10;;;;;Thrustspace  ;Thrust;Yes;;;;
 Kista-kar;C;;◗;;Earth;;;;;;;Thrustspace  ;Thrust;Yes;;;;
 Kitamer;E;;;;Earth;;;;;;;Thrustspace  ;Thrust;Yes;;;;
-Kiz-kar;C;;◗;;Water;;;;;;;Thrustspace  ;Thrust;Yes;;;;
 Krtakit;F;;;;Earth;;1;;;;;Thrustspace  ;Thrust;Yes;;;;
-Rollthunder;F;14.800;❑;;Air;;;;Hotter than Normal;;;Thunderspace;Thunder;Yes;;;;
-Aguanta;F;;Ο;;Water;;;;;;;Thuriaspace;Thuria;Yes;;;;
 Boreas;H;;;;Earth;;;;;;;Thuriaspace;Thuria;Yes;;;;
-Enolis;H;;❄;;Air;;;;;;;Thuriaspace;Thuria;Yes;;;;
-Losra;G;;;;Fire;;;;;;;Thuriaspace;Thuria;Yes;;;;
-Pyrosa;D;;;;Fire;;1;;;;;Thuriaspace;Thuria;Yes;;;;
 Quindelphos;D;;;;Earth;;1;fire;;;;Thuriaspace;Thuria;Yes;;;;
 The Pixie;B;;;;Earth;;;;Void;;;Thuriaspace;Thuria;Yes;;;;
 Thuria;E;;;;Earth;;;;;;;Thuriaspace;Thuria;Yes;;;;
 Zidacos;G;;◗;;Earth;;3;;;;;Thuriaspace;Thuria;Yes;;;;
-Dinichthys;C;;;;Water;;2;;;;;Timespace  ;Time;Yes;;;;
-Feoran;G;;;;Fire;;3;;;;;Timespace  ;Time;Yes;;;;
 Reptile;D;;;;Earth;;1;;;;;Timespace  ;Time;Yes;;;;
-Saurishian;F;;;;Air;;7;;;;;Timespace  ;Time;Yes;;;;
 Abet;A;;;;Earth;;;Air;;;;Tinyspace;Tiny;Yes;;;;
 Bamat;A;;;;Earth;;;;warm seas;;;Tinyspace;Tiny;Yes;;;;
 Becat;A;;;;Earth;;1;;;;;Tinyspace;Tiny;Yes;hot moon;;;
@@ -1307,153 +820,656 @@ Tibet;A;;;;Earth;;;;;;;Tinyspace;Tiny;Yes;warm earth belt;;;
 Apocalypse;E;;;;Earth;;;;;;;Tornspace  ;Torn;Yes;;;;
 Sunder;D;;;;Earth;;;;;;;Tornspace  ;Torn;Yes;;;;
 Turmoil;D;;;;Earth;;;;;;;Tornspace  ;Torn;Yes;;;;
-Voidstar;F;;;;Fire;;;;;;;Tornspace  ;Torn;Yes;;;;
-Voidstar;F;;;;Fire;;;;;;;Tornspace  ;Torn;Yes;;;;
-Traba;I;9.290.000;;;Fire;;;;Colder than normal;;;Trabaspace;Traba;Yes;;;;
 Trabarax;E;6.158;;;Earth;;1;;Forest and Jungle;Tabaxi;;Trabaspace;Traba;Yes;;;;
-hoppers;;;;;;;;;;;;Trailspace;Trail;Yes;;;;
-Trail;;;;;;;;;;;;Trailspace;Trail;Yes;;;;
-Slimeball;;;;;Water/Earth;Tikki;;;Swampy interior;;;Tropisphere;Tropi;Yes;;;;
 Snowball;;;;;Earth;Tikki;;;Frigid;;;Tropisphere;Tropi;Yes;;;;
 Tikki;;;△;Bowl;Earth;;;;;;;Tropisphere;Tropi;Yes;;;;
-Penumbra;K;500.000.000;◗;Disk;Artificial;;;;;;;Truespace;True;Yes;;;;
-Sun, Truespace;J;45.000.000;;;Fire;;;;;;;Truespace;True;Yes;;;;
-Comet ring;A-B;;‡;;Air/Water;;;;;;;Tukonspace;Tukon;Yes;;;Charles Taylor;
-Suns of Tuka;D;;;3 spheres;Fire;;;;;;;Tukonspace;Tukon;Yes;;;Charles Taylor;
 The Rocks of Tuka;G;;;;Earth;;;;;;;Tukonspace;Tukon;Yes;;;Charles Taylor;
-Threnth;D;;;;Air;;;;;;;Tukonspace;Tukon;Yes;;;Charles Taylor;
 Tuka Manak;E;;;;Earth;;;;;Human dominated;;Tukonspace;Tukon;Yes;Xeno hotbed;;Charles Taylor;
 Van-val;C;;;;Earth;;;;Farmland;;;Tukonspace;Tukon;Yes;;;Charles Taylor;
-Wak-ath;D;;;;Water;;;;Ice;;;Tukonspace;Tukon;Yes;;;Charles Taylor;
 Comporellon;E;;;;Earth;;;;;;;Turnspace;Turn;Yes;;SJR4 p.4;;
 Cranosh;E;;;;Earth;;;;Volcanic;;;Turnspace;Turn;Yes;;;;
 Gainiiaaon;A;;‡;;Earth;;;;;;;Turnspace;Turn;Yes;;;;
 Poltilor;E;;;;Earth;;;;;;;Turnspace;Turn;Yes;;;;
-Sun, Turnspace;D;;;;Fire;;3;;;;;Turnspace;Turn;Yes;;;;
 The wee One;J;;;;Earth;;;;;;;Turnspace;Turn;Yes;;;;
-Ultonka;D;;;;Water;;;;Ice;;;Turnspace;Turn;Yes;;;;
 Balrog;C;;◗;;Earth;;;;;;;Twinspace;Twin;Yes;;;;
 Cetrog;A;;;;Earth;;;;;;;Twinspace;Twin;Yes;;;;
 Gorlab;C;;◗;;Earth;;;;;;;Twinspace;Twin;Yes;;;;
 Gortec;A;;;;Earth;;;;;;;Twinspace;Twin;Yes;;;;
-Twin Suns;I;;;;Fire;;;;;;;Twinspace;Twin;Yes;Red + Green;;;
 Yittiy 1;D;;❑;;Earth;;;;;;;Twinspace;Twin;Yes;;;;
 Yittiy 2;D;;❑;;Earth;;;;;;;Twinspace;Twin;Yes;;;;
 Argon's World;C;;◗;Disk;Earth;;2;;;;;Tyrspace;Tyr;Yes;2 moons (Greatstone, Moor);;;
-Copper Nebula;I;;;;Air;;;;;;;Tyrspace;Tyr;Yes;;;;
 Rizzen;E;;△;Torus;Earth;;;;;;;Tyrspace;Tyr;Yes;portals;;;
-Thaoul;F;;;;Air;;5;;Poisonous;;;Tyrspace;Tyr;Yes;;;;
-Torrent;F;;;;Water;;2;;;;;Tyrspace;Tyr;Yes;2 moons (Rhone, Ios);;;
-Wink;G;;;;Fire;;;;;;;Tyrspace;Tyr;Yes;;;;
-Wink;G;;;;Fire;;;;;;;Tyrspace;Tyr;Yes;;;;
-Anvil;C;;;;Fire;;;;Thick earth crust;Humans;;Vergonspace;Vergon;Yes;;SJA4 p.52;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
-Blacksea, Vergonspace;E;;;;Water;;;;;Sahaugin;;Vergonspace;Vergon;Yes;;SJA4 p.52;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
 Bladering Belt;A;;‡;;Earth;;;;;;;Vergonspace;Vergon;Yes;;;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
 Hexahedron;E;;△;Triangular Bipyramid;Earth;;;;;Humans;;Vergonspace;Vergon;Yes;6 separate enviroments;SJA4 p.52;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
-Lattice, Vergonspace;G;;;;Air;;;;;Humans;;Vergonspace;Vergon;Yes;;SJA4 p.52;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
 Sceptre;F;;;;Earth;;;;;Goblinkin;;Vergonspace;Vergon;Yes;;SJA4 p.52;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
 Sirocco;D;;;;Earth;;;;Desolate;Humans;;Vergonspace;Vergon;Yes;;SJA4 p.52;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
-Vergon Prime;I;;;;Fire;;;;;;;Vergonspace;Vergon;Yes;;;;
 Blobwash;H;;;;Earth;;;;;;;Vistaspace;Vista;Yes;;;;
-Garrash;J;;;;Fire;;;;;;;Vistaspace;Vista;Yes;;SJR4 p.22;;
 Shield;B;;;;Earth;;;;;;;Vistaspace;Vista;Yes;Shield-shape;;;
-Steam;C;;;;Air/Water;;;;;;;Vistaspace;Vista;Yes;;;;
-Sun, Vistaspace;G;;;;Fire;;;;;;;Vistaspace;Vista;Yes;;;;
-Calandia;D;;;;Water;;1;;;;;Vodonispace  ;Vodoni;Yes;;;;
 Grog;E;;;;Earth;;2;;;;;Vodonispace  ;Vodoni;Yes;;;;
 Sala;D;;;;Earth;;;;molten;;;Vodonispace  ;Vodoni;Yes;;;;
-The Web;;;‡;;;;;;;;;Vodonispace  ;Vodoni;Yes;;;;
 Vodon;G;;;;Earth;;;;;;;Vodonispace  ;Vodoni;Yes;;;;
-Vodoni Prime;G;;;;Fire;;;;;;;Vodonispace  ;Vodoni;Yes;;;;
 Khaoras;G;;;;Earth;;3;;;;;Vodonikaspace;Vodonika;Yes;;;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
 New Kathyk;F;;;;Earth;;;;City World;Vodoni Humans;;Vodonikaspace;Vodonika;Yes;;;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
-Sha'rvir;D;;;;Water;;;;;Savage Neogi;;Vodonikaspace;Vodonika;Yes;;;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
 Teikruss;D;;;;Earth;;;;;;;Vodonikaspace;Vodonika;Yes;Wild Magic;;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
-The Stormgirdle;A;;‡;;Air;;;;;;;Vodonikaspace;Vodonika;Yes;;;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
-Vodoni Secundus;I;;◗;;Fire;;;;Void;;;Vodonikaspace;Vodonika;Yes;;;;
 Vodonika Inner Belt;A;;‡;;Earth;;;;;;;Vodonikaspace;Vodonika;Yes;;;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
 Wrakjhann;D;;❄;;Earth;;;;;;;Vodonikaspace;Vodonika;Yes;Game Preserve / Laboratory;;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
 Miminiput;E;;△;Icosahedron;Earth;;;;;;;Voskospace;Vosko;Yes;Wild, uncivilised world.;;;www.frozenstar.net/BTFS/Gazette.htm
-Rebdegorath;K;;△;Icosahedron;Fire;;;;;;;Voskospace;Vosko;Yes;;;;http://www.frozenstar.net/BTFS/Gazette.htm
-Voskogorath;F;;△;Icosahedron;Air;;;colourful;;;;Voskospace;Vosko;Yes;;;;www.frozenstar.net/BTFS/Gazette.htm
 Alun;;;;;Earth;Ferra;;;;;;Warrenspace;Warren;Yes;;;ripvanwormer;http://www.thepiazza.org.uk/bb/viewtopic.php?p=64744&sid=186501b3ecac842060e9f04e6b6c5a83#p64744
 Aluvia, Warrenspace;E;;;;Earth;;;;;Plasmoids;;Warrenspace;Warren;Yes;;;ripvanwormer;http://www.thepiazza.org.uk/bb/viewtopic.php?p=64744&sid=186501b3ecac842060e9f04e6b6c5a83#p64744
 Arra;E;;;;Earth;;;;Thin atmosphere;Mechalus;;Warrenspace;Warren;Yes;;;ripvanwormer;http://www.thepiazza.org.uk/bb/viewtopic.php?p=64744&sid=186501b3ecac842060e9f04e6b6c5a83#p64744
-Ellera;;;;;Air;;;;Hot, poisonous;;;Warrenspace;Warren;Yes;;;ripvanwormer;http://www.thepiazza.org.uk/bb/viewtopic.php?p=64744&sid=186501b3ecac842060e9f04e6b6c5a83#p64744
 Ferra;E;;;;Earth;;1;;;Humans (Ferrans);;Warrenspace;Warren;Yes;;;ripvanwormer;http://www.thepiazza.org.uk/bb/viewtopic.php?p=64744&sid=186501b3ecac842060e9f04e6b6c5a83#p64744
-K'Chill;G;;;;Air;;5;;;Mutant insects;;Warrenspace;Warren;Yes;;;ripvanwormer;http://www.thepiazza.org.uk/bb/viewtopic.php?p=64744&sid=186501b3ecac842060e9f04e6b6c5a83#p64744
 Thanion;;;;;Earth;;;;Cold;;;Warrenspace;Warren;Yes;;;ripvanwormer;http://www.thepiazza.org.uk/bb/viewtopic.php?p=64744&sid=186501b3ecac842060e9f04e6b6c5a83#p64744
-The Collapsar;;;;;Fire;;1;;;;;Warrenspace;Warren;Yes;Constantly imploding;;ripvanwormer;http://www.thepiazza.org.uk/bb/viewtopic.php?p=64744&sid=186501b3ecac842060e9f04e6b6c5a83#p64744
-Warren;J;;;;Fire;;;;;;;Warrenspace;Warren;Yes;;;ripvanwormer;http://www.thepiazza.org.uk/bb/viewtopic.php?p=64744&sid=186501b3ecac842060e9f04e6b6c5a83#p64744
 Lyi;E;;;;Earth;;;;;;;Wayspace;Way;Yes;;TCMC2;;
-Nooti;B;;‡;;Air;;;;;;;Wayspace;Way;Yes;;;;
-Oh;A;;;;Air;;;;;;;Wayspace;Way;Yes;;;;
-Poly;D;;;;Water;;;;;;;Wayspace;Way;Yes;;;;
-Sun, Wayspace;H;;❑;;Fire;;;;;;;Wayspace;Way;Yes;;;;
 Vicenor;D;;;;Earth;;;;;;;Wayspace;Way;Yes;;;;
-Sun, Webspace;G;;;;Fire;;;;;;;Webspace;Web;Yes;;;;
 Web 1;C;;;;Earth;;;;Desolate;Gate Masters;;Webspace;Web;Yes;;;;
 Web 2;D;;;;Earth;;;;Desolate;Menkothians;;Webspace;Web;Yes;;;;
 Web 3;E;;;;Earth;;;Water;;Gate Masters, Aranea;;Webspace;Web;Yes;;;;
-Web 4;G;;;;Air;;;;;;;Webspace;Web;Yes;;;;
 Webspace Belt;A;;‡;;Earth;;;;;;;Webspace;Web;Yes;;;;
 Akhat;E;;;;Earth;;;;Athas/Mars-like;;;Wehrspace  ;Wehr;Yes;;;;
-Amork;E;;;;Water;;;;Ice campaign world;;;Wehrspace  ;Wehr;Yes;;;;
-Aphigor;E;;;;Air;;;;;;;Wehrspace  ;Wehr;Yes;;;;
 Fersoon;E;;;;Earth;;;;lava world;;;Wehrspace  ;Wehr;Yes;;;;
-Kasoon;E;;;;Air;;;;;;;Wehrspace  ;Wehr;Yes;Radience;;;
 Lister's Rock;E;;◗;Disk;Earth;;1;;;;;Wehrspace  ;Wehr;Yes;moon starport/asteroid base;;;
-Sentord;E;;;;Water;;;;Iceworld;;;Wehrspace  ;Wehr;Yes;;;;
-Sun, Wehrspace;E;;;;Fire;;;;;;;Wehrspace  ;Wehr;Yes;;;;
-The Grey Belt;E;;‡;;Ash;;;;;;;Wehrspace  ;Wehr;Yes;Dust belt;;;
 Wehrld;E;;;;Earth;;;;;;;Wehrspace  ;Wehr;Yes;campaign world;;;
 Armistice;F;;;;Earth;;;;;;;Wickedspace  ;Wicked;Yes;;SJR4 p.10;;
 Cobolt;B;;;;Earth;;;;;;;Wickedspace  ;Wicked;Yes;;;;
-Hellium;A;;;;Air;;;;;;;Wickedspace  ;Wicked;Yes;;;;
-Sun, Wickedspace;G;;;;Fire;;;;;;;Wickedspace  ;Wicked;Yes;;;;
 Tyquickin;D;;;;Earth;;;1;;;;Wickedspace  ;Wicked;Yes;;;;
 Ghenrek I;D;3.000;;;Earth;;;;Hot, tide-locked;;;Wilderlandsspace;Wilderlands;Yes;;;;http://necromancergames.yuku.com/topic/12449/Ghenrek-I-II-III-
 Ghenrek II;E;7.500;;;Earth;;;;Warm, lush tropical;;;Wilderlandsspace;Wilderlands;Yes;;;;http://necromancergames.yuku.com/topic/12449/Ghenrek-I-II-III-
 Ghenrek III;E;4.000;;;Earth;;;;Cool dry desert;;;Wilderlandsspace;Wilderlands;Yes;;;;http://necromancergames.yuku.com/topic/12449/Ghenrek-I-II-III-
 Ghenrek IV / Gaia;E;8.000;;;Earth;;3;1;;;;Wilderlandsspace;Wilderlands;Yes;Home of Wilderlands of High Fantasy setting;The Wilderlands of High Fantasy.;;
-Ghenrek/Sol;H;865.000;;;Fire;;;;;;;Wilderlandsspace;Wilderlands;Yes;aka. Sol;;;
 Gorm;D;1.800;;;Earth;Ghenrek IV / Gaia;;;;;;Wilderlandsspace;Wilderlands;Yes;;;;
-Heaven's Bridge;;;‡;;;Ghenrek IV / Gaia;;;;;;Wilderlandsspace;Wilderlands;Yes;;;;
 Ioun;;;;;Earth;Ghenrek IV / Gaia;;;;;;Wilderlandsspace;Wilderlands;Yes;;;;
 Luna, Ghenrek IV;D;2.150;;;Earth;Ghenrek IV / Gaia;;;;;;Wilderlandsspace;Wilderlands;Yes;;;;
-Bescha;F;;◗;;Air;;;;;;;Windyspace;Windy;Yes;;;;
 Isulo;C;;;;Earth;;;;;;;Windyspace;Windy;Yes;;;;
-Kinis;F;;;;Air;;;;;;;Windyspace;Windy;Yes;;;;
 Kypale;C;;Ο;;Earth;;;;Void;;;Windyspace;Windy;Yes;;;;
-Rothaler;F;;;;Water;;;;;;;Windyspace;Windy;Yes;;;;
 Rynness;F;;;;Earth;;;;;;;Windyspace;Windy;Yes;;;;
-Uelde;H;;;;Fire;;;;;;;Windyspace;Windy;Yes;;;;
-Uelde;H;;;;Fire;;;;;;;Windyspace;Windy;Yes;;;;
 Bloranor;D;;;;Earth;;2;;;;;Winterspace;Winter;Yes;;;;
 Polor;I;;◗;;Earth;;;;Muddy;;;Winterspace;Winter;Yes;;;;
 Radole;E;;;;Earth;;;;;;;Winterspace;Winter;Yes;;SJR4 p.13;;
 Valrong;C;;;;Earth;;3;;;;;Winterspace;Winter;Yes;;;;
-Virotess;G;;;;Fire;;;;;;;Winterspace;Winter;Yes;;;;
-Whyst;;;;;;;;;;;;Winterspace;Winter;Yes;;;;
-Witchlight;B;;;;Fire;;;;;;;Witchlightspace;Witchlight;Yes;;;;
 Wormwood;;;△;Tubal;Earth;;;;;;;Witchlightspace;Witchlight;Yes;;;;
 Dhour Homeworld;;;;;Earth;;;;;Dhours;;Wormspace;Worm;Yes;;;;
 Mulch;;;‡;;Earth;;;;;;;Wormspace;Worm;Yes;;;;
 Psurlon Homeworld;;;;;Earth;;;;Void, cold;Psurlons;;Wormspace;Worm;Yes;Now destroyed.;Dark Sun MC II, p. 82.;;
 Tsochari Homeworld;;;;;Earth;;;;Cold, Dark;Tsochari;;Wormspace;Worm;Yes;;;;
-Borcus;D;;❄;;Air;;1;;violent storms;;;Wyrmspace ;Wyrm;Yes;moon (Arod);;;
-Pala;E;;;;Water;;2;;;;;Wyrmspace ;Wyrm;Yes;2 moons (Ordan, Bog);;;
-Sun, Wyrmspace;F;;;;Fire;;;;;;;Wyrmspace ;Wyrm;Yes;;;;
-Yggdrasil;K;200.000.000;;Tree;Live;;;;;;;Yggdrasil;Yggdrasil;Yes;;;;
-Charax;;;;;Air;;;;;;;Ytherik System;Ytherik;Yes;;;;
-Huatepec;;;;;Air;;;;;;;Ytherik System;Ytherik;Yes;;;;
-Karakos;;;;;Air;;;;;;;Ytherik System;Ytherik;Yes;;;;
-Onozuki;;;;;Air;;;;;;;Ytherik System;Ytherik;Yes;;;;
-Ytherik;;;;;Fire;;;;;;;Ytherik System;Ytherik;Yes;;;;
 Druchur;E;;;;Earth;;;;;Zelani;;Zalanispace;Zalani;Yes;;;;http://www.archlich.com/kotsc/Places/VodoniCluster/Zalanispace.html
 Druchur Cluster;G;;;;Earth;;;;;;;Zalanispace;Zalani;Yes;Mineral-rich;;;http://www.archlich.com/kotsc/Places/VodoniCluster/Zalanispace.html
 Garuch;E;;;;Earth;;;;Tropical;Zelani;;Zalanispace;Zalani;Yes;;;;http://www.archlich.com/kotsc/Places/VodoniCluster/Zalanispace.html
-Kavur;G;;;;Air;;;;warm;Zelani;;Zalanispace;Zalani;Yes;;;;http://www.archlich.com/kotsc/Places/VodoniCluster/Zalanispace.html
 N'Char;C;;Ο;;Earth;;;;Void;Uninhabited;Volcanic;Zalanispace;Zalani;Yes;;;;http://www.archlich.com/kotsc/Places/VodoniCluster/Zalanispace.html
-Sun, Zalanispace;I;;;;Fire;;;;;;;Zalanispace;Zalani;Yes;;;;http://www.archlich.com/kotsc/Places/VodoniCluster/Zalanispace.html
 Zelani Homeworld;F;13.300;;;Earth;;;;Harsh;Zelani;Mountainous;Zalanispace;Zalani;Yes;;SJA4 p.53;TSR;http://www.archlich.com/kotsc/Places/VodoniCluster/Zalanispace.html
+Red Embers;A-C;;‡;;Earth/Fire;;;;molten;Efreet;;Emberspace;Ember;Yes;;;;
+Rage Fire Ring;;;‡;;Earth/Fire;;;;Lava;;;Ragestarspace;Ragestar;Yes;;;;
+Moltaria;;;;;Earth/Fire;;;;Magma;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
+Gnome's Haven;C;;;;Earth/Fire/Water;;;;;;;Inspace ;In;Yes;;;;
+The Diaspora;A;;‡;;Earth/Ice;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Diaspora
+Cretoria;H;;;;Earth/Water;;;;;;;Islandspace;Island;Yes;;;;
+Comets;A;;;;Earth/Water;;;;;;;Thornspace  ;Thorn;Yes;Mother-trees;;;
+Ptah's Furnace;H;;△;Octahedron;Fire;;;;;;;'Malspace;'Mal;Yes;;;;
+Deshret;E;;;;Fire;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
+Reign;A;;‡;;Fire;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
+Sun, A'Lantaenspace;;;;;Fire;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
+Aeneaspace Sun;H;;;;Fire;;;;;;;Aeneaspace;Aenea;Yes;;;;
+Hearth;C;;;;Fire;;;;;;;Agraspace;Agra;Yes;;;;
+Scorch;F;;;;Fire;;;;;;;Agraspace;Agra;Yes;;;;
+Sun, Alanthusspace;;;;;Fire;;;;;;;Alanthusspace;Alanthus;Yes;;;Susan Brown;
+Sun, Alavaspace;;;;;Fire;;;;;;;Alavaspace;Alava;Yes;;;;
+Amar-E;J;;◗;Disk;Fire;;;;;;;Algolspace;Algol;Yes;Mirror/Sun;;;
+Chisama;I;;;;Fire;;;;;;;Ametsuchispace;Ametsuchi;Yes;;;;
+Eternal 1;D;;;;Fire;;;;;;;Aquaspace;Aqua;Yes;;;;
+Eternal 2;D;;;;Fire;;;;;;;Aquaspace;Aqua;Yes;;;;
+Greater Sun;I;;;;Fire;Sun Centre;;;;;;Archaeusspace;Archaeus;Yes;Red;;;
+Jhang;C;;;;Fire;;;;;;Crimson;Archaeusspace;Archaeus;Yes;;;;
+Lesser Sun;G;;;;Fire;Sun Centre;;;;;;Archaeusspace;Archaeus;Yes;Yellow;;;
+The Sun, Arkaelaspace;G;;;;Fire;;4;;;;;Arkaelaspace;Arkaela;Yes;;;;
+The Sun, Arthspace;H;870.106;;;Fire;;;;;;;Arthspace;Arth;Yes;;;;
+Sol, Artonspace;G;;◗;Square;Fire;;;;;;;Artonspace;Arton;Yes;;;;
+Sun, Artonspace;G;;;;Fire;;;;;;;Artonspace;Arton;Yes;;;;
+Sun, Ashspace;;;;;Fire;;;;;;;Ashspace;Ash;Yes;;;;
+Chenia;F;19.200;◗;Hexagon;Fire;;;;;;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
+Atrida;G;;;;Fire;;;;;;;Atridaspace;Atrida;Yes;;;;
+Banesun;H;;;;Fire;;;;;;;Banesun;Banesun;Yes;;;;
+Brightflame;D;;;;Fire;;2;;;;;Banesun;Banesun;Yes;Artificial;;;
+Darkstar;C;;❄;;Fire;;;;;Lakshu;;Banesun;Banesun;Yes;;;;
+Gordu;G;;;;Fire;;;;;;;Beltoun;Beltoun;Yes;;;;
+Ethithol;F;;;;Fire;;;;;;;Beyondspace;Beyond;Yes;Tetrahedron, artifact?;;;
+Avani;H;;;;Fire;;;;;;;Bloodspace;Blood;Yes;;;;
+Crusher;G;;;;Fire;;;;;;;Calatainspace;Calatain;Yes;;;;
+Ruby;H;;;;Fire;;;;;;;Calatainspace;Calatain;Yes;;;;
+“Sun”, Casaspace;C;;;;Fire;;;;;;;Casaspace;Casa;Yes;;;;
+Bisreai;;;;;Fire;;;;;;;Celenaresspace;Celenares;Yes;;;;
+Burning Crown;;;‡;Ring;Fire;;;;;;;Ceyparisphere;Ceypari;Yes;;;;
+Sol, CharSpace;H;;;;Fire;;;;;;;CharSpace  ;Char;Yes;;;;
+Source;G;;;;Fire;;;;;;;Chargespace;Charge;Yes;;;;
+Sun, Charmspace;G;;;;Fire;;;;;;;Charmspace  ;Charm;Yes;;;;
+Insect's Eyes;G;;;Insect Eyes;Fire;;;;;;;Chitinspace;Chitin;Yes;;;;
+Rothir;D;;;;Fire;;;;;;;Chromaspace;Chroma;Yes;Red;;;
+Ulzir;D;;;;Fire;;;;;;;Chromaspace;Chroma;Yes;Blue;;;
+Vandir;D;;;;Fire;;;;;;;Chromaspace;Chroma;Yes;Green;;;
+Pyrus;H;;;;Fire;;;;;;;Chronosspace ;Chronos;Yes;"""Sun""";;;
+Sun, Clayspace;;;;;Fire;;;;;;;Clayspace ;Clay;Yes;;;;
+Eye of Law;D;;;;Fire;;;;;;;Cloakspace  ;Cloak;Yes;;;;
+Sun, Cloudspace;H;;;;Fire;;;;;Uninhabited;;Cloudspace;Cloud;Yes;;;;
+Firefall;;;;;Fire;;;;;;;Clusterspace;Cluster;Yes;;;;
+Sun, Coldspace;G;;;;Fire;;;;;;Dim;Coldspace;Cold;Yes;;;;
+Oogli;E;;;;Fire;;;;;;;Colorspace  ;Color;Yes;;;;
+Sun, Countspace;J;;;;Fire;;;;;;;Countspace  ;Count;Yes;;;;
+Meyassidh;H;;;Tentacled Sphere;Fire;;;;;;;Cradlespace;Cradle;Yes;;;;
+Dark Sun;I;;;;Fire;;;;;;;Crimson Sphere;Crimson;Yes;;;;
+Lumus;F;;;;Fire;;;;;;;Cryospace;Cryo;Yes;;;;
+Crystalspace Sun;I;;;;Fire;;;;;;;Crystalspace;Crystal;Yes;;;;
+Cubestar;G;;❑;;Fire;;;;;;;Cubespace;Cube;Yes;;;;
+Suryn;H;;;;Fire;;;;;;;Cy'Prenspace;Cy'Pren;Yes;;;;
+Hope;H;;;;Fire;;;;;;;Darkspace;Dark;Yes;;;;
+Darnan;I;;;;Fire;;;;;;;Darnannonspace;Darnannon;Yes;;;;
+Fireforge;G;;;;Fire;;;;;;;Dirkspace  ;Dirk;Yes;;;;
+Aurel;J;;△;Star;Fire;;;;;;;Dragonspace;Dragon;Yes;Gate to elemental plane of fire;;;
+Ballock;E;;;;Fire;;;;;;;Dragonspace;Dragon;Yes;Irregular orbit;;;
+Angstar;H;997.000;;;Fire;;;;Cool, Dim;Efreet;;Dreadmindspace;Dreadmind;Yes;;;;
+Dreadstar;E;9.826;❑;;Fire;;;;Cool, Dim;;;Dreadmindspace;Dreadmind;Yes;;;;
+Fearon;J;20.300.000;❑;;Fire;;;fire;Dim;;;Dreadmindspace;Dreadmind;Yes;;;;
+Gruumsh's Eye;J;68.700.000;◗;;Fire;;;;;;;Dukagshspace;Dukagsh;Yes;;;;
+Red Sun;;;;;Fire;;;;;;;Dustspace;Dust;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
+Ra;J;;;;Fire;;;;;;;Elespatio/Latierra;Elespatio;Yes;;;;
+Sun, Elysak System;;;;;Fire;;;;;;;Elysak System;Elysak;Yes;;;;
+Sun, Emongspace;;;;;Fire;;;;;;;Emongspace;Emong;Yes;;;Susan Brown;
+Sun, Fallspace;G;;;;Fire;;;;;;;Fallspace;Fall;Yes;;;;
+Furnace;J;;;;Fire;;;;;;;Falxspace;Falx;Yes;;;;
+Sól;;;;;Fire;;;;;;;Fjordspace;Fjord;Yes;;;;
+Sun, Flatspace;H;;◗;;Fire;;;;;;;Flatspace  ;Flat;Yes;;;;
+Pharis;I;2.325.132;;;Fire;;;;;;;Sword World Space;Forcelia;Yes;;;;
+Firebound;F;;;;Fire;;;;;;;Formspace;Form;Yes;;;;
+Sun, Freezespace;;;;;Fire;;;;;;;Freezespace;Freeze;Yes;;;;
+Sun, Fungospace;;;;;Fire;;;;;;;Fungospace;Fungo;Yes;;;;
+Hasaril;H;;;;Fire;;;;;;;Gatespace;Gate;Yes;;;;
+Phaeris;D;;Ο;;Fire;;;;;;;Gatespace;Gate;Yes;;;;
+The Strinads;D;;;;Fire;;;;;;;Gatespace;Gate;Yes;;;;
+Fire Giant;J;;;;Fire;;;;;;;Giantspace ;Giant;Yes;;;;
+Feth;;;❄;;Fire;;1;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
+Kushor;F;;◗;;Fire;;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
+Soliel;J;;;;Fire;;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
+Trofuth;E;;;;Fire;;?;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
+Xinthus;F;;;;Fire;;;earth;lava surface;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
+Sun, Golarion;H;;;;Fire;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Solar_System
+The Sun, Golotspace;F;;;;Fire;;;;;;;Golotspace;Golot;Yes;;;;
+Gorth 5 Moon;D;;;;Fire;Gorth 5;;;;;;Gorthspace;Gorth;Yes;;;Charles Taylor;
+Gorth Fireflies;D;;;;Fire;Gorth;;;;;;Gorthspace;Gorth;Yes;;;Charles Taylor;
+Gorth's Second Sun;F;;△;;Fire;Gorth's Sun;;water/ice;;;;Gorthspace;Gorth;Yes;;;Charles Taylor;
+Gorth's Sun;J;;;;Fire;;1;fire;;;;Gorthspace;Gorth;Yes;;;Charles Taylor;
+Serril;G;;‡;Ring;Fire;;;;;;;Gossamerspace;Gossamer;Yes;;;;
+Lanth;I;;;;Fire;;;;;;;Greatspace;Great;Yes;;;;
+Liga;G;;;;Fire;;;;;;;Greyspace;Grey;Yes;;;;
+Ntwadumela;F;;;;Fire;;;;;;;Grommspace  ;Gromm;Yes;;;;
+Sun, Guardspace;H;;;;Fire;;;;;;;Guardspace;Guard;Yes;;;;
+Sun, Harthspace;J;;;;Fire;;;;;;;Harthspace;Harth;Yes;;;;
+The Heart;J;;;;Fire;;;;;;;Heartspace;Heart;Yes;"Heartspace's enormous primary ""beats"" (giving the sphere its name), pulsing from dark to light slowly within the space of about ten minutes. It is a deep red star, otherwise as typical as any other. This sun is one of the largest of all the spheres.";;;
+Buurn;D;;;;Fire;;;;;;;Heatspace  ;Heat;Yes;Hourglass;;;
+Flame;H;;;;Fire;;;;;;;Heatspace  ;Heat;Yes;;;;
+Scorch;F;;;;Fire;;;;;;;Heatspace  ;Heat;Yes;;;;
+Central Daystar;I;;;;Fire;;;;;;;Herdspace;Herd;Yes;;;;
+Helios;H;;;;Fire;;;;;;;Hyrkulspace;Hyrkul;Yes;;;;
+Charon;C;;;;Fire;;;;;;;Igniaspace;Ignia;Yes;;;;
+Ignia;C;;;;Fire;;;;;;;Igniaspace;Ignia;Yes;;;;
+Gleaming Star;G;;;;Fire;;;;;;;Imperial Space;Imperial;Yes;;;;
+Dawnbreaker;G;;;;Fire;;;;;;;Inspace ;In;Yes;;;;
+Sun, Ironspace;H;871.100;;;Fire;;;;;;;Ironspace;Iron;Yes;;Privateer Press;;http://privateerpress.com/iron-kingdoms
+Fireye;F;;;;Fire;;;;;;;Islandspace;Island;Yes;;;;
+Orbus;G;;△;Torus;Fire;;;;;;;Jadespace ;Jade;Yes;+cluster;;;
+Sun, Keelspace;H;;;;Fire;;;;;;;Keelspace  ;Keel;Yes;;;;
+Tezcat;F;;;;Fire;;;;;;;Korvspace;Korv;Yes;;;;
+Sirion;D;;;;Fire;;;;;;;Krynnspace;Krynn;Yes;Inert;;;
+Sun, Krynnspace;H;;;;Fire;;;;;;;Krynnspace;Krynn;Yes;;;;
+Sun, Lostspace;F;;;;Fire;;;;;;;Lostspace;Lost;Yes;;;;
+Furnaus;;;;;Fire;;;;;Hostile Fire Elementals;;Luftrain Sphere;Luftrain;Yes;;;Susan Brown;
+Sol, Maginicaspace;H;;;;Fire;;;;;;;Maginciaspace;Magincia;Yes;;;;
+Los;H;;;;Fire;;;;;;;Majspace;Maj;Yes;;;;
+Sun, Malhavokspace;;;;;Fire;;;;;;;Malhavokspace;Malhavok;Yes;;;;
+Sun, Marlspace;;;;;Fire;;;;;;;Marlspace;Marl;Yes;;;Susan Brown;
+Thul;G;;;;Fire;;;;;;Aquamarine;Merspace;Mer;Yes;;;;
+The Soul Forge;H;;;;Fire;;1;;;Uninhabited;;Metalspace;Metal;Yes;;;;
+Sun, Mindspace;;;;;Fire;;;;;;;Mindspace;Mind;Yes;;;;
+Sun, Mirrorspace;;;;;Fire;;;;;;;Mirrorspace;Mirror;Yes;;;;
+Moragsun;H;;;;Fire;;;;;;;Moragspace;Morag;Yes;;;;
+Ixionis;H;;;;Fire;;;;;;;Mystaraspace;Mystara;Yes;;;;
+Straash;K;;△;Teardrop;Fire;;;;;;;Nacrespace;Nacre;Yes;Sapphire Star;;;
+Fariam;D;;;;Fire;;;;;;;Nalspace;Nal;Yes;;;;
+Sun, Nalspace;I;;;;Fire;;;;;;;Nalspace;Nal;Yes;;;;
+Sun, Nebulaspace;G;;;;Fire;;;;;;;Nebulaspace;Nebula;Yes;;;;
+The Fire Wheel;G;;◗;Wheel-shaped;Fire;;;;;;;Nerenspace;Neren;Yes;;;;
+Sun, Neverspace;;;;;Fire;;;;;;;Neverspace;Never;Yes;;;;
+Threetee;I;;;;Fire;;;;;;;Nivelspace;Nivel;Yes;;;;
+New Sun;;;;;Fire;;;;;;;Nyrodspace;Nyrod;Yes;;;;
+Infernus;;;;;Fire;;;;;;;Nyrodspace;Nyrod;Yes;;;;
+The Red Star;;;;;Fire;;;;;;;Nyrodspace;Nyrod;Yes;;;;
+Arzol;I;;;;Fire;;;;;;;Octorspace;Octor;Yes;;;;
+Bogda;H;;;;Fire;;;;;;;Octorspace;Octor;Yes;;;;
+Florbeau;F;;;;Fire;;1;;;;;Octorspace;Octor;Yes;;;;
+Tymar;;;;;Fire;;;;Inert;;;Omnispace;Omni;Yes;;;;
+Arariskein;I;;;;Fire;;;;;;Binary;Orthospace;Ortho;Yes;;;;
+Rastur;H;;;;Fire;;;;;;;Osraspace;Osra;Yes;;;;
+Sun, Osternaaspace;;;;;Fire;;;;;;;Osternaaspace;Osternaa;Yes;;;;
+Hum;E;;;;Fire;;;;;;;Outspace  ;Out;Yes;;;;
+Pheos;H;;;;Fire;;;;;;;Pheolitespace;Pheolite;Yes;;;;
+The Pillar;*;;△;Pillar;Fire;;;;;;;Pillarspace;Pillar;Yes;;;;
+The Comet;C;;;Comet;Fire;;;;;;;Preyspace  ;Prey;Yes;;;;
+Ignius Air;H;;;;Fire;;;;;;;Primespace;Prime;Yes;;;;
+The Pyre;H;;;;Fire;;;;;;;Pyrespace;Pyre;Yes;;;;
+Altanor;I;;;;Fire;;;;;;;Racespace  ;Race;Yes;;;;
+Crimson Forge;B;;◗;;Fire;Aius;;;;Tanar'ri;;Ragespace  ;Rage;Yes;;;;
+Glyph;J;;;Rune;Fire;;;;;;;Ragespace  ;Rage;Yes;;;;
+Ragestar;E;;;;Fire;;;;;;;Ragestarspace;Ragestar;Yes;;;;
+The Sun, Realmspace;H;;;;Fire;;;;;;;Realmspace;Realm;Yes;;;;
+Blaze;I;;;;Fire;;;;;;;Refugespace;Refuge;Yes;;;;
+Mesor;H;;;;Fire;;;;;;;Rhymespace;Rhyme;Yes;;;;
+Micor;H;;;;Fire;;;;;;;Rhymespace;Rhyme;Yes;;;;
+Minja;A;;;;Fire;;;;;;;Rockspace  ;Rock;Yes;;;;
+Sun, Rockspace;I;;;;Fire;;;;;;;Rockspace  ;Rock;Yes;;;;
+Bryn;H;;;;Fire;;;;;;;Runedarspace;Runedar;Yes;;;;
+Ahhh;G;;‡;;Fire;;;;;;;Sandspace  ;Sand;Yes;;;;
+Sun, Sandspace;I;;;;Fire;;;;;;;Sandspace  ;Sand;Yes;;;;
+Saruthillion;H;;;;Fire;;;;;;;Saruspace;Saru;Yes;;;;
+Magania;;;;;Fire;Sarûnia;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
+Tarnish;;;;;Fire;;;;;;;Scarredspace;Scarred;Yes;;;;
+Sun, Seaspace;H;;;;Fire;;;;;;;Seaspace  ;Sea;Yes;;;;
+Sun, Seeliespace II;;;;;Fire;;;;;;;Seeliespace II;Seelie II;Yes;;;;
+Angharradh;B;;;;Fire;;;;;;;Seldarspace;Seldar;Yes;3 bodies;;;
+Lashrael;A;;;;Fire;;;;;;;Seldarspace;Seldar;Yes;;;;
+Sun, Seskotspace;;;;;Fire;;;;;;;Seskotspace;Seskot;Yes;;;;
+Toilnys;F;;;;Fire;;;;;;;Shamblespace;Shamble;Yes;;;;
+Silksun;H;;;;Fire;;;;;;;Silkspace  ;Silk;Yes;;;;
+Portal;H;;;;Fire;;;;;;;Skyspace  ;Sky;Yes;;;;
+Vixtil;F;;;;Fire;;;;;;;Skyspace  ;Sky;Yes;;;;
+Aramoth;B;;;;Fire;;;;;;;Solarisspace;Solaris;Yes;Irratic;;;
+Solaris;H;;;;Fire;;;;;;;Solarisspace;Solaris;Yes;;;;
+Solice;H;;;;Fire;;;;;;;Solicespace  ;Solice;Yes;;;;
+The Gems;G;;;;Fire;;;;;;;Spiderspace;Spider;Yes;5 suns;;;
+Bewcartch;F;;;;Fire;;;;;;;Splitspace;Split;Yes;;;;
+Kasalsh;I;;◗;;Fire;;;;;;;Splitspace;Split;Yes;;;;
+Mehlcix;G;;;;Fire;;;;;;;Splitspace;Split;Yes;;;;
+Todrima;F;;;;Fire;;;;;;;Splitspace part 2;Split 2;Yes;;;;
+Ibbuchikshee;J;;;;Fire;;;;;;;Squirrnspace  ;Squirrn;Yes;;;;
+Stationary;G;;;;Fire;;;;;;;Ssssspace  ;Ssss;Yes;;;;
+Suun;F;;;;Fire;;3;;;;;Ssuwspace;Ssuw;Yes;;;;
+Hagane Taiyo;I;1.199.392;;;Fire;;5;;;Fire Elementals, Efreet;Steel-coloured;Steel Star Space;Steel Star;Yes;;;;http://www.thepiazza.org.uk/bb/viewtopic.php?p=106943#p106943
+Gallant;G;;;;Fire;;;;;;;Swordspace  ;Sword;Yes;;;;
+Dead Heart;E;;;;Fire;;;;;;;Tarraspace;Tarra;Yes;;;;
+Forge;K;;;;Fire;;;;;;;Tarraspace;Tarra;Yes;Red;;;
+Utu;G;;;;Fire;;;;;;;Taur-Utu space;Taur-Utu;Yes;;;;
+The Brightstar;;;;;Fire;;;;;;;Tellenespace;Tellene;Yes;;;;
+Lifegiver;I;;;;Fire;;;;;;;Thasiaspace;Thasia;Yes;;SJA4 p.52;TSR;http://www.archlich.com/kotsc/Places/VodoniCluster/Thasiaspace.html
+Yaggdrysil;I;;;;Fire;;;;;;;Thornspace  ;Thorn;Yes;;;;
+Eclipse;J;;◗;;Fire;;10;;;;;Thrustspace  ;Thrust;Yes;;;;
+Losra;G;;;;Fire;;;;;;;Thuriaspace;Thuria;Yes;;;;
+Pyrosa;D;;;;Fire;;1;;;;;Thuriaspace;Thuria;Yes;;;;
+Feoran;G;;;;Fire;;3;;;;;Timespace  ;Time;Yes;;;;
+Voidstar;F;;;;Fire;;;;;;;Tornspace  ;Torn;Yes;;;;
+Voidstar;F;;;;Fire;;;;;;;Tornspace  ;Torn;Yes;;;;
+Traba;I;9.290.000;;;Fire;;;;Colder than normal;;;Trabaspace;Traba;Yes;;;;
+Sun, Truespace;J;45.000.000;;;Fire;;;;;;;Truespace;True;Yes;;;;
+Suns of Tuka;D;;;3 spheres;Fire;;;;;;;Tukonspace;Tukon;Yes;;;Charles Taylor;
+Sun, Turnspace;D;;;;Fire;;3;;;;;Turnspace;Turn;Yes;;;;
+Twin Suns;I;;;;Fire;;;;;;;Twinspace;Twin;Yes;Red + Green;;;
+Wink;G;;;;Fire;;;;;;;Tyrspace;Tyr;Yes;;;;
+Wink;G;;;;Fire;;;;;;;Tyrspace;Tyr;Yes;;;;
+Anvil;C;;;;Fire;;;;Thick earth crust;Humans;;Vergonspace;Vergon;Yes;;SJA4 p.52;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
+Vergon Prime;I;;;;Fire;;;;;;;Vergonspace;Vergon;Yes;;;;
+Garrash;J;;;;Fire;;;;;;;Vistaspace;Vista;Yes;;SJR4 p.22;;
+Sun, Vistaspace;G;;;;Fire;;;;;;;Vistaspace;Vista;Yes;;;;
+Vodoni Prime;G;;;;Fire;;;;;;;Vodonispace  ;Vodoni;Yes;;;;
+Vodoni Secundus;I;;◗;;Fire;;;;Void;;;Vodonikaspace;Vodonika;Yes;;;;
+Rebdegorath;K;;△;Icosahedron;Fire;;;;;;;Voskospace;Vosko;Yes;;;;http://www.frozenstar.net/BTFS/Gazette.htm
+The Collapsar;;;;;Fire;;1;;;;;Warrenspace;Warren;Yes;Constantly imploding;;ripvanwormer;http://www.thepiazza.org.uk/bb/viewtopic.php?p=64744&sid=186501b3ecac842060e9f04e6b6c5a83#p64744
+Warren;J;;;;Fire;;;;;;;Warrenspace;Warren;Yes;;;ripvanwormer;http://www.thepiazza.org.uk/bb/viewtopic.php?p=64744&sid=186501b3ecac842060e9f04e6b6c5a83#p64744
+Sun, Wayspace;H;;❑;;Fire;;;;;;;Wayspace;Way;Yes;;;;
+Sun, Webspace;G;;;;Fire;;;;;;;Webspace;Web;Yes;;;;
+Sun, Wehrspace;E;;;;Fire;;;;;;;Wehrspace  ;Wehr;Yes;;;;
+Sun, Wickedspace;G;;;;Fire;;;;;;;Wickedspace  ;Wicked;Yes;;;;
+Ghenrek/Sol;H;865.000;;;Fire;;;;;;;Wilderlandsspace;Wilderlands;Yes;aka. Sol;;;
+Uelde;H;;;;Fire;;;;;;;Windyspace;Windy;Yes;;;;
+Uelde;H;;;;Fire;;;;;;;Windyspace;Windy;Yes;;;;
+Virotess;G;;;;Fire;;;;;;;Winterspace;Winter;Yes;;;;
+Witchlight;B;;;;Fire;;;;;;;Witchlightspace;Witchlight;Yes;;;;
+Sun, Wyrmspace;F;;;;Fire;;;;;;;Wyrmspace ;Wyrm;Yes;;;;
+Ytherik;;;;;Fire;;;;;;;Ytherik System;Ytherik;Yes;;;;
+Sun, Zalanispace;I;;;;Fire;;;;;;;Zalanispace;Zalani;Yes;;;;http://www.archlich.com/kotsc/Places/VodoniCluster/Zalanispace.html
+Dayface;J;;;;Fire/Shadow;;;;;;;Beyondspace;Beyond;Yes;Dumbell;;;
+Ur-Yon;F;15.500;;;Fire/Water;;3;;Volcanic Islands;Ogres, Goblins;;Steel Star Space;Steel Star;Yes;;;;http://www.thepiazza.org.uk/bb/viewtopic.php?p=106943#p106943
+Terukuo;E;;;;Ice;;;;;;;Algolspace;Algol;Yes;;;;
+Fasdoi;D;;;;Ice;;;;;;;Atridaspace;Atrida;Yes;;;;
+Loksdu;D;;;;Ice;;;;;;;Atridaspace;Atrida;Yes;;;;
+Bright Rocks;J;;‡;;Ice;;;;;;;Cubespace;Cube;Yes;;;;
+The Ice Whale;J;;;Whale;Ice;;;;Frozen once-living world;;;Nacrespace;Nacre;Yes;;;;
+Squirrnspace Belt 2;E;;‡;;Ice;;;;;;;Squirrnspace  ;Squirrn;Yes;;;;
+Squirrnspace Belt 4;E;;‡;;Ice/Air;;;;;;;Squirrnspace  ;Squirrn;Yes;Cometary cloud;;;
+Jigoku;E;;;;Lava;;;;;;;Algolspace;Algol;Yes;;;;
+Avernus;E;;;;Lava;;;;;;;Atridaspace;Atrida;Yes;;;;
+Slane;G;;;;Lava;;;;;;;Beyondspace;Beyond;Yes;Teardrop;;;
+Shakalee;D;;;;Live;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
+Bhoomi;E;;◗;Disk;Live;;;;;;;Ametsuchispace;Ametsuchi;Yes;;;;
+Shejkano;C;;;Shell;Live;;;;;;;Aquaspace;Aqua;Yes;;;;
+The Great Reef;Sp;;‡;;Live;;;;;;;Aquaspace;Aqua;Yes;Ringworld (E - H thick);;;
+Warldus;E;;;;Live;;;;;;;Aquaspace;Aqua;Yes;;;;
+Phandir;C;;;;Live;;;;;;Green;Archaeusspace;Archaeus;Yes;;;;
+Bestial;B;;;;Live;;;;;Elves;;Banesun;Banesun;Yes;;;;
+World Tree;;;;;Live;;;;;;;Bugspace;Bug;Yes;Fills Sphere;;;
+Locni;;;;;Live;;1;;;Elves;;Celenaresspace;Celenares;Yes;moon (Cambomc);;;
+Berga;E;;;;Live;;;;;Berganies;;Cradlespace;Cradle;Yes;;;;
+Adonia;E;;;;Live;;;;;;;Dragonspace;Dragon;Yes;;;;
+Dukagsh;G;45.250;;;Live;;;;;Scro;;Dukagshspace;Dukagsh;Yes;;Dragon Annual #1;;
+Luthic;E;5.650;△;;Live;Dukagsh;;;;;;Dukagshspace;Dukagsh;Yes;;;;
+Great Tree;L;1.000.000.000;;Tree;Live;;;;;;;Faeriespace;Faerie;Yes;;;;
+Arcryth;;;;;Live;;;;;;;Sword World Space;Forcelia;Yes;;;;
+Golarion;E;;;;Live;;;;;;;Golarionspace;Golarion;Yes;;Pathfinder;Pazio;pathfinder.wikia.com/wiki/Golarion
+Hon'orma;C;;;;Live;Sacafeda;;;;Humans;;Gossamerspace;Gossamer;Yes;;;;
+Pan'raku;B;;Ο;;Live;Kodizana;;;;;;Gossamerspace;Gossamer;Yes;;;;
+Arcanius;A;;△;Pyramid;Live;;;;;;;Jadespace ;Jade;Yes;;;;
+Rainuss;E;;△;Torus;Live;;2;3;;;;Jadespace ;Jade;Yes;2 moons & 3 halo rings;;;
+Foran;G;;;;Live;;;;;;;Knightspace  ;Knight;Yes;;;;
+Sidar;E;;❑;;Live;;;;;;;Korvspace;Korv;Yes;;;;
+Xixchil Homeworld;;;;;Live;;;;;Xixchil;;Kreenspace;Kreen;Yes;The Xixchil's homeworld is a live world with many predators.;MC9 Spelljammer Monstrous Compendium II 'Xixchil';;
+Chislev;E;;;;Live;;;;;;;Krynnspace;Krynn;Yes;;;;
+Bior;G;;;;Live;;1;;;;;Maginciaspace;Magincia;Yes;;;;
+Sutorpea;A;;;Shark;Live;;;;;;;Nacrespace;Nacre;Yes;;;;
+Karnak;;;;;Live;;;;;;;Omnispace;Omni;Yes;;;;
+Blackwood;B;;;;Live;;;;;;;Ragespace  ;Rage;Yes;;;;
+Blind Huntress;*;;;;Live;;;;;;;Ragespace  ;Rage;Yes;Tarrasque;;;
+The Husk;;;;Beetle;Live;;;;;;;Scarredspace;Scarred;Yes;;;;
+Leafhome;H;;;Shell;Live;;;;;;;Seldarspace;Seldar;Yes;;;;
+Vanosh;;;;;Live;;2;;;;;Seskotspace;Seskot;Yes;;;;
+Arawai;E;7.171;;;Live;;2;;;;;Shardspace;Shard;Yes;;;Michael Billard;http://oracle.wizards.com/scripts/wa.exe?A2=ind0912d&L=spelljammer-l&P=564
+Web Core;D;;;;Live;;;;;;;Spiderspace part 2;Spider 2;Yes;;;;
+Zontex;E;;❄;;Live;;;;;;;Splitspace part 2;Split 2;Yes;;;;
+Thasia;G;88.500;;;Live;;;;;Thasians;;Thasiaspace;Thasia;Yes;;SJA4 p.52;TSR;http://www.archlich.com/kotsc/Places/VodoniCluster/Thasiaspace.html
+Birth Garden;;;‡;;Live;;;;;;;Thornspace  ;Thorn;Yes;Live worlds;;;
+Bramble;D;;;;Live;;;;;;;Thornspace  ;Thorn;Yes;;;;
+Briar;C;;;;Live;;;;;;;Thornspace  ;Thorn;Yes;;;;
+Forest;;;‡;;Live;;;;;;;Thornspace  ;Thorn;Yes;;;;
+Patch;C;;;;Live;;;;;;;Thornspace  ;Thorn;Yes;Infinity Vine;;;
+Seed Cloud;;;❄;;Live;;;;;;;Thornspace  ;Thorn;Yes;Starfly Lives;;;
+Yggdrasil;K;200.000.000;;Tree;Live;;;;;;;Yggdrasil;Yggdrasil;Yes;;;;
+Beltoun/Marth;D;;;;Live/Water;;;;;;;Beltoun;Beltoun;Yes;;;;
+Kanshou Belt;A;;‡;;Metal;;;;;;;Ametsuchispace;Ametsuchi;Yes;;;;
+Raylo;;;;;Metal;;;;;;;Sword World Space;Forcelia;Yes;;;;
+What Remains;A;;;;Mix;;;;;;;Horrorspace;Horror;Yes;;;;
+Sun Centre;N/A;;;;N/A;;2;;;;;Archaeusspace;Archaeus;Yes;;;;
+Astra;C;150;;;Portal;;;;;Rastipedes, Formians;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
+The Portal;A;;?;;Portal;;;;;;;Inspace ;In;Yes;Portal;;;
+The Portal;A;;?;;Portal;;;;;;;Inspace ;In;Yes;;;;
+Seeker;A;;?;;Portal;;;;;;;Knightspace  ;Knight;Yes;;;;
+The Portal;A;;?;;Portal;;;;;;;Outspace  ;Out;Yes;Portal;;;
+The Portal;A;;?;;Portal;;;;;;;Outspace  ;Out;Yes;;;;
+Prime Star;A;;;;Portal;;;;;;;Starspace;Star;Yes;to Radience;;;
+Garstand;E;;;;Smoke;;;;;;;Beyondspace;Beyond;Yes;wrecked;;;
+Whirlpool;F;;;;Special;;;;;;;Aquaspace;Aqua;Yes;Black hole;;;
+Bleem;S;;?;;Special;;;;;;;Arkaelaspace;Arkaela;Yes;;;;
+Black Gulf;S;;?;;Special;;;;;;;Crimson Sphere;Crimson;Yes;;;;
+Gamaro Base;A;;;;Special;;;;;;;Moragspace;Morag;Yes;Dead Gammeroid, Scro base;;;
+Kiffin;B;;◗;;Special;;;;;;;Shadowspace;Shadow;Yes;;;;
+Dragonsun;;;;Dragon;Starbeast;;;;;;;Pearlspace;Pearl;Yes;;;;
+Gundred;D;;;;Steam;;;;;;;Beyondspace;Beyond;Yes;Wrecked;;;
+Cygnus;D;;;;Unknown;;;;;;;Shardspace;Shard;Yes;;;;
+Squirrnspace Belt 1;E;;‡;;Varies;;;;;;;Squirrnspace  ;Squirrn;Yes;;;;
+Squirrnspace Belt 3;E;;‡;;Varies;;;;;;;Squirrnspace  ;Squirrn;Yes;;;;
+Marinias;G;;;;Water;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
+Orb;C;;;;Water;;;;;;;A'Lantaenspace;A'Lantaen;Yes;;;;
+Adramis;E;7.800;;;Water;;;;;Aquatic;;Adramisspace;Adramis;Yes;;Beyond the Moons;Jaime Lopez;http://www.spelljammer.org/worlds/locs/Adramis/Adramis.html
+Gorlan;D;;;;Water;;1;;;;;Aeneaspace;Aenea;Yes;;;;
+Stout;H;;;;Water;;2;;;;;Agraspace;Agra;Yes;2 moons (Mouse, Blazer);;;
+Agurlis;;;‡;;Water;;;;;;;Alanthusspace;Alanthus;Yes;;;Susan Brown;
+Srivijaya;J;;;;Water;;;;;;;Ametsuchispace;Ametsuchi;Yes;;;;
+The Corkscrew;D;;‡;;Water;;4;;;;;Ankispace;Anki;Yes;;;;
+Læolis;C;;;;Water;;;;;;Blue;Archaeusspace;Archaeus;Yes;;;;
+Xplanet9;F;30.758;;;Water;;10;;;;;Arthspace;Arth;Yes;;;;
+Poltina;F;30.400;;;Water;;3;;;;;Astralspace;Astral;Yes;;;blackdaggr;http://www.ganae.com/DnD/Wildspace/Astralspace.html
+Virgo;D;;;;Water;;;;;;;Atridaspace;Atrida;Yes;Erratic, Myth Gaelen?;;;
+Shazzel;D;;;;Water;;;;;Lizard-men;;Banesun;Banesun;Yes;;;;
+The Fringe;A;;‡;;Water;;;;Icy;;;Banesun;Banesun;Yes;;;;
+Sapalash;C;;;;Water;;;;;;;Beltoun;Beltoun;Yes;;;;
+Dwirm;G;;;;Water;;;;;;;Beyondspace;Beyond;Yes;;;;
+Harth, Bloodspace;G;;;;Water;;;;Icy;;;Bloodspace;Blood;Yes;;;;
+Barbuda;C;;;;Water;;;;;;;Casaspace;Casa;Yes;;SJR4 p.30;;
+Abrek;;;;;Water;Hechir;;;;;;Celenaresspace;Celenares;Yes;;;;
+Hechir;;;;;Water;;1;;;;;Celenaresspace;Celenares;Yes;moon (Abrek);;;
+Hechir;;;;;Water;;1;;;;;Celenaresspace;Celenares;Yes;;;;
+Hades;F;;;;Water;;;;Icy;;;CharSpace  ;Char;Yes;gate to hades;;;
+Eye of Law, Chargespace;F;;Ο;;Water;;;;;;;Chargespace;Charge;Yes;;;;
+Justice;D;;;;Water;;;;;;;Chargespace;Charge;Yes;;;;
+Choja-Ruk;F;;Ο;Oblate;Water;;;;;Crustacians;;Chitinspace;Chitin;Yes;;;;
+Samaldia;D;;‡;;Water;;;;;;;Chromaspace;Chroma;Yes;;;;
+Aquilus;G;;;;Water;;;;;;;Chronosspace ;Chronos;Yes;;;;
+Hidden One;J;;;;Water;;;;;;;Cloakspace  ;Cloak;Yes;;;;
+The Fringe;A;;‡;;Water;;;;Icy;;;Clusterspace;Cluster;Yes;;;;
+Chronicle;G;;;;Water;;;;;;;Countspace  ;Count;Yes;;;;
+Cycle;D;;;;Water;;;;;;;Countspace  ;Count;Yes;;;;
+Searral;;;;;Water;;;;;;;Crackedspace;Cracked;Yes;;;;
+Athor;E;;❑;;Water;;;;;Athoras;;Cradlespace;Cradle;Yes;;;;
+Lorond;E;;;;Water;;;;;Lorondin;;Cradlespace;Cradle;Yes;;;;
+Articka;I;;;;Water;;;;frozen surface;;;Cryospace;Cryo;Yes;;;;
+Azuria;E;;;;Water;;;;;;;Dragonspace;Dragon;Yes;;;;
+Permafrost;E;;◗;;Water;;;;Iceworld;;;Dragonspace;Dragon;Yes;;;;
+Dismaia;C;540;❄;;Water;;1;;;;;Dreadmindspace;Dreadmind;Yes;;;;
+Qualmind;F;14.900;‡;;Water;;;;Colder than normal;;;Dreadmindspace;Dreadmind;Yes;;;;
+Shargaas;F;14.360;;;Water;;;Obsidian;;;;Dukagshspace;Dukagsh;Yes;;;;
+Avedine;D;;;;Water;;;;;uninhabited;;Elespatio/Latierra;Elespatio;Yes;;;;
+Thalassa;D;;;;Water;;;;;;;Emeraldspace;Emerald;Yes;;SJR4 p.25;;
+Skern;F;;;;Water;;;;Ice;;;Fallspace;Fall;Yes;;;;
+Eclipse, Flatspace;D;;◗;;Water;;;;;;;Flatspace  ;Flat;Yes;;;;
+Tarsen;;;;;Water;;;;;;;Sword World Space;Forcelia;Yes;;;;
+Waterbound;F;;;;Water;;;;;;;Formspace;Form;Yes;;;;
+Aeslir;D;;◗;;Water;;;;;;;Gatespace;Gate;Yes;;;;
+Wegrya;E;;;;Water;;;;;;;Gatespace;Gate;Yes;;;;
+Frost Giant;I;;;;Water;;;;Frozen;;;Giantspace ;Giant;Yes;;;;
+Mairee;;;;;Water;;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
+Marusinal;C;;◗;;Water;;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
+Telakka;C;;;;Water;;;;Ice, void;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
+Zharree Belt;G;;‡;;Water;;;;;;;Gladiusspace;Gladius;Yes;;Spelljammer Mailing List;Nancy E (lea) Hall;http://oracle.wizards.com/scripts/wa.exe?A2=ind0307e&L=spelljammer-l&P=944
+Carci;C;400;;;Water;Golotspace Belt;;;Partially frozen;;;Golotspace;Golot;Yes;;;Tim Goff;http://lost.spelljammer.org/DrawingBoard/worlds/Vodoni/Golotspace/AsteroidBelt.html
+Gorthspace Belt;D;;‡;;Water;;;;Cold;;;Gorthspace;Gorth;Yes;;;Charles Taylor;
+Endeir;D;;❄;;Water;;;glowing gas;warm;Aquatic nomads;;Gossamerspace;Gossamer;Yes;;;;
+Rak'saya;D;;;;Water;Sacafeda;;;;;;Gossamerspace;Gossamer;Yes;;;;
+Conatha;C;;Ο;;Water;;;;;;;Greyspace;Grey;Yes;;;;
+Sawai;C;;;;Water;;;;;;;Grommspace  ;Gromm;Yes;;;;
+Tallin;E;;;;Water;;;;;;;Guardspace;Guard;Yes;;;;
+Aphrod;F;;;;Water;;;ice;Icy;;;Hyrkulspace;Hyrkul;Yes;;;;
+Posayd;D;;;;Water;;3;;;;;Hyrkulspace;Hyrkul;Yes;;;;
+Charon;C;;;;Water;;;;;;;Igniaspace;Ignia;Yes;;SJR4 p.27;;
+Thalassa;D;;;;Water;;;;;;;Igniaspace;Ignia;Yes;;SJR4 p.25;;
+Sequena's Tears;A;;‡;;Water;;;;;;;Imperial Space;Imperial;Yes;;;;
+Artis;D;1.206;;;Water;Caen;;;Ice;;;Ironspace;Iron;Yes;;Privateer Press;;http://privateerpress.com/iron-kingdoms
+Calder;D;2.412;;;Water;Caen;;;;;;Ironspace;Iron;Yes;;Privateer Press;;http://privateerpress.com/iron-kingdoms
+Barbuda;C;;;;Water;;;;;;;Islandspace;Island;Yes;;SJR4 p.30;;
+Dracos;F;;;;Water;;5;;;;;Jadespace ;Jade;Yes;;;;
+Hem;D;;;;Water;;1;1;;;;Jadespace ;Jade;Yes;ring halo;;;
+Shipwright;A;;;;Water;;;;;;;Keelspace  ;Keel;Yes;;;;
+Hy;F;;❄;;Water;;;;Voidworld;;;Knightspace  ;Knight;Yes;;;;
+Trerze;D;;Ο;;Water;;;;;;;Korvspace;Korv;Yes;;;;
+The Peeper;A;;;;Water;Xenix;;;Ice;;;Lahsphere;Lah;Yes;;Beyond the Moons;Ville Lavonius;http://www.spelljammer.org/worlds/locs/Xenix.html
+Aqualis;;;;;Water;;;;;;;Marlspace;Marl;Yes;;;Susan Brown;
+Falakyr;D;;;;Water;;4;;;;;Merspace;Mer;Yes;;;;
+Mer;E;;;;Water;;2;;;;;Merspace;Mer;Yes;;;;
+Syril;;;;;Water;Mer;;;;;;Merspace;Mer;Yes;;;;
+Mind 3;;;;;Water;;;;Ice;;;Mindspace;Mind;Yes;;;;
+Watereye;B;;;;Water;;;;;Scro;;Moragspace;Morag;Yes;;;;
+Proteanis;F;;;;Water;;;;;;;Mystaraspace;Mystara;Yes;;;;
+Torquon;D;;;;Water;;;;;Frogmen;;Nerenspace;Neren;Yes;;;;
+Poulgeird;;;;;Water;Tandris;;;Frozen wasteland;;;Nyrodspace;Nyrod;Yes;;;;
+Borysov;D;;Ο;;Water;;5;;;;;Octorspace;Octor;Yes;;;;
+Maclear;;;;;Water;;1;;;;;Omnispace;Omni;Yes;moon (Tropika);;;
+Ryan;C;200;;;Water;Torsia;;;Void;;;Osraspace;Osra;Yes;;;;
+Shard;B;5 × 25;△;;Water;Yarga;;;Ice;;;Osraspace;Osra;Yes;;;;
+Yarga;C;200;;;Water;;1;;frozen surface;;;Osraspace;Osra;Yes;;;;
+Lucencia;;;;;Water;;4;;;;;Osternaaspace;Osternaa;Yes;moons (elemental);;;
+Warclock;H;;;;Water;;;;;;;Preyspace  ;Prey;Yes;;;;
+Octapawn;A;;;;Water;;;;;;;Primespace;Prime;Yes;Octapus shaped;;;
+Quelya;E;;;;Water;;;;;;;Pyrespace;Pyre;Yes;;;;
+Blacksea;E;;;;Water;;4;;;;;Ragespace  ;Rage;Yes;4 moons (Dead Reef, Orb, The Web, Elamshin D'lil Yorn);;;
+Krayus;C;;;;Water;;;;;;;Ragespace  ;Rage;Yes;;;;
+Chandos;F;;;;Water;;;;;;;Realmspace;Realm;Yes;;;;
+Karpri;D;;;;Water;;;;;;;Realmspace;Realm;Yes;;;;
+Uptoor;E;;❑;;Water;;;;Ice;;;Rockspace  ;Rock;Yes;;;;
+Salzar;H;;;;Water;;;;;Salzar;;Salzarspace;Salzar;Yes;;SJA4 p.52;TSR;http://www.archlich.com/kotsc/Places/VodoniCluster/Salzarspace.html
+Galatia;;;;;Water;Sarûnia;;;Ice;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
+Gemini;E;;;;Water;;;;;;;Seaspace  ;Sea;Yes;;;;
+Thalassa;D;;;;Water;;;;;;;Seaspace  ;Sea;Yes;;SJR4 p.25;;
+Yorgpor;C;;;;Water;;;;;;;Seaspace  ;Sea;Yes;;;;
+Krastarrph Dell;;;;;Water;;;1;Icy;;;Seskotspace;Seskot;Yes;;;;
+Valestra;;;;;Water;;8;;;;;Seskotspace;Seskot;Yes;;;;
+Chonnot;B;;◗;;Water;;;;;;;Shadowspace;Shadow;Yes;;;;
+Suithine;F;;;;Water;;;;;;;Shamblespace;Shamble;Yes;;;;
+SlaveWorld;C;;;;Water;;;;;;;Spiderspace;Spider;Yes;Ice mines;;;
+Slin;B;;◗;;Water;;;;;;;Ssssspace  ;Ssss;Yes;;;;
+Ping-Yong;C;;;;Water;Ur-Yon;;;;;;Steel Star Space;Steel Star;Yes;;;;
+Slime Ring;J;;‡;;Water;;;;;;;Tarraspace;Tarra;Yes;;;;
+Ahto;G;;;;Water;;;;;;;Taur-Utu space;Taur-Utu;Yes;;;;
+Athirat;;;;;Water;;;;;;;Taur-Utu space;Taur-Utu;Yes;;;;
+Kiz-kar;C;;◗;;Water;;;;;;;Thrustspace  ;Thrust;Yes;;;;
+Aguanta;F;;Ο;;Water;;;;;;;Thuriaspace;Thuria;Yes;;;;
+Dinichthys;C;;;;Water;;2;;;;;Timespace  ;Time;Yes;;;;
+Wak-ath;D;;;;Water;;;;Ice;;;Tukonspace;Tukon;Yes;;;Charles Taylor;
+Ultonka;D;;;;Water;;;;Ice;;;Turnspace;Turn;Yes;;;;
+Torrent;F;;;;Water;;2;;;;;Tyrspace;Tyr;Yes;2 moons (Rhone, Ios);;;
+Blacksea, Vergonspace;E;;;;Water;;;;;Sahaugin;;Vergonspace;Vergon;Yes;;SJA4 p.52;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
+Calandia;D;;;;Water;;1;;;;;Vodonispace  ;Vodoni;Yes;;;;
+Sha'rvir;D;;;;Water;;;;;Savage Neogi;;Vodonikaspace;Vodonika;Yes;;;Roger Burns;http://oracle.wizards.com/scripts/wa.exe?A2=ind0708b&L=spelljammer-l&P=1027
+Poly;D;;;;Water;;;;;;;Wayspace;Way;Yes;;;;
+Amork;E;;;;Water;;;;Ice campaign world;;;Wehrspace  ;Wehr;Yes;;;;
+Sentord;E;;;;Water;;;;Iceworld;;;Wehrspace  ;Wehr;Yes;;;;
+Rothaler;F;;;;Water;;;;;;;Windyspace;Windy;Yes;;;;
+Pala;E;;;;Water;;2;;;;;Wyrmspace ;Wyrm;Yes;2 moons (Ordan, Bog);;;
+Slimeball;;;;;Water/Earth;Tikki;;;Swampy interior;;;Tropisphere;Tropi;Yes;;;;
+B'aslar;;;;;;;;;;;;Adramisspace;Adramis;Yes;;Beyond the Moons;Jaime Lopez;http://www.spelljammer.org/worlds/locs/Adramis/Adramis.html
+Kigal;;;;;;;;;;;;Ankispace;Anki;Yes;;;;
+Nanna/Sin;;;;;;Kigal;;;;;;Ankispace;Anki;Yes;;;;
+Bandor Cluster;;;;;;;;;;;;Bandorspace;Bandor;Yes;;;;
+The Fringe;;;;;;;;;;;;Banesun;Banesun;Yes;;;;
+Cambomc;;;;;;Locni;;;;;;Celenaresspace;Celenares;Yes;;;;
+Dra Eeh;;;;;;Ecurb;;;;;;Celenaresspace;Celenares;Yes;;;;
+Hechaeb;;;;;;Mitt;;;;;;Celenaresspace;Celenares;Yes;;;;
+Kipsnei;;;;;;Nodge;;;;;;Celenaresspace;Celenares;Yes;;;;
+Nocseren;;;;;;Libb;;;;;;Celenaresspace;Celenares;Yes;;;;
+Clay;;;;;;;;;;;;Clayspace ;Clay;Yes;;;;
+Denaeb;;;;;;;;;;;;Clusterspace;Cluster;Yes;;;;
+Islands of the Sun;;;‡;;;;;;;;;Clusterspace;Cluster;Yes;;;;
+The Fringe;;;;;;;;;;;;Clusterspace;Cluster;Yes;;;;
+Igniter;;;;;;;;;;;;Crackedspace;Cracked;Yes;;;;
+Gemstone;;;;;;;;;;;;Diamondspace;Diamond;Yes;;;;
+Ardath;;;;;;Draconia;;;;;;Dragonspace;Dragon;Yes;;;;
+Valdemar;;;;;;Draconia;;;;;;Dragonspace;Dragon;Yes;;;;
+Warlock;;;;;;Draconia;;;;;;Dragonspace;Dragon;Yes;;;;
+Inner Dustspace Belt;;;‡;;;;;;;;;Dustspace;Dust;Yes;;;;
+Mid Dustspace Belt;;;‡;;;;;;;;;Dustspace;Dust;Yes;;;;
+Outer Dustspace Belt;;;‡;;;;;;;;;Dustspace;Dust;Yes;;;;
+Akatosh;;;;;;;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
+Arkay;;;;;;;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
+Dibella;;;;;;Mara;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
+Julianos;;;;;;;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
+Kynareth;;;;;;;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
+Mara;;;;;;Zenithar;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
+Stendarr;;;;;;Julianos;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
+Zenithar;;;;;;;;;;;;Elderspace;Elder;Yes;;The Elder Scrolls game series;;
+Despoina;;;;;;;;;;;;Emeraldspace;Emerald;Yes;;;;
+Galactea;;;;;;;;;;;;Emeraldspace;Emerald;Yes;;;;
+Larissa;;;;;;;;;;;;Emeraldspace;Emerald;Yes;;;;
+Proteus;;;;;;;;;;;;Emeraldspace;Emerald;Yes;;;;
+Agron;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
+Beastra;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
+Freemor;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
+Genla;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
+Krag;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
+Mish;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
+Morath;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
+Tiqua;;;;;;;;;;;;Faeriespace;Faerie;Yes;;;;
+Dreki;;;;;;;;;;;;Fjordspace;Fjord;Yes;;;;
+Jotun;;;;;;;;;;;;Fjordspace;Fjord;Yes;;;;
+Muspell;;;;;;;;;;;;Fjordspace;Fjord;Yes;;;;
+Nithav;;;;;;;;;;;;Fjordspace;Fjord;Yes;;;;
+Fungo 1;;;;;;;;;;;;Fungospace;Fungo;Yes;;;;
+Fungo 2;;;;;;;;;;;;Fungospace;Fungo;Yes;;;;
+Fungo 3;;;;;;;;;;;;Fungospace;Fungo;Yes;;;;
+Fungo 4;;;;;;;;;;;;Fungospace;Fungo;Yes;;;;
+Fungo 5;;;;;;;;;;;;Fungospace;Fungo;Yes;;;;
+Tel’Quesseron;;;;;;;;;;Elves;;Glowrings Sphere;Glowrings;Yes;Conquered by Scro;;;
+Mefesk;;;;;;;;;;Wolf-people;;Lorpulanspace;Lorpulan;Yes;;;;
+World of the Lost Ones;;;;;;;;;;Clockwork Horrors;;Lost One's Sphere;Lost One's;Yes;Homeworld of the clockwork horrors.;MC7 Monstrous Compendium Spelljammer Appendix. Dragon #350, page 59.;;
+Carrigmore;;;;;;;;;;;;Malhavokspace;Malhavok;Yes;;;;
+Ouno;;;;;;;;;;;;Malhavokspace;Malhavok;Yes;;;;
+Palpatur;;;;;;;;;;;;Malhavokspace;Malhavok;Yes;;;;
+Praemal;;;;;;;;;;;;Malhavokspace;Malhavok;Yes;;;;
+Serran;;;;;;;;;;;;Malhavokspace;Malhavok;Yes;;;;
+Yragon;;;;;;;;;;;;Malhavokspace;Malhavok;Yes;;;;
+Inner Mindspace Belt;;;;;;;;;;;;Mindspace;Mind;Yes;;;;
+Mind 1;;;;;;;;;;;;Mindspace;Mind;Yes;;;;
+Mind 2;;;;;;;;;;;;Mindspace;Mind;Yes;;;;
+Outer Mindspace Belt;;;;;;;;;;;;Mindspace;Mind;Yes;;;;
+Dead World;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
+Desert World;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
+Fire World;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
+Melodya;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
+Mirror Prime;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
+Sun, Mirrorspace;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
+Tamargon;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
+The Backwaters;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
+Wartorn;;;;;;;;;;;;Mirrorspace;Mirror;Yes;;;;
+Mingo Vortex;;;;;;;;;;;;Mongospace;Mongo;Yes;;;;
+Bondel;;;;;;;;;;;;Morunespace;Morune;Yes;;The Radiant Dragon, p285.;;
+Nemeliador;;;;;;;;;;;;Numosspace;Numos;Yes;;;;
+Lora;;;;;;;;;;;;Omnispace;Omni;Yes;;;;
+Ortho;;;;;;;;;;;;Orthospace;Ortho;Yes;Harmonium homeworld.;The Factol's Manifesto.;;
+Gelidia;;;;;;;;;Icy;;;Osternaaspace;Osternaa;Yes;;;;
+The Vortex;;;;;;;;;;;;Pillarspace;Pillar;Yes;;;;
+Parcelius;;;;;;;;;;;;Plebosspace;Plebos;Yes;likely a fairly cosmopolitan, spelljammer-aware world.;Into the Void, p200.;;
+Hoodman's Guard;A;;;;;;;;;;;Ragespace  ;Rage;Yes;Base;;;
+Newhaven;A;;△;Station;;;;;;;;Ragespace  ;Rage;Yes;Arcane base;;;
+The Bitch's Threesome;;;;;;;;;;;;Ragespace  ;Rage;Yes;;;;
+Zenuvia;;;;;;;;;;;;Rainspace;Rain;Yes;Gargantuan flytraps;;;
+Barexina;;;;;;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
+Drenaelea;;;;;;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
+Lasarnia;;;;;;Sarûnia;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
+Ninachta;;;;;;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
+Sarûnia;;;;;;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
+Tinorous;;;;;;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
+Yellow Sun;;;;;;;;;;;;Sarûniaspace;Sarûnia;Yes;;;Twin Agate Dragons;http://pathfinderrpgcampaignsettingsarunia.blogspot.co.uk/
+Sarus;;;;;;;;;;;;Saurialspace;Saurial;Yes;;;;
+Seelispace IV centre;;;;;;;;;;;;Seeliespace IV;Seelie IV;Yes;;;;
+The Cold;;;#NAME?;;;;;;;;;Seskotspace;Seskot;Yes;;;;
+Sydia;;;;;;;;;;;;Sidiusspace;Sidius;Yes;Paladin Orders that hold the Spelljammer as a thing of whoreship;;;
+Lar;;;;;;;;;;;;Sillusspace;Sillus;Yes;;SJS1 p.5;Bruce Nesmith (TSR);
+Beacon;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
+Beros;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
+Caronax;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
+Ephos;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
+Iris;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
+Octerak;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
+Shorakoth;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
+Swarm;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
+Tileria;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
+Tyrisa;;;;;;;;;;;;Solarisspace;Solaris;Yes;;;;
+Fragments;;;;;;;;;;;;Spindlespace;Spindle;Yes;;;;
+Lattice;;;;;;;;;;;;Spindlespace;Spindle;Yes;;;;
+Godshome;E;;;;;;;;;;;Splatterspace;Splatter;Yes;;;;
+Diadoai;C;;;;;Tellene;;;;;;Tellenespace;Tellene;Yes;;;;
+Diadolai;;;;;;Tellene;;;;;;Tellenespace;Tellene;Yes;;;;
+Pelselond;;;;;;Tellene;;;;;;Tellenespace;Tellene;Yes;;;;
+Pelselond;C;;;;;Tellene;;;;;;Tellenespace;Tellene;Yes;;;;
+Tellene;;;;;;;3;;;;;Tellenespace;Tellene;Yes;The Kingdoms of Kalamar campaign setting.;Kingdoms of Kalamar  ;;
+Veshemo;;;;;;Tellene;;;;;;Tellenespace;Tellene;Yes;;;;
+Veshemo;D;;;;;Tellene;;;;;;Tellenespace;Tellene;Yes;;;;
+hoppers;;;;;;;;;;;;Trailspace;Trail;Yes;;;;
+Trail;;;;;;;;;;;;Trailspace;Trail;Yes;;;;
+The Web;;;‡;;;;;;;;;Vodonispace  ;Vodoni;Yes;;;;
+Heaven's Bridge;;;‡;;;Ghenrek IV / Gaia;;;;;;Wilderlandsspace;Wilderlands;Yes;;;;
+Whyst;;;;;;;;;;;;Winterspace;Winter;Yes;;;;
+Charyb;B;;;;Earth;Söll;;;;;;Hammerspace;Hammer;Yes;;;;
+Deiamol;D;;;;Fire;Söll;1;;;;;Hammerspace;Hammer;Yes;;;;
+Tigris;C;;;;Earth;Söll;2;;;;;Hammerspace;Hammer;Yes;;;;
+The Fated Place;D;;;;Earth;Söll;2;;;;;Hammerspace;Hammer;Yes;;;;
+Verdra;B;;;;Earth;Söll;1;;;;;Hammerspace;Hammer;Yes;;;;
+Locratia;E;;;;Earth;Söll;7;;;;;Hammerspace;Hammer;Yes;;;;
+Isharna;G;;;;Air;Söll;13;;;;;Hammerspace;Hammer;Yes;;;;
+Loekia;F;;;;Air;Söll;6;;;;;Hammerspace;Hammer;Yes;;;;
+Voelia;F;;;;Air;Söll;14;;;;;Hammerspace;Hammer;Yes;;;;
+Obscuria;A;;;;Ice;Söll;1;;;;;Hammerspace;Hammer;Yes;;;;
+The Ring of Siberys;A-D;;‡;;Air/Water;;;;;;;Siberspace;Siberys;Yes;;;WotC;
+Ebberon;E;7926,38;;;Earth;;13;;;;;Siberspace;Siberys;Yes;Ebberon campaign setting;;WotC;
+Ringling;F;;;;Air;;;;;;An Air-body primary, it still provides a decent amount of light to see through some mechanism deep within it.;Clownspace;Clown;Yes;;;;
+Désolée;D;;◗;;Earth;Ringling;;;;;A flat Earth-body, it rotates its faces towards the sun so it still has a day and night cycle, though there are communities in perpetual twilight on the sides (which are quite thin). Center for the most anti-clown rebellion in the system.;Clownspace;Clown;Yes;;;;
+Barnoom;D;;?;;Earth;Ringling;1;;;;"A Torus-shaped Earth-body, it lies perpendicular to Ringling so that the inside of the Torus gets very little light. This functions as equivalent to an Underdark and is the primary headquarters of the Space Clowns, centered in their capital: The Dark Carnival, which floats menacingly in the center of the Torus.  Its moon is Bay-Lee [Barnum & Bailey]. A Size A Air-body with a Water-type ring around it. The habitable side of the ring faces away from Barnoom. Populations live on islands floating in the ring. Each island has a ""temple"" dedicated to the Space Clowns, on which they yearly give sacrifices to their Clown Gods. Each temple resembles a cross between a circus tent and a Ziggurat.";Clownspace;Clown;Yes;;;;
+Arrah;G;;;;Fire;;;;;;;Siberspace;Siberys;Yes;;;WotC;
