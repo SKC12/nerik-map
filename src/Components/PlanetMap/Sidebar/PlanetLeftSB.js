@@ -113,6 +113,18 @@ function PlanetLeftSB(props) {
                 some worlds where very little is known.
               </p>
               <p>
+                Want to contribute to the Updated Map? Have some feedback about
+                the website? Please use{" "}
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://forms.gle/W5YMqFv6ZvgTeawt9"
+                >
+                  this form
+                </a>
+                .
+              </p>
+              <p>
                 Special thanks to TSR, WotC, and every single creator that
                 contributed to this hobby and allowed the creation of something
                 like this.

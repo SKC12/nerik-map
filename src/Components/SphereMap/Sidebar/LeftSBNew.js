@@ -114,6 +114,7 @@ function LeftSBNew(props) {
   const [flowType, setFlowType] = useState("Regular");
   const [flowRiver, setFlowRiver] = useState("Other");
   const [typeExtraInfo, setTypeExtraInfo] = useState("");
+  const isAnimated = useStore((state) => state.isAnimated);
 
   function getId(count) {
     if (!nodes.find((nd) => nd.id === `Sphere ${count}`)) {
@@ -202,6 +203,9 @@ function LeftSBNew(props) {
           ((parseInt(data.timeW) + parseInt(data.timeE)) / 2)
         ).toFixed(2);
       }
+
+      data.animation = isAnimated;
+
       let newEdge = {
         id: `${data.sphereW} to ${data.sphereE}`,
         source: data.sphereW,

@@ -180,15 +180,31 @@ function LeftSideBar(props) {
               worlds where very little is known.
             </p>
             <p>
+              Want to contribute to the Updated Map? Have some feedback about
+              the website? Please use{" "}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://forms.gle/W5YMqFv6ZvgTeawt9"
+              >
+                this form
+              </a>
+              .
+            </p>
+            <p>
               Special thanks to TSR, WotC, and every single creator that
               contributed to this hobby and allowed the creation of something
               like this.
             </p>
+
             <p>
-              A shout-out to <a href="https://jb2a.com">JB2A</a>, the source of
-              the Crystal Sphere and Planet images used in this website, shared
-              under a CC-BY-NC-SA license. Can't recommend them enough as a
-              source of animations for VTTs.
+              A shout-out to{" "}
+              <a target="_blank" rel="noreferrer" href="https://jb2a.com">
+                JB2A
+              </a>
+              , the source of the Crystal Sphere and Planet images used in this
+              website, shared under a CC-BY-NC-SA license. Can't recommend them
+              enough as a source of animations for VTTs.
             </p>
           </div>
         ) : null}
