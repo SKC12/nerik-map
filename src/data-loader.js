@@ -66,13 +66,13 @@ export async function loadCSVSpheres(sphereData, planetData) {
         planet.orbitRadius = "0";
         planet.orbitTrack = "I1";
         //find planetData for primary body
-        if (planet.name === "Eberron")
-          console.log(
-            planet,
-            obj,
-            planetsDataArray,
-            planetsDataArray.find((p) => p.name === planet.name)
-          );
+        // if (planet.name === "Oerth")
+        //   console.log(
+        //     planet,
+        //     obj,
+        //     planetsDataArray,
+        //     planetsDataArray.find((p) => p.name === planet.name)
+        //   );
         let planetInfo = planetsDataArray.find(
           (p) => p.name === planet.name && p.shortName === obj.shortName
         );

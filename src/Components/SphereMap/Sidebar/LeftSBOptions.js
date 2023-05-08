@@ -51,13 +51,15 @@ function LeftSBOptions(props) {
 
   const downloadAsFile = useCallback(() => {
     if (reactFlowInstance) {
-      const data = JSON.stringify(reactFlowInstance.toObject());
+      let data = reactFlowInstance.toObject();
       data.settings = {
         animated: isAnimated,
         projectedTime: projectedTime,
         hideUnknownPaths: hideUnknownPaths,
       };
-      const blob = new Blob([data], { type: "application/json" });
+      const stringData = JSON.stringify(data);
+
+      const blob = new Blob([stringData], { type: "application/json" });
       const a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
       a.download = "flowmap.json";

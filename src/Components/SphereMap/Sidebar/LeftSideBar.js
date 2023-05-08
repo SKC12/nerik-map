@@ -196,7 +196,6 @@ function LeftSideBar(props) {
               contributed to this hobby and allowed the creation of something
               like this.
             </p>
-
             <p>
               A shout-out to{" "}
               <a target="_blank" rel="noreferrer" href="https://jb2a.com">
