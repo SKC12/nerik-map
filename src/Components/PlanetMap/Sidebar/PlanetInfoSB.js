@@ -320,7 +320,7 @@ function PlanetInfoSB(props) {
         ></Autocomplete>
       ) : (
         <div className="LEFTSB__planet-shape-container">
-          <p className="LEFTSB__flow-data" style={{ fontFamily: "Symbol" }}>
+          <p className="LEFTSB__flow-data" style={{ fontFamily: "OpenSymbol" }}>
             {tempData.shape}
           </p>
           <p className="LEFTSB__flow-data">
