@@ -14,6 +14,9 @@ import earthPlanet from "../../img/earth.webm";
 import icePlanet from "../../img/ice.webm";
 import waterPlanet from "../../img/water.webm";
 import livePlanet from "../../img/live.webm";
+import clusterPlanet from "../../img/cluster.webm";
+
+import { getShapeFromUnicode } from "../utils";
 
 function getWidth(size) {
   switch (size) {
@@ -42,7 +45,8 @@ function getWidth(size) {
   }
 }
 
-function getBackgroundImage(type) {
+function getBackgroundImage(type, shape) {
+  if (getShapeFromUnicode(shape) === "Cluster") return clusterPlanet;
   if (type && type.includes("Earth")) {
     return earthPlanet;
   } else if (type && type.includes("Live")) {
@@ -98,7 +102,7 @@ export function PlanetNode({ selected, data }) {
         >
           <source
             type="video/webm"
-            src={getBackgroundImage(data.info.type)}
+            src={getBackgroundImage(data.info.type, data.info.shape)}
           ></source>
         </video>
         {zoomLevel > 0.04 || parseInt(data.orbitRadius) > 200 ? (

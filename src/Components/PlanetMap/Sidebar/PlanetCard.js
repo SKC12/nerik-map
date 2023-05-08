@@ -5,10 +5,14 @@ import earthPlanet from "../../../img/earth.webm";
 import icePlanet from "../../../img/ice.webm";
 import waterPlanet from "../../../img/water.webm";
 import livePlanet from "../../../img/live.webm";
+import clusterPlanet from "../../../img/cluster.webm";
 import { useReactFlow } from "reactflow";
 import { getCoords } from "../../utils";
+import { getShapeFromUnicode } from "../../utils";
 
-function getBackgroundImage(type) {
+function getBackgroundImage(type, shape) {
+  if (getShapeFromUnicode(shape) === "Cluster") return clusterPlanet;
+
   if (type && type.includes("Earth")) {
     return earthPlanet;
   } else if (type && type.includes("Live")) {
@@ -54,7 +58,7 @@ function PlanetCard(props) {
         <video width={"60px"} loop autoPlay>
           <source
             type="video/webm"
-            src={getBackgroundImage(planet.info.type)}
+            src={getBackgroundImage(planet.info.type, planet.info.shape)}
           ></source>
         </video>
       </div>
