@@ -31,7 +31,7 @@ function getBackgroundImage(type, shape) {
 }
 
 function PlanetCard(props) {
-  const { setCenter } = useReactFlow();
+  const { setCenter, getNodes } = useReactFlow();
   const onClickSelect = props.onClickSelect;
 
   const scale = props.scale;
@@ -47,7 +47,7 @@ function PlanetCard(props) {
     <div
       className="RIGHTSB__planet-card"
       onClick={(e) => {
-        onClickSelect(planet);
+        onClickSelect(planet, getNodes());
         setCenter(
           coords.x,
           coords.y,

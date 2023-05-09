@@ -93,6 +93,7 @@ function PlanetNewSB(props) {
   const setSphereNodes = useStore((state) => state.setNodes, shallow);
   const SphereNodes = useStore((state) => state.nodes, shallow);
   const [typeInputValue, setTypeInputValue] = useState("");
+  const onClickSelect = props.onClickSelect;
 
   const onClickSave = () => {
     let newNodes = [];
@@ -110,6 +111,7 @@ function PlanetNewSB(props) {
             orbitRadius: tempData.orbitRadius,
             info: tempData,
             beltAngle: angle,
+            onClickSelect: onClickSelect,
           },
           draggable: false,
         };

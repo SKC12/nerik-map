@@ -15,7 +15,7 @@ import PlanetOuterBgNode from "./PlanetOuterBgNode";
 import PlanetInnerBgNode from "./PlanetInnerBgNode";
 import PhlogistonBgNode from "./PlanetPhlogistonBgNode";
 import SphereLimitsNode from "./PlanetSphereLimitsNode";
-import { getCoords } from "../utils";
+import { getAnglesArray, getCoords } from "../utils";
 import { getShapeFromUnicode } from "../utils";
 import { BeltNode } from "./BeltNode";
 
@@ -33,19 +33,22 @@ const nodeTypes = {
   sphereLimitNode: SphereLimitsNode,
 };
 
-function getAnglesArray(n) {
-  let slice = 360 / n;
-  let arr = [180];
-  for (let i = 1; i < n; i++) {
-    arr.push(180 + i * slice);
-  }
-  return arr;
-}
-
 function PlanetMap(props) {
   const planetScreenData = useStore((state) => state.planetScreenData, shallow);
   const planets = planetScreenData.planets;
   const sphereRadius = planetScreenData.sphereRadius;
+  const onClickSelect = useCallback((planet, nodes) => {
+    setNodes(
+      nodes.map((nd) => {
+        if (nd.id.includes(planet.name + planet.orbitRadius)) {
+          nd.selected = true;
+        } else {
+          nd.selected = false;
+        }
+        return nd;
+      })
+    );
+  }, []);
   const initialNodes = planets.reduce((array, planet) => {
     if (getShapeFromUnicode(planet.info.shape) === "Belt") {
       let beltArray = getAnglesArray(16).map((angle) => {
@@ -56,7 +59,7 @@ function PlanetMap(props) {
             (parseInt(planet.orbitRadius) * scale * 10) / 2,
             angle
           ),
-          data: { ...planet, beltAngle: angle },
+          data: { ...planet, beltAngle: angle, onClickSelect: onClickSelect },
           draggable: false,
         };
         return node;
@@ -141,23 +144,6 @@ function PlanetMap(props) {
     []
   );
 
-  const onClickSelect = useCallback(
-    (planet) => {
-      console.log(planet);
-      setNodes(
-        nodes.map((nd) => {
-          if (nd.id.includes(planet.name + planet.orbitRadius)) {
-            nd.selected = true;
-          } else {
-            nd.selected = false;
-          }
-          return nd;
-        })
-      );
-    },
-    [nodes]
-  );
-
   const selectNode = nodes.filter((nd) => nd.selected === true)[0];
 
   useEffect(() => {
@@ -173,6 +159,7 @@ function PlanetMap(props) {
           scale={scale}
           nodeState={[nodes, setNodes]}
           planetScreenData={planetScreenData}
+          onClickSelect={onClickSelect}
         />
         <div
           ref={reactFlowRef}

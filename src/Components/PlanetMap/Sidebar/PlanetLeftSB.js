@@ -9,6 +9,7 @@ function PlanetLeftSB(props) {
   const selectedNode = props.selectedNode;
   const [nodes, setNodes] = props.nodeState;
   const planetScreenData = props.planetScreenData;
+  const onClickSelect = props.onClickSelect;
 
   const scale = props.scale;
   const reactFlowInstance = props.reactFlowInstance;
@@ -78,6 +79,7 @@ function PlanetLeftSB(props) {
             reactFlowInstance={reactFlowInstance}
             nodeState={[nodes, setNodes]}
             scale={scale}
+            onClickSelect={onClickSelect}
           />
         ) : null}
 
@@ -88,6 +90,7 @@ function PlanetLeftSB(props) {
             nodeState={[nodes, setNodes]}
             scale={scale}
             planetScreenData={planetScreenData}
+            onClickSelect={onClickSelect}
           />
         ) : null}
         {selectedTab === "aboutTab" ? (

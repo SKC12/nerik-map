@@ -72,13 +72,7 @@ function PlanetInfoSB(props) {
   const setSphereNodes = useStore((state) => state.setNodes, shallow);
   const SphereNodes = useStore((state) => state.nodes, shallow);
   const [typeInputValue, setTypeInputValue] = useState("");
-
-  // console.log(
-  //   "NODE",
-  //   SphereNodes.filter((nd) => {
-  //     return nd.data.shortName === "Siberys";
-  //   })
-  // );
+  const onClickSelect = props.onClickSelect;
 
   useEffect(() => {
     setTempData(selectedData);
@@ -154,6 +148,7 @@ function PlanetInfoSB(props) {
             orbitRadius: tempData.orbitRadius,
             info: tempData,
             beltAngle: angle,
+            onClickSelect: onClickSelect,
           },
           draggable: false,
         };

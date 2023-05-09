@@ -1,5 +1,5 @@
 import "../../style/Sphere.css";
-import { Handle, Position } from "reactflow";
+import { Handle, Position, useReactFlow } from "reactflow";
 import { useStore as useReactFlowStore } from "reactflow";
 // import airPlanet from "../../img/PlanetGasGiant_02_Regular_Orange_Thumb.webp";
 // import firePlanet from "../../img/PlanetAtmo_05_Regular_Red_Thumb.webp";
@@ -59,6 +59,8 @@ function getWidth(size) {
 //Returns an array of n evenly distributed angles between 0 and 360, starting at 180
 
 export function BeltNode({ selected, data }) {
+  const { getNodes } = useReactFlow();
+
   const angle = data.beltAngle;
   const zoomLevel = useReactFlowStore((store) => store.transform[2]);
   const planetSize = Math.min(
@@ -72,6 +74,7 @@ export function BeltNode({ selected, data }) {
 
       <div
         className={`PLANET__node ${selected ? "PLANET__node-selected" : ""}`}
+        onClick={() => data.onClickSelect(data, getNodes())}
         style={{
           position: "relative",
           width: `${planetSize}px`,
