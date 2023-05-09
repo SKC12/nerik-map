@@ -100,7 +100,7 @@ function PlanetInfoSB(props) {
             return (
               //for cases where name is blank, check radius
               planet.name !== selectedData.name ||
-              planet.orbitRadius !== selectedData.orbitRadius
+              (!planet.name && planet.orbitRadius !== selectedData.orbitRadius)
             );
           });
         }
