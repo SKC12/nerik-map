@@ -11,6 +11,7 @@ import asteroidRing from "../../../img/asteroidRing.webm";
 import { useReactFlow } from "reactflow";
 import { getCoords } from "../../utils";
 import { getShapeFromUnicode } from "../../utils";
+import { useEffect, useRef, useState } from "react";
 
 function getBackgroundImage(type, shape) {
   if (getShapeFromUnicode(shape) === "Cluster") return clusterPlanet;
@@ -39,6 +40,16 @@ function PlanetCard(props) {
 
   const scale = props.scale;
   const planet = props.planet;
+  const [bgImage, setBgImage] = useState(
+    getBackgroundImage(planet.info.type, planet.info.shape)
+  );
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    setBgImage(getBackgroundImage(planet.info.type, planet.info.shape));
+    videoRef.current?.load();
+  }, [planet.info.shape, planet.info.type]);
+
   const coords =
     getShapeFromUnicode(planet.info.shape) === "Belt"
       ? getCoords((parseInt(planet.orbitRadius) * scale * 10) / 2, 180)
@@ -61,11 +72,8 @@ function PlanetCard(props) {
       }}
     >
       <div className="RIGHTSB__planet-card-img-container">
-        <video width={"60px"} loop autoPlay>
-          <source
-            type="video/webm"
-            src={getBackgroundImage(planet.info.type, planet.info.shape)}
-          ></source>
+        <video ref={videoRef} width={"60px"} loop autoPlay>
+          <source type="video/webm" src={bgImage}></source>
         </video>
       </div>
       <div className="RIGHTSB__planet-card-data-container">

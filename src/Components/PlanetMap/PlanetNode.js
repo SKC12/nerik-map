@@ -17,6 +17,7 @@ import livePlanet from "../../img/live.webm";
 import clusterPlanet from "../../img/cluster.webm";
 
 import { getShapeFromUnicode } from "../utils";
+import { useEffect, useRef } from "react";
 
 function getWidth(size) {
   switch (size) {
@@ -65,11 +66,16 @@ function getBackgroundImage(type, shape) {
 }
 
 export function PlanetNode({ selected, data }) {
+  const videoRef = useRef(null);
+
   const zoomLevel = useReactFlowStore((store) => store.transform[2]);
   const planetSize = Math.min(
     Math.max((getWidth(data.info.size) * 5) / (zoomLevel * 1), 30),
     5000
   );
+  useEffect(() => {
+    videoRef.current?.load();
+  }, [data.info.shape, data.info.type]);
 
   return (
     <>
@@ -90,6 +96,7 @@ export function PlanetNode({ selected, data }) {
         }}
       >
         <video
+          ref={videoRef}
           width={`${planetSize * 1}px`}
           height={`${planetSize * 1}px`}
           loop
