@@ -4,6 +4,7 @@ import { Autocomplete, Button } from "@mui/material";
 import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
 import {
+  getAnglesArray,
   getCoords,
   getShapeFromUnicode,
   getUnicodeFromShape,
@@ -94,27 +95,57 @@ function PlanetNewSB(props) {
   const [typeInputValue, setTypeInputValue] = useState("");
 
   const onClickSave = () => {
-    let newNode = {
-      id: tempData.name + tempData.orbitRadius,
-      type: "planetNode",
-      position: getCoords(
-        (parseInt(tempData.orbitRadius) * scale * 10) / 2,
-        tempData.angle
-      ),
-      data: {
-        name: tempData.name,
-        orbitRadius: tempData.orbitRadius,
-        info: tempData,
-      },
-      draggable: false,
+    let newNodes = [];
+    if (getShapeFromUnicode(tempData.shape) === "Belt") {
+      let beltArray = getAnglesArray(16).map((angle) => {
+        let newNode = {
+          id: tempData.name + tempData.orbitRadius + angle,
+          type: "beltNode",
+          position: getCoords(
+            (parseInt(tempData.orbitRadius) * scale * 10) / 2,
+            angle
+          ),
+          data: {
+            name: tempData.name,
+            orbitRadius: tempData.orbitRadius,
+            info: tempData,
+            beltAngle: angle,
+          },
+          draggable: false,
+        };
+        return newNode;
+      });
+      newNodes = [...newNodes, ...beltArray];
+    } else {
+      let newNode = {
+        id: tempData.name + tempData.orbitRadius,
+        type: "planetNode",
+        position: getCoords(
+          (parseInt(tempData.orbitRadius) * scale * 10) / 2,
+          tempData.angle
+        ),
+        data: {
+          name: tempData.name,
+          orbitRadius: tempData.orbitRadius,
+          info: tempData,
+        },
+        draggable: false,
+      };
+      newNodes = [newNode];
+    }
+    setNodes([...nodes, ...newNodes]);
+
+    let newPlanet = {
+      name: tempData.name,
+      orbitRadius: tempData.orbitRadius,
+      info: tempData,
     };
-    //Add node to local SphereMap
-    setNodes(nodes.concat(newNode));
+
     //Add node to store
     setSphereNodes(
       SphereNodes.map((node) => {
         if (node.id === tempData.shortName) {
-          node.data.planets.push(newNode.data);
+          node.data.planets.push(newPlanet);
         }
         return node;
       })
