@@ -198,3 +198,12 @@ export function getCoords(radius, angle) {
     y: radius * Math.cos((Math.PI * angle) / 180),
   };
 }
+
+export function getAnglesArray(n) {
+  let slice = 360 / n;
+  let arr = [180];
+  for (let i = 1; i < n; i++) {
+    arr.push(180 + i * slice);
+  }
+  return arr;
+}

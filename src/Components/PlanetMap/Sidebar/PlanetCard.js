@@ -36,10 +36,13 @@ function PlanetCard(props) {
 
   const scale = props.scale;
   const planet = props.planet;
-  const coords = getCoords(
-    (parseInt(planet.orbitRadius) * scale * 10) / 2,
-    planet.info.angle
-  );
+  const coords =
+    getShapeFromUnicode(planet.info.shape) === "Belt"
+      ? getCoords((parseInt(planet.orbitRadius) * scale * 10) / 2, 180)
+      : getCoords(
+          (parseInt(planet.orbitRadius) * scale * 10) / 2,
+          planet.info.angle
+        );
   return (
     <div
       className="RIGHTSB__planet-card"

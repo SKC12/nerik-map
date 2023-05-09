@@ -5,6 +5,7 @@ import { Autocomplete } from "@mui/material";
 import useStore from "../../../store";
 import { shallow } from "zustand/shallow";
 import {
+  getAnglesArray,
   getCoords,
   getShapeFromUnicode,
   getUnicodeFromShape,
@@ -72,7 +73,12 @@ function PlanetInfoSB(props) {
   const SphereNodes = useStore((state) => state.nodes, shallow);
   const [typeInputValue, setTypeInputValue] = useState("");
 
-  const reactFlowInstance = props.reactFlowInstance;
+  // console.log(
+  //   "NODE",
+  //   SphereNodes.filter((nd) => {
+  //     return nd.data.shortName === "Siberys";
+  //   })
+  // );
 
   useEffect(() => {
     setTempData(selectedData);
@@ -85,7 +91,12 @@ function PlanetInfoSB(props) {
 
   const deleteNode = (node) => {
     //delete node from planetMap
-    if (node) reactFlowInstance.deleteElements({ nodes: [node] });
+    setNodes(
+      nodes.filter((nd) => {
+        return !nd.id.includes(selectedData.name + selectedData.orbitRadius);
+      })
+    );
+    // if (node) reactFlowInstance.deleteElements({ nodes: [node] });
     //delete planet from stored sphere
     setSphereNodes(
       SphereNodes.map((node) => {
@@ -122,21 +133,74 @@ function PlanetInfoSB(props) {
   }, [nodes, setNodes]);
 
   const onClickSave = () => {
-    setNodes(
-      nodes.map((node) => {
-        if (node.id === selectedData.name + selectedData.orbitRadius) {
-          node.data.info = tempData;
-          node.data.name = tempData.name;
-          node.data.orbitRadius = tempData.orbitRadius;
-          node.id = node.data.name + node.data.orbitRadius;
-          node.position = getCoords(
+    //Array with all but the edited node.
+    const otherNodes = nodes.filter((node) => {
+      return !node.id.includes(selectedData.name + selectedData.orbitRadius);
+    });
+
+    //Array with the edited node.
+    let newNodes = [];
+    if (getShapeFromUnicode(tempData.shape) === "Belt") {
+      let beltArray = getAnglesArray(16).map((angle) => {
+        let newNode = {
+          id: tempData.name + tempData.orbitRadius + angle,
+          type: "beltNode",
+          position: getCoords(
             (parseInt(tempData.orbitRadius) * scale * 10) / 2,
-            tempData.angle
-          );
+            angle
+          ),
+          data: {
+            name: tempData.name,
+            orbitRadius: tempData.orbitRadius,
+            info: tempData,
+            beltAngle: angle,
+          },
+          draggable: false,
+        };
+        return newNode;
+      });
+      newNodes = [...newNodes, ...beltArray];
+    } else {
+      let newNode = {
+        id: tempData.name + tempData.orbitRadius,
+        type: "planetNode",
+        position: getCoords(
+          (parseInt(tempData.orbitRadius) * scale * 10) / 2,
+          tempData.angle
+        ),
+        data: {
+          name: tempData.name,
+          orbitRadius: tempData.orbitRadius,
+          info: tempData,
+        },
+        draggable: false,
+      };
+      newNodes = [newNode];
+    }
+    //Merge both arrays
+    setNodes([...otherNodes, ...newNodes]);
+
+    setSphereNodes(
+      SphereNodes.map((node) => {
+        if (node.id === selectedData.shortName) {
+          node.data.planets = node.data.planets.map((planet) => {
+            if (
+              planet.name === selectedData.name &&
+              planet.orbitRadius === selectedData.orbitRadius
+            ) {
+              let newPlanet = {
+                name: tempData.name,
+                orbitRadius: tempData.orbitRadius,
+                info: tempData,
+              };
+              return newPlanet;
+            } else return planet;
+          });
         }
         return node;
       })
     );
+
     setEditMode(false);
   };
 

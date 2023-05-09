@@ -16,6 +16,8 @@ import PlanetInnerBgNode from "./PlanetInnerBgNode";
 import PhlogistonBgNode from "./PlanetPhlogistonBgNode";
 import SphereLimitsNode from "./PlanetSphereLimitsNode";
 import { getCoords } from "../utils";
+import { getShapeFromUnicode } from "../utils";
+import { BeltNode } from "./BeltNode";
 
 const scale = 5;
 
@@ -24,34 +26,62 @@ let baseMapWidth = 200 * scale;
 
 const nodeTypes = {
   planetNode: PlanetNode,
+  beltNode: BeltNode,
   outerBg: PlanetOuterBgNode,
   innerBg: PlanetInnerBgNode,
   phlogistonBg: PhlogistonBgNode,
   sphereLimitNode: SphereLimitsNode,
 };
 
+function getAnglesArray(n) {
+  let slice = 360 / n;
+  let arr = [180];
+  for (let i = 1; i < n; i++) {
+    arr.push(180 + i * slice);
+  }
+  return arr;
+}
+
 function PlanetMap(props) {
   const planetScreenData = useStore((state) => state.planetScreenData, shallow);
   const planets = planetScreenData.planets;
   const sphereRadius = planetScreenData.sphereRadius;
-  const initialNodes = planets.map((planet) => {
-    let node = {
-      id: planet.name + planet.orbitRadius,
-      type: "planetNode",
-      position: getCoords(
-        (parseInt(planet.orbitRadius) * scale * 10) / 2,
-        planet.info.angle
-      ),
-      data: planet,
-      draggable: false,
-    };
-    return node;
-  });
+  const initialNodes = planets.reduce((array, planet) => {
+    if (getShapeFromUnicode(planet.info.shape) === "Belt") {
+      let beltArray = getAnglesArray(16).map((angle) => {
+        let node = {
+          id: planet.name + planet.orbitRadius + angle,
+          type: "beltNode",
+          position: getCoords(
+            (parseInt(planet.orbitRadius) * scale * 10) / 2,
+            angle
+          ),
+          data: { ...planet, beltAngle: angle },
+          draggable: false,
+        };
+        return node;
+      });
+      return [...array, ...beltArray];
+    } else {
+      let node = {
+        id: planet.name + planet.orbitRadius,
+        type: "planetNode",
+        position: getCoords(
+          (parseInt(planet.orbitRadius) * scale * 10) / 2,
+          planet.info.angle
+        ),
+        data: planet,
+        draggable: false,
+      };
+      return [...array, node];
+    }
+  }, []);
+  // console.log("INITIAL NODES", initialNodes);
 
   const canvasWidth = props.width;
   const canvasHeight = props.height;
   const [nodes, setNodes] = useState(
-    [
+    initialNodes.concat([
       {
         id: "phlogistonBg",
         type: "phlogistonBg",
@@ -88,8 +118,9 @@ function PlanetMap(props) {
         selectable: false,
         zIndex: -2,
       },
-    ].concat(initialNodes)
+    ])
   );
+  // console.log("NODES", nodes);
   const [selectedNode, setSelectedNode] = useState(null);
 
   const [edges, setEdges] = useState([]);
@@ -112,9 +143,10 @@ function PlanetMap(props) {
 
   const onClickSelect = useCallback(
     (planet) => {
+      console.log(planet);
       setNodes(
         nodes.map((nd) => {
-          if (nd.id === planet.name + planet.orbitRadius) {
+          if (nd.id.includes(planet.name + planet.orbitRadius)) {
             nd.selected = true;
           } else {
             nd.selected = false;
