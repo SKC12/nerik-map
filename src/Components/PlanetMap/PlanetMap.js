@@ -49,9 +49,11 @@ function PlanetMap(props) {
       })
     );
   }, []);
+  const beltAsteroidN = 30;
+
   const initialNodes = planets.reduce((array, planet) => {
     if (getShapeFromUnicode(planet.info.shape) === "Belt") {
-      let beltArray = getAnglesArray(16).map((angle) => {
+      let beltArray = getAnglesArray(beltAsteroidN).map((angle) => {
         let node = {
           id: planet.name + planet.orbitRadius + angle,
           type: "beltNode",
@@ -160,6 +162,7 @@ function PlanetMap(props) {
           nodeState={[nodes, setNodes]}
           planetScreenData={planetScreenData}
           onClickSelect={onClickSelect}
+          beltAsteroidN={beltAsteroidN}
         />
         <div
           ref={reactFlowRef}

@@ -10,6 +10,7 @@ function PlanetLeftSB(props) {
   const [nodes, setNodes] = props.nodeState;
   const planetScreenData = props.planetScreenData;
   const onClickSelect = props.onClickSelect;
+  const beltAsteroidN = props.beltAsteroidN;
 
   const scale = props.scale;
   const reactFlowInstance = props.reactFlowInstance;
@@ -80,6 +81,7 @@ function PlanetLeftSB(props) {
             nodeState={[nodes, setNodes]}
             scale={scale}
             onClickSelect={onClickSelect}
+            beltAsteroidN={beltAsteroidN}
           />
         ) : null}
 
@@ -91,6 +93,7 @@ function PlanetLeftSB(props) {
             scale={scale}
             planetScreenData={planetScreenData}
             onClickSelect={onClickSelect}
+            beltAsteroidN={beltAsteroidN}
           />
         ) : null}
         {selectedTab === "aboutTab" ? (

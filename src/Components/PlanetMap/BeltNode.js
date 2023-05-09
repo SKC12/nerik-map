@@ -1,14 +1,11 @@
 import "../../style/Sphere.css";
 import { Handle, Position, useReactFlow } from "reactflow";
 import { useStore as useReactFlowStore } from "reactflow";
-// import airPlanet from "../../img/PlanetGasGiant_02_Regular_Orange_Thumb.webp";
-// import firePlanet from "../../img/PlanetAtmo_05_Regular_Red_Thumb.webp";
-// import earthPlanet from "../../img/PlanetAtmo_01_Regular_BlueOrange_Thumb.webp";
-// import icePlanet from "../../img/PlanetNoAtmo_01_Regular_BlueWhite_Thumb.webp";
-// import waterPlanet from "../../img/PlanetGasGiant_01_Regular_Blue_Thumb.webp";
-// import livePlanet from "../../img/PlanetAtmo_03_Regular_Green_Thumb.webp";
 
 import asteroid1 from "../../img/asteroid1.webm";
+import asteroid2 from "../../img/asteroid2.webm";
+import asteroid3 from "../../img/asteroid3.webm";
+import asteroid4 from "../../img/asteroid4.webm";
 
 function getWidth(size) {
   switch (size) {
@@ -60,6 +57,7 @@ function getWidth(size) {
 
 export function BeltNode({ selected, data }) {
   const { getNodes } = useReactFlow();
+  const asteroidBgs = [asteroid1, asteroid2, asteroid3, asteroid4];
 
   const angle = data.beltAngle;
   const zoomLevel = useReactFlowStore((store) => store.transform[2]);
@@ -79,9 +77,6 @@ export function BeltNode({ selected, data }) {
           position: "relative",
           width: `${planetSize}px`,
           height: `${planetSize}px`,
-          // backgroundImage: `url(${getBackgroundImage(data.info.type)})`,
-          // backgroundSize: "cover",
-
           borderRadius: "100%",
           textAlign: "center",
           cursor: "pointer",
@@ -98,7 +93,10 @@ export function BeltNode({ selected, data }) {
             }`,
           }}
         >
-          <source type="video/webm" src={asteroid1}></source>
+          <source
+            type="video/webm"
+            src={asteroidBgs[Math.floor(Math.random() * 4)]}
+          ></source>
         </video>
         {(zoomLevel > 0.04 || parseInt(data.orbitRadius) > 200) &&
         angle === 180 ? (

@@ -6,12 +6,15 @@ import icePlanet from "../../../img/ice.webm";
 import waterPlanet from "../../../img/water.webm";
 import livePlanet from "../../../img/live.webm";
 import clusterPlanet from "../../../img/cluster.webm";
+import asteroidRing from "../../../img/asteroidRing.webm";
+
 import { useReactFlow } from "reactflow";
 import { getCoords } from "../../utils";
 import { getShapeFromUnicode } from "../../utils";
 
 function getBackgroundImage(type, shape) {
   if (getShapeFromUnicode(shape) === "Cluster") return clusterPlanet;
+  if (getShapeFromUnicode(shape) === "Belt") return asteroidRing;
 
   if (type && type.includes("Earth")) {
     return earthPlanet;

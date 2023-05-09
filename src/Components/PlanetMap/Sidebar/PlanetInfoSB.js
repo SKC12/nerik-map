@@ -73,6 +73,7 @@ function PlanetInfoSB(props) {
   const SphereNodes = useStore((state) => state.nodes, shallow);
   const [typeInputValue, setTypeInputValue] = useState("");
   const onClickSelect = props.onClickSelect;
+  const beltAsteroidN = props.beltAsteroidN;
 
   useEffect(() => {
     setTempData(selectedData);
@@ -135,7 +136,7 @@ function PlanetInfoSB(props) {
     //Array with the edited node.
     let newNodes = [];
     if (getShapeFromUnicode(tempData.shape) === "Belt") {
-      let beltArray = getAnglesArray(16).map((angle) => {
+      let beltArray = getAnglesArray(beltAsteroidN).map((angle) => {
         let newNode = {
           id: tempData.name + tempData.orbitRadius + angle,
           type: "beltNode",
