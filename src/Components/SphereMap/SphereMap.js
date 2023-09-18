@@ -72,6 +72,8 @@ function SphereMap(props) {
   const selectNode = nodes.filter((nd) => nd.selected === true)[0];
   const selectEdge = edges.filter((edg) => edg.selected === true)[0];
 
+  const [mouseCoords, setMouseCoords] = useState(null);
+
   //console.log("NODES", nodes, "EDGES", edges);
 
   useEffect(() => {
@@ -85,6 +87,19 @@ function SphereMap(props) {
   useEffect(() => {
     updateFlowRiverColors(flowRiverColors);
   }, [flowRiverColors, updateFlowRiverColors]);
+
+  const handleMouseMove = (e) => {
+    const reactFlowBounds = reactFlowRef.current.getBoundingClientRect();
+    const position = reactFlowInstance.project({
+      x: e.clientX - reactFlowBounds.left,
+      y: e.clientY - reactFlowBounds.top,
+    });
+
+    setMouseCoords({
+      x: position.x / scale - 3,
+      y: position.y / scale - 3,
+    });
+  };
 
   const onDragEnd = useCallback(
     (e, node) => {
@@ -220,10 +235,24 @@ function SphereMap(props) {
         reactFlowInstance={reactFlowInstance}
         reactFlowRef={reactFlowRef}
       />
+
       <div
         ref={reactFlowRef}
-        style={{ height: canvasHeight, width: canvasWidth }}
+        onMouseMove={handleMouseMove}
+        style={{
+          height: canvasHeight,
+          width: canvasWidth,
+          position: "relative",
+        }}
       >
+        {mouseCoords ? (
+          <div className="SPHERE_MAP-Quadrants">
+            {String.fromCharCode(
+              65 + Math.floor(Math.max(mouseCoords?.x / 25, 0))
+            )}
+            {16 - Math.floor(Math.max(mouseCoords?.y / 25, 0))}
+          </div>
+        ) : null}
         <ReactFlow
           nodes={nodes}
           edges={edges}

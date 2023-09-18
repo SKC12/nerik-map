@@ -1,6 +1,22 @@
 .react-flow__handle {
     display: none;
-  }  
+  }
+  
+  
+.SPHERE_MAP-Quadrants{  
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 2px;
+  z-index: 100;
+  background-color: var(--bg-very-light);
+  color: var(--text-dark);
+  display: flex;
+  border-radius: 10px;  
+  align-items: center;
+  justify-content:space-around;
+  border: 2px solid var(--bg);
+}
  
   
 @keyframes dash {
