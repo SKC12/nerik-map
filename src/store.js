@@ -156,7 +156,7 @@ const useStore = create((set, get) => ({
     });
     //console.log(get().planetScreenData);
   },
-  loadFromLocalStorage: async () => {
+  loadFromLocalStorage: () => {
     const data = JSON.parse(localStorage.getItem("sbej-flowmap"));
     if (data) {
       set({
@@ -188,8 +188,18 @@ const useStore = create((set, get) => ({
   loadFromFile: (event) => {
     const file = event.target.files[0];
     const reader = new FileReader();
+
     reader.onload = (e) => {
       let data = JSON.parse(e.target.result);
+      // console.log(
+      //   JSON.stringify(data),
+      //   //parsedData,
+      //   //JSON.parse(e.target.result),
+      //   "data",
+      //   data.edges[0],
+      //   "stroke",
+      //   data.edges[0].style.stroke
+      // );
       if (data) {
         set({
           nodes: data.nodes || [],

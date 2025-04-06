@@ -16,6 +16,20 @@ function StartScreen(props) {
   const loadFromFile = useStore((state) => state.loadFromFile);
   const hiddenFileRef = useRef(null);
 
+  const onLoadFromFile = async (t) => {
+    loadFromScratch();
+    await timeout(500);
+    loadFromFile(t);
+  };
+
+  const onLoadFromLocalStorage = async (t) => {
+    loadFromScratch();
+    await timeout(500);
+    loadFromLocalStorage(t);
+  };
+
+  const timeout = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
   return (
     <div className="START__bg">
       <div
@@ -88,13 +102,13 @@ function StartScreen(props) {
             </Button>
             <input
               ref={hiddenFileRef}
-              onChange={loadFromFile}
+              onChange={onLoadFromFile}
               style={{ display: "none" }}
               type="file"
               accept=".json"
             ></input>
             <Button
-              onClick={loadFromLocalStorage}
+              onClick={onLoadFromLocalStorage}
               className="START__button"
               disableElevation
               variant="contained"

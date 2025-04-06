@@ -90,6 +90,7 @@ function SphereMap(props) {
 
   const handleMouseMove = (e) => {
     const reactFlowBounds = reactFlowRef.current.getBoundingClientRect();
+    if (!reactFlowInstance) return;
     const position = reactFlowInstance.project({
       x: e.clientX - reactFlowBounds.left,
       y: e.clientY - reactFlowBounds.top,
