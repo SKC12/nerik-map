@@ -165,6 +165,21 @@ const useStore = create((set, get) => ({
       set({
         edges: data.edges || [],
       });
+
+      let flowRivers = [];
+      let tempFlowRiverColors = {};
+
+      data.edges.map((edge) => {
+        if (!flowRivers.includes(edge.data.flowRiver) && edge.data.flowRiver) {
+          flowRivers.push(edge.data.flowRiver);
+          tempFlowRiverColors[edge.data.flowRiver] = edge.style.stroke;
+        }
+      });
+
+      set({
+        flowRiverColors: tempFlowRiverColors,
+      });
+
       if (data.settings) {
         set({
           isAnimated: data.settings.animated,
@@ -207,6 +222,24 @@ const useStore = create((set, get) => ({
         set({
           edges: data.edges || [],
         });
+
+        let flowRivers = [];
+        let tempFlowRiverColors = {};
+
+        data.edges.map((edge) => {
+          if (
+            !flowRivers.includes(edge.data.flowRiver) &&
+            edge.data.flowRiver
+          ) {
+            flowRivers.push(edge.data.flowRiver);
+            tempFlowRiverColors[edge.data.flowRiver] = edge.style.stroke;
+          }
+        });
+
+        set({
+          flowRiverColors: tempFlowRiverColors,
+        });
+
         if (data.settings) {
           set({
             isAnimated: data.settings.animated,
